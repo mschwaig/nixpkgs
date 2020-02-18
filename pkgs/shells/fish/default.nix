@@ -2,7 +2,7 @@
   which, gnused, gnugrep,
   groff, man-db, getent, libiconv, pcre2,
   gettext, ncurses, python3,
-  cmake
+  cmake, less
   , fetchpatch
 
   , writeText
