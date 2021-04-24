@@ -132,7 +132,7 @@ def retry(fn: Callable) -> None:
     until it returns True or a timeout is reached.
     """
 
-    for _ in range(900):
+    for _ in range(3300):
         if fn(False):
             return
         time.sleep(1)
