@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
 
   nativeBuildInputs = [ pkg-config ];
   buildInputs = [ libevent openssl zlib xz zstd scrypt ] ++
-    lib.optionals stdenv.isLinux [ libseccomp systemd libcap ];
+    lib.optionals stdenv.isLinux [ libseccomp (lib.getDev systemd) libcap ];
 
   patches = [ ./disable-monotonic-timer-tests.patch ];
 
