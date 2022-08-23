@@ -67,6 +67,21 @@ finish() {
         runHook postFetch
     fi
 
+    # TODO: make this work for other algorithms than sha256
+    if [[ $tryOtherUrlsOnHashMismatch == "1" ]]; then
+	dlHash=$(cat $downloadedFile | sha256sum)
+	dlHash="${dlHash:0:64}"
+	outputHashHex=$(echo ${outputHash:7} | base64 -d | od --format=x1 -An | tr -d ' \n')
+	if [[ "$dlHash" != "$outputHashHex" ]]; then
+		rm $downloadedFile
+		echo "file with unexpected hash obtained from $url"
+		echo "expected: $outputHashHex"
+		echo "got:      $dlHash"
+		echo "Trying next url."
+		return 0
+	fi
+    fi
+
     exit 0
 }
 

@@ -89,6 +89,10 @@ in
 , # If true, set executable bit on downloaded file
   executable ? false
 
+, # If set, downloading a file with an unexpected hash leads to trying other
+  # URLs until a file with the desired hash is obtained.
+  tryOtherUrlsOnHashMismatch ? false
+
 , # If set, don't download the file, but write a list of all possible
   # URLs (resulting from resolving mirror:// URLs) to $out.
   showURLs ? false
@@ -159,7 +163,7 @@ stdenvNoCC.mkDerivation {
     - If you wish for each list element to be passed as a separate curl argument, allowing arguments to contain spaces, use curlOptsList instead:
       curlOptsList = [ ${lib.concatMapStringsSep " " lib.strings.escapeNixString curlOpts} ];'' curlOpts;
   curlOptsList = lib.escapeShellArgs curlOptsList;
-  inherit showURLs mirrorsFile postFetch downloadToTemp executable;
+  inherit showURLs mirrorsFile postFetch downloadToTemp executable tryOtherUrlsOnHashMismatch;
 
   impureEnvVars = impureEnvVars ++ netrcImpureEnvVars;
 
