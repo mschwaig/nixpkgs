@@ -1,10 +1,6 @@
 { lib
-, clang-tools
-, llvmPackages
-, boost179
+, boost180
 , protobuf
-, python3Support ? false
-, python3
 , log4cxxSupport ? false
 , log4cxx
 , snappySupport ? false
@@ -17,7 +13,7 @@
 , gtestSupport ? false
 , cmake
 , curl
-, fetchurl
+, fetchFromGitHub
 , jsoncpp
 , openssl
 , pkg-config
@@ -37,48 +33,36 @@ let
   */
   enableCmakeFeature = p: if (p == null || p == false) then "OFF" else "ON";
 
-  # Not really sure why I need to do this.. If I call clang-tools without the override it defaults to a different version and fails
-  clangTools = clang-tools.override { inherit stdenv llvmPackages; };
-  # If boost has python enabled, then boost-python package will be installed which is used by libpulsars python wrapper
-  boost = if python3Support then boost179.override { inherit stdenv; enablePython = python3Support; python = python3; } else boost179;
-  defaultOptionals = [ boost protobuf ]
-    ++ lib.optional python3Support python3
+  defaultOptionals = [ boost180 protobuf ]
     ++ lib.optional snappySupport snappy.dev
     ++ lib.optional zlibSupport zlib
     ++ lib.optional zstdSupport zstd
     ++ lib.optional log4cxxSupport log4cxx;
 
 in
-stdenv.mkDerivation rec {
+stdenv.mkDerivation (finalAttrs: rec {
   pname = "libpulsar";
-  version = "2.10.2";
+  version = "3.4.2";
 
-  src = fetchurl {
-    hash = "sha256-IONnsSDbnX2qz+Xya0taHYSViTOiRI36AfcxmY3dNpo=";
-    url = "mirror://apache/pulsar/pulsar-${version}/apache-pulsar-${version}-src.tar.gz";
+  src = fetchFromGitHub {
+    owner = "apache";
+    repo = "pulsar-client-cpp";
+    rev = "v${version}";
+    hash = "sha256-2jjesv1zBeFguupgBFTvTNDgsGMSYp/lfjUqo5xdoYs=";
   };
 
-  sourceRoot = "apache-pulsar-${version}-src/pulsar-client-cpp";
-
-  # clang-tools needed for clang-format
-  nativeBuildInputs = [ cmake pkg-config clangTools ]
+  nativeBuildInputs = [ cmake pkg-config ]
     ++ defaultOptionals
     ++ lib.optional gtestSupport gtest.dev;
 
   buildInputs = [ jsoncpp openssl curl ]
     ++ defaultOptionals;
 
-  # Needed for GCC on Linux
-  env.NIX_CFLAGS_COMPILE = toString [ "-Wno-error=return-type" ];
-
   cmakeFlags = [
     "-DBUILD_TESTS=${enableCmakeFeature gtestSupport}"
-    "-DBUILD_PYTHON_WRAPPER=${enableCmakeFeature python3Support}"
     "-DUSE_LOG4CXX=${enableCmakeFeature log4cxxSupport}"
-    "-DClangTools_PATH=${clangTools}/bin"
   ];
 
-  enableParallelBuilding = true;
   doInstallCheck = true;
   installCheckPhase = ''
     echo ${lib.escapeShellArg ''
@@ -92,11 +76,11 @@ stdenv.mkDerivation rec {
   '';
 
   meta = with lib; {
-    homepage = "https://pulsar.apache.org/docs/en/client-libraries-cpp";
+    homepage = "https://pulsar.apache.org/docs/3.1.x/client-libraries-cpp/";
     description = "Apache Pulsar C++ library";
-
+    changelog = "https://github.com/apache/pulsar-client-cpp/releases/tag/v${version}";
     platforms = platforms.all;
     license = licenses.asl20;
-    maintainers = [ maintainers.corbanr ];
+    maintainers = with maintainers; [ corbanr gaelreyrol ];
   };
-}
+})
