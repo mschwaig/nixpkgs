@@ -80,7 +80,7 @@ in {
       };
 
       serviceConfig = {
-        ExecStart = "${pkgs.unstable.ollama}/bin/ollama serve";
+        ExecStart = "${pkgs.ollama}/bin/ollama serve";
         # Systemd takes care of username, user id, security & permissions
         # See https://0pointer.net/blog/dynamic-users-with-systemd.html
         # Almost nothing on the disk is readable for this dynamic user; only a few places writable:

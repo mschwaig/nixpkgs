@@ -74,7 +74,7 @@ in {
       after = [ "network.target" ];
 
       serviceConfig = {
-        ExecStart = "${ollama-webui}/bin/ollama-webui --port ${toString cfg.port} ${if cfg.cors_origin == null then "" else "--cors='" + cfg.cors_origin +"'"}";
+        ExecStart = "${pkgs.ollama-webui}/bin/ollama-webui --port ${toString cfg.port} ${if cfg.cors_origins == null then "" else "--cors='" + cfg.cors_origin +"'"}";
         DynamicUser = "true";
         Type = "simple";
         Restart = "on-failure";
