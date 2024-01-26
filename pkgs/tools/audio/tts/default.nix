@@ -16,14 +16,14 @@ let
 in
 python.pkgs.buildPythonApplication rec {
   pname = "tts";
-  version = "0.20.2";
+  version = "0.22.0";
   pyproject = true;
 
   src = fetchFromGitHub {
     owner = "coqui-ai";
     repo = "TTS";
     rev = "refs/tags/v${version}";
-    hash = "sha256-1nlSf15IEX1qKfDtR6+jQqskjxIuzaIWatkj9Z1fh8Y=";
+    hash = "sha256-RQVlPHYZ5X/6xbxwGNcgntcyAsBS8T2ketdk+OCIS3Q=";
   };
 
   postPatch = let
@@ -31,13 +31,16 @@ python.pkgs.buildPythonApplication rec {
       "bnunicodenormalizer"
       "cython"
       "gruut"
+      #"hangul-romanize"
       "inflect"
       "librosa"
       "mecab-python3"
       "numba"
       "numpy"
+      "pandas"
       "unidic-lite"
       "trainer"
+      #"tqdm"
     ];
   in ''
     sed -r -i \
@@ -98,6 +101,9 @@ python.pkgs.buildPythonApplication rec {
     transformers
     unidic-lite
     webrtcvad
+    unidecode
+    spacy
+    #hangul-romanize
   ];
 
   postInstall = ''
