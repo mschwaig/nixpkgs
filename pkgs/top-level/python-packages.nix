@@ -2055,6 +2055,8 @@ self: super: with self; {
     inherit (pkgs) chroma-hnswlib;
   };
 
+  chromadb = callPackage ../development/python-modules/chromadb { };
+
   chromaprint = callPackage ../development/python-modules/chromaprint { };
 
   ci-info = callPackage ../development/python-modules/ci-info { };
