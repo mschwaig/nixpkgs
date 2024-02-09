@@ -2,6 +2,7 @@
 , buildGoModule
 , fetchFromGitHub
 , llama-cpp
+, llama-cpp-bin-path ? "bin/llama-cpp-server"
 }:
 
 buildGoModule rec {
@@ -26,7 +27,7 @@ buildGoModule rec {
 
   postPatch = ''
     substituteInPlace llm/llama.go \
-      --subst-var-by llamaCppServer "${llama-cpp}/bin/llama-cpp-server"
+      --subst-var-by llamaCppServer "${llama-cpp}/${llama-cpp-bin-path}"
     substituteInPlace server/routes_test.go --replace "0.0.0" "${version}"
   '';
 
