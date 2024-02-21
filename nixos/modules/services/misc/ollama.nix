@@ -27,7 +27,7 @@ in {
 
         Optional: This service doesn't persist any chats and is only available in the terminal.
         For a convenient, graphical web app on top of it, take look at
-        <https://github.com/ollama-webui/ollama-webui>, also as `ollama-webui` in Nixpkgs.
+        <https://github.com/open-webui/open-webui>, also as `open-webui` in Nixpkgs.
         ''
       );
 
@@ -46,7 +46,7 @@ in {
         example = "https://myserver:8080,http://10.0.0.10:*";
         description = lib.mdDoc ''
           Allow access from web apps that are served under some (different) URL.
-          If a web app like Ollama-WebUI is available/served on `https://myserver:8080`,
+          If a web app like Open-WebUI is available/served on `https://myserver:8080`,
           then add this URL here. Otherwise the Ollama backend server will reject the
           UIs request and return 403 forbidden due to CORS.
           See <https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS>.

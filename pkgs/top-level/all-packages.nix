@@ -845,7 +845,7 @@ with pkgs;
 
   ollama = callPackage ../tools/misc/ollama {  };
 
-  ollama-webui = callPackage ../tools/misc/ollama-webui {  };
+  open-webui = callPackage ../tools/misc/open-webui {  };
 
   ots = callPackage ../tools/security/ots {  };
 

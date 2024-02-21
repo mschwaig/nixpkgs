@@ -2,19 +2,19 @@
 
 with lib;
 
-let cfg = config.services.ollama-webui;
+let cfg = config.services.open-webui;
 
 in {
   options = {
-    services.ollama-webui = {
+    services.open-webui = {
       enable = mkEnableOption (lib.mdDoc ''
-        Ollama-WebUI frontend service for the Ollama backend service.
+        Open-WebUI frontend service for the Ollama backend service.
         It's a single page web application that integrates with Ollama to
         run state-of-the-art AI large language models (LLM) locally with privacy
         on your personal computer.
         It's look and feel is similar to ChatGPT, supports different LLM models,
         it stores chats (in the browser storage), supports image uploads,
-        Markdown and Latex rendering etc.See <https://github.com/ollama-webui/ollama-webui>.
+        Markdown and Latex rendering etc.See <https://github.com/open-webui/open-webui>.
 
         The model names can be looked up on <https://ollama.ai/library> and are available in
         varying sizes to fit your CPU, GPU, RAM and disk storage.
@@ -23,7 +23,7 @@ in {
         LLM models. The Ollama backend can be running locally or on a server; it's available
         as a Nix package or a NixOS module.
         The URL to the Ollama backend service can be set in this module, but overriden
-        later in the running Ollama-WebUI as well.
+        later in the running Open-WebUI as well.
 
         Optional: This module is configured to run locally, but can be served from a (home) server,
         ideally behind a secured reverse-proxy.
@@ -31,20 +31,20 @@ in {
         on how to set up a reverse proxy.
       '');
 
-      ollama-webui-package = mkPackageOption pkgs "ollama-webui" { };
+      package = mkPackageOption pkgs "open-webui" { };
 
       host = mkOption {
         type = types.str;
         default = "127.0.0.1";
         description = lib.mdDoc ''
-          The host/domain name under which the Ollama-WebUI service is reachable.
+          The host/domain name under which the Open-WebUI service is reachable.
         '';
       };
 
       port = mkOption {
         type = types.port;
         default = 8080;
-        description = lib.mdDoc "The port for the  Ollama-WebUI service.";
+        description = lib.mdDoc "The port for the  Open-WebUI service.";
       };
 
       cors_origins = mkOption {
@@ -53,7 +53,7 @@ in {
         example = "*,https://myserver:8080,http://10.0.0.10:*";
         description = lib.mdDoc ''
           Allow access from web apps that are served under some (different) URL.
-          If a web app like Ollama-WebUI is available/served on `https://myserver:8080`,
+          If a web app like Open-WebUI is available/served on `https://myserver:8080`,
           then add this URL here. Otherwise the Ollama frontend server will reject the
           UIs request and return 403 forbidden due to CORS.
           See <https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS>.
@@ -64,8 +64,8 @@ in {
 
   config = mkIf cfg.enable {
 
-    systemd.services.ollama-webui = {
-      description = "Ollama WebUI Service";
+    systemd.services.open-webui = {
+      description = "Open-WebUI Service";
       wantedBy = [ "multi-user.target" ];
       after = [ "network.target" ];
 
@@ -73,7 +73,7 @@ in {
         cors-arg = if cfg.cors_origins == null then "" else "--cors='" + cfg.cors_origin +"'";
       in {
         ExecStart = ''
-          ${cfg.ollama-webui-package}/bin/ollama-webui --port ${toString cfg.port} ${cors-arg} --proxy http://${cfg.host}:${toString cfg.port}
+          ${cfg.package}/bin/open-webui --port ${toString cfg.port} ${cors-arg} --proxy http://${cfg.host}:${toString cfg.port}
         '';
         DynamicUser = "true";
         Type = "simple";

@@ -8,13 +8,13 @@
 # We just package the JS frontend part, not the Python reverse-proxy backend.
 # NixOS can provide any another reverse proxy such as nginx.
 buildNpmPackage rec {
-  pname = "ollama-webui";
-  # ollama-webui doesn't tag versions yet.
+  pname = "open-webui";
+  # open-webui doesn't tag versions yet.
   version = "0.0.0-unstable-2023-12-22";
 
   src = fetchFromGitHub {
-    owner = "ollama-webui";
-    repo = "ollama-webui";
+    owner = "open-webui";
+    repo = "open-webui";
     rev = "77c1a77fccb04337ff95440030cd051fd16c2cd8";
     hash = "sha256-u7h2tpHgtQwYXornslY3CZjKjigqBK2mHmaiK1EoEgk=";
   };
@@ -46,14 +46,14 @@ buildNpmPackage rec {
       Tools like Ollama make open-source large langue models (LLM) accessible and almost
       trivial to download and run them locally on a consumer computer.
       However, Ollama only runs in a terminal and doesn't store any chat history.
-      Ollama-WebUI is a web frontend on top of Ollama that looks and behaves similar to ChatGPT's web frontend.
+      Open-WebUI is a web frontend on top of Ollama that looks and behaves similar to ChatGPT's web frontend.
       You can have separate chats with different LLMs that are saved in your browser,
       automatic Markdown and Latex rendering, upload files etc.
       This package contains two parts:
       - `<nix-store-package-path>/lib` The WebUI as a compiled, static html folder to bundle in your web server
       - `<nix-store-package-path>/bin/${pname}` A runnable webserver the serves the WebUI for convenience.
     '';
-    homepage = "https://github.com/ollama-webui/ollama-webui";
+    homepage = "https://github.com/open-webui/open-webui";
     license = licenses.mit;
     mainProgram = pname;
     maintainers = with maintainers; [ malteneuss ];
