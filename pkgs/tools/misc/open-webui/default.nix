@@ -3,6 +3,8 @@
 , nodePackages
 , fetchFromGitHub
 , runtimeShell
+, esbuild
+, buildGoModule
 }:
 
 # We just package the JS frontend part, not the Python reverse-proxy backend.
@@ -10,16 +12,16 @@
 buildNpmPackage rec {
   pname = "open-webui";
   # open-webui doesn't tag versions yet.
-  version = "0.0.0-unstable-2023-12-22";
+  version = "0.0.0-unstable-2024-02-21";
 
   src = fetchFromGitHub {
     owner = "open-webui";
     repo = "open-webui";
-    rev = "77c1a77fccb04337ff95440030cd051fd16c2cd8";
-    hash = "sha256-u7h2tpHgtQwYXornslY3CZjKjigqBK2mHmaiK1EoEgk=";
+    rev = "a70192ad1b2a5a13a3786a48287b29ef7febad3e";
+    hash = "sha256-4DXHNoXqEPEnVCpZ+PXfAYVYmVVbqHUa94qMdFaxgG8=";
   };
   # dependencies are downloaded into a separate node_modules Nix package
-  npmDepsHash = "sha256-SI2dPn1SwbGwl8093VBtcDsA2eHSxr3UUC+ta68w2t8=";
+  npmDepsHash = "sha256-TavFWEROSXS3GKbMzKhblLYLuN1tpXzlJG0Tm5p6fMI=";
 
   # We have to bake in the default URL it will use for ollama webserver here,
   # but it can be overriden in the UI later.
@@ -27,6 +29,19 @@ buildNpmPackage rec {
 
   # The path '/ollama/api' will be redirected to the specified backend URL
   OLLAMA_API_BASE_URL = PUBLIC_API_BASE_URL;
+
+  ESBUILD_BINARY_PATH = "${lib.getExe (esbuild.override {
+    buildGoModule = args: buildGoModule (args // rec {
+      version = "0.18.20";
+      src = fetchFromGitHub {
+        owner = "evanw";
+        repo = "esbuild";
+        rev = "v${version}";
+        hash = "sha256-mED3h+mY+4H465m02ewFK/BgA1i/PQ+ksUNxBlgpUoI=";
+      };
+      vendorHash = "sha256-+BfxCyg0KkDQpHt/wycy/8CTG6YBA/VJvJFhhzUnSiQ=";
+    });
+  })}";
   # "npm run build" creates a static page in the "build" folder.
   installPhase = ''
     mkdir -p $out/lib
