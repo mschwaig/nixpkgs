@@ -72,7 +72,9 @@ in {
       serviceConfig = let
         cors-arg = if cfg.cors_origins == null then "" else "--cors='" + cfg.cors_origin +"'";
       in {
-        ExecStart = "${cfg.ollama-webui-package}/bin/ollama-webui --port ${toString cfg.port} ${cors-arg}";
+        ExecStart = ''
+          ${cfg.ollama-webui-package}/bin/ollama-webui --port ${toString cfg.port} ${cors-arg} --proxy http://${cfg.host}:${toString cfg.port}
+        '';
         DynamicUser = "true";
         Type = "simple";
         Restart = "on-failure";
