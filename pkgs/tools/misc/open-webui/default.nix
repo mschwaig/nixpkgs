@@ -5,10 +5,46 @@
 , runtimeShell
 , esbuild
 , buildGoModule
+, python3
 }:
 
 # We just package the JS frontend part, not the Python reverse-proxy backend.
 # NixOS can provide any another reverse proxy such as nginx.
+let
+  python_env = python3.withPackages (p: with p; [
+    fastapi
+    uvicorn
+    pydantic
+    python-multipart
+    flask
+    flask-cors
+    python-socketio
+    python-jose
+    passlib
+    uuid
+    requests
+    aiohttp
+    peewee
+    bcrypt
+    langchain
+    langchain-community
+    chromadb
+    sentence-transformers
+    pypdf
+    docx2txt
+    unstructured
+    markdown
+    pypandoc
+    pandas
+    openpyxl
+    pyxlsb
+    xlrd
+    faster-whisper
+    pyjwt
+    black
+  ]
+);
+in
 buildNpmPackage rec {
   pname = "open-webui";
   # open-webui doesn't tag versions yet.
@@ -44,17 +80,19 @@ buildNpmPackage rec {
   })}";
   # "npm run build" creates a static page in the "build" folder.
   installPhase = ''
-    mkdir -p $out/lib
-    cp -R ./build/. $out/lib
+    mkdir -p $out/lib/static
+    cp -R ./build/. $out/lib/static
+    cp -R ./backend $out/lib/
 
     mkdir -p $out/bin
     cat <<EOF >>$out/bin/${pname}
     #!${runtimeShell}
-    ${nodePackages.http-server}/bin/http-server $out/lib
+    ${python_env}/bin/uvicorn main:app --app-dir $out/lib/backend
     EOF
     chmod +x $out/bin/${pname}
   '';
 
+  # --host 0.0.0.0 --port "$PORT" --forwarded-allow-ips '*'
   meta = with lib; {
     description = "ChatGPT-Style Web Interface for Ollama";
     longDescription = ''

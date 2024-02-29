@@ -69,12 +69,23 @@ in {
       wantedBy = [ "multi-user.target" ];
       after = [ "network.target" ];
 
+      environment = {
+        DATA_DIR = "%S/open-webui/data";
+        FRONTEND_BUILD_DIR = "${pkgs.open-webui}/lib/static";
+        TRANSFORMERS_CACHE = "%S/open-webui/transformers-cache";
+        HF_HOME = "%S/open-webui/hf-home";
+        SENTENCE_TRANSFORMERS_HOME = "%S/open-webui/sentence_transformers_home";
+      };
+
       serviceConfig = let
         cors-arg = if cfg.cors_origins == null then "" else "--cors='" + cfg.cors_origin +"'";
       in {
-        ExecStart = ''
-          ${cfg.package}/bin/open-webui --port ${toString cfg.port} ${cors-arg} --proxy http://${cfg.host}:${toString cfg.port}
+        ExecStart = pkgs.writeShellScript "open-webui-work-dir" ''
+          mkdir work-dir; cd work-dir;
+          ${cfg.package}/bin/open-webui --port ${toString cfg.port} --host ${cfg.host} --forwarded-allow-ips '*'
         '';
+        WorkingDirectory = "%S/open-webui/work-dir";
+        StateDirectory = [ "open-webui" ];
         DynamicUser = "true";
         Type = "simple";
         Restart = "on-failure";

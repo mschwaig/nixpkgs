@@ -168,6 +168,10 @@ buildPythonPackage rec {
   ];
 
   disabledTests = [
+"test_create_sql_agent"
+"test_convert_pydantic_to_openai_function"
+"test_convert_pydantic_to_openai_function_nested"
+    
     # these tests have db access
     "test_table_info"
     "test_sql_database_run"

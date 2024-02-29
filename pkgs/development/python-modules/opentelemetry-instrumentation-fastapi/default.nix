@@ -1,6 +1,7 @@
 { buildPythonPackage
 , fastapi
 , hatchling
+, httpx
 , opentelemetry-api
 , opentelemetry-instrumentation
 , opentelemetry-instrumentation-asgi
@@ -33,6 +34,7 @@ buildPythonPackage {
 
   nativeCheckInputs = [
     opentelemetry-test-utils
+    httpx
     pytestCheckHook
   ];
 

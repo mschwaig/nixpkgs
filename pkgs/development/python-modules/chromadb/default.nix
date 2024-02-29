@@ -48,7 +48,7 @@ buildPythonPackage rec {
     setuptools-scm
   ];
 
-  buildInputs = [
+  propagatedBuildInputs = [
     build
     requests
     pydantic
