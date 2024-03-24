@@ -408,7 +408,11 @@ in buildPythonPackage rec {
 
     # torch/csrc requires `pybind11` at runtime
     pybind11
-  ] ++ lib.optionals tritonSupport [ openai-triton ];
+  ] ++ lib.optionals tritonSupport [
+    openai-triton
+  ] ++ lib.optionals rocmSupport [
+    rocmPackages.hip-common
+  ];
 
   propagatedCxxBuildInputs = [
   ]
