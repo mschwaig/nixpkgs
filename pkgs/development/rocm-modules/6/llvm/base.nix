@@ -135,7 +135,13 @@ in stdenv.mkDerivation (finalAttrs: {
     "-DLLVM_EXTERNAL_LIT=${lit}/bin/.lit-wrapped"
   ] ++ extraCMakeFlags;
 
-  postPatch = lib.optionalString finalAttrs.passthru.isLLVM ''
+  prePatch = ''
+    cd ../
+  '';
+
+  postPatch = ''
+    cd ${targetDir}
+  '' + lib.optionalString finalAttrs.passthru.isLLVM ''
     patchShebangs lib/OffloadArch/make_generated_offload_arch_h.sh
   '' + lib.optionalString (buildTests && finalAttrs.passthru.isLLVM) ''
     # FileSystem permissions tests fail with various special bits
