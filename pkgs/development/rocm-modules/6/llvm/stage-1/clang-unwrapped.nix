@@ -2,13 +2,14 @@
 , callPackage
 , rocmUpdateScript
 , llvm
+, makeWrapper
 }:
 
 callPackage ../base.nix rec {
   inherit stdenv rocmUpdateScript;
   targetName = "clang-unwrapped";
   targetDir = "clang";
-  extraBuildInputs = [ llvm ];
+  extraBuildInputs = [ llvm makeWrapper ];
 
   extraCMakeFlags = [
     "-DCLANG_INCLUDE_DOCS=ON"
@@ -41,6 +42,9 @@ callPackage ../base.nix rec {
 
   extraPostInstall = ''
     mv bin/clang-tblgen $out/bin
+    # compress all outputs
+    wrapProgram $out/bin/clang-offload-bundler \
+      --add-flags '-compress'
   '';
 
   requiredSystemFeatures = [ "big-parallel" ];

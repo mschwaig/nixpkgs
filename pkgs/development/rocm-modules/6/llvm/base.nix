@@ -75,10 +75,10 @@ in stdenv.mkDerivation (finalAttrs: {
   patches = extraPatches;
 
   src = fetchFromGitHub {
-    owner = "ROCm";
+    owner = "mschwaig";
     repo = "llvm-project";
-    rev = "rocm-${finalAttrs.version}";
-    hash = "sha256-uGxalrwMNCOSqSFVrYUBi3ijkMEFFTrzFImmvZKQf6I=";
+    rev = "527b6eaf13b5bdcf3d825d150badb091b330e9f4";
+    hash = "sha256-oW8/WJXg5Afy99PZun0XNsAf/in+MrPVEkL4JQmn1JM=";
   };
 
   nativeBuildInputs = [
