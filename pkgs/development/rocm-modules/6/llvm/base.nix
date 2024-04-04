@@ -72,13 +72,15 @@ in stdenv.mkDerivation (finalAttrs: {
     "info" # Avoid `attribute 'info' missing` when using with wrapCC
   ];
 
-  patches = extraPatches;
+  patches = [
+    ./add-compression-to-clang-offload-bundler.patch
+  ] ++ extraPatches;
 
   src = fetchFromGitHub {
-    owner = "mschwaig";
+    owner = "ROCm";
     repo = "llvm-project";
-    rev = "527b6eaf13b5bdcf3d825d150badb091b330e9f4";
-    hash = "sha256-oW8/WJXg5Afy99PZun0XNsAf/in+MrPVEkL4JQmn1JM=";
+    rev = "rocm-${finalAttrs.version}";
+    hash = "sha256-uGxalrwMNCOSqSFVrYUBi3ijkMEFFTrzFImmvZKQf6I=";
   };
 
   nativeBuildInputs = [
