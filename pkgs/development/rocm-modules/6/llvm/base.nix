@@ -137,6 +137,7 @@ in stdenv.mkDerivation (finalAttrs: {
 
   prePatch = ''
     cd ../
+    chmod -R u+w .
   '';
 
   postPatch = ''
