@@ -42,8 +42,11 @@ callPackage ../base.nix rec {
 
   extraPostInstall = ''
     mv bin/clang-tblgen $out/bin
-    # compress all outputs
-    wrapProgram $out/bin/clang-offload-bundler \
+    # add wrapper to compress embedded accelerator-specific code
+    # this makes the output of composable_kernel significantly smaller right now
+    # TODO: remove this once ROCm does it out of the box
+    mv $out/bin/clang-offload-bundler $out/bin/clang-offload-bundler-unwrapped
+    makeWrapper $out/bin/clang-offload-bundler-unwrapped $out/bin/clang-offload-bundler-compress \
       --add-flags '-compress'
   '';
 
