@@ -404,6 +404,13 @@
     '';
   };
 
+  competitest-nvim = super.competitest-nvim.overrideAttrs {
+    dependencies = [ self.nui-nvim ];
+
+    doInstallCheck = true;
+    nvimRequireCheck = "competitest";
+  };
+
   compe-tabnine = super.compe-tabnine.overrideAttrs {
     buildInputs = [ tabnine ];
 
@@ -716,6 +723,13 @@
     src = "${hurl.src}/contrib/vim";
   };
 
+  idris2-nvim = super.idris2-nvim.overrideAttrs {
+    dependencies = with self; [ nui-nvim nvim-lspconfig ];
+
+    doInstallCheck = true;
+    nvimRequireCheck = "idris2";
+  };
+
   image-nvim = super.image-nvim.overrideAttrs {
     dependencies = with self; [
       nvim-treesitter
@@ -955,7 +969,7 @@
   };
 
   neotest = super.neotest.overrideAttrs {
-    dependencies = with self; [ plenary-nvim ];
+    dependencies = with self; [ nvim-nio plenary-nvim ];
   };
 
   neotest-gradle = super.neotest-gradle.overrideAttrs {
@@ -988,6 +1002,13 @@
 
   nvim-dap-python = super.nvim-dap-python.overrideAttrs {
     dependencies = with self; [ nvim-dap ];
+  };
+
+  nvim-dap-ui = super.nvim-dap-ui.overrideAttrs {
+    dependencies = with self; [ nvim-dap nvim-nio ];
+
+    doInstallCheck = true;
+    nvimRequireCheck = "dapui";
   };
 
   nvim-lsputils = super.nvim-lsputils.overrideAttrs {

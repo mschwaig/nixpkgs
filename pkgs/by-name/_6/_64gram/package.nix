@@ -5,9 +5,8 @@
 }:
 
 telegram-desktop.overrideAttrs (old: rec {
-
-  pname = "64Gram";
-  version = "1.1.15";
+  pname = "64gram";
+  version = "1.1.16";
 
   src = fetchFromGitHub {
     owner = "TDesktop-x64";
@@ -15,7 +14,7 @@ telegram-desktop.overrideAttrs (old: rec {
     rev = "v${version}";
 
     fetchSubmodules = true;
-    hash = "sha256-3HLRv8RTyyfnjMF7w+euSOj6SbxlxOuczap5Nlizsvg=";
+    hash = "sha256-2IuNJleHtlkELcTHDwRT4pcDcDXSqM5YlLPGYiGT2TE=";
   };
 
   meta = with lib; {
