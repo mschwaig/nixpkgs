@@ -155,6 +155,9 @@ let
     !allowNonSource &&
     !allowNonSourcePredicate attrs;
 
+  contentAddressedByDefault = config.contentAddressedByDefault
+    || builtins.getEnv "NIXPKGS_CONTENT_ADDRESSED_BY_DEFAULT" == "1";
+
   showLicenseOrSourceType = value: toString (map (v: v.shortName or "unknown") (toList value));
   showLicense = showLicenseOrSourceType;
   showSourceType = showLicenseOrSourceType;

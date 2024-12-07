@@ -72,6 +72,9 @@ let
 
     contentAddressedByDefault = mkMassRebuild {
       feature = "set `__contentAddressed` to true by default";
+      default = false;
+      # getEnv part is in check-meta.nix
+      defaultText = literalExpression ''false || builtins.getEnv "NIXPKGS_CONTENT_ADDRESSED_BY_DEFAULT" == "1"'';
     };
 
     allowAliases = mkOption {
