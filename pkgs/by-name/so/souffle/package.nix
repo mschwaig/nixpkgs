@@ -2,11 +2,12 @@
 , bash-completion, perl, ncurses, zlib, sqlite, libffi
 , mcpp, cmake, bison, flex, doxygen, graphviz
 , makeWrapper, python3, callPackage
+, swig, enableSwig ? true
 }:
 
 
 let
-  toolsPath = lib.makeBinPath [ mcpp python3 ];
+  toolsPath = lib.makeBinPath ([ mcpp python3 ] ++ lib.optional enableSwig swig);
 in
 stdenv.mkDerivation rec {
   pname = "souffle";
