@@ -17,13 +17,15 @@
   makeWrapper,
   python3,
   callPackage,
+  enableSwig ? true,
+  swig
 }:
 
 let
-  toolsPath = lib.makeBinPath [
+  toolsPath = lib.makeBinPath ([
     mcpp
     python3
-  ];
+  ] ++ lib.optional enableSwig swig);
 in
 stdenv.mkDerivation rec {
   pname = "souffle";
