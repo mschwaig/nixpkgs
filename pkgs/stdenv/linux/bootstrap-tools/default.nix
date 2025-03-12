@@ -14,7 +14,7 @@ let
     };
   };
 
-  maybeContentAddressed = lib.optionalAttrs config.contentAddressedByDefault {
+  maybeContentAddressed = lib.optionalAttrs true {
     __contentAddressed = true;
     outputHashAlgo = "sha256";
     outputHashMode = "recursive";
