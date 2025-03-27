@@ -14,15 +14,12 @@ let
     };
   };
 
-  maybeContentAddressed = lib.optionalAttrs true {
+  args = {
+    inherit system bootstrapFiles;
+    extraAttrs = {};
     __contentAddressed = true;
     outputHashAlgo = "sha256";
     outputHashMode = "recursive";
-  };
-
-  args = {
-    inherit system bootstrapFiles;
-    extraAttrs = maybeContentAddressed;
   };
   result =
     if libc == "glibc" then
