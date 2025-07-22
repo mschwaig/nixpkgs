@@ -17,10 +17,10 @@ let
   bazelDepsSha256ByBuildAndHost = {
     x86_64-linux = {
       x86_64-linux = "sha256-hInf6KQ4N3sOTtklMkY2ATsOsHOnkfK1mSQGjxWqFZk=";
-      aarch64-linux = lib.fakeHash;
+      aarch64-linux = "sha256-SxcI3dv7LCAgvuveIPs6wD3krRiotTDD08LrzXVAOWg=";
     };
     aarch64-linux = {
-      aarch64-linux = lib.fakeHash;
+      aarch64-linux = "sha256-yU3efv7GUjQthPN88SXMwkUs2VEIy8s0poqy4KGJzyY=";
     };
   };
   bazelHostConfigName.aarch64-linux = "elinux_aarch64";
@@ -102,7 +102,7 @@ buildBazelPackage rec {
   HERMETIC_PYTHON_VERSION = "3.12";
   PYTHON_BIN_PATH = "${pythonEnv}/bin/python3.12";
   PYTHON_LIB_PATH = "${pythonEnv}/lib/python3.12/site-packages";
-  CLANG_COMPILER_PATH = "${buildPackages.clang}/bin/clang";
+  CLANG_COMPILER_PATH = "${buildPackages.clang}/bin/${stdenv.cc.targetPrefix}clang";
 
   dontAddBazelOpts = true;
   removeRulesCC = false;
