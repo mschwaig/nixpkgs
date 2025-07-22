@@ -3,6 +3,7 @@
   buildPackages,
   buildBazelPackage,
   fetchFromGitHub,
+  patchelf,
   lib,
 }:
 let
@@ -33,7 +34,7 @@ let
 in
 buildBazelPackage rec {
   name = "tensorflow-lite";
-  version = "2.19.0"; #https://www.tensorflow.org/install/source#cpu
+  version = "2.19.0";
 
   src = fetchFromGitHub {
     owner = "tensorflow";
@@ -63,7 +64,7 @@ buildBazelPackage rec {
       "--cxxopt=c++"
       "--host_cxxopt=-x"
       "--host_cxxopt=c++"
-      
+
       # workaround for https://github.com/bazelbuild/bazel/issues/15359
       "--spawn_strategy=sandboxed"
       "--sandbox_debug"
@@ -72,8 +73,8 @@ buildBazelPackage rec {
       "--config=${bazelHostConfigName.${hostPlatform.system}}"
     ];
 
-  bazelBuildFlags = [ 
-    "--cxxopt=--std=c++17" 
+  bazelBuildFlags = [
+    "--cxxopt=--std=c++17"
     "--extra_toolchains=@bazel_tools//tools/python:autodetecting_toolchain_nonstrict"
   ];
 
@@ -95,6 +96,17 @@ buildBazelPackage rec {
         chmod -x "$path"
       done
     '';
+    preBuild = lib.optionalString (hostPlatform.system != buildPlatform.system) ''
+      HOST_LIB_DIR="${buildPackages.stdenv.cc.cc.lib.lib}/lib"
+
+      find "/build/output/external/aarch64_linux_toolchain" -type f -executable | while read binary; do
+        if [[ ! "$binary" == *.so* ]] && file "$binary" | grep -q "ELF.*executable.*x86-64"; then
+          echo "Patching x86_64 binary: $(basename $binary)"
+          patchelf --set-interpreter ${buildPackages.stdenv.cc.bintools.dynamicLinker} --add-rpath "$HOST_LIB_DIR" "$binary"
+        fi
+      done
+    '';
+
   };
 
   fetchAttrs.sha256 = bazelDepsSha256;
@@ -103,7 +115,6 @@ buildBazelPackage rec {
   PYTHON_BIN_PATH = "${pythonEnv}/bin/python3.12";
   PYTHON_LIB_PATH = "${pythonEnv}/lib/python3.12/site-packages";
   CLANG_COMPILER_PATH = "${buildPackages.clang}/bin/${stdenv.cc.targetPrefix}clang";
-
   dontAddBazelOpts = true;
   removeRulesCC = false;
 
