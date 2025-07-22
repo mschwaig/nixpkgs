@@ -3,7 +3,6 @@
   buildPackages,
   buildBazelPackage,
   fetchFromGitHub,
-  patchelf,
   lib,
 }:
 let
@@ -48,6 +47,7 @@ buildBazelPackage rec {
   nativeBuildInputs = [
     pythonEnv
     buildPackages.perl
+    buildPackages.auto-patchelf
   ];
 
   bazelTargets = [
@@ -97,14 +97,9 @@ buildBazelPackage rec {
       done
     '';
     preBuild = lib.optionalString (hostPlatform.system != buildPlatform.system) ''
-      HOST_LIB_DIR="${buildPackages.stdenv.cc.cc.lib.lib}/lib"
-
-      find "/build/output/external/aarch64_linux_toolchain" -type f -executable | while read binary; do
-        if [[ ! "$binary" == *.so* ]] && file "$binary" | grep -q "ELF.*executable.*x86-64"; then
-          echo "Patching x86_64 binary: $(basename $binary)"
-          patchelf --set-interpreter ${buildPackages.stdenv.cc.bintools.dynamicLinker} --add-rpath "$HOST_LIB_DIR" "$binary"
-        fi
-      done
+      # delete gdb so we do not have to patch it
+      rm /build/output/external/aarch64_linux_toolchain/bin/aarch64-none-linux-gnu-gdb
+      NIX_BINTOOLS=${buildPackages.stdenv.cc.bintools} auto-patchelf --libs ${buildPackages.stdenv.cc.cc.lib.lib}/lib --paths /build/output/external/aarch64_linux_toolchain
     '';
 
   };
