@@ -1,0 +1,19 @@
+97354a1b5a9cb3d6f2459470e6b9d22fb7a996fe just overrrides existing stuff, not fetching new source
+6aa0e2cf50f82ca4e8439310e380d9d37394bd1c adds package to python set plus top level, not sure about taht one
+08dd663b9be560bcf6775c613cac7cf22722d740 no sure ... touches other stuff
+f6f16b8b98aaa7649b435e8d15599b68f7a1aea5 missing hashes
+90a49d004a4d94f505e72debf4ff13af45f57044 touches alias file, so could be a re-introduction
+ff959099ad5a46c51c10861580fa2d820fb5a6aa python situation again
+f18e0a0949b943aca465d256cd261c6412f2c496 looks like a move
+20f113f1b194aa4f245bf7d595266c46d7c7b06d python situation again
+9fb9c969033e0057899efdcfbbe5d41395c38b05 python situation again
+224305569450d9e847a56a4e4b06a9b3080fd8f7 looks like it has a lock file
+261fc46846ecdcb3182d0ea1cf241750402b3038 touches alias file
+0834814d77c65b95b275b9ef3b2d097f74d2ea33 looks like it moves a node package
+d26aa5f9514ca4179679df18f3957c3d0e9faead missing hashes in lock file
+1700b1908bedfacc75c9d19e82bce1c1244dcab8 seems to just add a name for the llama.cpp rocm override?
+8edab4fd19ccd46f33e4180b64ff3f128b75c6fe missing lock file?
+
+we might want to exclude
+* that alias stuff
+* packages without fetchers or unrealistically short packages (Because they probably don't have fetchers

@@ -26,19 +26,23 @@ def review_commits(filename):
         # Extract just the commit hash (first field)
         commit_hash = line.split()[0]
 
-        # Show the rest of the line as context
-        print(f">>> {line}")
-        print()
-
-        # Run git show (user can press 'q' to continue to next commit)
+        # Run git show and pipe through less to always have pagination
+        # -R preserves colors, -K allows Ctrl+C to exit less
         try:
-            subprocess.run(['git', 'show', commit_hash])
+            git_process = subprocess.Popen(
+                ['git', 'show', '--color=always', "--stat", commit_hash],
+                stdout=subprocess.PIPE
+            )
+            subprocess.run(
+                ['less', '-R', '-K'],
+                stdin=git_process.stdout
+            )
+            git_process.stdout.close()
+            git_process.wait()
         except KeyboardInterrupt:
             print("\n\nStopped by user")
             sys.exit(0)
 
-        print()
-        print("-" * 80)
         print()
 
     print(f"Done reviewing all commits in {filename}")

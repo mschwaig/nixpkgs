@@ -1,15 +1,100 @@
+64e6e3f26a748bef854b6ffca49048a49bbeabf7 2025-11-17 [clight-gui,clight,clightd] clight,clight-gui,clightd: migrate to pkgs/by-name, modernize
+f8a26c443a08644b37d0775bd637bc0901959190 2025-11-16 [font-misc-misc] font-misc-misc: refactor, move to pkgs/by-name and rename from xorg.fontmiscmisc
+b84617f14e674406bdd0c147d45c77ebea8d1748 2025-11-16 [font-misc-meltho] font-misc-meltho: refactor, move to pkgs/by-name and rename from xorg.fontmiscmeltho
+42fca86f89f37ee92f2c8bf8a8bed221f1404c0d 2025-11-15 [font-jis-misc] font-jis-misc: refactor, move to pkgs/by-name and rename from xorg.fontjismisc
+506db072ab0419ab38f213d87d269f49ea92547c 2025-11-15 [font-ibm-type1] font-ibm-type1: refactor, move to pkgs/by-name and rename from xorg.fontibmtype1
+db23a88b9a80583c22dba7c2b4b45866f1dd23ca 2025-11-15 [font-dec-misc] font-dec-misc: refactor, move to pkgs/by-name and rename from xorg.fontdecmisc
+961f70725cd3b92f76288a48bc95bcd3232d7b12 2025-11-15 [font-daewoo-misc] font-daewoo-misc: refactor, move to pkgs/by-name and rename from xorg.fontdaewoomisc
+4a82229180a5beac6b84fde576820ebd17c72422 2025-11-15 [font-cursor-misc] font-cursor-misc: refactor, move to pkgs/by-name and rename from xorg.fontcursormisc
+1c66cd8f6539e67482bbf51e8838d7d081c76ba0 2025-11-15 [font-arabic-misc] font-arabic-misc: refactor, move to pkgs/by-name and rename from xorg.fontarabicmisc
 ac700b363449b9baa3317a6ab410ef7257d57961 2025-11-14 [asc] asc: migrate to by-name
+b08c312cde724bee684e95423f521e58f938b023 2025-11-12 [tbe] tbe: migrate to pkgs/by-name and modernize derivation
 fbbab1eff53ab5f9afbc743b51c5875e0edaffa1 2025-11-10 [p7zip-rar,p7zip] p7zip: migrate to by-name
+87258df63377ebc38f7217271b645eb4a8cca7dc 2025-11-10 [peerflix-server] peerflix-server: migrate from nodePackages
+727d02790a7f072396337f85c24d078528a823b9 2025-11-10 [tiddlywiki] tiddlywiki: migrate from nodePackages
+bd16d452b0adb8446fd45aab74cf5f974a114ce5 2025-11-10 [svelte-check] svelte-check: migrate from nodePackages
 ca5ee04c40a119912673ccd274e76d22b2b9389f 2025-11-10 [buildah-unwrapped,buildah] buildah: migrate to by-name
+9731d5459097191e28990d64d3cc1e98cc0dd396 2025-11-10 [cdk8s-cli] ckd8s-cli: migrate from nodePackages
+39c4aa65ec553304fde23e5162fe48f179b13076 2025-11-08 [nrm] nrm: migrate from nodePackages
+2bdcf95276a78d96b31daaa44692f6b389ec0e98 2025-11-08 [conventional-changelog-cli] conventional-changelog-cli: migrate from nodePackages
+d8e0983f4fb6816ae8082cf21d41f88734d2f118 2025-11-08 [localtunnel] localtunnel: migrate from nodePackages
+e99bf3b9616ba34ba15c46c32cc72573dfbf3484 2025-11-08 [katex] katex: migrate from nodePackages
+0d94a711119266f5be117c53042e9f5bd65cd176 2025-11-08 [diff2html-cli] diff2html-cli: migrate from nodePackages
+9cf3ceab665cb2896754bb3e34c5794c6f0f1983 2025-11-08 [code-theme-converter] code-theme-converter: migrate from nodePackages
+42ec1c05896ee7703f6a8cbcdd0f18a3d2e1be45 2025-11-08 [coc-nginx] coc-nginx: migrate from nodePackages
+7660b3d5b6d8a801adfb2623ee42e37ae9a256ca 2025-11-09 [ggshield] ggshield: move to `pkgs/by-name`
+983751956ff932c3357fa18b0d0d42461fce1820 2025-11-08 [commitlint] commitlint: migrate from nodePackages
+6c3af5d19523f5c0b3f5ae4686924d96b131a7fa 2025-11-08 [json-diff] json-diff: migrate from nodePackages
+ecf72265ab93582917e5f160f2d8c5c1e8a0f1b2 2025-11-06 [jshint] jshint: migrate from nodePackages
+c3a23aaf853a4a3d8507ed8cfd0d1e73aa9bf3d8 2025-11-05 [coc-yank] coc-yank: migrate from nodePackages
+a5d418f44312e4da4b3427fd3b1969e063429cd2 2025-11-05 [coc-yaml] coc-yaml: migrate from nodePackages
+ee22f9dea6d8def0942d53f01a7ec52b823ba6f4 2025-11-05 [coc-wxml] coc-wxml: migrate from nodePackages
+8a33e287e5309a5c4806bb80b847e0344742ed63 2025-11-05 [coc-vimtex] coc-vimtex: migrate from nodePackages
+0e1e74d71dce62bd3f7a31d6e1f30351d45cecf6 2025-11-05 [coc-vimlsp] coc-vimlsp: migrate from nodePackages
+012cccc12929b5119061236f9551c64cfe6d4764 2025-11-05 [coc-texlab] coc-texlab: migrate from nodePackages
+ef2f4bdc396ce7126b0b1f7048655e54271400be 2025-11-05 [coc-tabnine] coc-tabnine: migrate from nodePackages
+4647cf35a0b3bdc54f25ae6ff3b28d8c8ce62a6e 2025-11-05 [coc-sumneko-lua] coc-sumneko-lua: migrate from nodePackages
+7e9c70a2e27c4385684cd266540145010192b2db 2025-11-05 [coc-stylelint] coc-stylelint: migrate from nodePackages
+8d69b4a264e0e562c8fd28e13cd20d672e18934f 2025-11-05 [coc-sqlfluff] coc-sqlfluff: migrate from nodePackages
+65dc92e99a6a3f7d35993e7aea8b72a3a8b7b7c6 2025-11-05 [coc-solargraph] coc-solargraph: migrate from nodePackages
+63bccd4eaba04ce8dbb51baf68c476f947f73c26 2025-11-05 [coc-snippets] coc-snippets: migrate from nodePackages
+fe207f1a0949e268128d0b876ea6de89304b9f41 2025-11-05 [coc-smartf] coc-smartf: migrate from nodePackages
+89aa372f0c05df5475a3dba675ca2fa682dfff31 2025-11-05 [coc-rust-analyzer] coc-rust-analyzer: migrate from nodePackages
+8d8538bdc19c0c02104f1eb23410957b301d52b8 2025-11-05 [coc-r-lsp] coc-r-lsp: migrate from nodePackages
+5b047f88c5eab03db5ffae1c97b894aacf83f1e7 2025-11-05 [coc-prettier] coc-prettier: migrate from nodePackages
+b96b2c33bb5a6209a453206efee1367badf30260 2025-11-05 [coc-pairs] coc-pairs: migrate from nodePackages
+6c67d0ee2dc62806500de7a4582e423175342250 2025-11-05 [coc-markdownlint] coc-markdownlint: migrate from nodePackages
+d43cfa79ee8eee752f83f9dfdf9901383a2f00b5 2025-11-05 [coc-lists] coc-lists: migrate from nodePackages
+63ff9dd0c3a786d77d155084c4c5d7d634d3e36d 2025-11-05 [coc-json] coc-json: migrate from nodePackages
+e1e09af914c0d2676cce14f780be55a4474b19d1 2025-11-05 [coc-jest] coc-jest: migrate from nodePackages
+2e191e2b1a51fb55c816e01261b4460fbcbb749b 2025-11-05 [coc-java] coc-java: migrate from nodePackages
+5028d9b6441991f24988e6439cf8f2f06b648ae3 2025-11-05 [coc-html] coc-html: migrate from nodePackages
+8c72d3555bfebe44fb482a0dad9b14c72e2ffd62 2025-11-05 [coc-highlight] coc-highlight: migrate from nodePackages
+9ec68a08a425c0a56de07bd711d41235ba44f4fc 2025-11-05 [coc-haxe] coc-haxe: migrate from nodePackages
+57a98fb2839429ba0330dd465395058e9ed81a68 2025-11-05 [coc-flutter] coc-flutter: migrate from nodePackages
+6667711e2c0c903f96064f16ba0c072809f75ec6 2025-11-05 [coc-eslint] coc-eslint: migrate from nodePackages
+f66077b5a85046bb7ed0f938e3be0981e3d7e8a2 2025-11-05 [coc-emmet] coc-emmet: migrate from nodePackages
+888865f645e67586e1da3cebb679f4aa7c506313 2025-11-05 [coc-cmake] coc-cmake: migrate from nodePackages
+86cfef9c19dfec0bd096b4ecdc82f2539bd81f5a 2025-11-06 [json-server] json-server: migrate from nodePackages
+f56221596a841f4a5a319b2ca5d0bb874cb32fab 2025-11-06 [js-beautify] js-beautify: migrate from nodePackages
+81a676c92b0620f29fad0c0b46e6495d11341173 2025-11-04 [mocha] mocha: migrate from nodePackages
+315f634c9696e9d375a7aa356d5b87a4f4d7d947 2024-12-03 [gatsby-cli] gatsby-cli: migrate from nodePackages
+4f2c8f225774f1dcfe8d4f42e969fdb7406de8cb 2025-11-02 [joplin-cli] joplin-cli: migrate from nodePackages
+233755a3d0468db70a6d48078cc410bdbf17cfe3 2025-11-04 [vega-lite] vega-lite: migrate from nodePackages
+8acc954e72324149241cce9b1b9140d4721078ef 2025-11-04 [jsonplaceholder] jsonplaceholder: migrate from nodePackages
+685e3a6176136693758d0aa9d8ae5203618cf50f 2025-11-01 [uppy-companion] uppy-companion: migrate from nodePackages
 1b2b5808e8fa29fb698443df961c7465ab4a5db5 2025-11-04 [gemstash] gemstash: migrate to by-name
 6d015ef7f230d3e74f0f11ff32fc053366137e8a 2025-10-11 [gl-gsync-demo] gl-gsync-demo: move to by-name, modernize
+8f57530b0b43dd38fcb2e5f0b24d983d3df8d92d 2025-11-04 [caneda] caneda: migrate to pkgs/by-name
 74432d9de5fb1d1899500eaabaafad5aed2d87af 2025-11-03 [_3llo] _3llo: migrate to by-name
+c5290a8d7c0f1173438fad0d2c977ba6b9c408e0 2025-11-02 [cocoapods-beta,cocoapods] cocoapods: move to pkgs/by-name and add cocoapods-beta variant
+27b3cce3f2501df4499769154b9a6879ad415368 2025-11-01 [fetchmail_7] fetchmail_7: move to pkgs/by-name
+5ecffc5205805a20609d4cc7bd160c28446e8e1d 2025-11-01 [fetchmail] fetchmail: move to pkgs/by-name
+772dc221ae01f5de99f24d55b3692178937ddf6a 2025-10-29 [udisks] udisks: move to pkgs/by-name
 47502d47722cc8dc83bfaa79f6487dc67db0af3a 2025-11-01 [dosbox] dosbox: migrate to by-name
 9b316df866ea4b3cc2ae2a3472fd98da2604198b 2025-10-31 [enyo-launcher,fmodex,zandronum-server,zandronum] pkgs/games/doom-ports: migrate to by-name
 97f4dd3ef7972117b9e7588c73be662d7c67ac8b 2025-10-24 [vkquake] vkquake: move to by-name
 c38cd91cbba253b965631f63f3c3212cf3bd326b 2025-10-29 [opentrack] opentrack: move to by-name, clean up
 001cb3b681f82b74ebb98abacfbba2f9f1a881dd 2025-10-29 [asciidoctor-with-extensions] asciidoctor-with-extensions: move to by-name
 6061c5123ac1703a455ab7631b17da9f28fc7b6e 2025-10-29 [asciidoctor] asciidoctor: move to by-name
+7cd480deb60e524e57ce85f2a1e95d1b88d92b0c 2025-10-29 [gitbeaker-cli] gitbeaker-cli: migrate from nodePackages
+59a5ee813d83076f8e4a4b8b8f227f821f67ed03 2025-10-29 [mpsolve] mpsolve: migrate to pkgs/by-name
+64fe5d3cd03d0fe66a2eac54cdc371acd0bcacc2 2025-10-29 [gittyup] gittyup: migrate to pkgs/by-name
+b697a53555deae5c00ffa87d7f07feed7f145883 2025-10-29 [apitrace] apitrace: migrate to pkgs/by-name
+50cfb4d974080456584c9e10ded90c5ceee4da4e 2025-10-29 [rmview] rmview: migrate to pkgs/by-name
+760a9aee5737fb480d3406786fb9ea0004540983 2025-10-29 [pagefind] pagefind: migrate to pkgs/by-name
+4950b3c98d53db5d3f30ac3dfae55f399186342a 2025-10-29 [qjournalctl] qjournalctl: migrate to pkgs/by-name
+c2fe9c63a8a783c1da7becf8165e9cf31c919c88 2025-10-29 [selectdefaultapplication] selectdefaultapplication: migrate to pkgs/by-name
+af86a398976544fb9a939cdab9bf053cbdf2fd2f 2025-10-29 [tpmmanager] tpmmanager: migrate to pkgs/by-name
+a0bd0331ab437ab0bee1cbad6646e3374bdc9fb5 2025-10-29 [gpsbabel] gpsbabel: migrate to pkgs/by-name
+bced968114ca1ab7aa5dff697bb662ea44153ea0 2025-10-29 [kapow] kapow: migrate to pkgs/by-name
+4f99d10510bf1244ceec2cbd1b98b9d53b96ce97 2025-10-29 [qnotero] qnotero: migrate to pkgs/by-name
+ea3677e44dae8e0909829edef2d447eb4e8635c5 2025-10-29 [synergy] synergy: migrate to pkgs/by-name
+39fbd3a8602857e0ef7ab26f3197b3f49869ee27 2025-10-29 [fulcrum] fulcrum: migrate to pkgs/by-name
+dc02c820cf4e705176d5d1aefa75bd6dc6438a34 2025-10-29 [yacas] yacas: migrate to pkgs/by-name
+abf75c9161fb8c5d843423afd7c5b37e09bc5a76 2025-10-29 [flashprint] flashprint: migrate to pkgs/by-name
+6ccdbd9acc0dd312b552e997c0579d37bc7655b7 2025-10-29 [qtrvsim] qtrvsim: migrate to pkgs/by-name
+3e5c72a676d3131b5f9b43409012222170d00af6 2025-10-29 [aitrack] aitrack: migrate to pkgs/by-name
 cdfda72c650a072ee51083f78166f89801687580 2025-10-24 [openxcom] openxcom: move to by-name/
 f25d07b9605d0f9ce684d47120b2a9b613507963 2025-10-24 [mudlet] mudlet: modernize, move to by-name/
 4dc22b276cceb42866327d92909e06635587241a 2025-10-24 [soi] soi: modernize, move to by-name/
@@ -33,11 +118,18 @@ b427fd4b306494d05f90583a675ad9b186231e05 2025-10-22 [npush] npush: modernize, mo
 40fe2a0d664704d0887333f7f37169d15a97ef6c 2025-10-22 [iortcw] iortcw: move to by-name/
 8435c2e684435148db19937640f66e36174f5f94 2025-10-22 [linthesia] linthesia: modernize, move to by-name/
 30166dda2db6bf12258c4174d27ba61cd06a5ef8 2025-10-27 [fritzing] fritzing: move to by-name
+ce0937bc1d8da74461df0c27e6bae698fa69c547 2025-10-26 [stellarium] stellarium: migrate to pkgs/by-name
 08532c3ee6bf40104a57ee6ea782d62ffc4f2843 2025-10-17 [pro-office-calculator] pro-office-calculator: move to by-name
+7131f8ceac5513e5470ec4f669d217ebd39bfce6 2025-10-25 [pdfmixtool] pdfmixtool: move to pkgs/by-name
+9b09e0ee623a271f9292083d6d62550034758486 2025-10-19 [etcd] etcd: move to pkgs/by-name
+7b646716558d025eacba4ccc26bbf8ecc8d441eb 2025-10-19 [etcd_3_5] etcd_3_5: move to pkgs/by-name
 ad8112717c29a7ca425fd8fefa467e822e1f1af3 2025-10-24 [yamlfix] yamlfix: move to by-name
 032a192de6910eba9b12ed520ca9b7eaa2861264 2025-10-24 [ufmt] ufmt: move to by-name
 98a16089ef58d31311fdc177fdf07189658b3fb8 2025-10-20 [botan3] botan3: move to by-name
 72ccd1e2cbb5afde01115c223eae80e0ec5b925d 2025-10-24 [ceph] pkgs/ceph: move to by-name
+bd8890b4f81363865a380c0c48d3f3dfdcb6728f 2025-10-23 [birdtray] birdtray: move to `pkgs/by-name`
+d17e964c45da45d795ea1d91425025f35efcf29b 2025-06-01 [rofi-emoji] rofi-emoji: move to pkgs/by-name, use v4
+270d0275c2bb3aeb0f26df1c8b1be3c9e837cbe8 2025-05-25 [rofi-rbw-wayland,rofi-rbw-x11,rofi-rbw] rofi-rbw: move to pkgs/by-name
 b420ad063c7dd7781c1baa593b69160626c20c3a 2025-10-21 [nootka] nootka: move to by-name/
 153be6ef09d94cfbea09d3ed3d5a3cb313e6bf24 2025-10-21 [linvstmanager] linvstmanager: move to by-name/
 f4be23dfcc236585a1ee1b8824a81042c7aa9047 2025-10-21 [pithos] pithos: move to by-name/
@@ -71,6 +163,7 @@ e1a909b7a1f46d2b65ef2b1221c00f3cc0685d72 2025-10-20 [synthv1] synthv1: modernize
 236eab40dc3d00512351c54f56f2b8f1fc4c7963 2025-10-20 [muse] muse: move to by-name/
 acb5e4763e151dd12b35657911bf50f6a3de7693 2025-10-20 [iannix] iannix: modernize, move to by-name/
 8496210f3d38c148e950c7e45134267da5b19add 2025-09-20 [idris2] idris2: Move to by-name
+9227e50841ab9e67a14bdfa5d8a214ffbafa3319 2025-10-20 [keyoxide-cli] nodePackages.keyoxide: migrate from nodePackages
 189ad91472bcaa1271b7ba92348b169475df5cd0 2025-10-19 [sonic-visualiser] sonic-visualiser: modernize, move to by-name/
 499ee63b0c99e000a79989ed1241f93e642dac57 2025-10-19 [flacon] flacon: modernize, move to by-name/
 c11d586ace0c69b36f1468b39861a655df7e93de 2025-10-19 [samplebrain] samplebrain: modernize, move to by-name/
@@ -102,10 +195,14 @@ eaa8f44da9e5e4be5c736a2a0f0039b301dad312 2025-10-18 [lv2lint] lv2lint: modernize
 6a2510770b87f585589b48df4a5ccbb364d7b78c 2025-10-18 [goattracker] goattracker: move to by-name/
 e782bbc1768c7342ade0c27e30607e1bdda0d3a6 2025-10-18 [csound] csound: move to by-name/
 324523cf9b9bbb7e7f4b28b2441c7223b507684e 2025-10-18 [ardour] ardour: move to by-name/
+36b7d18471b8264465d727696c049807c1badaa2 2025-10-18 [convertall] convertall: migrate to pkgs/by-name
 e41a5aeeb4fdb684406cc2eb9a47c7e565c39f75 2025-10-17 [flightgear] flightgear: move to by-name and modernize
+3de7554e67cde1066ff8408790a4aaa89617d7af 2025-10-15 [rclone] rclone: move to pkgs/by-name
+1b168e31013d222969f2b9758a6806d38b9e9d2d 2025-10-15 [rclone-browser] rclone-browser: move to pkgs/by-name
 e88a19be009e6306bc09d71409820c9a4b244b74 2025-10-15 [libressl] libressl: move to by-name
 cea7911fa6a34049de1b7a3cba5f7ba799d0f9db 2025-05-11 [direwolf] direwolf: move to by-name
 984fc6f787715e9213ba0324884dea672f97a79b 2025-10-11 [tt-smi] tt-smi: move to by-name
+4c47be359015b5a4e2de097508fe37c65345574b 2025-10-12 [scss-lint] scss-lint: move to pkgs/by-name, update ffi
 c87380f3742fdc07ee293c7a8ffe4991148dc08e 2025-10-12 [armagetronad-dedicated,armagetronad] armagetronad, armagetronad-dedicated: move to by-name, modernize
 c98b9ab2aa1ff7dfcb3b3853298569a27145ce21 2025-10-11 [systemdgenie] systemdgenie: migrate to by-name
 fda0621210345c67419f6978112da118cd9619cf 2025-10-11 [rare] rare: move to by-name, modernize
@@ -125,6 +222,7 @@ c4028683adfe6384b4ed7c8b4dcf36ec8dbdbf6c 2025-10-09 [xpilot-ng] xpilot-ng: move 
 f9942d9ea9eaec0dd755cc6961027062826524be 2025-10-09 [cutechess] cutechess: move to by-name, modernize
 35d262562e391bd33eeaec68ad129374e8a5136f 2025-09-26 [sonic-pi] sonic-pi: move to by-name
 7dd4833b77b2c26a73e5bc26a0c4da9b497696bf 2025-10-08 [libutp,libutp_3_4] libutp: move to by-name
+d8e887f7725282d660c26eede4bff43cdd230c02 2025-09-20 [soci] soci: migrate to `pkgs/by-name`
 0a81759d2cb08e409506d81c2045303b16feaca0 2025-10-07 [frog] frog: move to by-name
 daa9c7c2a93586aeb6f8c0fe3104c81f63d243ab 2025-10-07 [frogdata] frogdata: move to by-name
 c76d7e78e652487c6eb7412793adbae27e28930b 2025-10-07 [mbt] mbt: move to by-name
@@ -150,25 +248,82 @@ b26d919c4a5b19695f2dd768cd9f2925f567b0f1 2025-10-05 [adb-sync,brasero-unwrapped,
 88ff20cd445287cad9a8d2687fc73a7073aba0e7 2025-10-04 [svxlink] svxlink: migrate to by-name
 558024d849879dd859636553e33e86caaf74d0a2 2025-10-03 [qradiolink] qradiolink: migrate to by-name
 b7cb0d230ab0ff115669fd41f3be619922ad59b4 2025-03-03 [colmap] colmap: move to by-name
+445d18171f877c81023a96f89ca8e3e74b1b798a 2025-10-02 [cdktf-cli] cdktf-cli: migrate from nodePackages
+c82863e17dedabcbf9781d6df30258d5808c4cf5 2025-10-01 [coc-sh] coc-sh: migrate from nodePackages
+721d8186c6ea703e6d630f91a75cd76a6de8a997 2025-10-01 [coc-explorer] coc-explorer: migrate from nodePackages
+5ba77d6ad87b78512812bafc290ccb804767e583 2025-10-01 [coc-git] coc-git: migrate from nodePackages
+ac533eee7cac22f5cc041d991b7b3d0eba7f4df5 2025-10-01 [coc-spell-checker] coc-spell-checker: migrate from nodePackages
 022de5278d71740ac96bad9b45a928711ffb93d9 2025-09-26 [spago-legacy] spago-legacy: move to by-name
 adda1d78ebc05133d238a1137f7b809efcf679b3 2025-10-02 [rhino] rhino: migrate to by-name
 d0b5fc24a1c3714b277e47d6e0da71a8e3cd641e 2025-10-02 [omegat] omegat: migrate to by-name
+f3fa5ff106d9b6b7a48a5bdb0348155a17e3f088 2025-10-01 [cspell] cspell: migrate from nodePackages
+3bdfcf7a101231c4952d851f4a25e98f3adb2a59 2025-10-01 [wesnoth] wesnoth: move to pkgs/by-name
 959299e148b1dfb78b4f50758e9be22864aa0e68 2025-10-01 [mrrescue] mrrescue: move to by-name
 4bd61445beadeeed594107c73c3830ef604e340b 2025-10-01 [_90secondportraits] _90secondportraits: move to by-name
+9a693ae7fe44c3b7ae1f8bde19b69ba50e937b29 2025-10-01 [coc-docker] nodePackages.coc-docker: migrate to pkgs/by-name
 c3f5f7c572c9e1a46b16a9773b25e276d36c4e6e 2025-09-29 [orthorobot] orthorobot: move to by-name
+ae968b82ac31020b4b8fd1e4dd609facf96f0a7b 2025-09-29 [prometheus-mysqld-exporter] prometheus-mysqld-exporter: move to pkgs/by-name
 2c29bb5c9db223645b86a96ada274f367979be0a 2025-09-26 [spago-legacy] spago-legacy: move to by-name
+760ed7b659e76f4e931992ca7c2a66031a63f696 2025-09-28 [parallel-full] parallel-full: move to `pkgs/by-name`
+fea270510ec85a484cb7df119996d6adc57a8fdd 2025-09-28 [parallel] parallel: move to `pkgs/by-name`
+e7513aca60a0cac2ca3ded5d0a0452bd9b72ab55 2025-09-08 [speedcrunch] speedcrunch: migrate to pkgs/by-name
 2088c727470acbef55bcc029e77078cd913b3dff 2025-09-21 [flint] flint: Move to by-name
 f4d9842f7d0df311b99801668d25493267f7f401 2025-09-27 [hushboard] hushboard: move to by-name
 da3ee77ed4b8d8cfbed2d35cf8a2a6952f7f16c3 2025-09-27 [tamgamp-lv2] tamgamp-lv2: move to by-name
 0f059225868cb2d00974fd145899d7f3b4371605 2025-09-27 [melmatcheq-lv2] melmatcheq-lv2: move to by-name
 b6b1c049efdd2276ba3be4d66cb0ad0890712f5b 2025-09-27 [ir-lv2] ir-lv2: move to by-name
+fa10b447b6a2d6deee5f52387460cb5451ae2ab4 2025-09-25 [git-recent] git-recent: move to `pkgs/by-name`
+21708aaeff6c8b949eb2b51b29f588d1b4724b1f 2025-09-24 [hal-hardware-analyzer] hal-hardware-analyzer: move to pkgs/by-name
 a4dd7db0dc40f13289806c91c67a8bdd6f38ce96 2025-09-18 [adoptopenjdk-icedtea-web,ballerina,davmail,DisnixWebService,elasticmq-server-bin,ganttproject-bin,greenfoot,gremlin-console,gremlin-server,jabref,javaCup,javacc,jing-trang,jprofiler,keystore-explorer,libmatthew_java,mcaselector,openapi-generator-cli,openrefine,pattypan,processing,scalafix,slipstream,soapui,trimmomatic] treewide(java-users): clean callPackage overrides, by-name some
+3ccc4089b6a1a9edd2be3ac472688e65be67b24c 2025-09-10 [xeyes] xeyes: 1.3.0 -> 1.3.1, refactor & move to pkgs/by-name from xorg namespace
+63640282de5a4a32dfcbbaeb14b664d9287c1e60 2025-09-10 [xcompmgr] xcompmgr: refactor & move to pkgs/by-name from xorg namespace
+69c34bfba44abb1b5f12e7cc41443fbe337296fb 2025-08-23 [xcalc] xcalc: refactor and move to pkgs/by-name from xorg namespace
+4cc11e680666d397cd24bf1dd82275e8664ecb57 2025-09-10 [x11perf] x11perf: 1.6.1 -> 1.7.0, refactor & move to pkgs/by-name from xorg namespace
+19d5fe041003703206072988771ebe0de2d8e275 2025-09-10 [libxtst] libxtst: refactor, move to pkgs/by-name and rename from xorg.libXtst
+b72cbd7789c88bf92c560514f8bc2f1ef62a50d7 2025-09-10 [libxshmfence] libxshmfence: refactor & move to pkgs/by-name from xorg namespace
+dbdc0d8f06ca7201917501056d0c6cc8a1a4a0a4 2025-06-08 [libxkbfile] libxkbfile: refactor and migrate to pkgs/by-name from xorg namespace
+67af63a0765d43a7eb08c62da06fecc61d31cc36 2025-08-31 [libxinerama] libxinerama: refactor, move to pkgs/by-name and rename from xorg.libXinerama
+781cbbf25837da89eaf6bcca747d69fb648322f3 2025-06-08 [libwindowswm] libwindowswm: refactor and migrate to pkgs/by-name from xorg.libWindowsWM
+4c4fd26ced7988897342f6386cc73af6d267c227 2025-08-27 [font-bitstream-type1] font-bitstream-type1: refactor, move to pkgs/by-name and rename from xorg.fontbitstreamtype1
+e6a9281e35e2135f333717a1abcec32b939643f5 2025-08-27 [font-bitstream-75dpi] font-bitstream-75dpi: refactor, move to pkgs/by-name and rename from xorg.fontbitstream75dpi
+b96325543a358a168dc1a7c0f2dcac02a7642dfd 2025-08-27 [font-bitstream-100dpi] font-bitstream-100dpi: refactor, move to pkgs/by-name and rename from xorg.fontbitstream100dpi
+ab945fb3310d1a61f5ac38d333441443179314ad 2025-08-23 [libxscrnsaver] libxscrnsaver: refactor, move to pkgs/by-name and rename from xorg.libxscrnsaver
+741655d77aa56cd6d548d4300cabe714653de98e 2025-08-23 [libxres] libxres: refactor, move to pkgs/by-name and rename from xorg.libXres
+512533926e3e93025da420bb444a88d080374db8 2025-08-23 [libxpresent] libxpresent: refactor, move to pkgs/by-name and rename from xorg.libXpresent
+f8da5444ae47dbfcd376e19c420380fb29b2648a 2025-08-23 [libxp] libxp: refactor, move to pkgs/by-name and rename from xorg.libXp
 83932848d563582dd51b1594935ebcd48feb4dbf 2025-09-21 [maptool] maptool: remove dependency pins and move to by-name
+add1684d35fe156b69aaf50b3c6a85e6ed3009e8 2025-09-17 [openbabel] openbabel: move to `by-name`
 05cf9965696ecaf4636f6f61ff22c1d4654cd722 2025-09-11 [candle] candle: migrate to by-name
+b214834cb4356d56964a6e822cd1b89de63731f3 2025-09-16 [yaml-cpp] yaml-cpp: move to `by-name`
+5fc1d4322e3ea2374c0a9e3e04aee33af2c7fdf2 2025-09-16 [proj] proj: move to `by-name`
+443539a91c246cbbf76cca57fdbb9cbb20b78be6 2025-09-16 [libmusicbrainz] libmusicbrainz: move to `by-name`
+ad8fd71549576a50e4f427d0dd8a26dfe3b79cd1 2025-09-15 [seafile-client] seafile-client: migrate to pkgs/by-name
+1254586fce41a52047700b8bf35a67074ecffb07 2025-09-14 [commitizen] commitizen: remove from python3Packages
+0a18aee1960fb812d2565f1fbd3236acd8ae50ee 2025-09-14 [rofi-unwrapped,rofi] rofi{,-unwrapped}: move to pkgs/by-name
+157a4e3863a766c9d7977002e911a976fcb92940 2025-08-30 [font-xfree86-type1] font-xfree86-type1: refactor, move to pkgs/by-name and rename from xorg.fontxfree86type1
+a8c9ed2a405a0b5081108b6ff5c336090a9ca593 2025-08-30 [font-winitzki-cyrillic] font-winitzki-cyrillic: refactor, move to pkgs/by-name and rename from xorg.fontwinitzkicyrillic
+154002f5a64ce55c07e2ced6cbfe65c80fac43f4 2025-08-30 [font-sun-misc] font-sun-misc: refactor, move to pkgs/by-name and rename from xorg.fontsunmisc
+667074fff0bff5275b9c707ce965142a186d05f5 2025-08-30 [font-sony-misc] font-sony-misc: refactor, move to pkgs/by-name and rename from xorg.fontsonymisc
+d3a2b393f37c31683a25b2247297849166916c49 2025-08-30 [font-screen-cyrillic] font-screen-cyrillic: refactor, move to pkgs/by-name and rename from xorg.fontscreencyrillic
+2dc1d4e9370144e4ef8ec84c33f05bea98feb452 2025-08-30 [font-schumacher-misc] font-schumacher-misc: refactor, move to pkgs/by-name and rename from xorg.fontschumachermisc
+e013f09554c54ac19c32d2ec2252c025c5a3dee0 2025-08-28 [font-misc-ethiopic] font-misc-ethiopic: refactor, move to pkgs/by-name and rename from xorg.fontmiscethiopic
+62e6b67dd0d7165ba3a9abaeee06c1182db4b75c 2025-08-28 [font-misc-cyrillic] font-misc-cyrillic: refactor, move to pkgs/by-name and rename from xorg.fontmisccyrillic
+ce9e0b565a3a4db63f015bf605134efddba2d4b1 2025-08-28 [font-micro-misc] font-micro-misc: refactor, move to pkgs/by-name and rename from xorg.fontmicromisc
+191109e0d90ec68854a894499607ba1bd6945e9d 2025-08-28 [font-isas-misc] font-isas-misc: refactor, move to pkgs/by-name and rename from xorg.fontisasmisc
+5e23f445e5d81021389cdae7449e143cd3811a5b 2025-08-27 [font-cronyx-cyrillic] font-cronyx-cyrillic: refactor, move to pkgs/by-name and rename from xorg.fontcronyxcyrillic
+837e11d2c395a452d2a488142345a3229838338f 2025-08-26 [font-bh-lucidatypewriter-75dpi] font-bh-lucidatypewriter-75dpi: refactor, move to pkgs/by-name and rename from xorg.fontbhlucidatypewriter75dpi
+7abbe6b31ef74a20b96405abaf09c4a0773d3f44 2025-09-13 [font-bh-lucidatypewriter-100dpi] font-bh-lucidatypewriter-100dpi: refactor, move to pkgs/by-name & rename from xorg.fontbhlucidatypewriter100dpi
+14cf636039e48082bc98432798cc4ad9444f47dc 2025-09-13 [font-bh-75dpi] font-bh-75dpi: refactor, move to pkgs/by-name & rename from xorg.fontbh75dpi
+0922a4b685bc61cd7ad8e31e7d6dd2c79a06418a 2025-09-13 [font-bh-100dpi] font-bh-100dpi: refactor, migrate to pkgs/by-name & rename from xorg.fontbh100dpi
 a7f8ee0b91ccdbe46ca7f0a9f5edb88bb7a79c83 2025-09-12 [bashate] bashate: move to by-name, cleanup, fix
 2dd1a60e560e5f1056b075c936bef023d5b6e0cf 2025-09-10 [kmymoney] kmymoney: migrate to by-name, refactor
 e5853f842e7e005efabab216f3100b2b2544a37f 2025-09-10 [alkimia] alkimia: migrate to by-name, refactor
+a09a78fa11bdceae1da143c5378bd636ce2222e2 2025-09-09 [gpxsee] gpxsee: move to pkgs/by-name
+5c340597a9063d512baf9e26a64525a634bad479 2025-08-22 [xbacklight] xbacklight: refactor and move to pkgs/by-name from xorg namespace
+111ec2bfcebffbdc927f16e501e899360fb11e13 2025-08-22 [xauth] xauth: refactor and move to pkgs/by-name from xorg namespace
+9a2fb1ec7e28fcc9a5771ceebcdda7e5851c1b02 2025-08-22 [tab-window-manager] tab-window-manager: refactor, move to pkgs/by-name & rename from xorg.twm
 c670edba257640871eef05f7bcd72a7886317f58 2025-09-07 [deployer] deployer: move to by-name
+ff0db11ae7ffffa93988929ddefd0d084a634987 2025-09-07 [nota] nota: migrate to pkgs/by-name
 829014a2d00615627335727b10c3c47e82a1427d 2025-03-26 [netsurf-browser] netsurf-browser: move to by-name
 279c298cbb0e5488ab2864e743bc2c0c455501c1 2025-03-26 [nsgenbind] nsgenbind: move to by-name
 9bc2f708ae92bcf6f82b6226eb0bf5dfb28b69b7 2025-03-26 [libutf8proc] libutf8proc: move to by-name
@@ -186,11 +341,60 @@ c5fe62044e05b64cd3a9428eeb651a373a0ce5f9 2025-03-26 [libnsfb] libnsfb: move to b
 caba7ceefbebddf4edd40e81cde8aca87c194580 2025-03-26 [libparserutils] libparserutils: move to by-name
 2ce9d785135a536552b788d5d83eb495b13d2123 2025-03-26 [netsurf-buildsystem] netsurf-buildsystem: move to by-name
 da855a3b7834e7659a52970269645fd34e13df36 2025-09-05 [psysh] psysh: move to by-name
+10d80dc179afe0272abac68fba91ca6e4c7f45fc 2025-09-04 [appcsxcad] appcsxcad: migrate to pkgs/by-name, use qt6
+b59476139c900187dad784b0a1fc5f26d844475a 2025-09-04 [qcsxcad] qcsxcad: migrate to pkgs/by-name, use qt6
+003996f6d9ed3189b50e9e6839a446e3785f8cb1 2025-09-05 [x11basic] x11basic: move to pkgs/by-name
+036ae348e33150409e17f8ba95feb4bfd33f303b 2025-01-19 [bazel_7] bazel, bazel_7: move to pkgs/by-name/ba/
+ff737fedfc41c9391640079d4be9843155c8ec4b 2025-09-04 [google-cloud-sdk] google-cloud-sdk: move to pkgs/by-name
+fb03576605b4721cb3911821b5755852ad894741 2025-09-03 [spicedb-zed] spicedb-zed: move to pkgs/by-name
+f587bb437690779060eb55614433180994d32075 2025-09-03 [spicedb] spicedb: move to pkgs/by-name
+a1fffa47ebad2e7a0c46366fb6097c4b6170d709 2025-09-01 [mailpit] mailpit: move to pkgs/by-name
+4cb0b20affdcad4f2016521539ada5d5ec545904 2025-08-31 [lxappearance] lxappearance{,-gtk2}: move from lxde.lxappearance{,-gtk2}
+8e217aa17eac35c6e23aaafec237b470f493df7e 2025-08-31 [lxmenu-data] lxmenu-data: move from lxde.lxmenu-data
+67b69746bce45b68533b4ce2c74366796cd19fbb 2025-08-31 [lxtask] lxtask: move from lxde.lxtask
+98e2c2d56dd9ec149b7d2f03f789e191d879dbf5 2025-08-31 [lxsession] lxsession: move from lxde.lxsession
+126a57d77a72c78e5b225fe698714b0379ee7d40 2025-08-31 [lxpanel] lxpanel: move from lxde.lxpanel
+02fbf7e201db4b442c70ee0f5d072e83c5b67e6f 2025-08-31 [lxrandr] lxrandr: move from lxde.lxrandr
+10a2efa52e7974da4bffb17ab061c7a6f6bc64f4 2025-08-23 [xstdcmap] xstdcmap: refactor and move to pkgs/by-name from xorg namespace
+9c66bf85e8617e523c574d99c221337dd0d2fcb5 2025-08-23 [xsm] xsm: refactor and move to pkgs/by-name from xorg namespace
+f25482f3dcb3c9e282abca1a9df41b1b56dedd26 2025-08-23 [xsetroot] xsetroot: refactor and move to pkgs/by-name from xorg namespace
+413f94911546b19aa961799fe7dd823b0ca28ea0 2025-08-23 [xset] xset: refactor and move to pkgs/by-name from xorg namespace
+0e805d89c1af8e75b872d19916bd9e1586ae56f7 2025-08-30 [zeal] zeal: migrate to pkgs/by-name, use qt6
+638d0c828f7d502caddf513d535b0df818fab683 2025-08-20 [catch2] catch2: move to pkgs/by-name
+acb05054f64df107cf18e07b6846473253f6bf70 2025-08-20 [catch2_3] catch2_3: move to pkgs/by-name
 e2ad57d487acab81377249ec17e389623aa0e6bd 2025-08-29 [qolibri] qolibri: move to by-name, switch to Qt6
+3c24cb60ff576568fa0bbe8c67f38669d8f26490 2025-08-23 [xkill] xkill: refactor and move to pkgs/by-name from xorg namespace
+fea40463335f6a2885d20c59f558268f27b3178b 2025-08-23 [xkbutils] xkbutils: refactor and move to pkgs/by-name from xorg namespace
+744120dbc7899fcbede9e9935306dad692574230 2025-08-23 [xhost] xhost: refactor and move to pkgs/by-name from xorg namespace
+47b8e80c55ea416ee98017dba2802f3cac34dab9 2025-08-23 [xgc] xgc: 1.0.6 -> 1.0.7, refactor & move to pkgs/by-name from xorg namespace
+240d5045b60ff898ce4705d9d816a3b12c80adcd 2025-08-23 [xgamma] xgamma: 1.0.7 -> 1.0.8, refactor & move to pkgs/by-name from xorg namespace
+9ef0609cf31fccaeb2811d939929bba677231e99 2025-08-26 [font-adobe-utopia-type1] font-adobe-utopia-type1: refactor, move to pkgs/by-name and rename from xorg.fontadobeutopiatype1
+98df87ea67a2ef46069c8e5f1a1741026a50af8a 2025-08-26 [font-adobe-utopia-75dpi] font-adobe-utopia-75dpi: refactor, move to pkgs/by-name and rename from xorg.fontadobeutopia75dpi
+e21431a16558e4b69ebcf187691d9af81bccbfd8 2025-08-26 [font-adobe-utopia-100dpi] font-adobe-utopia-100dpi: refactor, move to pkgs/by-name and rename from xorg.fontadobeutopia100dpi
+657ebfddbb0365705acaaccec01c48525dd9231e 2025-08-21 [font-adobe-100dpi] font-adobe-100dpi: refactor, move to pkgs/by-name and rename from xorg.fontadobe100dpi
+f8136a0f82e7f36b9e412c75645efc00fb9411d4 2025-04-26 [font-adobe-75dpi] font-adobe-75dpi: refactor, move to pkgs/by-name and rename from xorg.fontadobe75dpi
+63aa3b433f2ea5b3735549ab8045e063c705f299 2025-08-28 [feh] feh: move to pkgs/by-name
 dcf47c07ad723f2b6ffa7b9ad560d5564cd537c7 2025-08-27 [cmake-language-server] cmake-language-server: move to by-name
 2fc4da0c7ad9f7b3814e8fbb33cd9f8fac309109 2025-08-27 [gnunet-gtk,gnunet] gnunet{,-gtk}: move to by-name
 34b9180a4d43d694040ef6caa5d8c9a1b37b50c9 2025-08-27 [visidata] visidata: migrate to by-name
 44c9f687aea7eff0e89ecc6c618d80bb7f650c1a 2025-08-26 [slade] slade: move to by-name
+7e96b523d10942786a3b8371ef0eafabd1231a87 2025-08-23 [appres] appres: refactor and move to pkgs/by-name from xorg namespace
+203364c3a78622c67f9caca6aa98e80da92d3109 2025-08-23 [libxi] libxi: refactor, move to pkgs/by-name and rename from xorg.libXi
+0b402f072535c1ecd9e96ac279bf2d2c466cb33d 2025-08-23 [libxft] libxft: refactor, move to pkgs/by-name and rename from xorg.libXft
+5e02ae89216ed8f187188e06ec397527a62496bf 2025-08-23 [libxfont_1,libxfont_2] libxfont_{1,2}: refactor, move to pkgs/by-name and rename from xorg.libXfont{,2}
+9e7b4cc4776000b8cd709277ec6f27212f422b74 2025-08-18 [libxdamage] libxdamage: refactor, move to pkgs/by-name and rename from xorg.libXdamage
+d3e3c7aaf473b3cc065ef19a2651fbfacf5776f0 2025-08-23 [libxcomposite] libxcomposite: refactor, move to pkgs/by-name and rename from xorg.libXcomposite
+9b4e7b6fdedf43c76d650b5ce0e656fc1b1f6e4e 2025-08-23 [xmore] xmore: refactor and move to pkgs/by-name from xorg namespace
+6f159706b73ea8b8de64f334e4c130d6aa016031 2025-08-23 [xmessage] xmessage: refactor and move to pkgs/by-name from xorg namespace
+227c2a7ccccf99a9d81e894262b43fc9ca99d244 2025-08-23 [xmag] xmag: refactor and move to pkgs/by-name from xorg namespace
+458daf8c44874a96bd6371f4608d2208f529db7f 2025-08-19 [libxcb-cursor] libxcb-cursor: refactor, move to pkgs/by-name and rename from xorg.xcbutilcursor
+4cd91610a474a98a2b9e7daefb4bc222e1b853d5 2025-08-23 [xconsole] xconsole: refactor and move to pkgs/by-name from xorg namespace
+ec5f820b38b3cda32c393d4ba8c35268782b9f4a 2025-08-22 [smproxy] smproxy: refactor and move to pkgs/by-name from xorg namespace
+8d6077c1efd4997d9e5c5d3465333a32fd725985 2025-08-22 [listres] listres: refactor and move to pkgs/by-name from xorg namespace
+5684229ccf75fbd05a219c51ccba781027c4d7ae 2025-08-22 [viewres] viewres: refactor and move to pkgs/by-name from xorg namespace
+a525a830f29bbabd662bb322c6eaa09cfb4bfc00 2025-08-21 [font-mutt-misc] font-mutt-misc: refactor, move to pkgs/by-name and rename from xorg.fontmuttmisc
+472fb3da5adfbfe3a1289e020c9b4eb1bcc58514 2025-08-21 [font-bh-type1] font-bh-type1: refactor, move to pkgs/by-name and rename from xorg.fontbhtype1
+0fec3fb91cf5f6f2a116b58b754065f920818942 2025-08-20 [font-bh-ttf] font-bh-ttf: refactor, move to pkgs/by-name and rename from xorg.fontbhttf
 e359611e77d9457ff23d6521b1b9ae8a3618fb3d 2025-08-16 [homesick,mailcatcher] treewide: migrate ruby packages to by-name and update
 5226c75abcbea4acd0567b72a64a58169f53c92e 2025-08-21 [tetgen] tetgen: move to by-name
 f75522c6b9f06efe8da5d9fa896b94c923b70e94 2025-08-21 [tetgen_1_4] tetgen_1_4: move to by-name
@@ -263,8 +467,34 @@ f5afdf552d733e386dd952e0c25f3206fdafdb08 2025-08-21 [dnstracer] dnstracer: move 
 fc65db9a30de55a6d8defbde6e8d681900f41496 2025-08-21 [tubekit-unwrapped,tubekit] tubekit: move to by-name
 859f3347e3b16f4efd78336159b86854e356e3fc 2025-08-21 [zettlr] zettlr: move to by-name
 e6e9e48440136a7417c65f70fc61dbf887d77af1 2025-08-21 [gpio-utils] gpio-utils: move to by-name
+21a80441cc9f14fdff48eac5d2f259bb66c3d14f 2025-08-21 [xvinfo] xvinfo: refactor and move to pkgs/by-name from xorg namespace
+f4db99ab73512c452c26d52facbeda418968c296 2025-08-21 [xrandr] xrandr: refactor and move to pkgs/by-name from xorg namespace
+12e753b55c1ec322ee12ee4a36c70a0768fd8d99 2025-08-21 [xfsinfo] xfsinfo: 1.0.7 -> 1.0.8, refactor & move to pkgs/by-name from xorg namespace
+60176ccb0429f65d7a84ce0dbcb6b49476d7950b 2025-08-21 [xev] xev: refactor and move to pkgs/by-name from xorg namespace
+66ca0ad28cff983efd2dca71e9e4a7cd544508ad 2025-08-21 [xcursor-themes] xcursor-themes: refactor, move to pkgs/by-name and rename from xorg.xcursorthemes
+22b9ac1e5cf9ef1ad47ced474173467b814e23d7 2025-08-21 [xcursorgen] xcursorgen: refactor and move to pkgs/by-name from xorg namespace
+2fa8f417f169dc2b9a441d44c18dffe4e5710f9b 2025-04-26 [font-encodings] font-encodings: refactor, move to pkgs/by-name and rename from xorg.encodings
+11138fc8049662d6ccee0919a94957dd7a472cf8 2025-08-20 [bzip3] bzip3: move to pkgs/by-name
+3edf0cc9ce5ce96a85eea76e42f6d60c9e2b8ba1 2025-08-19 [libxcb-wm] libxcb-wm: refactor, move to pkgs/by-name and rename from xorg.xcbutilwm
+c1db54b7d85931b61a9fed9bd6a541504be71e1e 2025-08-19 [libxcb-render-util] libxcb-render-util: refactor, move to pkgs/by-name and rename from xorg.xcbutilrenderutil
+6a2c2ed9208bd32313b6a322f005cfa0847a42f4 2025-08-19 [libxcb-keysyms] libxcb-keysyms: refactor, move to pkgs/by-name and rename from xorg.xcbutilkeysyms
+a2a6f2a295ff1c4febdbede3da80af5307edf012 2025-08-19 [libxcb-image] libxcb-image: refactor, move to pkgs/by-name and rename from xorg.xcbutilimage
+d051ea0c859fa14e7f63a16b26183ed886709f00 2025-08-19 [libxcb-errors] libxcb-errors: refactor, move to pkgs/by-name and rename from xorg.xcbutilerrors
+d41e8bba2271fc6be2fd6814e38530d79a5f5c3e 2025-08-18 [libxcb-util] libxcb-util: refactor, move to pkgs/by-name and rename from xorg.xcbutil
+f5077a75cf102fe252c338c8587dc6fff4727f45 2025-08-18 [libxxf86vm] libxxf86vm: refactor, move to pkgs/by-name and rename from xorg.libXxf86vm
+cdda889cee20a007f23cd7204c0ea0eea4ef2499 2025-08-18 [libxxf86misc] libxxf86misc: refactor, move to pkgs/by-name and rename from xorg.libXxf86misc
+809bf617cfdd7d6998726b778e69dc05d5140361 2025-08-18 [libxxf86dga] libxxf86dga: refactor, move to pkgs/by-name and rename from xorg.libXxf86dga
+b7a50d3f5348688f00c4040ef1e2b5e5d26b8cd4 2025-08-18 [libxvmc] libxvmc: refactor, move to pkgs/by-name and rename from xorg.libXvMC
+847dbb84a3dd2e98f120f438c3b76a45b72e44f9 2025-08-18 [libxaw] libxaw: refactor, move to pkgs/by-name and rename from xorg.libXaw
+2301e67b505cfb20722c74aa0de628992e63e0e6 2025-08-18 [libxpm] libxpm: refactor, move to pkgs/by-name and rename from xorg.libXpm
+ee1a92b0c935e27d0530d9377217ed18766a62f6 2025-08-18 [libxmu] libxmu: refactor, move to pkgs/by-name and rename from xorg.libXmu
+96349f4b00899c20e3e796e515da19bfd23d769d 2025-08-18 [libxt] libxt: refactor, move to pkgs/by-name and rename from xorg.libXt
+365735436e5d5b216eba0a3eb1f07bfc9e80fae8 2025-08-18 [libsm] libsm: refactor, move to pkgs/by-name and rename from xorg.libSM
+a79f97b971d903a229f919d7920063dae8cf731d 2025-08-18 [libice] libice: refactor, move to pkgs/by-name and rename from xorg.libICE
 890d03374fedcd5f7f3e8156fcfd89c07d78ee45 2025-08-19 [alerta-server,alerta,apr,bore-cli,charybdis,corundum,danger-gitlab,duff,eid-mw,eventstore,hasura-cli,hci,hercules-ci-agent,hivex,jmol,laurel,librepo,maphosts,marvin,oilrush,pinnwand,polar,reckon,redis-dump,riemann-dash,riemann-tools,rosenpass-tools,rosenpass,schleuder-cli,schleuder,serverspec,sommelier,sonobuoy,steck,teamocil,truvari,veusz,vorbis-tools,xdelta,zpaq,zpaqd] treewide: move to by-name part 3
 d31f96b146e553d0ccb84edad93b772a834c35bf 2025-08-17 [isort] isort: migrate to by-name
+4cc1e8b7b574fe304048f6b6fe5503b843ff14c3 2025-08-11 [slstatus] slstatus: migrate to pkgs/by-name
+8a20059113be6bb020cbdf36d998cc1d22b5e8cc 2025-08-11 [slock] slock: migrate to pkgs/by-name
 bf3eddaa729694d36085b7ebc537fbada4ce94c7 2025-08-11 [plausible] plausible: move to by-name
 fb7d7c5fe02f8204445a7f56c78f3ccbacd870df 2025-08-02 [calamares] calamares: 3.3.13 -> 3.4.0, qt6-ize, clean up, move to by-name
 8fb5f3a7da9cd44002cb2c685a7f4f45b0cab198 2025-08-09 [jami] jami: move to by-name
@@ -272,6 +502,7 @@ fb7d7c5fe02f8204445a7f56c78f3ccbacd870df 2025-08-02 [calamares] calamares: 3.3.1
 891601dbde590a1a3f1d9cddfee7b486e2bc8051 2025-08-07 [leo-editor] leo-editor: migrate to by-name
 4f9d0bd2847a8de448cfbdbf0c02f67072f6966e 2025-08-07 [ghostscriptX,ghostscript_headless,ipe] ipe: migrate to by-name
 190f6932af0a62fc7d61bc2a643625bc0da10626 2025-08-07 [meerk40t-camera,meerk40t] meerk40t: migrate to by-name
+76c1b5e7d961e3e0ead83bf310a6bd09945a5980 2025-08-05 [sqlitebrowser] sqlitebrowser: move to pkgs/by-name
 6260e19a95f6254895961d43fa4e515a42498a14 2025-08-06 [surge] surge: migrate to by-name
 6bb7ba540ca0b592a95311605947949d437ee319 2025-08-06 [grc] grc: move to by-name
 1e067588820e654e921967d1eb5b67bf99af90dc 2025-08-06 [qucs-s] qucs-s: migrate to by-name
@@ -281,6 +512,8 @@ b0075b9ee1e8ab9fbfc91ec0f7b5f07dae814673 2025-08-05 [gitlab-triage] gitlab-triag
 38c7c217aa43e10fb7592cb8e4ba8184cb27fd65 2025-08-05 [squishyball] squishyball: migrate to by-name
 409e80d2446aa57e888eeb5327c035819466c220 2025-08-05 [ktimetracker] ktimetracker: migrate to by-name
 9afb2f32447b14a3d462a58a90899b7effa4d064 2025-08-05 [kid3-cli,kid3-kde,kid3-qt] kid3-{cli-kde-qt}: move to by-name to reduce evaluation overhead
+0d6026023e39eadcf4f2ef60669c6cc7432a2eb8 2025-08-05 [mpd] mpd: move to pkgs/by-name
+4ef842967118f49fc1e509326b99adcef718d181 2025-08-05 [mpd-small] mpd-small: move to pkgs/by-name
 1a020d050913a838ad59d40c69707f222c577090 2025-08-04 [zombietrackergps] zombietrackergps: move to by-name
 047f027ad7e1a658f0cf2bff1e1373a6422d4c22 2025-08-04 [cryptop] cryptop: move to by-name
 80b37887c2af35c6f5984df1cb046d318212586d 2025-08-04 [utterly-nord-plasma] utterly-nord-plasma: migrate to by-name
@@ -296,11 +529,3 @@ c3ab7634ed3e1db54ea2e6cb564025d3ec77bf04 2025-08-02 [cpeditor] cpeditor: move to
 eb17e8bd7030fd76a47b2f361b2bf0cd4f533e11 2025-08-02 [apio] apio: migrate to by-name
 8e41855fcdea5a4c9e6915fc39cc4c93126b7b74 2025-08-02 [gp-saml-gui] gp-saml-gui: migrate to by-name
 147d02e310b472fcf1c1498d7d6bebb1acdbd6e7 2025-08-01 [cvc5,freemind,jazzy,jdepend,lief,nix-pin,pmd,rake,roapi-http,sickgear,solanum,sqlint,t,torque] treewide: move to by-name part 2
-8559510d8d2e130edb86958cb56cf8ae746fb168 2025-07-26 [ktextaddons] ktextaddons: migrate to by-name
-f882afff2c68092ac29f1b953fb24bf88a8e3cb0 2025-07-28 [kora-icon-theme] kora-icon-theme: migrate to by-name
-90adcba2133616da92370ba5a5246be1c58dbe86 2025-07-29 [material-kwin-decoration] material-kwin-decoration: migrate to by-name
-8a0d1de538392992b12faa699063ce519371020a 2025-08-01 [travis] travis: move to by-name (#430047)
-2dd1736503acc89e3138e517427ad594af39963c 2025-07-22 [xp-pen-g430-driver] xp-pen-g430-driver: migrate to by-name
-f3f1b8113c33b122a9cbe4ae9df2f81c2d8e943f 2025-07-23 [mpremote] mpremote: migrate to by-name
-bb704e81aa0399b156a6fb4c120d024eb4c32bda 2025-07-23 [pricehist] pricehist: migrate to by-name
-b5fda38b50f6428edc0b0f9a48da9083fbc5a628 2025-08-01 [punes-qt6,punes] punes: migrate to by-name

@@ -1,15 +1,12 @@
 d734dad0af7c9834cc680a6e602c14074b4e93c9 2025-07-24 [venator] venator: init at 1.0.4
 70f8fa6e126842d93425e7828fda35cff28463eb 2025-11-15 [drawy] drawy: init at 1.0.0-alpha-unstable-2025-11-17
-2bb9b781ccd19acba6270f26d85a90346aecc48f 2025-11-18 [antigravity] antigravity: init at 1.11.2-6251250307170304
 64fbca78da7ddfaf1bc9722c265070c09c4e94a5 2025-10-18 [hyprlauncher] hyprlauncher: init at 0.1.0
 1be76d1cf4947535b59ad64434f9c1b66be5ade0 2025-10-18 [hyprpwcenter] hyprpwcenter: init at 0.1.0
 9d5824e6a770a5846713226a8e84ab5fb5cf8997 2025-10-18 [hyprwire] hyprwire: init at 0.1.0
 80323062f8e966ed6401a1e4deaeca85ab9a116d 2025-10-18 [hyprtoolkit] hyprtoolkit: init at 0.1.0
 bea5958c63ff1df0d34c7a804691299f7fcb181e 2025-08-25 [ptcpdump] ptcpdump: init at 0.37.0
-b39f8cb0a1108a2124cb51ec11a72fd6fbf30ec1 2025-09-01 [ersatztv] ersatztv: init at 25.8.0
 9faec8f5cedbdec251314cd09d531f6820f4b519 2025-10-12 [pascube] pascube: init at 1.5.1
 d829874e1f5e806e648f8c02e51ef1ce03944463 2025-11-09 [reddix] reddix: init at 0.2.9
-6b5ef122d07574af00a647780c814a3a565056a3 2025-07-31 [taskbook] taskbook: init at 0.3.0
 c2247d3f04fe4da90a09244acc1df2f8b3dd6cfa 2025-11-13 [temporal_capi] temporal_capi: init at 0.1.2
 6154b41419f3fc076ac65827d432842bc03fb66a 2024-06-29 [emmy-lua-code-style] emmy-lua-code-style: init at 1.5.7
 2149335e0b354076a380a499cad9141334d19b23 2025-05-30 [umap] umap: init at 3.4.0
@@ -29,10 +26,8 @@ a38994a0b1f70cd2f507ccab1a45de1f3161e11a 2025-11-11 [tzpfms] tzpfms: init at 0.4
 d3e6a340d967260efae964e95b2f36cbfb9dd5e2 2025-11-11 [qbootctl] qbootctl: init at 0.2.2
 9e687756127c607992461d76afbcc295685263b2 2025-11-09 [ssh-vault] ssh-vault: init at 1.1.4
 ccaa0205bcac5abc582645d94826164ddedd3b4f 2025-11-11 [typesetter] typesetter: init at 0.5.0
-179b66ec2266200a86c0ed6e3404327bb1a29229 2025-11-11 [kryoptic] kryoptic: init at 1.3.1
 d79eeb4e9dd0edde5ddad2d13e6852cfd438d3ff 2025-11-09 [rovium] rovium: init at 0.4.0
 1974ddaa3b251de56832923bc90dc456e4a5918e 2025-11-07 [ocaml-pds] pds: init at 6.55
-1fa644d711e16a49e77d06ed8f7c523a866138f6 2025-07-19 [mhabit] mhabit: init at 1.21.0+118
 179c5fff05aea1f3976524de71b8f726c6c2aa9e 2025-11-09 [pygpoabuse] pygpoabuse: init at 0-unstable-2025-11-09
 787aa8b71fda9c4a0c854a182db3a523366e50c5 2025-11-02 [vdu_controls] vdu_controls: init at 2.4.3
 44abfc6fbf78df3ba959e2fc1771f41c70dd8e63 2025-11-02 [ddcutil-service] ddcutil-service: init at 1.0.14
@@ -40,7 +35,6 @@ a42dbf2fa4fec0c3743c06fcd5f21d3e1a32ea49 2025-08-18 [lue] lue: init at 0.3.1
 1833e4b2091c995154d6efd84c3705220403afd0 2025-11-07 [pyhanko-cli] pyhanko-cli: init at 0.2.0
 dd23f0d9dca712722e9ff8db870761c24513c907 2025-08-04 [protorpc] protorpc: init at 1.1.2
 f640ab99a9d1368af30c181957d9b88693c6aa14 2025-11-09 [qusb2snes] qusb2snes: init at 0.7.35
-c9fbca914c7d9b8c72efe8386e59920aa484f667 2025-10-14 [markdown-toc] markdown-toc: init at 1.2.0
 8e9939c0c779d1900153761bddbc7945392fddce 2025-10-14 [svg-term] svg-term: init at 2.1.1
 fa819afd505d9d7dbadf79d62ac7ab9d751896ce 2025-11-08 [evil-winrm-py] evil-winrm-py: init at 1.5.0
 1be212bea8eb48f892430e183f9ca59c144d0e09 2025-11-08 [subler] subler: init at 1.9.1
@@ -52,28 +46,22 @@ b3605e26ae5becc3706698342bde34b5ffc54dbf 2025-10-16 [uni-algo] uni-algo: init at
 f0ac7dfbc3bad1ab0d1d5f1f24d10d714b7fe96d 2025-11-08 [monodraw] monodraw: init at 1.7.1
 f7786647e0eb808b3114fac7a165459876b0bc9f 2025-11-08 [meetingbar] meetingbar: init at 4.11.6
 7c6896cbdd6891d57bdfa759a4d820e8a52c1041 2025-11-08 [alcove] alcove: init at 1.4.1
-b3ad4503a867c92c28728dc099106c8f2325486d 2025-07-24 [xapp-thumbnailers] xapp-thumbnailers: init at 1.2.8
-e2d8a70246fb4fb955ebb333ebabd8d7900d0aa1 2025-11-02 [copyparty-full-buggy,copyparty-min,copyparty-most,copyparty] copyparty: init at 1.19.20
 3028f38efb536d6ed0cba051db966893806e8d4f 2025-11-07 [regex-tui] regex-tui: init at 0.2.0
 2c51fdcfe3a683b665d80ae703d3d322e0032675 2025-11-08 [prmt] prmt: init at 0.1.7
 5fc1ba1943818c41d20e03c53b9d342ab0308569 2025-05-26 [temporal-ui-server] temporal-ui-server: init at 2.43.2
 ab2f82d14e6ad651dd404304c6936f781d9a275b 2025-11-04 [millisecond] millisecond: init at 0.2.0
-02dad28fe83d67c2e63886766a8c259049bef1e7 2025-11-06 [helix-db] helix-db: init at 2.0.5
 e110e409abbba6ff7dd76ed0115fb91fd42789a6 2025-11-04 [toml-test] toml-test: init at 1.6.0
 5d3f02782f216ef4f3431c459b5c9c1aaa3f77e8 2025-11-05 [microhs] microhs: init at 0.14.21.0
 f7af868c6530d882eae4fc8df5463f39336ec768 2024-10-10 [firefox-gnome-theme] firefox-gnome-theme: init at 143
-8a8374acb1f816766680b20b303bb07366cf7c22 2025-10-22 [knobkraft-orm] knobkraft-orm: init at 2.7.1
 bcfb9e6fadfb88044722e5b5aad89fec6673d77e 2025-11-04 [gh-webhook] gh-webhook: init at 0.2.0
 a5f6a3391a7da13c456e961b7136b1eb87001b54 2025-10-25 [opencl-cts] opencl-cts: init
 5a4feee1826a89ea169ec34af480607650ea9d4e 2025-06-06 [wild] wild: init at 0.7.0
-01c95078d95d7a0cd49d337d83d26d5f4c6741ed 2025-10-25 [tlrender] tlrender: init at 0.10.0
 8be927c14a3d3f2d9349f5358d316b7089dd32eb 2025-11-03 [bit-logo] bit-logo: init at 0.1.0
 adcdd30fe25a69c572f2d89876a728cce3b3ba18 2025-11-03 [phytool] phytool: init at 2-unstable-2024-07-14
 aaf821b4208b829d6a398cdd6b8db795daf4eb6d 2025-09-21 [mdbook-plugins] mdbook-plugins: init at 0.2.3
 d8486c1e524235d86cdadd080d82e73a6fa52e12 2025-11-02 [nextvi] nextvi: init at 2.1
 5efbfb6b02107937765cc264c6494e9a22499d85 2025-11-03 [cocoon] cocoon: init at 0.5.0
 a87bb5ad8dc8b0c50b8b3e8edf5bb378e5764d27 2025-11-03 [clashmi] clashmi: init at 1.0.12.162
-8f80acbc3e3f40441206ffe4261478ff684f5879 2025-10-13 [wheelwizard] wheelwizard: init at 2.3.3
 7942113f43d0df1cb750d6fa48c620da43b34f38 2025-10-19 [ltspice] ltspice: init at 24.1.10
 d9430cfe41e219aed8ac856227d8d3414f1cc61b 2025-11-01 [zatackax] zatackax: init at 1.1.0
 9efc113722a4b59a21a64a096d598708e0f3bac3 2025-10-20 [jack-link] jack-link: init at 0.2.4
@@ -88,7 +76,6 @@ c3793a77580f34e4594560d13706d7af0da2fa2f 2025-10-30 [rusty-path-of-building] rus
 14d0327e9c459d5d353e24890f3c0e0b6c8bd618 2025-10-31 [fakesip] fakesip: init at 0.9.1
 27ea5b1a461525f0bfa92f407a14a73322fb20c0 2025-10-30 [fakehttp] fakehttp: init at 0.9.18
 32257c8e85cc1d07f3658916aef3816c84956aac 2025-10-14 [nemorosa] nemorosa: init at 0.3.0
-d096ff8c1e6b03a69801858bd3ade08a23990862 2025-10-14 [postfixadmin] postfixadmin: init at 4.0.1
 21124ba61b0291bbad7c3dac526eaca74ecaf7e3 2025-10-29 [mdio-tools] mdio-tools: init at 1.3.1
 68ed260e1673d1f815334ee58625c29738f8a886 2025-10-25 [nativefiledialog-extended] nativefiledialog-extended: init at 1.2.1
 a52c90da61a012e7be9a3ba98fa9d7ffacbfabce 2025-08-09 [freelens-bin] freelens-bin: init at 1.6.1
@@ -99,9 +86,7 @@ df9fce6aea2403b7dadab6462efe4671790fb52d 2024-11-24 [fcitx5-inflex-themes] fcitx
 43ade2f51fab344cfd27ee8ca4a20ea4ed8d6499 2025-10-28 [tpm2-pkcs11-abrmd] tpm2-pkcs11-abrmd: init at 1.9.2
 17fd2ebb807281e5d431e1cc0905df165bc36bbc 2025-10-28 [juledoc] juledoc: init at unstable-2025-09-09
 31ccfff9593d149d941e875973ab012468df69db 2025-10-28 [julefmt] julefmt: init at unstable-2025-09-08
-33f715cfc8a638d72de08c1a628ca1ca4578d47e 2025-09-17 [vclab-nexus] vclab-nexus: init at 2025.05
 dfe018a51c1e3a081ae5d43a032e8fe8fec6b272 2025-09-19 [tinygltf] tinygltf: init at 2.9.6
-dd32f4f6a1da3b05a668e25e6e0f6f9809084ec3 2025-10-29 [terracotta] terracotta: init at 0.3.12
 6715f8f3f2323a70d5c79a014422f4965c29a4ef 2025-10-27 [batticonplus] batticonplus: init at 2.0.1 this is a drop-in replacement for cbatticon with wayland support
 f6e5f353191a1b874e0d855dedfe346a69a637db 2025-10-26 [uhhyou-plugins-juce] uhhyou-plugins-juce: init at 0.1.0
 34cb8d1d09482bb8a8ce1ff2dbe6078a8df02b11 2025-10-27 [uhhyou-plugins] uhhyou-plugins: init at 0.67.0
@@ -110,12 +95,9 @@ f6e5f353191a1b874e0d855dedfe346a69a637db 2025-10-26 [uhhyou-plugins-juce] uhhyou
 65f42173f17014e6255fd8806e52595de61a1bb0 2025-09-04 [beammp-launcher] beammp-launcher: init at 2.7.0
 9a4f7a19e46a99d2a35c28ba3b929e4d7d03f3e1 2025-10-27 [go-csp-collector] go-csp-collector: init at 0.0.16-unstable-2025-10-10
 566f5bb03c902226abbfa68a7c259bb979c97723 2024-12-14 [redumper] redumper: init at build_438
-fe8ec962bf4243aef705ee4a10a3b5d2b03be3ff 2025-10-22 [yubihsm-setup] yubihsm-setup: init at 2.3.3
 315ea55a65a720bbd661380ad04aa918525e80f8 2024-08-19 [chicago95] chicago95: init at 3.0.1
 ec212ce238feb98f60925abebb1ded418ca38245 2025-10-13 [vicinae] vicinae: init at 0.15.5
 ed6551c9e74fefb28909b8b9730adf2b3ba9846c 2025-10-22 [jart-jsoncpp] jart-jsoncpp: init at 0-unstable-2025-10-23
-0731872d157c1b4293da996de2acf766e6b76816 2025-10-19 [adjustor] adjustor: init at 3.11.8
-80ee38741ad67cfa7b2ce30bd7e844065bca0e35 2025-10-25 [libdisplay-info_0_2] libdisplay-info_0_2: init at 0.2.0
 37bcb08fa8a3a6b0bcaad3c109d2ec9ad829811d 2025-10-16 [stasis] stasis: init at 0.5.0
 f89b079591c41fcd28841e146f80364bc18ca838 2025-10-25 [kide] kide: init at 1.0.40
 6c8c69dd58b7e77c3d61b61257bffe79087f887e 2025-10-24 [gitfetch] gitfetch: init at 1.2.1
@@ -123,8 +105,6 @@ fd29e89e92cd57f2dd61b9509116e652e6c73335 2025-10-25 [sampo] sampo: init at 0.12.
 3488184ee710295168ebc83b1b9dce641005e9cc 2025-10-21 [kaitai-struct-cpp-stl-runtime] kaitai-struct-cpp-stl-runtime: init at 0.11
 3b88e192f80788d98452c45e22dc8847a2cdf8f7 2025-10-24 [kubazip] kubazip: init at 0.3.5
 0eabec273360a9cdf6ca62ab641ac36f2aa2f077 2025-08-26 [artix-games-launcher] artix-games-launcher: init at 2.20
-6fb07ee11ae478fd208aaf7a482277e012bef515 2025-10-23 [undercut-f1] undercut-f1: init at 3.3.51
-16c01fbc4de6a7876ebe30e0dc8e673cccb8ff2e 2025-08-05 [warpgate] warpgate: init at 0.17.0
 97354a1b5a9cb3d6f2459470e6b9d22fb7a996fe 2025-10-22 [pyglossary-gui] pyglossary-gui: init at 5.1.1
 1d1ce10813f73dc514fb53bad4dedcb02fe172e6 2025-10-22 [pyglossary] pyglossary: init at 5.1.1
 6e34ca27418bdbc560275f66cacc8771e3e22fe9 2025-10-23 [keychron-udev-rules] keychron-udev-rules: init at 23-10-2025
@@ -135,10 +115,8 @@ a60f412cc6d82e2abbf0558ff9bb6326e6865e35 2025-09-24 [gdscript-formatter] gdscrip
 401adf55dfc9ce41ad8366b93f348d1690f71e7f 2025-10-21 [sigsum] sigsum: init at 0.11.2
 8598b9e738dbb56e6081f8df6e88ce6d8db8a74a 2025-10-16 [framework-tool-tui] framework-tool-tui: init at 0.5.1
 03ffc669d2d09fb99e8c3dfc11daff94caea7051 2025-09-22 [discord-rich-presence-plex] discord-rich-presence-plex: init at version 2.16.0
-2d401b8df7f1f00d9196e1de01fd2db311e525f0 2025-10-20 [dplusplus] dpp: init at 0.6.0
 7b3d110d4046e7fae61695df3689328050ef91e1 2025-06-02 [everforest-cursors] everforest-cursors: init at 3212590527
 bd8004d72646c60d8e315e0ec34dc6d7e7821408 2025-10-16 [miro] miro: init at 0.6.2
-f64b99e4b07d8a1830d1467ee31df90daeb4e3ea 2025-10-06 [simple-binary-encoding] simple-binary-encoding: init at 1.36.0
 8a9fa0f5e3d37ec8330d175bdf384949ffff69b7 2025-09-08 [iocaine] iocaine: init at 2.5.1
 75a4592d89f39e2d3999b6894192ced8bdb2c529 2025-10-14 [json-repair] json-repair: init from python3Packages.json-repair
 9e871d5514aaeede9e56602f339503c265d76769 2025-09-29 [libtatsu] libtatsu: init at 1.0.5
@@ -147,11 +125,9 @@ beceaec1c1046bfdcf215dbaada17d5ec9183e02 2025-10-19 [icesprog] icesprog: init 1.
 4fdc48ee7d9f4d8259579d0b6aff74c3312cc5bb 2025-10-11 [winboat] winboat: init at 0.8.7
 fe1ba330ead05a62a8758af0604b0fb4cfd7b7cb 2025-10-17 [frozen-containers] frozen-containers: init at 1.2.0-unstable-2025-07-29
 5a4698d5c7875f9afcfc0ee6627ef96142f2e0f5 2025-10-18 [prometheus-tailscale-exporter] prometheus-tailscale-exporter: init at 0.2.5
-648502b9e4f96e0b62b25947ca4ac15daa245e3d 2025-10-17 [everest-bin,everest] everest{,-bin}: init at 5806 (work around nixpkgs-update bot)
 94d2bea2af56f82675d243e4313fe8cbd3f6ae6a 2025-10-16 [tocaia] tocaia: init at 0.9.0
 9db770b448880aef731adfe9d42b337eaa39fc72 2025-10-17 [gocheat] gocheat: init at 0.1.1
 83cec4293d4a34e77cb254c8f1fd5ca389b65675 2025-10-16 [mio] mio: init at unstable-2023-03-03
-c49d51b8232e9b0c1384ad3a6c2c636a06bf643b 2025-10-13 [onscripter] onscripter: init at 20230825
 6cbf9eed62de44ff3d0d022957396c33a9441a3e 2025-05-23 [qsvlite] qsvlite: init at 7.1.0
 0c594d355cba053efc1323814a373d59457f0ff0 2025-10-10 [legendsbrowser2] legendsbrowser2: init at 2.0.10
 51785d8f0c33ebdd768dcabb7afe4d4a722c6e76 2025-09-11 [orbstack] orbstack: init at 2.0.3-19876
@@ -167,7 +143,6 @@ e12e058f03b90373be0ccac06168ee59cc3bb027 2025-10-14 [hyprmon] hyprmon: init at 0
 090dc96c39f2301cda34c9e33c71e31198b65b7e 2025-10-12 [rode-central] rode-central: init at 2.0.101-212
 69ad974f1ca533099f79a25d7c1c2e3e650e35bf 2025-10-13 [freifunk-meshviewer] freifunk-meshviewer: init at 12.6.0
 9d049ff28eb014ae2b5e758fa1ae52b589613420 2025-10-13 [fastmail-desktop] fastmail-desktop: init at 1.0.0
-d4d2689fc05595eaaceebb41ad17c95d03b992f2 2025-10-10 [claude-code-router] claude-code-router: init at 1.0.59
 d443501cb0c57c5604aef8c0bfb39c91ebadb440 2025-10-12 [pgit] pgit: init at 1.1.0
 173b795a64cd2710a98be5636dc54922e8097ed4 2025-10-12 [code] code: init at 0.2.188
 4a883e81805c5471681781ccbf10a85ae5ed42e1 2025-09-23 [karabiner-dk] karabiner-dk: init at 6.3.0
@@ -175,7 +150,6 @@ eb409aa6ff0c8034c295c3728a316ecd0701a2b4 2025-04-26 [faugus-launcher] faugus-lau
 6a92e489f85299d0177658a1a256401966543364 2025-10-10 [kitget] kitget: init at 0.0.2
 94ea2ddb016adef8bc46cbd40ebd76cac3f0ea55 2025-09-20 [tt-topology] pythonPackages.tt-topology: init at 1.2.13
 c71ea32e11c325a64af0c9c59046c4c94184d44c 2025-09-20 [tt-burnin] pythonPackages.tt-burnin: init at 0.2.4
-33c1d09f22ccd920ab86645ce0a39085bc6da8fe 2025-10-12 [libultrahdr] libultrahdr: init at 1.4.0
 b87fcf0b64df333a9f6bd8c596e9f79601b907b8 2025-10-11 [wstsound] wstsound: init at 0.3.0-unstable-2025-07-21
 ba8b10fc811f1a0852e4c3341155bdffdeac479b 2025-10-11 [uitest] uitest: init at 0-unstable-2024-05-26
 98f024e65ecd091eda17983141cd591e3391de70 2025-10-11 [tinygettext] tinygettext: init at 0.1.0-unstable-2025-05-07
@@ -195,8 +169,6 @@ bebccfbaa568c8ad526d8de733ff247f7aab8489 2025-10-11 [switchfin] switchfin: init 
 751be5e78052a47fc4bcf2e9201916bca7b0c9f1 2025-09-20 [tt-system-tools] tt-system-tools: init at 1.4.0
 69972cd34d8e074d8c0d8d74eceb3d193023fc8c 2025-10-10 [distro-info-data] distro-info-data: init at 0.67
 8537a9ae4965d1c79e100b214fb2d7b0785d2b85 2025-10-03 [hledger-fmt] hledger-fmt: init at 0.3.1
-5518f1e35f24b472d74253445b1fe88d7e5f13a1 2025-09-05 [netbox_4_4] netbox_4_4: init at 4.4.2
-c70a1e268dc250d2596e24d3a282b10f8fca65d1 2023-10-22 [docuseal] docuseal: init 2.1.7
 bf2b7d4ddb2feb1a0ed63a65073b78dace5000dc 2025-10-09 [jiratui] jiratui: init at 1.2.0
 f655c05f894f7766f230ce46c2cb67b899865ac8 2025-09-25 [tsidp] tsidp: init at 0.0.4
 6aa0e2cf50f82ca4e8439310e380d9d37394bd1c 2025-10-09 [phart] python3Packages.phart: init at 1.1.4
@@ -207,27 +179,22 @@ d3bf47068738d13ebc3b39b5380a2c2daecbdf45 2025-10-07 [git-fork] git-fork: init at
 5aabe811772127c7f8bcfa096dde84821777a3cd 2025-10-07 [cruise] cruise: init at 1.1.0
 21bd89d4052d0abaa90b20923f3f777b990ff736 2025-10-07 [librespot-ma] librespot-ma: init at 0.6.0-unstable-2025-08-10
 aaf94dac7257b0ba852ff9172934707a13922b14 2025-08-30 [calceph] calceph: init at 4.0.5
-8a7e61659d633722fa21a19c2d61f47df3b54d15 2024-10-08 [linkwarden] linkwarden: init at 2.13.0
 3326b5ccce304d02dbfecfc1f14f27662b26591a 2025-06-20 [onionprobe] onionprobe: init at 1.4.0
 4e11ddec246d510695882a250f1eef338f13aad2 2025-06-20 [onionbalance] onionbalance: init at 0.2.4
 41a35d8d6836e61798254714e05c9e3ec821bc9e 2025-07-21 [mariokart64recomp] mariokart64recomp: init at 0.9.1-unstable-2025-10-02
 d7211cd6328034696b025e9b938d22031394bc87 2024-05-18 [n64recomp] n64recomp: init at 0-unstable-2025-09-06
-75895d79b2b1b2d59a8ae95728431cf65a46aeda 2024-09-23 [librespeed-rust] librespeed-rust: init at 1.3.8
 8d665b5b7aa29cd7a0235e9b129529a4090bd3d3 2025-09-13 [pluginval] pluginval: init at 1.0.4
-2dc3a4251e308b8135de5e39012638810765251f 2025-10-05 [zigfetch] zigfetch: init at 0.23.0
 d20cfa8f5f4bfd576c6da5fca8b2b0c3ec4cb454 2025-09-15 [ctagdrc] ctagdrc: init at 0.1.1
 a3542b9d27a6d0d26425fe878a7c9b9656c06334 2025-10-06 [samira] samira: init at 0.5.1
 a0bf33115e5b7044bb93a48ece2b404b4e42ccb0 2025-09-07 [lacy] lacy: init at 0.5.1
 39dafd799f38996f47927399c22e6be67ba1c3b5 2025-10-03 [moxnotify] moxnotify: init at 0.1.0
 dad647d699081d36f19f1cca840b4428ebb9bccd 2025-10-05 [hygg] hygg: init at 0.1.19
-e4e1cc33fe663bd182fd7416ceb2fdbf881498dd 2025-06-27 [avalanche-cli] avalanche-cli: init at 1.9.2
 bff87305ed7f15a6246df44e2c37fce4c5c1396c 2025-10-05 [changelogen] changelogen: init at 0.6.2
 2b2f2574bf3601e8b4ab54e43ccadc048473abd3 2025-10-01 [terraform-backend] terraform-backend: init at 0.1.3
 40d65767fab9bd171a7af8ab605c19f563a33736 2025-10-04 [ticketbooth] ticketbooth: init at 1.2.0
 d78f8a5999f0fed81012af9a994478a8df585464 2025-10-05 [smbcrawler] smbcrawler: init at 1.2.0
 0c87aed8aa26591634cd96b9de3d942802545aa3 2024-11-13 [deterministic-zip] deterministic-zip: init at 5.2.0
 74728b8b4ef8a902827a61ee7d821aa41588368d 2025-10-04 [ovhcloud-cli] ovhcloud-cli: init at 0.5.0
-9d4bbcda3a043d64546b6179a8fd5584bc46d03c 2025-07-18 [phira-free,phira-unwrapped,phira] phira{,-unwrapped,-free}: init at 0.6.7
 9fc608e171920520b96d34fb1fde1994aec2b903 2025-09-07 [hgrep] hgrep: init at 0.3.8
 eb6d0c29a2dddf3a596c9d112b2436b5cc9fab45 2025-09-14 [ripplerx] ripplerx: init at 1.5.18
 a7d95643693b71373a3c82a81b85a6d9360f441f 2025-09-04 [gonzo] gonzo: init at 0.2.1
@@ -239,18 +206,14 @@ de1de0eb13c999d2f2517f24b262484adf9e08a2 2025-10-04 [unftp] unftp: init at 0.15.
 2e6b498101477d203b5a5475cf78f3a14dc35828 2025-10-03 [wamrc] wamrc: init at 2.3.1
 85172a306bff0e13b619f0ee759ddcfc01de1c31 2025-09-29 [mdserve] mdserve: init at 0.4.0
 e59957e003215b7e2cfeeb31692b52eafd2575cd 2025-10-03 [linyaps-web-store-installer] linyaps-web-store-installer: init at 1.6.8
-b48e11d1408457ce496e215dd388387f75ff56b7 2025-10-02 [tts-mod-vault] tts-mod-vault: init 1.3.0
 a667c6a86c078a21e6d012e249e804f6a5a269ab 2025-03-03 [poselib] poselib: init at 2.0.5
-93a611e793d606f9f2bb74a06f1cd39fc4b9f505 2025-09-09 [ionic-cli] ionic-cli: init at 7.2.1
 a0ba392b048a3b346c144c0a58d0e691ab9ee5e5 2025-09-18 [bulletty] bulletty: init at 0.1.7
 35e9a405b18599d6601c60293a6f1053dcfca974 2025-10-02 [mbmd] mbmd: init at 0.13-unstable-2025-08-08
 73fb7196bad64aa9ac9f5879f0626fba271af7ae 2025-09-28 [cosmic-ext-applet-caffeine] cosmic-ext-applet-caffeine: init at 2025-09-29
 7e310754cedad9054669ab8fa9d8ab6c58e2eee7 2025-09-30 [openspeedrun] openspeedrun: init at 0.3.3
-dbeffaaba8781a047d28b7ddbe6917a211f241bc 2025-09-23 [ringboard] ringboard: init at 0.12.2-unstable-2025-09-23
 854b1ada11a6ce1b1a8e1ddbd73af3afc6bef288 2025-09-01 [krunkit] krunkit: init at 1.0.0
 a8464be051fe50849eceb315ddb83794b957927b 2025-09-01 [libkrun-efi] libkrun-efi: init at 1.15.1
 6e0d51b96438921ceda97eba8f7a9c428c7931d2 2025-09-28 [claude-code-acp] claude-code-acp: init at 0.4.5
-ec1d9408594e5923f7ffee02e22ff2b949f3c8fd 2025-09-28 [github-copilot-cli] github-copilot-cli: init at 0.0.328
 a1f5841e583de97aa9c65f679848d34400e3ce31 2025-09-28 [yatto] yatto: init at 0.18.1
 6f059086af1a5c98c5a928180829e7d1eb77c54d 2025-09-29 [libvirt-dbus] libvirt-dbus: init at 1.4.1
 6e101e57444e68eab5a771e9d28a37e387ee3150 2025-06-12 [tcpdirect] tcpdirect: init at 9.0.2.45
@@ -265,10 +228,8 @@ cd2090d9d12f9b0da4bf814d5166101dda3e038a 2025-08-25 [radicle-native-ci] radicle-
 1981a619ae761a7b8b689cde90d451c14e3f0d5f 2025-09-19 [typr] typr: init at 1.0.1.20
 ee18acafa820645b82b300582af9df92497fd260 2025-09-26 [prometheus-storagebox-exporter] prometheus-storagebox-exporter: Init at 0-unstable-2025-07-28
 f6f16b8b98aaa7649b435e8d15599b68f7a1aea5 2025-06-09 [peacock] peacock: init at 8.3.0
-a3b4bdbb84817087e2c76fbfa6f7576eb05325f0 2025-09-07 [cosmic-initial-setup] cosmic-initial-setup: init at 1.0.0-beta.1.1
 80f7cf46cc757475403522e96e55b087cd5e2eea 2025-09-24 [visual-paradigm-ce] visual-paradigm-ce: init at 17.3.20250906
 81951e6dd6b5c4a5e71a47f6c82000012e407e48 2025-09-24 [integratorxx] integratorxx: init at 0-unstable-2025-09-09
-516785e5eeee7d3523d9cda0f0d2193c9f7a6eab 2025-04-02 [unofficial-homestuck-collection] unofficial-homestuck-collection: init at 2.7.2
 a91a232d1077c9ddcfe8c6cbf09b1fd2ef69dee4 2025-09-21 [cocom-tool-set] cocom-tool-set: init at 0.996
 cbd996f1f620781445b585821a2ef1e0253c5fc9 2025-07-04 [lcagent] lcagent: init at 0.1.0
 b32b86d7917242b550a4885e7586a273d3541c3a 2025-09-24 [mediamate] mediamate: init at 3.8.2-316
@@ -281,16 +242,11 @@ d20b0897def4ab2c5a48c0839ccaac8efa391a08 2025-09-24 [nightdiamond-cursors] night
 035d05ea35a67212d491d9741808e46b25a795ec 2025-09-22 [bbedit] bbedit: init at 15.5.3
 108ef9653fff16264441347bf0fa861f2ad8177b 2025-09-22 [harmonoid] harmonoid: init at 0.3.10
 b2bc74053fbf353d5c45bb788353ff8325e59459 2025-09-13 [hyprviz] hyprviz: init at 0.6.1
-d0c03e4c5abf82a3218e04b3eb90b566ec2ae5f1 2025-08-12 [nixos-init] nixos-init: init at 0.1.0
-b15e124ee85f3bf416145111c98de3146cce7a28 2025-09-21 [vixl] vixl: init at 8.0.0
 ca1deead6800c81e80628cc8fa827d9dc696ed8a 2025-09-21 [jetuml] jetuml: init at 3.9
 213f7a3b1606f62de82634df4934961a967bc40b 2025-09-05 [snowemu] snowemu: init at 1.1.0
 dd1d4c2bfada25430a078f154c9a6bd07bab8ad0 2025-08-23 [oscar64] oscar64: init at 1.32.263
-cb2ef2c936fc59e4a1b91374de0bbc2a748e9482 2025-09-14 [linyaps] linyaps: init at 1.9.12
 8be638759f35fb3ca70c77c2309ae34a9273a4d6 2025-09-14 [linyaps-box] linyaps-box: init at 2.1.0
 73c46577d4dc9211b8f3ad393565905c4f71ae85 2025-09-21 [hx-lsp] hx-lsp: init at 0.2.11
-0b24b2e6d9b47e09601485be7b9e2756421adbf6 2025-06-25 [pixieditor] pixieditor: init at 2.0.1.14
-2b5f1071cc2e29ea069b4b5dc8294b94d0628676 2025-07-04 [luwen] luwen: init at 0.7.13
 c14fae8ce3cc61d1286f8f4f6191d8068d18bc2c 2025-09-19 [desktoppr] desktoppr: init at 0.5
 ef4adebc71f6ac1af296f06a8eede7042c900303 2025-09-19 [tmuxai] tmuxai: init at 1.1.1
 7932f8092de5581e441f7825ea1a2079ec60a729 2025-06-14 [jfbview] jfbview: init at 0.6.0
@@ -301,12 +257,10 @@ d80652857e5376b4edc82186d426f0cd547934e7 2025-08-14 [gophertube] gophertube: ini
 2d31447b252570f13ef7453f7d34882f46ab3538 2025-09-14 [vaporizer2] vaporizer2: init at 3.5.0-unstable-2024-09-14
 4238e9a0693499a75babfaaf608506c30afaeda5 2025-09-17 [zeno] zeno: init at 2.0.15
 1e66baf758ea888bb7e3fe67bd81038131465bfd 2025-09-09 [tektoncd-cli-pac] tektoncd-cli-pac: init at 0.37.0
-fc81f11cc15811f7b367d2d4435c9da3ac790e0d 2025-04-24 [dformat] dformat: init at 0.15.2
 05810d4eb44fa65223cda52e93e3922df70d6bbb 2025-06-24 [l8w8jwt] l8w8jwt: init at 2.5.0
 829cc555dcfbc43599d2068fab45ea8b6c34e40b 2025-09-16 [applesauce] applesauce: init at 0.5.19
 e4a2bc9fa778bcf4a317041d9a54c37a791bb25c 2025-09-06 [ostui] ostui: init at 1.0.4
 c5cb903e37dd55fdd406b2791ac64cff42d1adfa 2025-09-16 [ycm-cmake-modules] ycm-cmake-modules: init at 0.18.4
-1d916135fc33f945271995fbe0c62fabcbb0c9a9 2025-04-20 [dscanner] dscanner: init at 0.15.2
 e938ba4da9c74458ed7734a886fd480526263636 2025-09-15 [hm] hm: init at 18.0
 6497c8c0a09a9261a6b29a19a3390d1fb1c18b61 2025-08-19 [hydrasect] hydrasect: init at 2025-08-27
 21d9c45bbba5e3f8b5ddaf4a4da243559531ce4a 2025-08-19 [nirius] nirius: init at 0.4.3
@@ -321,9 +275,7 @@ bb2ae01ef06ec5d7e5765cf3e9494439900b5d73 2025-09-07 [radio-active] radio-active:
 ade3f11ee482cf65d9b9aebf98b82214f5a0a2b9 2025-06-08 [dn42-cacert] dn42-cacert: init at 0-unstable-2016-01-16
 2cd2faedd88375f7b252ba0ad52ca085c2109a0c 2025-09-12 [emhash] emhash: init at 1.0.1
 87363e629ba411a91df8eb9171de6865fd2773a1 2025-09-12 [audiomatch] audiomatch: init at 0.2.2
-fae41a5ee90b944d3bb461038ccb0fb168373ea6 2025-09-05 [bazel_8] bazel_8: init at 8.4.1
 4a09f3a1f5814effce52574399c2b7e9579a0b8f 2025-09-11 [crates-lsp] crates-lsp: init at 0.4.2
-99d4c189314ac0eccc97b972a63a0cea3ad826de 2025-09-09 [xmrig-cuda-mo,xmrig-cuda] xmrig-cuda{,-mo}: init at 6.22.1{,-mo1}
 4d63e0d216b2e05185226589867aae64f828d5d0 2025-08-31 [spit] spit: init at 0.1
 0ebca7541f5900abcb2b17d6a0e1b9cb0f8df512 2025-09-09 [uradvd] uradvd: init at 0-unstable-2025-08-16
 f800055e411adc0b139d8d5ee26552f08ca367f0 2025-09-10 [fex-headless] fex-headless: init package
@@ -335,11 +287,9 @@ b7570aed198806ae8680b51ddad8800be3dfc308 2025-01-06 [suspicious-package] suspici
 0173b5c7aebc72d13b19532ce23f1a18e36728bd 2025-08-31 [shira] shira: init at 1.7.1-unstable-2025-08-31
 b66c11dc88aa026f7336a30e73e3ff0b70b4deb3 2025-06-21 [cosmic-reader] cosmic-reader: init at 0-unstable-2025-08-29
 38bd2c8c2a3917bc6fb375c3e8c3098226567dd0 2025-09-02 [why3find] why3find: init at 1.2.0
-422a6e0a4e0a0ff788986fc346985c55ea78dd42 2025-05-10 [celestegame] celestegame: init at 1.4.0.0{,+everest.5806}
 f509d54658e535bd8ec023a3c0285f7a11da4089 2025-09-02 [lazyssh] lazyssh: init at 0.2.0
 f8d0dc70c010667499743a164bf415015a1d5c3c 2025-09-05 [plakar] plakar: init at 1.0.3
 788d47d8c312d0d622752ae7c0a9a8bad43cbff2 2025-08-23 [vacuum-tube] vacuum-tube: init at 1.3.15
-f004867c7f8193468850cf5b990ba70006992f10 2025-09-07 [onyx] onyx: init at 2.0.12
 90a49d004a4d94f505e72debf4ff13af45f57044 2025-09-07 [krename] krename: re-init at 5.0.60
 0efa842a7648dc80f6e743edc0f6c4989ff07fc5 2025-09-07 [texsurgery] texsurgery: init at 0.6.3
 33dfc47d5e3bd5f6aa5eb3180741fa4b31d50d8c 2025-06-24 [timekpr] nixos/timekpr: init at 0.5.8
@@ -347,26 +297,19 @@ ae493e85606dedbf147d0a8ab503fa14d715563d 2025-06-29 [cosmic-ext-applet-external-
 e1d28ae48680298adaf1b58f97c5453623218ec8 2025-09-07 [ia-writer-mono] ia-writer-mono: init at 0-unstable-2023-06-16
 8fcdda901ef7687507e81564c671c52631da939c 2025-07-05 [portfolio_rs] portfolio_rs: init at 0.6.0
 31a558c5f0962c90cb551db4b68f38de033bab0a 2025-08-11 [gemini-cli-bin] gemini-cli-bin: init at 0.3.4
-3090213d52ff4ed63c11ffdd8ae80f2a79c4b459 2025-07-23 [assetripper] assetripper: init at 1.3.0
 a784a11d3ab7c29473592e5968316c11e3ebd485 2025-09-06 [dli] dli: init at 0-unstable-2025-09-06
 8c19806822238ff349fe4d7fdedf64b591bffae1 2025-09-03 [libfrida-core] libfrida-core: init at 17.2.17
 34e35a0ca6c348bd05bbe5bab3ded066ff576b68 2025-09-06 [lightway] lightway: init at 0-unstable-2025-09-04
-f146a418e659abfe76c0b445cf10c62ac1030e4e 2025-03-31 [cddlc] cddlc: init at 0.4.2
 ff959099ad5a46c51c10861580fa2d820fb5a6aa 2025-09-06 [crypt4gh] python3Packages.crypt4gh: init at 1.7
 b102c5b9af712ab6217925ebbec0f71e87c951d6 2025-09-05 [globus-cli] globus-cli: init at 3.36.0
-02794ad4d56af7586773b1e022f6cc3714ea311b 2025-09-03 [floorp-bin-unwrapped,floorp-bin] floorp-bin: init at 12.1.4
-1f06af6dfa92fccb9c32741da4569be32cbd6587 2025-07-20 [bcu] bcu: init at 1.1.119
 f18e0a0949b943aca465d256cd261c6412f2c496 2025-09-05 [vtk-dicom] vtk-dicom: init at 0.8.17
 c9a3a473d50be544ab2496d87daab916fb2d35ca 2025-09-05 [doxx] doxx: init at 0-unstable-2025-08-18 (#434616)
 76f5eebb27c46cf92e2db8b3e326e027c36dd963 2025-09-04 [zuban] zuban: init at 0.0.21
 a9c1dfc9d387251c5275e1e528c28aa5aaa10b71 2025-07-12 [jsign] jsign: init at 7.2
 9601e3275e4995425fb047e7815875f7c177a88e 2025-09-02 [hii] hii: init at 1.1.5
-19502c059b628d4cd2d4264f884d3043e55c1849 2025-07-24 [epson-inkjet-printer-workforce-840-series] epson-inkjet-printer-workforce-840-series: init at 1.0.0
 507dc27677763d72b70fa793b7347915901c27bf 2025-06-19 [kmidimon] kmidimon: init at 1.4.1
 d3410cf27e8970ef21e63a7a72985f4195333101 2025-09-04 [ee] ee: init at 1.5.2
 2255d0e133c7ea0a8e801b77cf02783819666821 2025-09-01 [mado] mado: init at 0.3.0
-19393acb7c4ecd492169c7ccc16281f71e5029ba 2025-09-04 [sftool-gui,sftool] sftool: init at 0.1.13; sftool-gui: init at 1.0.2
-4f65f55a3a671628dfd44d2e6c3086dc1cb0496b 2025-08-24 [log4brains] log4brains: init at 1.1.0
 615db5eecfb2d026ab51e1ffbccdc8b0e9f51d5f 2025-08-07 [llama-swap] llama-swap: init at 156
 86666a4a999c38c84bb21e0822452c680d7eae74 2025-08-23 [radicle-desktop] radicle-desktop: init at 0.8.0
 fcea3563e6d7f0cd60eebd698408c8c443e1fc53 2025-09-03 [semtools] semtools: init at 1.2.0
@@ -377,7 +320,6 @@ e8f196e4f04e77670eb3becc485a756f67d1bd30 2025-04-06 [mymake] mymake: init at 2.3
 567702bb43bd4b62b54e498feb709c5e69e83eea 2025-09-01 [igsc] igsc: init at 0.9.6
 e30106c7f831b14315655240dc1bbec03285d843 2025-09-01 [metee] metee: init at 6.0.1
 87c2d6a4f68915480b2bf9ff5c7d776cc885ad26 2025-09-01 [pbc] pbc: init at 1.0.0
-8bcfa8361c7e8d0dd7d44c961c2b1301fb2a287b 2025-06-07 [interstellar] interstellar: init at 0.9.3
 1b0478e165bfbbc666e4cd60124be35db3881798 2025-09-01 [angrr] angrr: init at 0.1.1
 224305569450d9e847a56a4e4b06a9b3080fd8f7 2024-12-14 [binary-object-scanner] binary-object-scanner: init at 3.3.1
 aa3f01e9bb47613f2be2169ad03ac9c5debc7a4d 2025-08-29 [raccoin] raccoin: init at 0.2.0
@@ -394,14 +336,12 @@ f9dc3b0ad0168b6074b5ee9fb9e904b3ea1e06ad 2025-08-30 [picocrypt-ng] picocrypt-ng:
 3358263b3da9c118047d19ff23d39410319300f7 2025-08-29 [cooper] cooper: init at 1.01-unstable-2025-05-25
 e986605cacbf29a38f75ee2ba2961a90c996eec6 2025-08-26 [pwdsphinx] pwdsphinx: init at 2.0.3
 a4f7a0696c881e145726bf02a262c4f5001d3422 2025-08-29 [ipamjfont] ipamjfont: init at 006.01
-5473ce1668247cf91501a20ab536f17e7c24cbd5 2025-08-28 [xdg-desktop-portal-phosh] xdg-desktop-portal-phosh: init at 0.0.4
 0834814d77c65b95b275b9ef3b2d097f74d2ea33 2025-08-27 [serve] serve: init at 14.2.4
 c0750cee3d328bf0bc6da910a9a58045e1252f5f 2025-08-27 [mtk-uartboot] mtk-uartboot: init at 0-unstable-2024-12-07
 799301ce9639a19d62d22b3e585eb3e3ff17bf77 2025-08-25 [lucide] lucide: init at 0.541.0
 4393259b5a631d7ba2bcedfc074fb5734509370f 2025-08-26 [vivify] vivify: init at 0.8.2
 b65a6037444fc213e9e35e9016d7c70b0dc24b14 2025-08-27 [nmgui] nmgui: init at 1.0.0
 eca97313c15caaeb884f983343101a2f615b44ce 2025-08-17 [libopaque] libopaque: init at 1.0.1
-7a7ffbfd6604bcaedaf3f3c9802a2f867ef6fb54 2025-08-24 [piliplus] piliplus: init at 1.4.1.1
 6c0dee3d65c4c02f935b7d42af3422a2022a59c8 2025-06-09 [mfaomp] mfaomp: init at 0.4.3
 70bf6928aabdaec084bd3b32590a3d62e80ace00 2025-08-26 [btfdump] btfdump: init at 0.0.4
 b5586570626e6c57111a107caba7dcad56075ce9 2025-06-15 [lmath] lmath: init at 1.10.15
@@ -416,31 +356,24 @@ f5095e0707b9d0d94aadf9223ec61a12a185e3a9 2025-07-17 [blowfish-tools] blowfish-to
 c18a6a58174642ca88ef23e10f7ba0ae64eb2a5d 2025-08-25 [grpc-health-probe] grpc-health-probe: init at 0.4.40
 4665071e88329e64320d10116c2f32a461750772 2025-08-25 [nasin-nanpa-ucsur] nasin-nanpa-ucsur: init at 4.0.2
 289f85a12f7a47265680af30cf4ea104d531ff61 2025-07-28 [openorbitaloptimizer] openorbitaloptimizer: init at 0.1.0
-13f7c95c42905f9edb8d66486363873035240ff3 2025-07-28 [jonquil] jonquil: init at 0.3.0
 8ba1a8c882f4052de72506ed4e4c0264275e84d3 2025-08-13 [yffi] yffi: init at 0.24.0
 d26aa5f9514ca4179679df18f3957c3d0e9faead 2024-10-01 [svgo] svgo: init at 4.0.0
-3917b65ffe2495a9375d1f50f5632ac038ac9acc 2025-08-17 [sbom-tool] sbom-tool: init at 4.1.0
 4cd81eaad5bdaf1431fd916117549df3ab5a1e57 2025-08-24 [cursor-cli] cursor-cli: init at 0-unstable-2025-08-22
 9ab4929950d034b780afb037bb22548362afb96a 2025-07-14 [mpdris2-rs] mpdris2-rs: init at 1.0.2
-c9882aa83bb0a51dfcb883bde0d0a2f288422208 2025-08-23 [ciderpress2] ciderpress2: init at 1.1.0
 3fa8d065dadf4a291eebfa9fef9167e0babbb851 2025-08-23 [near-facsimile] near-facsimile: init at 1.0.9
 5f71158592f4fec1a591ddc85235efaa25e7c95e 2025-08-22 [openapv] openapv: init at 0.2.0.1
 17a789092c0d6367fe779f716bd87e7f8d450fe8 2025-08-22 [img4lib] img4lib: init at 0-unstable-2021-11-28
-8852657baec91e6f1a6164d371bf6cfe3084738b 2025-07-01 [comaps] comaps: init at 2025.08.13-8
 55024503f61c7363a1ab80824decf75d549d0129 2025-08-22 [xscreenruler] xscreenruler: init at 1.0.2
 c47d779ed356b392c849eb79be02d6c40ae4807c 2025-08-21 [npingler] npingler: init at unstable-2025-08-21
 72427e253359bfcd4474fbcb0b5d725c5d61555c 2025-07-22 [junixsocket-native-common] junixsocket-native-common: init at 2.10.1
 7860dd8e0e8163dc459a241c1a2d11f91090a39b 2025-08-20 [etcd_3_6] etcd_3_6: init 3.6.4
 fc5f4f8247d6f14c315d3a46ba967bc8aa29fbf3 2025-08-20 [enpass-cli] enpass-cli: init at 1.6.5
 67f0915d2b53b6b3285f0e51c91514b4474f4693 2025-07-22 [junixsocket-common] junixsocket-common: init at 2.10.1
-be94d3f8bfb17c7906915c494940820cb8d32d17 2025-07-20 [libgeneral] libgeneral: init at 84
-6ec037c83bf233e4212ca810638f25e4f1c1ee7c 2025-07-20 [img4tool] img4tool: init at 217
 ba7cd35d6dba092dcb246c7ae3657469b174cb10 2025-08-19 [jocalsend] jocalsend: init at 1.6.1803
 4c75542c64411e50e02a3c6d5ccbb805366a8042 2025-08-16 [gow] gow: init at 0-unstable-2025-08-13
 afdb7f1ebf4247dae1353aa776bbfb85c2a0690d 2025-08-19 [rofi-nerdy] rofi-nerdy: init at 0.0.8
 c78c366c0b08bbd5a99ef60fa037c1b5f5d3c760 2025-08-18 [rtklib-ex] rtklib-ex: init at 2.5.0
 1700b1908bedfacc75c9d19e82bce1c1244dcab8 2025-08-16 [llama-cpp-rocm] llama-cpp-rocm: init at 6134
-cee55b8bc0125b42b177806970f3f97c94107892 2025-07-15 [kiro] kiro: init at 0.2.13
 666545fc487fbba52e161e4ec6c3165b8882aae0 2025-07-26 [mixtool] mixtool: init at 0-unstable-2025-07-07
 52ef4abcc13dc75307113ebf18afb4c8121e295b 2025-08-18 [lazyhetzner] lazyhetzner: init at 0.0.4
 2d8d13ae35fb66c9cd7a355b0fd0b5b43bc1dfb5 2025-08-08 [nvs] nvs: init at 1.10.6
@@ -453,14 +386,10 @@ e6a500c43149848ee6b4d72632e603cea4f7326e 2025-07-01 [kurve] kurve: init at 0.4.0
 12312b94c439ed3c97d950a6d69076b84eed1c31 2025-08-12 [github-to-sops] github-to-sops: init at 2.0.0
 9d8255d7fe7f16fe29e0af6abe2e2328082daf03 2025-08-17 [hyprmagnifier] hyprmagnifier: init at unstable-2025-05-16
 044e1d941f6fa408b39bae995dd0d14f2792f845 2025-06-28 [go-sendxmpp] go-sendxmpp: init at 0.14.1
-71b79f825dd9ffe8a983b2b82ed734742231be71 2025-08-17 [textlint-rule-preset-ja-spacing] textlint-rule-preset-ja-spacing: init at 2.4.3
 8d0984def2c92bcab6c3027ab168b8ee6883bdf3 2025-06-24 [sshwifty] sshwifty: init at 0.4.0-beta-release
-3f4a4648bd10e3b64fb00563637489e85dff89a5 2025-08-14 [collectl] collectl: init at 4.3.20.1
-210106efce9ad52aeb1228a9f2ca6ff6d4d3683f 2025-07-21 [spaghettikart] spaghettikart: init at 0-unstable-2025-08-07
 1b83b39faa7b89c553b64777be7238800adb9806 2025-08-06 [jol] jol: init at 0.17
 a8084dbe0233e4e9c1aa8de83386b5ef0d3503a0 2025-08-16 [cargo-plumbing] cargo-plumbing: init at 0.0.3
 02b7b8270fede6e914f9aac6a1e7bc5586c5b69b 2025-08-16 [projclean] projclean: init at 0.8.0
-bf29a6134dcd9ca9bd734733739403e9f2a1350c 2025-08-12 [pdf2htmlex] pdf2htmlex: init at 0.18.8.rc1
 b976804e14c6020ea68c3bf2bac609b98963ada6 2025-08-13 [sointu] sointu: init at 0.4.1-unstable-2025-08-13
 33fba9b6ba43838fa6b01fbc0733e04d4ec2174b 2025-08-15 [bili-live-tool] bili-live-tool: init at 0.3.9
 4bfe6c41f1005eee6ef61e0fdab2b88a58142910 2025-08-15 [arashi] arashi: init at 25.08.3
@@ -474,13 +403,11 @@ de26efe653f807e69419052aeed1565803228b82 2025-05-27 [proxyman] proxyman: init at
 437cc70c6c7e298a22cf8b9ef738f82b573966a8 2025-08-03 [rsstail-py] rsstail-py: init at 0.6.0
 0c08b21a748456085fda4f9f05076e58e68d4fdc 2025-08-13 [mprisence] mprisence: init at 1.2.4
 896942e500825d503659b9f4d449964dee8c8648 2025-06-25 [wxwidgets_3_3] wxwidgets_3_3: init at 3.3.1
-5978a51e11d11a5a0f906fab24758dc27ca4d8d4 2025-08-09 [empire-compiler] empire-compiler: init at 0.3.3
 725442d69ca3d0f7c902626665fca83c01602ce3 2025-08-01 [conman] conman: init at 0.3.1
 2db01e86a9739850ca04c10b360da78b279fbf2f 2025-08-12 [kirsch] kirsch: init at 0.6.1 (#389868)
 8bc9bb67992d7c8a1d225886001e754f40ad568d 2025-08-11 [docstrfmt] docstrfmt: init at 1.10.0
 d587dd97fef82330ca0e5952c0ba43935b013597 2025-08-10 [feyngame] feyngame: init at 3.0.0
 0421dbf594796a87ef47bb0fe58287034ff4470c 2025-07-18 [renode-unstable] renode-unstable: init at 1.16.0-unstable-2025-08-08
-e3706bf35eddf8f441365d77d8714562d824ed95 2025-07-05 [renode] renode: init at 1.16.0
 a956dc122c3c73cd89c5eb42cc8518f9941467d3 2025-07-28 [ifstate] ifstate: init at 2.0.0
 2851652b853a4bcbb00ec734b71f2d4cee283de3 2025-08-11 [sphinx-lint] sphinx-lint: init at 1.0.0
 642de91793cfe87578424e0630c4f9da6c3e8e17 2025-08-02 [rewaita] rewaita: init at 1.0.1
@@ -510,15 +437,12 @@ ddbe450f4017084e1eb367a62a2788cc8b6500e8 2025-08-07 [ld-audit-search-mod] ld-aud
 c1513a4fd70640aea4ce53fe9b3c99b4bde19990 2025-08-07 [qdldl] qdldl: init at 0.1.8
 f9983116dd574bcae5a49727540aef36f402c944 2025-08-07 [gnubik] gnubik: init at 2.4.3
 aee83dd489158ad8754b7509fd2eba0bb9be4df6 2025-07-20 [tuatara] tuatara: init at 1631040452-unstable-2025-04-29
-8c32828aafbdb0068cad5c8830b2f1e3d936539a 2025-08-06 [librdata] librdata: init at 0-unstable-2023-10-03
 c07bb08a76ea87eb2f78b1a9626f816ff52e8268 2025-08-05 [sylkserver] sylkserver: init at 6.5.0
 40df29bdec83a4bd02e99f33b1a8b780ebfe5e7b 2025-08-05 [emmylua-check] emmylua-check: init at 0.10.0
 4161d8709a432b0c1a197974298470945e1daf7d 2025-08-05 [emmylua-ls] emmylua-ls: init at 0.10.0
 0707e2bc3f5ad7aa6d28607fa397042600beab8d 2025-08-05 [emmylua-doc-cli] emmylua-doc-cli: init at 0.10.0
-d8c4d45f7fa0c35488936a1332c4b852e9fd4d0c 2025-08-01 [googlesans-code] googlesans-code: init at 6.000 Co-authored-by: Angel J <78835633+Iamanaws@users.noreply.github.com>
 bc2146534ec5d5deebee291e3f429418df612087 2025-06-30 [jib-cli] jib-cli: init at 0.13.0
 29dcdca5c303748381f0c73297e59aaa5c37c77b 2025-08-04 [qtappinstancemanager] qtappinstancemanager: init at 1.3.0
-e77bf38e5f9ed1693738434532009b6b8277bc67 2025-07-29 [angle] angle: init at 7258
 7468c655858432ce08726b33808148403cd343ad 2025-08-03 [hail] hail: init at 0.2.2
 4349f8ca760b28e4b83c69d9895a501f2830ce92 2025-06-29 [protonmail-export] protonmail-export: init at 1.0.5
 f3c54e43babe6577640873769acbc0b236581a0d 2025-07-03 [c99sh] c99sh: init at 1.1.1
@@ -535,4 +459,3 @@ f3245b67d085b83a796c5c107dfa500b48906ac1 2025-07-29 [wahay] wahay: init at 0.2
 b318c694c9a01b5c0ee78d135e3c8811d5979a15 2025-08-02 [rendercv] rendercv: init at 2.2
 bb25caafc56e3ab1e04153f6eefe6a7851451625 2025-07-29 [alsa-utils-nhlt] alsa-utils-nhlt: init
 a271356a4a7bcace91927e7e9744d3f24d5c2297 2025-07-09 [contact] contact: init at 1.3.16
-9af1f69529dec2c6f9774f02a2f50662808591e3 2025-08-01 [ting] ting: init at 0.1.0

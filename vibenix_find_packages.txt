@@ -1,16 +1,22 @@
-mschwaig@mutalisk ~/nixpkgs (master)> python3 analyze_package_additions.py "2025-08-01" "2025-11-20"
+mschwaig@mutalisk ~/nixpkgs (vibenix_dataset_tools)> python3 analyze_package_additions.py "2025-08-01" "2025-11-20"
 Fetching commits from 2025-08-01 to 2025-11-20...
 Running: git log --diff-filter=A --name-only --pretty=format:%H|%ai|%an|%s --since=2025-08-01 --until=2025-11-20 -- pkgs/by-name/*/*/package.nix
+Applying exclusion rules to 537 NEW commits...
 
 ================================================================================
-SUMMARY: Found 1129 commits that added package.nix files
+SUMMARY: Found 1119 commits that added package.nix files
 ================================================================================
-NEW packages:      538
-MOVED packages:    306
-MANUAL review:     285
+NEW packages:      461
+EXCLUDED:           76
+OTHER changes:     564
+MANUAL review:      18
 ================================================================================
 
-Written 538 commits to new_packages_2025-08-01_2025-11-20.txt
-Written 306 commits to moved_packages_2025-08-01_2025-11-20.txt
-Written 285 commits to manual_review_2025-08-01_2025-11-20.txt
-mschwaig@mutalisk ~/nixpkgs (master)>
+Written 461 commits to new_packages_2025-08-01_2025-11-20.txt
+Written 76 commits to excluded_packages_2025-08-01_2025-11-20.txt
+Written 564 commits to other_changes_2025-08-01_2025-11-20.txt
+Written 18 commits to manual_review_2025-08-01_2025-11-20.txt
+mschwaig@mutalisk ~/nixpkgs (vibenix_dataset_tools)>
+
+
+I also did 15 exclusions manually, which are listed in manual_exclusions.txt, which I have not looked at closely yet, and the 18 files marked for manual review could also end up in the NEW package category, unless for simplicity we want to just stick to the current regex for finding new packages.

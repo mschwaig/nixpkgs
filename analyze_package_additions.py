@@ -2,16 +2,17 @@
 """
 Analyze git commits that added package.nix files in pkgs/by-name/
 Classifies commits into:
-- NEW: Clearly adds a new package
-- MOVED: Clearly migrates/moves an existing package to by-name
+- NEW: Clearly adds a new package (after exclusion rules)
+- EXCLUDED: New packages that match exclusion criteria (e.g., requires_patching)
+- OTHER_CHANGES: Migrates/moves existing package to by-name or updates version
 - MANUAL: Needs manual review
 """
 
 import subprocess
 import re
 from collections import defaultdict
-from dataclasses import dataclass
-from typing import List
+from dataclasses import dataclass, field
+from typing import List, Set
 import sys
 
 # Classification patterns
@@ -20,12 +21,20 @@ NEW_PATTERNS = [
     r'^[^:]+:\s*init\b',  # "package: init"
 ]
 
-MOVED_PATTERNS = [
-    r'migrate to by-name',
-    r'move to by-name',
-    r'treewide.*by-name',
-    r'moved to by-name',
-    r'migrated to by-name',
+OTHER_CHANGES_PATTERNS = [
+    r'by-name',              # Any mention of by-name or pkgs/by-name
+    r'top-level',            # Any mention of top-level
+    r'migrate (from|to)',    # "migrate from/to X"
+    r'move (from|to)',       # "move from/to X"
+    r'extract (from|to)',    # "extract from/to X"
+    r'refactor',             # Refactoring existing packages
+    r'reinstate',            # Reinstating removed packages
+    r'restore',              # Restoring removed packages
+    r'repackage',            # Repackaging existing packages
+    r'rewrite',              # Rewriting existing packages
+    r'->',                   # Version updates like "package: 1.0 -> 2.0"
+    r'^revert\b',            # Reverts like "Revert \"package: init at 1.0\""
+    r'^reapply\b',           # Reapplying previous commits
 ]
 
 @dataclass
@@ -36,6 +45,7 @@ class CommitInfo:
     author: str
     subject: str
     files: List[str]
+    exclusion_reasons: Set[str] = field(default_factory=set)
 
     def classify(self) -> str:
         """Classify commit based on subject line"""
@@ -46,10 +56,10 @@ class CommitInfo:
             if re.search(pattern, self.subject, re.IGNORECASE):
                 return "NEW"
 
-        # Check for moved/migrated package patterns
-        for pattern in MOVED_PATTERNS:
+        # Check for moved/migrated/updated package patterns
+        for pattern in OTHER_CHANGES_PATTERNS:
             if re.search(pattern, subject_lower):
-                return "MOVED"
+                return "OTHER_CHANGES"
 
         # Everything else needs manual review
         return "MANUAL"
@@ -115,6 +125,56 @@ def fetch_commits(since: str, until: str) -> List[CommitInfo]:
     return commits
 
 
+def get_all_commit_files(commit_hash: str) -> List[str]:
+    """Get all files touched in a commit"""
+    cmd = ['git', 'diff-tree', '--no-commit-id', '--name-only', '-r', commit_hash]
+    result = subprocess.run(cmd, capture_output=True, text=True, check=True)
+    return [line.strip() for line in result.stdout.strip().split('\n') if line.strip()]
+
+
+def apply_exclusion_rules(commits: List[CommitInfo]) -> tuple[List[CommitInfo], List[CommitInfo]]:
+    """
+    Apply exclusion rules to NEW commits.
+    Returns (included_commits, excluded_commits)
+    """
+    included = []
+    excluded = []
+
+    for commit in commits:
+        # Check if commit adds multiple packages
+        if len(commit.files) > 1:
+            commit.exclusion_reasons.add('multiple_packages')
+
+        # Get all files in the commit
+        all_files = get_all_commit_files(commit.hash)
+
+        # Check if commit modifies other package.nix files (beyond the ones it adds)
+        all_package_nix = [f for f in all_files if f.endswith('/package.nix') and f.startswith('pkgs/by-name/')]
+        added_package_nix = set(commit.files)
+        if any(pkg for pkg in all_package_nix if pkg not in added_package_nix):
+            commit.exclusion_reasons.add('modifies_other_packages')
+
+        # Check for .patch files
+        if any(f.endswith('.patch') for f in all_files):
+            commit.exclusion_reasons.add('requires_patching')
+
+        # Check for lock files
+        if any(f.endswith('.lock') or f.endswith('lock.json') or f.endswith('deps.json') for f in all_files):
+            commit.exclusion_reasons.add('has_lock_files')
+
+        # Check if commit touches all-packages.nix
+        if 'pkgs/top-level/all-packages.nix' in all_files:
+            commit.exclusion_reasons.add('touches_all_packages')
+
+        # If any exclusion reasons were found, move to excluded
+        if commit.exclusion_reasons:
+            excluded.append(commit)
+        else:
+            included.append(commit)
+
+    return included, excluded
+
+
 def main():
     if len(sys.argv) < 3:
         print("Usage: python3 analyze_package_additions.py <since_date> <until_date>")
@@ -133,19 +193,27 @@ def main():
         category = commit.classify()
         classified[category].append(commit)
 
+    # Apply exclusion rules to NEW commits
+    print(f"Applying exclusion rules to {len(classified['NEW'])} NEW commits...", file=sys.stderr)
+    included_new, excluded_new = apply_exclusion_rules(classified['NEW'])
+    classified['NEW'] = included_new
+    classified['EXCLUDED'] = excluded_new
+
     # Print summary to stderr
     print(f"\n{'='*80}", file=sys.stderr)
     print(f"SUMMARY: Found {len(commits)} commits that added package.nix files", file=sys.stderr)
     print(f"{'='*80}", file=sys.stderr)
     print(f"NEW packages:     {len(classified['NEW']):4d}", file=sys.stderr)
-    print(f"MOVED packages:   {len(classified['MOVED']):4d}", file=sys.stderr)
+    print(f"EXCLUDED:         {len(classified['EXCLUDED']):4d}", file=sys.stderr)
+    print(f"OTHER changes:    {len(classified['OTHER_CHANGES']):4d}", file=sys.stderr)
     print(f"MANUAL review:    {len(classified['MANUAL']):4d}", file=sys.stderr)
     print(f"{'='*80}\n", file=sys.stderr)
 
     # Write results to files with date range in filename
     output_files = {
         'NEW': f'new_packages_{since}_{until}.txt',
-        'MOVED': f'moved_packages_{since}_{until}.txt',
+        'EXCLUDED': f'excluded_packages_{since}_{until}.txt',
+        'OTHER_CHANGES': f'other_changes_{since}_{until}.txt',
         'MANUAL': f'manual_review_{since}_{until}.txt'
     }
 
@@ -155,8 +223,14 @@ def main():
             for commit in commits_in_category:
                 packages = commit.get_package_names()
                 pkg_list = ','.join(packages)
-                # Format: hash date packages subject
-                f.write(f"{commit.hash} {commit.date} [{pkg_list}] {commit.subject}\n")
+
+                # For excluded commits, include reasons
+                if category == 'EXCLUDED' and commit.exclusion_reasons:
+                    reasons = ','.join(sorted(commit.exclusion_reasons))
+                    f.write(f"{commit.hash} {commit.date} [{pkg_list}] {commit.subject} [EXCLUDED: {reasons}]\n")
+                else:
+                    # Format: hash date packages subject
+                    f.write(f"{commit.hash} {commit.date} [{pkg_list}] {commit.subject}\n")
 
         print(f"Written {len(commits_in_category)} commits to {filename}", file=sys.stderr)
 
