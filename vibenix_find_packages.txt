@@ -1,0 +1,16 @@
+mschwaig@mutalisk ~/nixpkgs (master)> python3 analyze_package_additions.py "2025-08-01" "2025-11-20"
+Fetching commits from 2025-08-01 to 2025-11-20...
+Running: git log --diff-filter=A --name-only --pretty=format:%H|%ai|%an|%s --since=2025-08-01 --until=2025-11-20 -- pkgs/by-name/*/*/package.nix
+
+================================================================================
+SUMMARY: Found 1129 commits that added package.nix files
+================================================================================
+NEW packages:      538
+MOVED packages:    306
+MANUAL review:     285
+================================================================================
+
+Written 538 commits to new_packages_2025-08-01_2025-11-20.txt
+Written 306 commits to moved_packages_2025-08-01_2025-11-20.txt
+Written 285 commits to manual_review_2025-08-01_2025-11-20.txt
+mschwaig@mutalisk ~/nixpkgs (master)>

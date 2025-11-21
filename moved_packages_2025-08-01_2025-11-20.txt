@@ -1,0 +1,306 @@
+ac700b363449b9baa3317a6ab410ef7257d57961 2025-11-14 [asc] asc: migrate to by-name
+fbbab1eff53ab5f9afbc743b51c5875e0edaffa1 2025-11-10 [p7zip-rar,p7zip] p7zip: migrate to by-name
+ca5ee04c40a119912673ccd274e76d22b2b9389f 2025-11-10 [buildah-unwrapped,buildah] buildah: migrate to by-name
+1b2b5808e8fa29fb698443df961c7465ab4a5db5 2025-11-04 [gemstash] gemstash: migrate to by-name
+6d015ef7f230d3e74f0f11ff32fc053366137e8a 2025-10-11 [gl-gsync-demo] gl-gsync-demo: move to by-name, modernize
+74432d9de5fb1d1899500eaabaafad5aed2d87af 2025-11-03 [_3llo] _3llo: migrate to by-name
+47502d47722cc8dc83bfaa79f6487dc67db0af3a 2025-11-01 [dosbox] dosbox: migrate to by-name
+9b316df866ea4b3cc2ae2a3472fd98da2604198b 2025-10-31 [enyo-launcher,fmodex,zandronum-server,zandronum] pkgs/games/doom-ports: migrate to by-name
+97f4dd3ef7972117b9e7588c73be662d7c67ac8b 2025-10-24 [vkquake] vkquake: move to by-name
+c38cd91cbba253b965631f63f3c3212cf3bd326b 2025-10-29 [opentrack] opentrack: move to by-name, clean up
+001cb3b681f82b74ebb98abacfbba2f9f1a881dd 2025-10-29 [asciidoctor-with-extensions] asciidoctor-with-extensions: move to by-name
+6061c5123ac1703a455ab7631b17da9f28fc7b6e 2025-10-29 [asciidoctor] asciidoctor: move to by-name
+cdfda72c650a072ee51083f78166f89801687580 2025-10-24 [openxcom] openxcom: move to by-name/
+f25d07b9605d0f9ce684d47120b2a9b613507963 2025-10-24 [mudlet] mudlet: modernize, move to by-name/
+4dc22b276cceb42866327d92909e06635587241a 2025-10-24 [soi] soi: modernize, move to by-name/
+c37ed775a74ef97b80ff14b1ec7fc184779d33a2 2025-10-24 [rogue] rogue: modernize, move to by-name/
+aa2106ad9b3f6f4f1225afa251389913934f9df4 2025-10-24 [chiaki-ng] chiaki-ng: modernize, move to by-name/
+d833a664845968330607bd6f2d4b90562d5e33dd 2025-10-24 [chiaki] chiaki: modernize, move to by-name/
+a3d628aa8b67bd3d3e6bf0fbc200dec51259228e 2025-10-24 [vcmi] vcmi: modernize, move to by-name/
+87624b203e41248c2ad04352153e1ff73d1740fb 2025-10-24 [qgo] qgo: modernize, move to by-name/
+9cc67cbcdc08538e2f6e87167ef505deda68cf88 2025-10-22 [pegasus-frontend] pegasus-frontend: modernize, move to by-name/
+ca5d528578f5d437e942a0cfb2076ecae0079704 2025-10-22 [qtads] qtads: modernize, move to by-name/
+7c0514d13583bbdb7cfa80c8d672cc7d640a5c5c 2025-10-22 [crawl] crawl: move to by-name/
+0ae8bcacabf373dfede573376f7b8478abaf55af 2025-10-22 [doomseeker] doomseeker: modernize, move to by-name/
+9fb463902636e7e986d55d226903ee768b47dd1f 2025-10-22 [shattered-pixel-dungeon] shattered-pixel-dungeon: modernize, move to by-name/
+cd8c6695597caef06e32f156802b8e7c85c28383 2025-10-22 [koboredux] koboredux: move to by-name/
+cc333161fb1d8a3428ab0440fb71317cde2606db 2025-10-22 [instawow] instawow: move to by-name/
+745401b28a852b2c9e34dfc0112d6b97e688267d 2025-10-22 [dxx-rebirth] dxx-rebirth: move to by-name/
+36c03b6a2db76eed82a774e06727fc37660e8dfd 2025-10-22 [blightmud] blightmud: modernize, move to by-name/
+b427fd4b306494d05f90583a675ad9b186231e05 2025-10-22 [npush] npush: modernize, move to by-name/
+018e0aec1a7fb8df2811c2aacd1f69057ac3cd13 2025-10-22 [scummvm] scummvm: modernize, move to by-name/
+247bdeb02ff375f9ba4cc4b37f873446ad9e0d94 2025-10-22 [quakespasm] quakespasm: modernize, move to by-name/
+40fe2a0d664704d0887333f7f37169d15a97ef6c 2025-10-22 [iortcw] iortcw: move to by-name/
+8435c2e684435148db19937640f66e36174f5f94 2025-10-22 [linthesia] linthesia: modernize, move to by-name/
+30166dda2db6bf12258c4174d27ba61cd06a5ef8 2025-10-27 [fritzing] fritzing: move to by-name
+08532c3ee6bf40104a57ee6ea782d62ffc4f2843 2025-10-17 [pro-office-calculator] pro-office-calculator: move to by-name
+ad8112717c29a7ca425fd8fefa467e822e1f1af3 2025-10-24 [yamlfix] yamlfix: move to by-name
+032a192de6910eba9b12ed520ca9b7eaa2861264 2025-10-24 [ufmt] ufmt: move to by-name
+98a16089ef58d31311fdc177fdf07189658b3fb8 2025-10-20 [botan3] botan3: move to by-name
+72ccd1e2cbb5afde01115c223eae80e0ec5b925d 2025-10-24 [ceph] pkgs/ceph: move to by-name
+b420ad063c7dd7781c1baa593b69160626c20c3a 2025-10-21 [nootka] nootka: move to by-name/
+153be6ef09d94cfbea09d3ed3d5a3cb313e6bf24 2025-10-21 [linvstmanager] linvstmanager: move to by-name/
+f4be23dfcc236585a1ee1b8824a81042c7aa9047 2025-10-21 [pithos] pithos: move to by-name/
+5376c4415b7bc074deee332dc921160f73b8be72 2025-10-21 [espeak-ng] espeak-ng: move to by-name/
+343db01d3188f6e0de3c822033fa25c8e7e34696 2025-10-21 [ladspa-sdk,ladspaH] ladspa{H,-sdk}: modernize, move to by-name/
+161046a6d03393f7b00e6b215376cedb8bbf99e4 2025-10-21 [puredata] puredata: move to by-name/
+36967779e93f9c657dc288aabedf7f78f2764c68 2025-10-21 [petrifoo] petrifoo: modernize, move to by-name/
+c159537648488d972f6acfed73c107f5d0fa0dec 2025-10-21 [deadbeef] deadbeef: modernize, move to by-name/
+a62102d5d241004d71e7ba4a4b682745c75d6186 2025-10-21 [greg] greg: move to by-name/
+101675411d30a3f8b0eaae967f203949c0b66fd6 2025-10-21 [mellowplayer] mellowplayer: modernize, move to by-name/
+3f9b9a9212d9c5f749acc9901fb60e2a5af85b7e 2025-10-21 [hqplayer-desktop] hqplayer-desktop: move to by-name/
+ed5d911fafe738234b1046b7d611cfc665d80e74 2025-10-21 [pragha] pragha: modernize, move to by-name/
+c8a90d6bb4906539aea1a1935148081d452ab162 2025-10-21 [mixxx] mixxx: move to by-name/
+83581bafc24ce2b89926f1630220a9ed960ba3da 2025-10-20 [raysession] raysession: move to by-name/
+73e26854d1ed03f2df5bf12bb32aa6f072136570 2025-10-20 [patchance] patchance: move to by-name/
+89d1c448c15200fa772aeef5aa6bb182474201f3 2025-10-20 [mbrola-voices,mbrola] mbrola{-voices}: move to by-name/
+62c2b9c6f1560b1cb4005c1006bb47448f7a9027 2025-10-20 [samplv1] samplv1: move to by-name/
+873872959d90f6539061bdf229c76e027b1527c6 2025-10-20 [seq66] seq66: move to by-name/
+38a526329486c6091a6d7e5a6ed0e8616c053171 2025-10-20 [carla] carla: move to by-name/
+0d1e5fd68008ccc0c3a830e5213f77afd42192e7 2025-10-20 [jackmix] jackmix: modernize, move to by-name/
+b2ed4d386a8178619db0fa00e9df664573c18595 2025-10-20 [projectm_3] projectm_3: move to by-name/
+ffa273ca0cdd894176abd4e1040b94dda88d94a3 2025-10-20 [qsampler] qsampler: modernize, move to by-name/
+3691402438faaa7ac686cfc9e9d919b5fcc37efe 2025-10-20 [qjackctl] qjackctl: modernize, move to by-name/
+f4ec3db3f4ffbe83f3fe99f814a2f4141d96d099 2025-10-20 [qmidinet] qmidinet: modernize, move to by-name/
+db37f785a819c352879d95ad4d1d52471cea55fd 2025-10-20 [dfasma] dfasma: modernize, move to by-name/
+94e81c1f953643fbdd1eebe79f9f1edc36d97cf7 2025-10-20 [sayonara] sayonara: modernize, move to by-name/
+490bc12f6de312c9d27a90e1d4dce1f005337123 2025-10-20 [traverso] traverso: move to by-name/
+e1a909b7a1f46d2b65ef2b1221c00f3cc0685d72 2025-10-20 [synthv1] synthv1: modernize, move to by-name/
+72641301aef9fbd5376f231f78b8f9a2821613bc 2025-10-20 [mt32emu-qt] mt32emu-qt: modernize, move to by-name/
+60b91288d9145100befa651b2c37dfd6831e92af 2025-10-20 [jack-autoconnect] jack-autoconnect: move to by-name/
+236eab40dc3d00512351c54f56f2b8f1fc4c7963 2025-10-20 [muse] muse: move to by-name/
+acb5e4763e151dd12b35657911bf50f6a3de7693 2025-10-20 [iannix] iannix: modernize, move to by-name/
+8496210f3d38c148e950c7e45134267da5b19add 2025-09-20 [idris2] idris2: Move to by-name
+189ad91472bcaa1271b7ba92348b169475df5cd0 2025-10-19 [sonic-visualiser] sonic-visualiser: modernize, move to by-name/
+499ee63b0c99e000a79989ed1241f93e642dac57 2025-10-19 [flacon] flacon: modernize, move to by-name/
+c11d586ace0c69b36f1468b39861a655df7e93de 2025-10-19 [samplebrain] samplebrain: modernize, move to by-name/
+851a3d65acb7ff91aea96279e9969ff6a1ee26c0 2025-10-19 [csound-qt] csound-qt: modernize, move to by-name/
+7836a7329671b739fd27ff7080b65ab899e4ff11 2025-10-19 [qsynth] padthv1: move to by-name/
+918709a9136b3d3cab2d83086771ac4a6dad5b3a 2025-10-19 [tony] tony: modernize, move to by-name/
+65d38452b55747c858c9f2b3f3b7b78661f1ce4f 2025-10-19 [drumkv1] drumkv1: modernize, move to by-name/
+52fff94153e4ed5154a214ec02260fffca7b32a8 2025-10-19 [pipecontrol] pipecontrol: modernize, move to by-name/
+a8c5d2b93d0912a12e533d7bff780a307ad696e9 2025-10-19 [padthv1] padthv1: move to by-name/
+e80781d34ca9537f8b4ce85333f161ae49d6e306 2025-10-18 [airwave] airwave: modernize, move to by-name/
+2bcd5978306bb1e6eab88d890622e2cf8cfc07e0 2025-10-18 [lpd8editor] lpd8editor: modernize, move to by-name/
+279844bb6eda14e1a295b329b1e53ba295f861ce 2025-10-18 [noson] noson: modernize, move to by-name/
+df6943d363b3306bec609a2116ddca0576769707 2025-10-18 [sonic-lineup] sonic-lineup: modernize, move to by-name/
+69538d72e51f1f17bb95b3227bb2d27548dcb96b 2025-10-18 [qpwgraph] qpwgraph: modernize, move to by-name/
+6e90cd6ff337dd6ea49aa7cd6af6bd47b015e595 2025-10-18 [jamesdsp] jamesdsp: modernize, move to by-name/
+a892cc7cd3663785fe35229b43c4f9129f51f7e2 2025-10-18 [spotify-qt] spotify-qt: modernize, move to by-name/
+2d3cc35cf1398e8030105cad6a8e80bc1d554062 2025-10-18 [polyphone] polyphone: modernize, move to by-name/
+87c1b32e1fe6d4f319fc117466e3a65bf1b0a287 2025-10-18 [miniaudicle] miniaudicle: modernize, move to by-name/
+3b3498f9c9721609a1d29ed0bd7fbe86c17ea796 2025-10-18 [in-formant] in-formant: modernize, move to by-name/
+5a87b6ae4bc71a14901de052cacd6b2fcead5cb6 2025-10-18 [easyaudiosync] easyaudiosync: modernize, move to by-name/
+47356e6b20df824d545fa5a63731c368b25c0633 2025-10-18 [musescore] musescore: modernize, move to by-name/
+7e66f437ab7ecbb5bf18555bd111a6a74eb57f35 2025-10-18 [bucklespring-libinput] bucklespring: modernize, move to by-name/
+a816199c3faf36ce00548ed305077124f0d4783a 2025-10-18 [mt32emu-smf2wav] mt32emu-smf2wav: modernize, move to by-name/
+6697b05926566fc88ae8365549c5354e7128c07c 2025-10-18 [libmt32emu] libmt32emu: modernize, move to by-name/
+a3dbd9ed85e397212d49819e6722769e622e4304 2025-10-19 [cutecom] cutecom: move to by-name
+ac0da8e80f9e724677f3ab2d3eb071b03f766629 2025-10-11 [legendary-gl] legendary-gl: move to by-name, modernize
+8f4420f92ec1f32dcdc61769b68b1ea43ca3b717 2025-10-18 [bitwig-studio3] bitwig-studio3: modernize, move to by-name/
+eaa8f44da9e5e4be5c736a2a0f0039b301dad312 2025-10-18 [lv2lint] lv2lint: modernize, move to by-name/
+6a2510770b87f585589b48df4a5ccbb364d7b78c 2025-10-18 [goattracker] goattracker: move to by-name/
+e782bbc1768c7342ade0c27e30607e1bdda0d3a6 2025-10-18 [csound] csound: move to by-name/
+324523cf9b9bbb7e7f4b28b2441c7223b507684e 2025-10-18 [ardour] ardour: move to by-name/
+e41a5aeeb4fdb684406cc2eb9a47c7e565c39f75 2025-10-17 [flightgear] flightgear: move to by-name and modernize
+e88a19be009e6306bc09d71409820c9a4b244b74 2025-10-15 [libressl] libressl: move to by-name
+cea7911fa6a34049de1b7a3cba5f7ba799d0f9db 2025-05-11 [direwolf] direwolf: move to by-name
+984fc6f787715e9213ba0324884dea672f97a79b 2025-10-11 [tt-smi] tt-smi: move to by-name
+c87380f3742fdc07ee293c7a8ffe4991148dc08e 2025-10-12 [armagetronad-dedicated,armagetronad] armagetronad, armagetronad-dedicated: move to by-name, modernize
+c98b9ab2aa1ff7dfcb3b3853298569a27145ce21 2025-10-11 [systemdgenie] systemdgenie: migrate to by-name
+fda0621210345c67419f6978112da118cd9619cf 2025-10-11 [rare] rare: move to by-name, modernize
+600ede9f5a9996e0b5f2c4f060f6d6dc4973bc0c 2025-10-11 [nethack-qt,nethack-x11,nethack] nethack, nethack-{x11,qt}: move to by-name, modernize
+d9cbf28ebdc17761335e6d8a2a304d24f266cf2e 2025-10-11 [plexamp] plexamp: migrate to by-name
+4fee139917c7c6d129aa5f0bd8a6af11ef858d16 2025-10-11 [sgt-puzzles] sgt-puzzles: move to by-name, modernize
+d8cf88b06b6c9b1484bf16e2b13075ebe997e7ff 2025-10-09 [garden-of-coloured-lights] garden-of-coloured-lights: move to by-name, modernize
+7d123712d5a3f9bd1813d41faacb22dd029800e2 2025-10-09 [freeciv] freeciv: move to by-name, modernize
+c17f026ad77a9b62ddb581289c1d95155172cb7d 2025-10-09 [amoeba] amoeba: move to by-name, modernize
+9df9e47f5ea8471dde0a6fb76279e4007ccb3662 2025-10-09 [amoeba-data] amoeba-data: move to by-name, modernize
+9e538a05144d9d077065ea6312ae2cec613ad6c4 2025-10-09 [lincity-ng] lincity-ng: move to by-name, modernize
+436d1c7b23c5eca826da99964e361caa6d082f90 2025-10-09 [lincity] lincity: move to by-name, modernize
+9924426fd0fa60bd0b9053f71d895a918f1e17f3 2025-10-09 [bloodspilot-server] bloodspilot-server: move to by-name, modernize
+355e927e8cb7d4128898a2afefde1a0a7e77ae2f 2025-10-09 [bloodspilot-client] bloodspilot-client: move to by-name, modernize
+c4028683adfe6384b4ed7c8b4dcf36ec8dbdbf6c 2025-10-09 [xpilot-ng] xpilot-ng: move to by-name, modernize
+58bdd012a9d2551885350332599c9565499ceead 2025-10-09 [cutemaze] cutemaze: move to by-name, modernize
+f9942d9ea9eaec0dd755cc6961027062826524be 2025-10-09 [cutechess] cutechess: move to by-name, modernize
+35d262562e391bd33eeaec68ad129374e8a5136f 2025-09-26 [sonic-pi] sonic-pi: move to by-name
+7dd4833b77b2c26a73e5bc26a0c4da9b497696bf 2025-10-08 [libutp,libutp_3_4] libutp: move to by-name
+0a81759d2cb08e409506d81c2045303b16feaca0 2025-10-07 [frog] frog: move to by-name
+daa9c7c2a93586aeb6f8c0fe3104c81f63d243ab 2025-10-07 [frogdata] frogdata: move to by-name
+c76d7e78e652487c6eb7412793adbae27e28930b 2025-10-07 [mbt] mbt: move to by-name
+bb380596cea6a85f0d48fbf6f66ba44e28073baa 2025-10-07 [timblserver] timblserver: move to by-name
+6196a9548540890eb4527103b39e7b636904aaae 2025-10-07 [timbl] timbl: move to by-name
+f7ddbc808d9e337976099993405acde3b06d7a6f 2025-10-07 [ucto] ucto: move to by-name
+12a7f7384e3bd0d2e15d66be5d73e23b6a5561e4 2025-10-07 [uctodata] uctodata: move to by-name
+33008aefc918ac901644748d28663d978092c705 2025-10-07 [libfolia] libfolia: move to by-name
+7180468bc2cf3e379d6d2f373e3564a036501d8a 2025-10-07 [ticcutils] ticcutils: move to by-name
+f9bbe9049f4bec2a8ea2f27ef6c3e2cf97cacc3a 2025-10-07 [ctranslate2] ctranslate2: move to by-name
+1349ad7e63fc2a9693b0eeea3615e66cd007b973 2025-10-03 [sdr-j-fm] sdr-j-fm: migrate to by-name
+3fe3a4a47a3a55be4795e0513937ee27f7fc998f 2025-10-06 [openmvg] openmvg: move to by-name
+e0d5027e8873eaa5e8f74fba39072fcb231f4b4b 2025-10-05 [carapace,coq-kernel,cyclonedx-gomod,dee,directx-shader-compiler,elinks,embree,emojione,etcd_3_4,falcon,fclones,fswatch,geos,gsmlib,headscale,kdbg,libcoap,libmodsecurity,libxslt,mandelbulber,mitscheme,mkosi,mup,networkmanager,onlykey,openems,parcellite,qdigidoc,schroedinger,sparse,ttfautohint,uim,v4l-utils,vampire,virt-manager,whalebird,x2goclient,zexy] treewide: migrate to by-name
+b26d919c4a5b19695f2dd768cd9f2925f567b0f1 2025-10-05 [adb-sync,brasero-unwrapped,brasero,gomobile,kjv,lukesmithxyz-bible-kjv] various: migrate to by-name
+7132a3c6e5ddb0980ebfb8bbb86c083873de9c75 2025-10-04 [ktailctl] ktailctl: migrate to by-name
+56c1eb11d81369876581cc3945019bb4292ed432 2025-10-04 [skrooge] skrooge: migrate to by-name
+2a0a311a4d5cfe772c6cf13b6b6e4279e509c378 2025-10-04 [whitesur-kde] whitesur-kde: migrate to by-name, move out of top-level
+226c340d7edd983cfbf138c999968a2f75d74c2d 2025-10-04 [kdiskmark] kdiskmark: migrate to by-name, move out of top-level
+4b0601434916e590cb4d4e85b1761fcae2916191 2025-10-04 [heaptrack] heaptrack: migrate to by-name, move out of top-level
+55321d21dd562c2d562ba9c7165b43e0b4b5fe97 2025-10-04 [qiv] qiv: migrate to by-name
+850a703a9aededdb5d571d6b8de2a99ce74477c9 2025-10-03 [fallout2-ce] fallout2-ce: move to by-name
+0c0c71bec80a25d615fdb58ad4255048b31c7890 2025-10-03 [fallout-ce] fallout-ce: move to by-name
+88ff20cd445287cad9a8d2687fc73a7073aba0e7 2025-10-04 [svxlink] svxlink: migrate to by-name
+558024d849879dd859636553e33e86caaf74d0a2 2025-10-03 [qradiolink] qradiolink: migrate to by-name
+b7cb0d230ab0ff115669fd41f3be619922ad59b4 2025-03-03 [colmap] colmap: move to by-name
+022de5278d71740ac96bad9b45a928711ffb93d9 2025-09-26 [spago-legacy] spago-legacy: move to by-name
+adda1d78ebc05133d238a1137f7b809efcf679b3 2025-10-02 [rhino] rhino: migrate to by-name
+d0b5fc24a1c3714b277e47d6e0da71a8e3cd641e 2025-10-02 [omegat] omegat: migrate to by-name
+959299e148b1dfb78b4f50758e9be22864aa0e68 2025-10-01 [mrrescue] mrrescue: move to by-name
+4bd61445beadeeed594107c73c3830ef604e340b 2025-10-01 [_90secondportraits] _90secondportraits: move to by-name
+c3f5f7c572c9e1a46b16a9773b25e276d36c4e6e 2025-09-29 [orthorobot] orthorobot: move to by-name
+2c29bb5c9db223645b86a96ada274f367979be0a 2025-09-26 [spago-legacy] spago-legacy: move to by-name
+2088c727470acbef55bcc029e77078cd913b3dff 2025-09-21 [flint] flint: Move to by-name
+f4d9842f7d0df311b99801668d25493267f7f401 2025-09-27 [hushboard] hushboard: move to by-name
+da3ee77ed4b8d8cfbed2d35cf8a2a6952f7f16c3 2025-09-27 [tamgamp-lv2] tamgamp-lv2: move to by-name
+0f059225868cb2d00974fd145899d7f3b4371605 2025-09-27 [melmatcheq-lv2] melmatcheq-lv2: move to by-name
+b6b1c049efdd2276ba3be4d66cb0ad0890712f5b 2025-09-27 [ir-lv2] ir-lv2: move to by-name
+a4dd7db0dc40f13289806c91c67a8bdd6f38ce96 2025-09-18 [adoptopenjdk-icedtea-web,ballerina,davmail,DisnixWebService,elasticmq-server-bin,ganttproject-bin,greenfoot,gremlin-console,gremlin-server,jabref,javaCup,javacc,jing-trang,jprofiler,keystore-explorer,libmatthew_java,mcaselector,openapi-generator-cli,openrefine,pattypan,processing,scalafix,slipstream,soapui,trimmomatic] treewide(java-users): clean callPackage overrides, by-name some
+83932848d563582dd51b1594935ebcd48feb4dbf 2025-09-21 [maptool] maptool: remove dependency pins and move to by-name
+05cf9965696ecaf4636f6f61ff22c1d4654cd722 2025-09-11 [candle] candle: migrate to by-name
+a7f8ee0b91ccdbe46ca7f0a9f5edb88bb7a79c83 2025-09-12 [bashate] bashate: move to by-name, cleanup, fix
+2dd1a60e560e5f1056b075c936bef023d5b6e0cf 2025-09-10 [kmymoney] kmymoney: migrate to by-name, refactor
+e5853f842e7e005efabab216f3100b2b2544a37f 2025-09-10 [alkimia] alkimia: migrate to by-name, refactor
+c670edba257640871eef05f7bcd72a7886317f58 2025-09-07 [deployer] deployer: move to by-name
+829014a2d00615627335727b10c3c47e82a1427d 2025-03-26 [netsurf-browser] netsurf-browser: move to by-name
+279c298cbb0e5488ab2864e743bc2c0c455501c1 2025-03-26 [nsgenbind] nsgenbind: move to by-name
+9bc2f708ae92bcf6f82b6226eb0bf5dfb28b69b7 2025-03-26 [libutf8proc] libutf8proc: move to by-name
+792039a935ed02d5cc2f4415c57186d162086d36 2025-03-26 [libsvgtiny] libsvgtiny: move to by-name
+7a24681060945dff04373c0dd36b20af5f113111 2025-03-26 [libnsutils] libnsutils: move to by-name
+da5860d2b6c26d081e7610975f0940b9224d3ad3 2025-03-26 [libnspsl] libnspsl: move to by-name
+8d08e7a079def6207ad28f409024d28938661384 2025-03-26 [libnslog] libnslog: move to by-name
+b6689d7480ff8b7b974ec2cbe7db22cf7d766274 2025-03-26 [libnsgif] libnsgif: move to by-name
+c5fe62044e05b64cd3a9428eeb651a373a0ce5f9 2025-03-26 [libnsfb] libnsfb: move to by-name
+41c1934d04936687ec1bc89d3f9e110e0b316c4c 2025-03-26 [libnsbmp] libnsbmp: move to by-name
+398e1eec0785b1769b1ed17c47bba160317d6434 2025-03-26 [libdom] libdom: move to by-name
+24296f56983f9692a940d8e4a73100e4f6509d83 2025-03-26 [libhubbub] libhubbub: move to by-name
+04a49fa416bae75f5bc2d5de43bf19c542319729 2025-03-26 [libcss] libcss: move to by-name
+79097233b9cfe7cffdaeffaad27cbed828159451 2025-03-26 [libwapcaplet] libwapcaplet: move to by-name
+caba7ceefbebddf4edd40e81cde8aca87c194580 2025-03-26 [libparserutils] libparserutils: move to by-name
+2ce9d785135a536552b788d5d83eb495b13d2123 2025-03-26 [netsurf-buildsystem] netsurf-buildsystem: move to by-name
+da855a3b7834e7659a52970269645fd34e13df36 2025-09-05 [psysh] psysh: move to by-name
+e2ad57d487acab81377249ec17e389623aa0e6bd 2025-08-29 [qolibri] qolibri: move to by-name, switch to Qt6
+dcf47c07ad723f2b6ffa7b9ad560d5564cd537c7 2025-08-27 [cmake-language-server] cmake-language-server: move to by-name
+2fc4da0c7ad9f7b3814e8fbb33cd9f8fac309109 2025-08-27 [gnunet-gtk,gnunet] gnunet{,-gtk}: move to by-name
+34b9180a4d43d694040ef6caa5d8c9a1b37b50c9 2025-08-27 [visidata] visidata: migrate to by-name
+44c9f687aea7eff0e89ecc6c618d80bb7f650c1a 2025-08-26 [slade] slade: move to by-name
+e359611e77d9457ff23d6521b1b9ae8a3618fb3d 2025-08-16 [homesick,mailcatcher] treewide: migrate ruby packages to by-name and update
+5226c75abcbea4acd0567b72a64a58169f53c92e 2025-08-21 [tetgen] tetgen: move to by-name
+f75522c6b9f06efe8da5d9fa896b94c923b70e94 2025-08-21 [tetgen_1_4] tetgen_1_4: move to by-name
+33f763318aa1c95a714fdf22be95c0fe858bc6d8 2025-08-21 [blast] blast: move to by-name
+cbc026c36ed4c8c1bfca29209b04cab8414260bc 2025-08-21 [blast-bin] blast-bin: move to by-name
+47a1c7e207ebb73c1928f330b60286ad925becf7 2025-08-21 [nest] nest: move to by-name
+42f42f268541c37f9a8e26c991cb4a4b81552d47 2025-08-21 [obitools3] obitools3: move to by-name
+19b88033f346845731cb447bb9faa7dd3161e566 2025-08-21 [sc2-headless] sc2-headless: move to by-name
+26b4107088e0b0c6dff0bf09f8c264a937b62c14 2025-08-21 [mathematica] mathematica: move to by-name
+1815d5ab48cd06011277e806e5a2263d709c93de 2025-08-21 [trilinos] trilinos: move to by-name
+8544538777dd8e698b2b8fc7e016db7cc748c0f9 2025-08-21 [wolfram-notebook] wolfram-notebook: move to by-name
+713e620c1170677951c45635e480333fbc9d0342 2025-08-21 [eprover] eprover: move to by-name
+b4eed221114b54cb7f81f75ee2bf51eca071a66e 2025-08-21 [glucose] glucose: move to by-name
+85693031b6f79fa44132f20700ed81c33e0e0f39 2025-08-21 [leo3-bin] leo3-bin: move to by-name
+51c20b27d85ed7967ae13a48b5012406d0891b7c 2025-08-21 [spass] spass: move to by-name
+018cff749ccb5fe83e65a590b7b3f9882f69807d 2025-08-21 [verit] verit: move to by-name
+b738a8a90bb5a99cba58f09fb187f56f8ffec92c 2025-08-21 [yices] yices: move to by-name
+675fbe3ab6a519d0b2e3030bbdd7c4aeafa50b99 2025-08-21 [tlaplus] tlaplus: move to by-name
+d3967f76ddb8eb9343884df540e4e3b19a5f3e63 2025-08-21 [tlaplus-toolbox] tlaplus-toolbox: move to by-name
+e036b87a3b743b69ecd282043e6d71e223c9489f 2025-08-21 [tlaplus18] tlaplus18: move to by-name
+4cba7aaa04c4698336c5f63677171bd7e61a2151 2025-08-21 [avy] avy: move to by-name
+54109fef0218697d619a4a14a75c53f3aa15b359 2025-08-21 [geogebra] geogebra: move to by-name
+826df19a28ca8a46416ebbfeafbe74748aec14e9 2025-08-21 [geogebra6] geogebra6: move to by-name
+e63d260e7642c1f25fc4f1f8f342d09660730cad 2025-08-21 [pari] pari: move to by-name
+7848b51567e942391306484271ad193731266679 2025-08-21 [gp2c] gp2c: move to by-name
+6faab6e866db7bb2844113716c5a73c9f21f2307 2025-08-21 [raspa] raspa: move to by-name
+36fa7b12c19d087ed03a270103a538ad781ed06c 2025-08-21 [raspa-data] raspa-data: move to by-name
+9071245fdff905b64fe574ea36daad615615bd49 2025-08-21 [boinc] boinc: move to by-name
+aa1a6c5d2e007c2e5b0a2e647394ee428403cda3 2025-08-21 [cytoscape] cytoscape: move to by-name
+ccdc27d78cad18e5cd5fee8e65656d67b555c631 2025-08-21 [golly] golly: move to by-name
+5f7d2e6cc7bff2bb160183d084243bc8891e00d2 2025-08-21 [avell-unofficial-control-center] avell-unofficial-control-center: move to by-name
+f6d28c8cc7ed09b710fdebe36b2c8ea0eb857481 2025-08-21 [cups] cups: move to by-name
+d8cf97574277a3791804181580e0e91b8ef1b879 2025-08-21 [cups-filters] cups-filters: move to by-name
+f881edd2302b954fc745effb1f1783391bbcd2d3 2025-08-21 [cups-pk-helper] cups-pk-helper: move to by-name
+634dd2f743756b6461f6f89dcb4b3ba880a27d49 2025-08-21 [gutenprint] gutenprint: move to by-name
+abf4e3a84661392ac37d84666754c88899529540 2025-08-21 [gutenprint-bin] gutenprint-bin: move to by-name
+3b5ed6c7888ac952a4d6fe275fa9a5f1e8d4f79d 2025-08-21 [fahclient] fahclient: move to by-name
+61b4cfbd6ee992d7c955e97d38ef564b6c4049dd 2025-08-21 [gotrue] gotrue: move to by-name
+58aa71747c70e63ba53c81dd949d6e2e1853297c 2025-08-21 [gotrue-supabase] gotrue-supabase: move to by-name
+af5e7a53c98d8c8d0f7ceb296c05458255c8dee5 2025-08-21 [gowitness] gowitness: move to by-name
+2237ea17e8a3538ea83051254b1563a812b8e4f7 2025-08-21 [helmfile] helmfile: move to by-name
+1535d4e5048a445ef3d8dc049125458ab37a0dbd 2025-08-21 [epkowa] epkowa: move to by-name
+0606c8b1851d5bb22cf4c015054deb83dc34d1ab 2025-08-21 [utsushi] utsushi: move to by-name
+c48b39b1361a02a9f4d49cb82dae696ab748f926 2025-08-21 [utsushi-networkscan] utsushi-networkscan: move to by-name
+92b63189be447b478784bac8fe4d8ec82e4ab415 2025-08-21 [jack1] jack1: move to by-name
+d7e587b9285d8285d50b9c2de2094fc5ca2838b2 2025-08-21 [jack2] jack2: move to by-name
+6c7ad09fd633982a5d9731fe38cc094bac63d452 2025-08-21 [jack-example-tools] jack-example-tools: move to by-name
+e917bd15d29fd544b33f8698b7ffbba53ea22a0e 2025-08-21 [kompute] kompute: move to by-name
+c8af5328331da50c6c4ae09ab0868e535ff5e710 2025-08-21 [mongocxx] mongocxx: move to by-name
+6b1428a02c31b5437454e7496fcf287cacc9c051 2025-08-21 [nix-index-unwrapped,nix-index] nix-index: move to by-name
+66beef4e3307ebfef972c7ff3740d45901f1a094 2025-08-21 [nix-update-source] nix-update-source: move to by-name
+047dd7b524da8dd2da3da887a4d6b50829a11cc8 2025-08-21 [nixos-icons] nixos-icons: move to by-name
+56fabd5a339a94c648a2d1e4a82caa1df6f6005e 2025-08-21 [nixos-grub2-theme] nixos-grub2-theme: move to by-name
+a85e9001f321f483be41ff55639582c4cb32a683 2025-08-21 [pgadmin4] pgadmin4: move to by-name
+c7a76b5e03a28a14e4b11722f3c7427c93670f32 2025-08-21 [romdirfs] romdirfs: move to by-name
+21d2ba1809cdbcc1da75d745c01497acfaa52eb2 2025-08-21 [terraforming] terraforming: move to by-name
+9fe697e30c16e0c7ecb69c1441f307b8462dff81 2025-08-21 [terraform-landscape] terraform-landscape: move to by-name
+21b40568f1e32448d0989d287ffee28066670306 2025-08-21 [wasmer] wasmer: move to by-name
+cc7d944ec69bb192565ce6858bbfa36f8cd52fad 2025-08-21 [wavm] wavm: move to by-name
+c84f5de7b1fbb43f757a9d2af1cf6a9010a1e0b1 2025-08-21 [webkit2-sharp] webkit2-sharp: move to by-name
+db64e45c901b36149edc8883cc6723e2fe1c8678 2025-08-21 [wikicurses] wikicurses: move to by-name
+ef7f010d24acdbffbd713d25e8bafd9e20025f93 2025-08-21 [wraith] wraith: move to by-name
+d64d3245d36e4f3e8c956d2d30ade962cfa77b13 2025-08-21 [xsane] xsane: move to by-name
+7e033de86bb77dae103c210abfeeaced97d83594 2025-08-21 [bullet] bullet: move to by-name
+65d1858dcfcba857f6dfbf06feaebfe8d303656b 2025-08-21 [bullet-roboschool] bullet-roboschool: move to by-name
+6a3e97bfb6a26112aa91932c8bc2ea5a44600570 2025-08-21 [httrack] httrack: move to by-name
+f5afdf552d733e386dd952e0c25f3206fdafdb08 2025-08-21 [dnstracer] dnstracer: move to by-name
+065ae9b9d36017900041af3d8ca72fde38a08e9e 2025-08-21 [newlib] newlib: move to by-name
+8af8eba291ab1cc0742f0588905d13b737f87c2f 2025-08-21 [kodelife] kodelife: move to by-name
+fc65db9a30de55a6d8defbde6e8d681900f41496 2025-08-21 [tubekit-unwrapped,tubekit] tubekit: move to by-name
+859f3347e3b16f4efd78336159b86854e356e3fc 2025-08-21 [zettlr] zettlr: move to by-name
+e6e9e48440136a7417c65f70fc61dbf887d77af1 2025-08-21 [gpio-utils] gpio-utils: move to by-name
+890d03374fedcd5f7f3e8156fcfd89c07d78ee45 2025-08-19 [alerta-server,alerta,apr,bore-cli,charybdis,corundum,danger-gitlab,duff,eid-mw,eventstore,hasura-cli,hci,hercules-ci-agent,hivex,jmol,laurel,librepo,maphosts,marvin,oilrush,pinnwand,polar,reckon,redis-dump,riemann-dash,riemann-tools,rosenpass-tools,rosenpass,schleuder-cli,schleuder,serverspec,sommelier,sonobuoy,steck,teamocil,truvari,veusz,vorbis-tools,xdelta,zpaq,zpaqd] treewide: move to by-name part 3
+d31f96b146e553d0ccb84edad93b772a834c35bf 2025-08-17 [isort] isort: migrate to by-name
+bf3eddaa729694d36085b7ebc537fbada4ce94c7 2025-08-11 [plausible] plausible: move to by-name
+fb7d7c5fe02f8204445a7f56c78f3ccbacd870df 2025-08-02 [calamares] calamares: 3.3.13 -> 3.4.0, qt6-ize, clean up, move to by-name
+8fb5f3a7da9cd44002cb2c685a7f4f45b0cab198 2025-08-09 [jami] jami: move to by-name
+19931713bb9978e7e61cf2e98c6a5ec1387ff7a6 2025-08-08 [openwebrx] openwebrx: migrate to by-name
+891601dbde590a1a3f1d9cddfee7b486e2bc8051 2025-08-07 [leo-editor] leo-editor: migrate to by-name
+4f9d0bd2847a8de448cfbdbf0c02f67072f6966e 2025-08-07 [ghostscriptX,ghostscript_headless,ipe] ipe: migrate to by-name
+190f6932af0a62fc7d61bc2a643625bc0da10626 2025-08-07 [meerk40t-camera,meerk40t] meerk40t: migrate to by-name
+6260e19a95f6254895961d43fa4e515a42498a14 2025-08-06 [surge] surge: migrate to by-name
+6bb7ba540ca0b592a95311605947949d437ee319 2025-08-06 [grc] grc: move to by-name
+1e067588820e654e921967d1eb5b67bf99af90dc 2025-08-06 [qucs-s] qucs-s: migrate to by-name
+0aac58e8d28a1e67f5451ab2038cbfb7f68fb947 2025-08-06 [magma] magma: move to by-name
+b0075b9ee1e8ab9fbfc91ec0f7b5f07dae814673 2025-08-05 [gitlab-triage] gitlab-triage: move to by-name
+174bac31abd00b2575111387247b2a652a5a4a3c 2025-08-05 [inspec] inspec: move to by-name
+38c7c217aa43e10fb7592cb8e4ba8184cb27fd65 2025-08-05 [squishyball] squishyball: migrate to by-name
+409e80d2446aa57e888eeb5327c035819466c220 2025-08-05 [ktimetracker] ktimetracker: migrate to by-name
+9afb2f32447b14a3d462a58a90899b7effa4d064 2025-08-05 [kid3-cli,kid3-kde,kid3-qt] kid3-{cli-kde-qt}: move to by-name to reduce evaluation overhead
+1a020d050913a838ad59d40c69707f222c577090 2025-08-04 [zombietrackergps] zombietrackergps: move to by-name
+047f027ad7e1a658f0cf2bff1e1373a6422d4c22 2025-08-04 [cryptop] cryptop: move to by-name
+80b37887c2af35c6f5984df1cb046d318212586d 2025-08-04 [utterly-nord-plasma] utterly-nord-plasma: migrate to by-name
+a8e1129739f29dccb709fa761eb21b8e13007f56 2025-08-04 [orangefs] orangefs: migrate to by-name
+7cf33b2eddf8993890e2105105a492da2d2c3323 2025-08-04 [dmensamenu] dmensamenu: migrate to by-name, modernize (#430631)
+9098504c3713ac266caaa5db4c5e7c224db279bc 2025-08-03 [acd-cli] acd-cli: migrate to by-name (#428863)
+dce17d8f828cddf2aa86d22778687ff330ce604c 2025-07-21 [wails] wails: move to by-name
+2ccf06c42e1e9f5b27cda04ccf45a47bf8e53313 2025-08-03 [brakeman] brakeman: migrate to by-name
+b56e34b54022a864ede429d7f78c6662d7f29b36 2025-07-26 [awsume] awsume: migrate to by-name
+09325145c0e1cbd93b778b904cf0bf419821cb05 2025-07-25 [olive-editor] olive-editor: migrate to by-name
+53479e04c4adffeb4fb09870f2515ff488c9df2d 2025-07-24 [plater] plater: migrate to by-name
+c3ab7634ed3e1db54ea2e6cb564025d3ec77bf04 2025-08-02 [cpeditor] cpeditor: move to by-name
+eb17e8bd7030fd76a47b2f361b2bf0cd4f533e11 2025-08-02 [apio] apio: migrate to by-name
+8e41855fcdea5a4c9e6915fc39cc4c93126b7b74 2025-08-02 [gp-saml-gui] gp-saml-gui: migrate to by-name
+147d02e310b472fcf1c1498d7d6bebb1acdbd6e7 2025-08-01 [cvc5,freemind,jazzy,jdepend,lief,nix-pin,pmd,rake,roapi-http,sickgear,solanum,sqlint,t,torque] treewide: move to by-name part 2
+8559510d8d2e130edb86958cb56cf8ae746fb168 2025-07-26 [ktextaddons] ktextaddons: migrate to by-name
+f882afff2c68092ac29f1b953fb24bf88a8e3cb0 2025-07-28 [kora-icon-theme] kora-icon-theme: migrate to by-name
+90adcba2133616da92370ba5a5246be1c58dbe86 2025-07-29 [material-kwin-decoration] material-kwin-decoration: migrate to by-name
+8a0d1de538392992b12faa699063ce519371020a 2025-08-01 [travis] travis: move to by-name (#430047)
+2dd1736503acc89e3138e517427ad594af39963c 2025-07-22 [xp-pen-g430-driver] xp-pen-g430-driver: migrate to by-name
+f3f1b8113c33b122a9cbe4ae9df2f81c2d8e943f 2025-07-23 [mpremote] mpremote: migrate to by-name
+bb704e81aa0399b156a6fb4c120d024eb4c32bda 2025-07-23 [pricehist] pricehist: migrate to by-name
+b5fda38b50f6428edc0b0f9a48da9083fbc5a628 2025-08-01 [punes-qt6,punes] punes: migrate to by-name
