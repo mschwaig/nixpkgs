@@ -80,6 +80,16 @@ class CommitInfo:
                 packages.append(match.group(1))
         return packages
 
+    def get_package_attr(self) -> str:
+        """
+        Extract package attribute from commit subject.
+        Assumes format like "packageName: init at 1.0" or "python3Packages.foo: init at 1.0"
+        Returns the part before the first colon.
+        """
+        if ':' in self.subject:
+            return self.subject.split(':', 1)[0].strip()
+        return None
+
 
 def fetch_commits(since: str, until: str) -> List[CommitInfo]:
     """Fetch commits that added package.nix or default.nix files in pkgs/"""
@@ -145,6 +155,68 @@ def get_file_content_from_commit(commit_hash: str, filepath: str) -> str:
     cmd = ['git', 'show', f'{commit_hash}:{filepath}']
     result = subprocess.run(cmd, capture_output=True, text=True, check=True)
     return result.stdout
+
+
+def check_package_viability(commit_hash: str, package_attr: str) -> tuple[bool, List[str]]:
+    """
+    Check if a package is viable for the dataset using nix flakes.
+    Returns (is_viable, [reasons_for_exclusion])
+
+    Checks:
+    - Not broken (meta.broken)
+    - Not unfree (meta.license)
+    - Supported on Linux
+    """
+    reasons = []
+    flake_ref = f"nixpkgs/{commit_hash}#{package_attr}"
+    base_cmd = ['nix', 'eval', '--raw']
+
+    # Check if package is broken
+    try:
+        result = subprocess.run(
+            base_cmd + [f'{flake_ref}.meta.broken', '--apply', 'x: if x then "true" else "false"'],
+            capture_output=True,
+            text=True,
+            timeout=30
+        )
+        if result.returncode == 0 and result.stdout.strip() == 'true':
+            reasons.append('broken')
+    except subprocess.TimeoutExpired:
+        reasons.append('eval_timeout')
+        return (False, reasons)
+    except subprocess.CalledProcessError:
+        reasons.append('eval_failed')
+        return (False, reasons)
+
+    # Check if package is unfree
+    try:
+        expr = 'x: let license = x.meta.license or null; in if license == null then "false" else if builtins.isList license then (if builtins.any (l: !(l.free or true)) license then "true" else "false") else (if !(license.free or true) then "true" else "false")'
+        result = subprocess.run(
+            base_cmd + [f'{flake_ref}', '--apply', expr],
+            capture_output=True,
+            text=True,
+            timeout=30
+        )
+        if result.returncode == 0 and result.stdout.strip() == 'true':
+            reasons.append('unfree')
+    except subprocess.TimeoutExpired:
+        reasons.append('eval_timeout')
+
+    # Check if package supports Linux (x86_64-linux)
+    try:
+        result = subprocess.run(
+            base_cmd + [f'{flake_ref}.meta', '--apply',
+                       'meta: if (meta ? availableOn) then (if meta.availableOn {{ system = "x86_64-linux"; }} then "true" else "false") else "true"'],
+            capture_output=True,
+            text=True,
+            timeout=30
+        )
+        if result.returncode == 0 and result.stdout.strip() == 'false':
+            reasons.append('not_on_linux')
+    except subprocess.TimeoutExpired:
+        reasons.append('eval_timeout')
+
+    return (len(reasons) == 0, reasons)
 
 
 def is_substantial_package(commit_hash: str, filepath: str) -> bool:
@@ -214,17 +286,29 @@ def apply_exclusion_rules(commits: List[CommitInfo]) -> tuple[List[CommitInfo], 
         if any(pkg for pkg in all_substantial if pkg not in added_substantial_set):
             commit.exclusion_reasons.add('modifies_other_packages')
 
-        # Check for .patch files
-        if any(f.endswith('.patch') for f in all_files):
+        # Check for .patch or .diff files
+        if any(f.endswith('.patch') or f.endswith('.diff') for f in all_files):
             commit.exclusion_reasons.add('requires_patching')
 
         # Check for lock files
         if any(f.endswith('.lock') or f.endswith('lock.json') or f.endswith('deps.json') for f in all_files):
             commit.exclusion_reasons.add('has_lock_files')
 
+        # Check if commit touches os-specific packages
+        if any(f.startswith('pkgs/os-specific') for f in all_files):
+            commit.exclusion_reasons.add('os_specific')
+
         # Check if commit touches all-packages.nix
         if 'pkgs/top-level/all-packages.nix' in all_files:
             commit.exclusion_reasons.add('touches_all_packages')
+
+        # Check package viability using nix (broken, unfree, linux support)
+        package_attr = commit.get_package_attr()
+        if package_attr:
+            is_viable, viability_reasons = check_package_viability(commit.hash, package_attr)
+            if not is_viable:
+                for reason in viability_reasons:
+                    commit.exclusion_reasons.add(reason)
 
         # If any exclusion reasons were found, move to excluded
         if commit.exclusion_reasons:
