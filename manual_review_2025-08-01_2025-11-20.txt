@@ -1,18 +1,12 @@
-813140d8fd561428499279b7ad95f258b173d1dc 2025-11-14 [manim-slides] manim-slides: pin av at 13.1.0
-cd3e1beac58da637c28b3f134714670827fe153b 2025-11-14 [manim] manim: pin av at 13.1.0
-070a683623d936a067eb9e3e62a9c1144c624316 2025-10-25 [phonemizer] phonemizer: use bibtexparser_2
 e9c0f4d15df6dce7906ef13a82256525a5a6266f 2025-10-24 [intel-ipsec-mb] intel-ipsec-mb: add package for 2.0.1
-55ef7dad4220c0c77c089eed79200dd52e52a4f7 2025-08-27 [jre-generate-cacerts] buildMavenPackage: use generate-cacerts.pl to populate trust store
-cb4a14d95a857b746d931d5925a2c74dcd45fd70 2025-09-17 [cryptolyzer] cryptolyzer: expose application; add mainProgram
-37f4e53db56923761952cacf15a1f8f26d820f66 2025-09-15 [open5gs-webui] open5gs{,-webui}: fix webui
-fbad420db279f7111de690f2da6cccc73aab8aee 2025-09-04 [cp2k] cp2k: move gfortran to nativeBuildInputs
+4fcb3e00b510b976c9b96a73f936332bef90f2f9 2025-10-08 [lfe] lfe: simplify to single version support
+c05ecfd6f0317d20a969fcd3bd0ee41eea8087b0 2025-10-04 [vscode-icons-team.vscode-icons] vscode-extensions.vscode-icons-team.vscode-icons: build from source at 12.14.0
+ee2ae14303e2be2aa516b3ffa95d220636c9d732 2025-09-28 [eamodio.gitlens] vscode-extensions.eamodio.gitlens: build from source at 17.5.1
+c98f2c15716276045a4350441e93a52887e7f2b2 2025-09-29 [tcs-lib] ocamlPackages.tcs-lib: 0.3 → 0.6
+ba0d0d88ce18691886c433e340603a0cb4ce8c20 2025-08-22 [plex-for-kodi] kodi.packages.plex: Add plex-for-kodi to Kodi addons
+f542f4d66da35a62e5a3a4b9175aa74f117d6367 2025-09-02 [azure-mgmt-resource-deployments] pythonPackages.azure-mgmt-resource-deployments: int at 1.0.0b1
 fb9155a57662b9c1bbcb7d79fcbe9b1cdcff70dd 2025-08-29 [bluez-headers] bluez-headers: expose bluez header files
+c48d39166f8a04abec6bf95df83f9b34fd8cb872 2025-08-27 [pinecone-plugin-assistant] python3Packages.pinecone-plugin-inference: remove due to deprecation
 d6426fb7ea83fd538dee3aed4b74eb6fc7fd2d60 2025-07-28 [greenx] greenx: initi at 2.2
-15fad33a2715884a3082ab277949b191571eeaa3 2025-08-24 [mat2] mat2: use python312
-f0fbe75e810b80382434a1a53af7c3db0e46e527 2025-07-09 [clickhouse] clickhouse: 25.3.5.42 → 25.5.6.14
-efef2b35899241f700affd577e90d741769344de 2025-08-13 [myjwt] python313Packages.myjwt: add mainProgram
-92eee7ea7694f27e7fb197fac25597a4b4e1e015 2025-08-07 [calamares-nixos] calamares-nixos: convert to wrapper
-47881f96c7eff2641cc9386ed28667fc44fa78c1 2025-04-03 [grub2_pvhgrub_image] grub: build grub2_pvhgrub_image together with grub2_pvgrub_image
-1870d82500150236626b2ebfebeffa85361a789a 2025-08-05 [avrlibc,wasilibc] Simplify definitions of libcs
+03f16593904f8a0811ed47143dd4f0f8d73db74b 2025-08-20 [livebook] livebook: move under beam modules
 2c8adb01de4777f376a4685ff8e8ba356519fc0b 2025-05-30 [pokemon-colorscripts] pokemon-colorscripts: 0-unstable-2024-10-19
-f7bde756ac981d1f325e64126de89929591e1372 2025-08-04 [heimdall-gui] heimdall: move override to improve eval

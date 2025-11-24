@@ -68,14 +68,21 @@ class CommitInfo:
         """Extract package names from file paths"""
         packages = []
         for filepath in self.files:
+            # Match pkgs/by-name/XX/name/package.nix
             match = re.search(r'pkgs/by-name/[^/]+/([^/]+)/package\.nix', filepath)
+            if match:
+                packages.append(match.group(1))
+                continue
+
+            # Match pkgs/.../name/default.nix - extract the parent directory name
+            match = re.search(r'pkgs/.*/([^/]+)/default\.nix$', filepath)
             if match:
                 packages.append(match.group(1))
         return packages
 
 
 def fetch_commits(since: str, until: str) -> List[CommitInfo]:
-    """Fetch commits that added package.nix files in pkgs/by-name/"""
+    """Fetch commits that added package.nix or default.nix files in pkgs/"""
     cmd = [
         "git", "log",
         "--diff-filter=A",  # Only additions
@@ -84,7 +91,8 @@ def fetch_commits(since: str, until: str) -> List[CommitInfo]:
         f"--since={since}",
         f"--until={until}",
         "--",
-        "pkgs/by-name/*/*/package.nix"
+        "pkgs/by-name/*/*/package.nix",
+        "pkgs/**/default.nix"
     ]
 
     print(f"Running: {' '.join(cmd)}", file=sys.stderr)
@@ -112,7 +120,7 @@ def fetch_commits(since: str, until: str) -> List[CommitInfo]:
                 files=[]
             )
             current_files = current_commit.files
-        elif line.startswith('pkgs/by-name/'):
+        elif line.startswith('pkgs/'):
             current_files.append(line)
         elif line.strip() == '':
             # Empty line between commits
@@ -126,10 +134,44 @@ def fetch_commits(since: str, until: str) -> List[CommitInfo]:
 
 
 def get_all_commit_files(commit_hash: str) -> List[str]:
-    """Get all files touched in a commit"""
-    cmd = ['git', 'diff-tree', '--no-commit-id', '--name-only', '-r', commit_hash]
+    """Get all files touched in a commit (excluding deletions)"""
+    cmd = ['git', 'diff-tree', '--no-commit-id', '--name-only', '--diff-filter=AM', '-r', commit_hash]
     result = subprocess.run(cmd, capture_output=True, text=True, check=True)
     return [line.strip() for line in result.stdout.strip().split('\n') if line.strip()]
+
+
+def get_file_content_from_commit(commit_hash: str, filepath: str) -> str:
+    """Get the content of a file as it was added in a commit"""
+    cmd = ['git', 'show', f'{commit_hash}:{filepath}']
+    result = subprocess.run(cmd, capture_output=True, text=True, check=True)
+    return result.stdout
+
+
+def is_substantial_package(commit_hash: str, filepath: str) -> bool:
+    """
+    Check if a file is a substantial package definition.
+    Criteria:
+    - At least 6 lines AND
+    - Contains "meta" AND
+    - Contains pattern matching "src" = "fetch" (with possible whitespace)
+    """
+    content = get_file_content_from_commit(commit_hash, filepath)
+    lines = content.split('\n')
+
+    # Check line count
+    if len(lines) < 6:
+        return False
+
+    # Check for "meta" in content
+    if 'meta' not in content:
+        return False
+
+    # Check for src = fetch pattern (with flexible whitespace)
+    # Matches: src = fetchXXX, src=fetchXXX, etc.
+    if not re.search(r'src\s*=\s*fetch', content):
+        return False
+
+    return True
 
 
 def apply_exclusion_rules(commits: List[CommitInfo]) -> tuple[List[CommitInfo], List[CommitInfo]]:
@@ -141,17 +183,35 @@ def apply_exclusion_rules(commits: List[CommitInfo]) -> tuple[List[CommitInfo], 
     excluded = []
 
     for commit in commits:
-        # Check if commit adds multiple packages
-        if len(commit.files) > 1:
+        # Filter for substantial packages in added files
+        substantial_added = [
+            f for f in commit.files
+            if is_substantial_package(commit.hash, f)
+        ]
+
+        # Check if commit adds multiple substantial packages
+        if len(substantial_added) > 1:
             commit.exclusion_reasons.add('multiple_packages')
 
         # Get all files in the commit
         all_files = get_all_commit_files(commit.hash)
 
-        # Check if commit modifies other package.nix files (beyond the ones it adds)
-        all_package_nix = [f for f in all_files if f.endswith('/package.nix') and f.startswith('pkgs/by-name/')]
-        added_package_nix = set(commit.files)
-        if any(pkg for pkg in all_package_nix if pkg not in added_package_nix):
+        # Check if commit modifies other substantial package files (beyond the ones it adds)
+        # Look for both package.nix and default.nix files
+        potential_packages = [
+            f for f in all_files
+            if (f.endswith('/package.nix') or f.endswith('/default.nix'))
+            and f.startswith('pkgs/')
+        ]
+
+        # Filter for substantial packages in all files
+        all_substantial = [
+            f for f in potential_packages
+            if is_substantial_package(commit.hash, f)
+        ]
+
+        added_substantial_set = set(substantial_added)
+        if any(pkg for pkg in all_substantial if pkg not in added_substantial_set):
             commit.exclusion_reasons.add('modifies_other_packages')
 
         # Check for .patch files
@@ -185,7 +245,20 @@ def main():
     until = sys.argv[2]
 
     print(f"Fetching commits from {since} to {until}...", file=sys.stderr)
-    commits = fetch_commits(since, until)
+    all_commits = fetch_commits(since, until)
+
+    # Filter to only commits that added at least one substantial package
+    print(f"Filtering {len(all_commits)} commits for substantial packages...", file=sys.stderr)
+    commits = []
+    for commit in all_commits:
+        substantial_added = [
+            f for f in commit.files
+            if is_substantial_package(commit.hash, f)
+        ]
+        if substantial_added:
+            commits.append(commit)
+
+    print(f"Found {len(commits)} commits with substantial packages", file=sys.stderr)
 
     # Classify commits
     classified = defaultdict(list)
@@ -201,7 +274,7 @@ def main():
 
     # Print summary to stderr
     print(f"\n{'='*80}", file=sys.stderr)
-    print(f"SUMMARY: Found {len(commits)} commits that added package.nix files", file=sys.stderr)
+    print(f"SUMMARY: Found {len(commits)} commits that added package.nix or default.nix files", file=sys.stderr)
     print(f"{'='*80}", file=sys.stderr)
     print(f"NEW packages:     {len(classified['NEW']):4d}", file=sys.stderr)
     print(f"EXCLUDED:         {len(classified['EXCLUDED']):4d}", file=sys.stderr)
