@@ -1,0 +1,11 @@
+commit_hash,date,packages,subject,test_base_commit,exclusion_reasons
+2bb9b781ccd19acba6270f26d85a90346aecc48f,2025-11-18,antigravity,antigravity: init at 1.11.2-6251250307170304,6f374686605df381de8541c072038472a5ea2e2d,"touches_all_packages,unfree"
+b39f8cb0a1108a2124cb51ec11a72fd6fbf30ec1,2025-09-01,ersatztv,ersatztv: init at 25.8.0,85a6c4a07faa12aaccd81b36ba9bfc2bec974fa1,has_lock_files
+54dcb2f353476fdd2f7b6b8dbc7f26e77ab63608,2025-07-25,flash-attn,python3Packages.flash-attn: init at 2.8.2,12c1f0253aa9a54fdf8ec8aecaafada64a111e24,broken
+6b5ef122d07574af00a647780c814a3a565056a3,2025-07-31,taskbook,taskbook: init at 0.3.0,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60,has_lock_files
+9937d9102c46348e443d6b21bf75ce46856faa9f,2025-11-12,yt-dlp-ejs,yt-dlp-ejs: init at 0.3.1,f6b44b2401525650256b977063dbcf830f762369,"has_lock_files,modifies_other_packages"
+08fb46f3d45e76f0005c4c1846430fe001d4bb9c,2025-11-10,helion,python3Packages.helion: init at 0.2.1,f6b44b2401525650256b977063dbcf830f762369,broken
+ce042502defbb1faa60802586610fc3bc43c38ef,2025-11-12,pytorch-tokenizers,python3Packages.pytorch-tokenizers: init at 1.0.1,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60,requires_patching
+179b66ec2266200a86c0ed6e3404327bb1a29229,2025-11-11,kryoptic,kryoptic: init at 1.3.1,f6b44b2401525650256b977063dbcf830f762369,requires_patching
+d79eeb4e9dd0edde5ddad2d13e6852cfd438d3ff,2025-11-09,rovium,rovium: init at 0.4.0,f6b44b2401525650256b977063dbcf830f762369,unfree
+1fa644d711e16a49e77d06ed8f7c523a866138f6,2025-07-19,mhabit,mhabit: init at 1.21.0+118,f6b44b2401525650256b977063dbcf830f762369,has_lock_files

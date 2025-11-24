@@ -10,6 +10,7 @@ Classifies commits into:
 
 import subprocess
 import re
+import csv
 from collections import defaultdict
 from dataclasses import dataclass, field
 from typing import List, Set
@@ -46,6 +47,7 @@ class CommitInfo:
     subject: str
     files: List[str]
     exclusion_reasons: Set[str] = field(default_factory=set)
+    test_base_commit: str = None
 
     def classify(self) -> str:
         """Classify commit based on subject line"""
@@ -155,6 +157,45 @@ def get_file_content_from_commit(commit_hash: str, filepath: str) -> str:
     cmd = ['git', 'show', f'{commit_hash}:{filepath}']
     result = subprocess.run(cmd, capture_output=True, text=True, check=True)
     return result.stdout
+
+
+def is_ancestor(ancestor_commit: str, descendant_commit: str) -> bool:
+    """Check if ancestor_commit is an ancestor of descendant_commit"""
+    cmd = ['git', 'merge-base', '--is-ancestor', ancestor_commit, descendant_commit]
+    result = subprocess.run(cmd, capture_output=True)
+    return result.returncode == 0
+
+
+def find_test_base_commit(package_commit: str, channel_bumps: List[str]) -> str:
+    """
+    Find the newest channel bump commit that IS an ancestor of package_commit.
+    This gives us the newest channel state before the package was added.
+
+    Args:
+        package_commit: The commit that adds the package
+        channel_bumps: List of channel bump commits, sorted newest to oldest
+
+    Returns:
+        The commit hash of the appropriate test base, or None if not found
+    """
+    for bump_commit in channel_bumps:
+        if is_ancestor(bump_commit, package_commit):
+            # This channel bump is in the package's history (happened before)
+            return bump_commit
+    return None
+
+
+def load_channel_bumps(filepath: str) -> List[str]:
+    """Load channel bump commits from a file (format: hash date time timezone)"""
+    with open(filepath, 'r') as f:
+        commits = []
+        for line in f:
+            line = line.strip()
+            if line:
+                # Extract just the commit hash (first field)
+                commit_hash = line.split()[0]
+                commits.append(commit_hash)
+        return commits
 
 
 def check_package_viability(commit_hash: str, package_attr: str) -> tuple[bool, List[str]]:
@@ -321,12 +362,20 @@ def apply_exclusion_rules(commits: List[CommitInfo]) -> tuple[List[CommitInfo], 
 
 def main():
     if len(sys.argv) < 3:
-        print("Usage: python3 analyze_package_additions.py <since_date> <until_date>")
-        print("Example: python3 analyze_package_additions.py 2025-07-01 2025-08-31")
+        print("Usage: python3 analyze_package_additions.py <since_date> <until_date> [channel_bumps_file]")
+        print("Example: python3 analyze_package_additions.py 2025-07-01 2025-08-31 channel_bumps.txt")
         sys.exit(1)
 
     since = sys.argv[1]
     until = sys.argv[2]
+    channel_bumps_file = sys.argv[3] if len(sys.argv) > 3 else None
+
+    # Load channel bumps if provided
+    channel_bumps = []
+    if channel_bumps_file:
+        print(f"Loading channel bumps from {channel_bumps_file}...", file=sys.stderr)
+        channel_bumps = load_channel_bumps(channel_bumps_file)
+        print(f"Loaded {len(channel_bumps)} channel bump commits", file=sys.stderr)
 
     print(f"Fetching commits from {since} to {until}...", file=sys.stderr)
     all_commits = fetch_commits(since, until)
@@ -356,6 +405,18 @@ def main():
     classified['NEW'] = included_new
     classified['EXCLUDED'] = excluded_new
 
+    # Find test base commits if channel bumps were provided
+    if channel_bumps:
+        print(f"Finding test base commits...", file=sys.stderr)
+        for commit in commits:
+            test_base = find_test_base_commit(commit.hash, channel_bumps)
+            if test_base is None:
+                print(f"ERROR: Could not find test base commit for {commit.hash} ({commit.subject})", file=sys.stderr)
+                sys.exit(1)
+            commit.test_base_commit = test_base
+
+        print(f"Found test bases for all {len(commits)} commits", file=sys.stderr)
+
     # Print summary to stderr
     print(f"\n{'='*80}", file=sys.stderr)
     print(f"SUMMARY: Found {len(commits)} commits that added package.nix or default.nix files", file=sys.stderr)
@@ -366,28 +427,44 @@ def main():
     print(f"MANUAL review:    {len(classified['MANUAL']):4d}", file=sys.stderr)
     print(f"{'='*80}\n", file=sys.stderr)
 
-    # Write results to files with date range in filename
+    # Write results to CSV files with date range in filename
     output_files = {
-        'NEW': f'new_packages_{since}_{until}.txt',
-        'EXCLUDED': f'excluded_packages_{since}_{until}.txt',
-        'OTHER_CHANGES': f'other_changes_{since}_{until}.txt',
-        'MANUAL': f'manual_review_{since}_{until}.txt'
+        'NEW': f'new_packages_{since}_{until}.csv',
+        'EXCLUDED': f'excluded_packages_{since}_{until}.csv',
+        'OTHER_CHANGES': f'other_changes_{since}_{until}.csv',
+        'MANUAL': f'manual_review_{since}_{until}.csv'
     }
 
     for category, filename in output_files.items():
         commits_in_category = classified[category]
-        with open(filename, 'w') as f:
+        with open(filename, 'w', newline='') as f:
+            writer = csv.writer(f)
+
+            # Write header
+            if category == 'EXCLUDED':
+                writer.writerow(['commit_hash', 'date', 'packages', 'subject', 'test_base_commit', 'exclusion_reasons'])
+            else:
+                writer.writerow(['commit_hash', 'date', 'packages', 'subject', 'test_base_commit'])
+
+            # Write data
             for commit in commits_in_category:
                 packages = commit.get_package_names()
                 pkg_list = ','.join(packages)
 
-                # For excluded commits, include reasons
-                if category == 'EXCLUDED' and commit.exclusion_reasons:
+                row = [
+                    commit.hash,
+                    commit.date,
+                    pkg_list,
+                    commit.subject,
+                    commit.test_base_commit or ''
+                ]
+
+                # For excluded commits, add exclusion reasons
+                if category == 'EXCLUDED':
                     reasons = ','.join(sorted(commit.exclusion_reasons))
-                    f.write(f"{commit.hash} {commit.date} [{pkg_list}] {commit.subject} [EXCLUDED: {reasons}]\n")
-                else:
-                    # Format: hash date packages subject
-                    f.write(f"{commit.hash} {commit.date} [{pkg_list}] {commit.subject}\n")
+                    row.append(reasons)
+
+                writer.writerow(row)
 
         print(f"Written {len(commits_in_category)} commits to {filename}", file=sys.stderr)
 

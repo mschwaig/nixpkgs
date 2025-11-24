@@ -1,0 +1,26 @@
+commit_hash,date,packages,subject,test_base_commit
+64e6e3f26a748bef854b6ffca49048a49bbeabf7,2025-11-17,"clight-gui,clightd","clight,clight-gui,clightd: migrate to pkgs/by-name, modernize",8b6600824693a9c706ef09bd86711ca393703466
+f8a26c443a08644b37d0775bd637bc0901959190,2025-11-16,font-misc-misc,"font-misc-misc: refactor, move to pkgs/by-name and rename from xorg.fontmiscmisc",1d4c88323ac36805d09657d13a5273aea1b34f0c
+b84617f14e674406bdd0c147d45c77ebea8d1748,2025-11-16,font-misc-meltho,"font-misc-meltho: refactor, move to pkgs/by-name and rename from xorg.fontmiscmeltho",1d4c88323ac36805d09657d13a5273aea1b34f0c
+42fca86f89f37ee92f2c8bf8a8bed221f1404c0d,2025-11-15,font-jis-misc,"font-jis-misc: refactor, move to pkgs/by-name and rename from xorg.fontjismisc",1d4c88323ac36805d09657d13a5273aea1b34f0c
+506db072ab0419ab38f213d87d269f49ea92547c,2025-11-15,font-ibm-type1,"font-ibm-type1: refactor, move to pkgs/by-name and rename from xorg.fontibmtype1",1d4c88323ac36805d09657d13a5273aea1b34f0c
+db23a88b9a80583c22dba7c2b4b45866f1dd23ca,2025-11-15,font-dec-misc,"font-dec-misc: refactor, move to pkgs/by-name and rename from xorg.fontdecmisc",1d4c88323ac36805d09657d13a5273aea1b34f0c
+961f70725cd3b92f76288a48bc95bcd3232d7b12,2025-11-15,font-daewoo-misc,"font-daewoo-misc: refactor, move to pkgs/by-name and rename from xorg.fontdaewoomisc",1d4c88323ac36805d09657d13a5273aea1b34f0c
+4a82229180a5beac6b84fde576820ebd17c72422,2025-11-15,font-cursor-misc,"font-cursor-misc: refactor, move to pkgs/by-name and rename from xorg.fontcursormisc",1d4c88323ac36805d09657d13a5273aea1b34f0c
+1c66cd8f6539e67482bbf51e8838d7d081c76ba0,2025-11-15,font-arabic-misc,"font-arabic-misc: refactor, move to pkgs/by-name and rename from xorg.fontarabicmisc",1d4c88323ac36805d09657d13a5273aea1b34f0c
+630803b2cdb823b1a7b0a07a66100762d3f93a17,2025-11-14,elm-graphql,elmPackages.elm-graphql: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
+d10e9c065621e33344bb2235a492272ac5a3bd9d,2025-11-14,elm-git-install,elmPackages.elm-git-install: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
+c4853893c8d03265903be2c90baf899740f29731,2025-11-14,elm-optimize-level-2,elmPackages.elm-optimize-level-2: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
+3b3da8abf115cfa3b478bd31e4e1895cf3d48a75,2025-11-14,elm-xref,elmPackages.elm-xref: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
+2767324cf8bbdcaf5f7b9a800caf73a398b248f0,2025-11-14,elm-verify-examples,elmPackages.elm-verify-examples: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
+8fbb32445cd8c9a10dfd8217a944d073d715091a,2025-11-14,elm-upgrade,elmPackages.elm-upgrade: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
+f6bbac2dfd6d1102e3dde57aa929d25bc42f3d6d,2025-11-14,elm-spa,elmPackages.elm-spa: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
+32b2a7955b2f11893a17c1b77845759d9830c0c2,2025-11-14,elm-live,elmPackages.elm-live: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
+096c513053a083b1e22c872029c51a7ba5f7df48,2025-11-14,elm-analyse,elmPackages.elm-analyse: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
+436ecd5821dfdb2aff99b3de0b8e52edaa9c8191,2025-11-14,elm-language-server,elmPackages.elm-language-server: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
+0816f456ffe47a9ca094d6f2117f586efe374f46,2025-11-14,elm-doc-preview,elmPackages.elm-doc-preview: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
+87258df63377ebc38f7217271b645eb4a8cca7dc,2025-11-10,peerflix-server,peerflix-server: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
+727d02790a7f072396337f85c24d078528a823b9,2025-11-10,tiddlywiki,tiddlywiki: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
+bd16d452b0adb8446fd45aab74cf5f974a114ce5,2025-11-10,svelte-check,svelte-check: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
+9731d5459097191e28990d64d3cc1e98cc0dd396,2025-11-10,cdk8s-cli,ckd8s-cli: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
+39c4aa65ec553304fde23e5162fe48f179b13076,2025-11-08,nrm,nrm: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
