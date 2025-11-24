@@ -629,7 +629,7 @@ def main():
     for category, filename in output_files.items():
         commits_in_category = classified[category]
         with open(filename, 'w', newline='') as f:
-            writer = csv.writer(f)
+            writer = csv.writer(f, lineterminator='\n')
 
             # Write header
             if category == 'EXCLUDED':
