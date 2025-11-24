@@ -16,6 +16,9 @@ from dataclasses import dataclass, field
 from typing import List, Set
 import sys
 
+# Processing limit for faster iteration (set to None for no limit)
+COMMIT_LIMIT = 100
+
 # Classification patterns
 NEW_PATTERNS = [
     r'\binit\b.*\bat\b',  # "init at X.Y.Z"
@@ -392,6 +395,11 @@ def main():
             commits.append(commit)
 
     print(f"Found {len(commits)} commits with substantial packages", file=sys.stderr)
+
+    # Limit commits for faster iteration
+    if COMMIT_LIMIT and len(commits) > COMMIT_LIMIT:
+        print(f"Limiting to first {COMMIT_LIMIT} commits for faster iteration", file=sys.stderr)
+        commits = commits[:COMMIT_LIMIT]
 
     # Classify commits
     classified = defaultdict(list)
