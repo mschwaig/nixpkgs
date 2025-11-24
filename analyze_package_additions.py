@@ -51,6 +51,10 @@ class CommitInfo:
     files: List[str]
     exclusion_reasons: Set[str] = field(default_factory=set)
     test_base_commit: str = None
+    build_success: bool = None
+    build_error: str = None
+    build_time: float = None  # Build time in seconds
+    build_log_file: str = None  # Path to build log file for failures
 
     def classify(self) -> str:
         """Classify commit based on subject line"""
@@ -199,6 +203,152 @@ def load_channel_bumps(filepath: str) -> List[str]:
                 commit_hash = line.split()[0]
                 commits.append(commit_hash)
         return commits
+
+
+def get_package_name_without_set(package_attr: str) -> str:
+    """
+    Extract package name without package set prefix.
+    E.g., 'python3Packages.foo' -> 'foo', 'bar' -> 'bar'
+    """
+    if '.' in package_attr:
+        return package_attr.split('.')[-1]
+    return package_attr
+
+
+def try_build_package(commit: 'CommitInfo', repo_path: str, log_dir: str) -> tuple[bool, str, float, str]:
+    """
+    Try to build a package by overlaying it onto the test base commit.
+
+    Args:
+        commit: CommitInfo with the package details
+        repo_path: Path to the nixpkgs repository
+        log_dir: Directory to store build logs
+
+    Returns:
+        (success, error_message, build_time_seconds, log_file_path)
+    """
+    import tempfile
+    import os
+    import time
+
+    if not commit.test_base_commit:
+        return (False, "No test base commit available", 0.0, None)
+
+    package_attr = commit.get_package_attr()
+    if not package_attr:
+        return (False, "Cannot extract package attribute from commit subject", 0.0, None)
+
+    # Get the package name without set prefix
+    pkg_name = get_package_name_without_set(package_attr)
+
+    # Get the first package file (should only be one for NEW packages)
+    if not commit.files:
+        return (False, "No package files found", 0.0, None)
+    package_file = commit.files[0]
+
+    # Get package file content from the commit
+    try:
+        package_content = get_file_content_from_commit(commit.hash, package_file)
+    except subprocess.CalledProcessError as e:
+        return (False, f"Failed to get package content: {e}", 0.0, None)
+
+    # Determine if this is in a package set or top-level
+    if '.' in package_attr:
+        # Package set member (e.g., python3Packages.foo)
+        package_set = package_attr.rsplit('.', 1)[0]
+
+        # Create overlay that adds to the package set
+        overlay_code = f'''
+  overlay = self: super: {{
+    {package_set} = super.{package_set} // {{
+      {pkg_name} = self.{package_set}.callPackage (
+        # Package content from commit
+        {package_content}
+      ) {{}};
+    }};
+  }};
+'''
+        build_attr = package_attr
+    else:
+        # Top-level package
+        overlay_code = f'''
+  overlay = self: super: {{
+    {pkg_name} = self.callPackage (
+      # Package content from commit
+      {package_content}
+    ) {{}};
+  }};
+'''
+        build_attr = pkg_name
+
+    # Create a temporary Nix expression to build the package
+    nix_expr = f'''
+let
+  baseRepo = builtins.fetchTree {{
+    type = "git";
+    url = "file://{repo_path}";
+    rev = "{commit.test_base_commit}";
+  }};
+
+  basePkgs = import baseRepo {{}};
+
+  # Create overlay with our package
+{overlay_code}
+
+  pkgs = import baseRepo {{
+    overlays = [ overlay ];
+  }};
+in
+  pkgs.{build_attr}
+'''
+
+    # Write to temporary file and try to build
+    with tempfile.NamedTemporaryFile(mode='w', suffix='.nix', delete=False) as f:
+        f.write(nix_expr)
+        temp_nix_file = f.name
+
+    # Prepare log file path
+    log_file = None
+    if not os.path.exists(log_dir):
+        os.makedirs(log_dir)
+
+    try:
+        # Start timing
+        start_time = time.time()
+
+        # Run build and capture output to log file if it fails
+        result = subprocess.run(
+            ['nix', 'build', '--impure', '--expr', f'import {temp_nix_file}', '--no-link'],
+            capture_output=True,
+            text=True,
+            timeout=900  # 15 minute timeout
+        )
+
+        build_time = time.time() - start_time
+
+        if result.returncode == 0:
+            return (True, "", build_time, None)
+        else:
+            # Save build log
+            log_file = os.path.join(log_dir, f"{commit.hash}_build.log")
+            with open(log_file, 'w') as lf:
+                lf.write(f"Build command: nix build --impure --expr 'import {temp_nix_file}' --no-link\n")
+                lf.write(f"Exit code: {result.returncode}\n")
+                lf.write(f"Build time: {build_time:.2f}s\n")
+                lf.write(f"\n=== STDOUT ===\n{result.stdout}\n")
+                lf.write(f"\n=== STDERR ===\n{result.stderr}\n")
+            return (False, f"Build failed with exit code {result.returncode}", build_time, log_file)
+    except subprocess.TimeoutExpired:
+        build_time = 900.0  # Timeout duration
+        log_file = os.path.join(log_dir, f"{commit.hash}_build.log")
+        with open(log_file, 'w') as lf:
+            lf.write(f"Build command: nix build --impure --expr 'import {temp_nix_file}' --no-link\n")
+            lf.write(f"Build timed out after {build_time}s\n")
+        return (False, "Build timeout (15 minutes)", build_time, log_file)
+    except Exception as e:
+        return (False, str(e), 0.0, None)
+    finally:
+        os.unlink(temp_nix_file)
 
 
 def check_package_viability(commit_hash: str, package_attr: str) -> tuple[bool, List[str]]:
@@ -425,6 +575,39 @@ def main():
 
         print(f"Found test bases for all {len(commits)} commits", file=sys.stderr)
 
+        # Try building NEW packages
+        print(f"Trying to build {len(classified['NEW'])} NEW packages...", file=sys.stderr)
+        import os
+        repo_path = os.getcwd()
+        log_dir = f"build_logs_{since}_{until}"
+        build_successes = 0
+        build_failures = []
+
+        for i, commit in enumerate(classified['NEW'], 1):
+            print(f"  Building {i}/{len(classified['NEW'])}: {commit.get_package_attr()}...", file=sys.stderr)
+            success, error, build_time, log_file = try_build_package(commit, repo_path, log_dir)
+            commit.build_success = success
+            commit.build_error = error if not success else None
+            commit.build_time = build_time
+            commit.build_log_file = log_file
+
+            if success:
+                build_successes += 1
+            else:
+                build_failures.append(commit)
+
+        # Move build failures to EXCLUDED
+        if build_failures:
+            for commit in build_failures:
+                commit.exclusion_reasons.add('build_failed')
+                classified['NEW'].remove(commit)
+                classified['EXCLUDED'].append(commit)
+
+        print(f"Successfully built {build_successes}/{build_successes + len(build_failures)} packages", file=sys.stderr)
+        if build_failures:
+            print(f"Moved {len(build_failures)} build failures to EXCLUDED", file=sys.stderr)
+            print(f"Build logs saved in {log_dir}/", file=sys.stderr)
+
     # Print summary to stderr
     print(f"\n{'='*80}", file=sys.stderr)
     print(f"SUMMARY: Found {len(commits)} commits that added package.nix or default.nix files", file=sys.stderr)
@@ -450,7 +633,9 @@ def main():
 
             # Write header
             if category == 'EXCLUDED':
-                writer.writerow(['commit_hash', 'date', 'packages', 'subject', 'test_base_commit', 'exclusion_reasons'])
+                writer.writerow(['commit_hash', 'date', 'packages', 'subject', 'test_base_commit', 'exclusion_reasons', 'build_time', 'build_log_file'])
+            elif category == 'NEW':
+                writer.writerow(['commit_hash', 'date', 'packages', 'subject', 'test_base_commit', 'build_time'])
             else:
                 writer.writerow(['commit_hash', 'date', 'packages', 'subject', 'test_base_commit'])
 
@@ -467,10 +652,15 @@ def main():
                     commit.test_base_commit or ''
                 ]
 
-                # For excluded commits, add exclusion reasons
+                # For excluded commits, add exclusion reasons and build info
                 if category == 'EXCLUDED':
                     reasons = ','.join(sorted(commit.exclusion_reasons))
                     row.append(reasons)
+                    row.append(f"{commit.build_time:.2f}" if commit.build_time is not None else '')
+                    row.append(commit.build_log_file or '')
+                # For new commits, add build time
+                elif category == 'NEW':
+                    row.append(f"{commit.build_time:.2f}" if commit.build_time is not None else '')
 
                 writer.writerow(row)
 
