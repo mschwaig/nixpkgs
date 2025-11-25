@@ -566,14 +566,25 @@ def main():
     # Find test base commits if channel bumps were provided
     if channel_bumps:
         print(f"Finding test base commits...", file=sys.stderr)
+        no_test_base = []
         for commit in commits:
             test_base = find_test_base_commit(commit.hash, channel_bumps)
-            if test_base is None:
-                print(f"ERROR: Could not find test base commit for {commit.hash} ({commit.subject})", file=sys.stderr)
-                sys.exit(1)
             commit.test_base_commit = test_base
+            if test_base is None:
+                print(f"WARNING: Could not find test base commit for {commit.hash} ({commit.subject})", file=sys.stderr)
+                commit.exclusion_reasons.add('no_test_base')
+                no_test_base.append(commit)
 
-        print(f"Found test bases for all {len(commits)} commits", file=sys.stderr)
+        # Move commits without test bases to EXCLUDED if they're in NEW
+        for commit in no_test_base:
+            if commit in classified['NEW']:
+                classified['NEW'].remove(commit)
+                classified['EXCLUDED'].append(commit)
+
+        with_base = len(commits) - len(no_test_base)
+        print(f"Found test bases for {with_base}/{len(commits)} commits", file=sys.stderr)
+        if no_test_base:
+            print(f"Excluded {len(no_test_base)} commits without test bases", file=sys.stderr)
 
         # Try building NEW packages
         print(f"Trying to build {len(classified['NEW'])} NEW packages...", file=sys.stderr)
