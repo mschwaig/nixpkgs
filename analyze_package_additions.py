@@ -176,7 +176,8 @@ def is_ancestor(ancestor_commit: str, descendant_commit: str) -> bool:
 def find_test_base_commit(package_commit: str, channel_bumps: List[str]) -> str:
     """
     Find the newest channel bump commit that IS an ancestor of package_commit.
-    This gives us the newest channel state before the package was added.
+    Uses binary search to exploit transitivity: if bump X is an ancestor,
+    then all older bumps are also ancestors.
 
     Args:
         package_commit: The commit that adds the package
@@ -185,11 +186,27 @@ def find_test_base_commit(package_commit: str, channel_bumps: List[str]) -> str:
     Returns:
         The commit hash of the appropriate test base, or None if not found
     """
-    for bump_commit in channel_bumps:
-        if is_ancestor(bump_commit, package_commit):
-            # This channel bump is in the package's history (happened before)
-            return bump_commit
-    return None
+    if not channel_bumps:
+        return None
+
+    # Binary search for the newest (first) ancestor
+    left, right = 0, len(channel_bumps) - 1
+    result = None
+
+    while left <= right:
+        mid = (left + right) // 2
+
+        if is_ancestor(channel_bumps[mid], package_commit):
+            # This bump is an ancestor - it's a candidate
+            # But there might be a newer one, so search left
+            result = channel_bumps[mid]
+            right = mid - 1
+        else:
+            # This bump is NOT an ancestor (too new)
+            # The answer must be older, so search right
+            left = mid + 1
+
+    return result
 
 
 def load_channel_bumps(filepath: str) -> List[str]:
