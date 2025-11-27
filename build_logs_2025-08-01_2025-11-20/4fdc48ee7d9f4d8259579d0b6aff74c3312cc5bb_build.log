@@ -1,0 +1,30 @@
+Build command: nix build --impure --expr 'import /tmp/tmpu3ly50hz.nix' --no-link
+Exit code: 1
+Build time: 6.78s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:37:12:
+           36|
+           37|   strict = derivationStrict drvAttrs;
+             |            ^
+           38|
+
+       … while evaluating derivation 'winboat-0.8.7'
+         whose name attribute is located at /nix/store/z3gip60a3wcs278xwv79wc3yd1bjanyv-source/pkgs/stdenv/generic/make-derivation.nix:539:13
+
+       … while evaluating attribute 'guest-server' of derivation 'winboat-0.8.7'
+         at /tmp/tmpu3ly50hz.nix:62:3:
+           61|
+           62|   guest-server = pkgsCross.mingwW64.callPackage ./guest-server.nix { };
+             |   ^
+           63|   passthru = {
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: path '/tmp/guest-server.nix' does not exist
+

@@ -1,0 +1,32 @@
+Build command: nix build --impure --expr 'import /tmp/tmp514llnfd.nix' --no-link
+Exit code: 1
+Build time: 4.21s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while evaluating the attribute 'drvPath'
+         at /nix/store/hnrz3z3v9sazmz6p1va69zccnqg9wskv-source/lib/customisation.nix:430:7:
+          429|     // {
+          430|       drvPath =
+             |       ^
+          431|         assert condition;
+
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:37:12:
+           36|
+           37|   strict = derivationStrict drvAttrs;
+             |            ^
+           38|
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: undefined variable 'django-agnocomplete'
+       at /tmp/tmp514llnfd.nix:55:7:
+           54|       django
+           55|       django-agnocomplete
+             |       ^
+           56|       django-environ
+

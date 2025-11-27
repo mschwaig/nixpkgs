@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmp1eje8jkh.nix' --no-link
+Exit code: 1
+Build time: 4.92s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmp1eje8jkh.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmp1eje8jkh.nix':
+
+       … while evaluating the attribute 'python3Packages.pyimg4'
+         at /tmp/tmp1eje8jkh.nix:15:7:
+           14|     python3Packages = super.python3Packages // {
+           15|       pyimg4 = self.python3Packages.callPackage (
+             |       ^
+           16|         # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: evaluation aborted with the following error message: 'lib.customisation.callPackageWith: Function called without required argument "apple-compress" at /tmp/tmp1eje8jkh.nix:18'
+

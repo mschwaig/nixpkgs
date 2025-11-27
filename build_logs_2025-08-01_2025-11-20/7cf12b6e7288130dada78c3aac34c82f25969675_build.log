@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmp2il8ayk4.nix' --no-link
+Exit code: 1
+Build time: 0.47s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmp2il8ayk4.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmp2il8ayk4.nix':
+
+       … while evaluating the attribute 'python3Packages.pycrashreport'
+         at /tmp/tmp2il8ayk4.nix:15:7:
+           14|     python3Packages = super.python3Packages // {
+           15|       pycrashreport = self.python3Packages.callPackage (
+             |       ^
+           16|         # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: evaluation aborted with the following error message: 'lib.customisation.callPackageWith: Function called without required argument "la-panic" at /tmp/tmp2il8ayk4.nix:22'
+

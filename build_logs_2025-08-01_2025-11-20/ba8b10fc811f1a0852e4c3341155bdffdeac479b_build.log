@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmpy5gplupo.nix' --no-link
+Exit code: 1
+Build time: 0.40s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmpy5gplupo.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmpy5gplupo.nix':
+
+       … while evaluating the attribute 'uitest'
+         at /tmp/tmpy5gplupo.nix:14:5:
+           13|   overlay = self: super: {
+           14|     uitest = self.callPackage (
+             |     ^
+           15|       # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: evaluation aborted with the following error message: 'lib.customisation.callPackageWith: Function called without required argument "tinycmmc" at /tmp/tmpy5gplupo.nix:21, did you mean "tinycc"?'
+

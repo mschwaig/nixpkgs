@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmpdrqkxz8q.nix' --no-link
+Exit code: 1
+Build time: 0.40s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmpdrqkxz8q.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmpdrqkxz8q.nix':
+
+       … while evaluating the attribute 'python313Packages.pytest-docker'
+         at /tmp/tmpdrqkxz8q.nix:15:7:
+           14|     python313Packages = super.python313Packages // {
+           15|       pytest-docker = self.python313Packages.callPackage (
+             |       ^
+           16|         # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: evaluation aborted with the following error message: 'lib.customisation.callPackageWith: Function called without required argument "pytest-pycodestyle" at /tmp/tmpdrqkxz8q.nix:24'
+

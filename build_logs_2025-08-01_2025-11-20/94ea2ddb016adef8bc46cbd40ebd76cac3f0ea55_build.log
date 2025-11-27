@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmpi5_rz0wt.nix' --no-link
+Exit code: 1
+Build time: 0.94s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmpi5_rz0wt.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmpi5_rz0wt.nix':
+
+       … while evaluating the attribute 'pythonPackages.tt-topology'
+         at /tmp/tmpi5_rz0wt.nix:15:7:
+           14|     pythonPackages = super.pythonPackages // {
+           15|       tt-topology = self.pythonPackages.callPackage (
+             |       ^
+           16|         # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: do not use python3Packages when building Python packages, specify each used package as a separate argument
+

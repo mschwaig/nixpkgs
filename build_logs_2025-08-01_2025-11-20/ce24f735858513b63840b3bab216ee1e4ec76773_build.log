@@ -1,0 +1,32 @@
+Build command: nix build --impure --expr 'import /tmp/tmpspkskz1e.nix' --no-link
+Exit code: 1
+Build time: 4.79s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmpspkskz1e.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmpspkskz1e.nix':
+
+       … while evaluating the attribute 'yaziPlugins.bookmarks'
+         at /tmp/tmpspkskz1e.nix:15:7:
+           14|     yaziPlugins = super.yaziPlugins // {
+           15|       bookmarks = self.yaziPlugins.callPackage (
+             |       ^
+           16|         # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: attribute 'callPackage' missing
+       at /tmp/tmpspkskz1e.nix:15:19:
+           14|     yaziPlugins = super.yaziPlugins // {
+           15|       bookmarks = self.yaziPlugins.callPackage (
+             |                   ^
+           16|         # Package content from commit
+

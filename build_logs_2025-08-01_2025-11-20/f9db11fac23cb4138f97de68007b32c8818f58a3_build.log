@@ -1,0 +1,32 @@
+Build command: nix build --impure --expr 'import /tmp/tmp6l5lv4_7.nix' --no-link
+Exit code: 1
+Build time: 0.49s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmp6l5lv4_7.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmp6l5lv4_7.nix':
+
+       … while evaluating the attribute 'home-assistant-custom-components.polaris-mqtt'
+         at /tmp/tmp6l5lv4_7.nix:15:7:
+           14|     home-assistant-custom-components = super.home-assistant-custom-components // {
+           15|       polaris-mqtt = self.home-assistant-custom-components.callPackage (
+             |       ^
+           16|         # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: attribute 'callPackage' missing
+       at /tmp/tmp6l5lv4_7.nix:15:22:
+           14|     home-assistant-custom-components = super.home-assistant-custom-components // {
+           15|       polaris-mqtt = self.home-assistant-custom-components.callPackage (
+             |                      ^
+           16|         # Package content from commit
+

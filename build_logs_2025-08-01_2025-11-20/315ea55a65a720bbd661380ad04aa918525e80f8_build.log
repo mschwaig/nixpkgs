@@ -1,0 +1,41 @@
+Build command: nix build --impure --expr 'import /tmp/tmp6kzv3nh9.nix' --no-link
+Exit code: 1
+Build time: 121.83s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+this derivation will be built:
+  /nix/store/v3y9lwcpwhwrrsnni7hfczbc3j12bqzf-chicago95-3.0.1.drv
+building '/nix/store/v3y9lwcpwhwrrsnni7hfczbc3j12bqzf-chicago95-3.0.1.drv'...
+error: builder for '/nix/store/v3y9lwcpwhwrrsnni7hfczbc3j12bqzf-chicago95-3.0.1.drv' failed with exit code 1;
+       last 25 log lines:
+       > /nix/store/ciarnmsx8lvsrmdbjddpmx0pqjrm8imb-bash-5.3p3/bin/bash: line 1: which: command not found
+       > /nix/store/ciarnmsx8lvsrmdbjddpmx0pqjrm8imb-bash-5.3p3/bin/bash: line 1: which: command not found
+       > /nix/store/ciarnmsx8lvsrmdbjddpmx0pqjrm8imb-bash-5.3p3/bin/bash: line 1: which: command not found
+       > /nix/store/ciarnmsx8lvsrmdbjddpmx0pqjrm8imb-bash-5.3p3/bin/bash: line 1: which: command not found
+       > /nix/store/ciarnmsx8lvsrmdbjddpmx0pqjrm8imb-bash-5.3p3/bin/bash: line 1: which: command not found
+       > /nix/store/ciarnmsx8lvsrmdbjddpmx0pqjrm8imb-bash-5.3p3/bin/bash: line 1: which: command not found
+       > /nix/store/ciarnmsx8lvsrmdbjddpmx0pqjrm8imb-bash-5.3p3/bin/bash: line 1: which: command not found
+       > /nix/store/ciarnmsx8lvsrmdbjddpmx0pqjrm8imb-bash-5.3p3/bin/bash: line 1: which: command not found
+       > /nix/store/ciarnmsx8lvsrmdbjddpmx0pqjrm8imb-bash-5.3p3/bin/bash: line 1: which: command not found
+       > P chicago95-theme-plus -r chicago95-theme-plus -d "June 2020" -t "PlusGUI" -s 1 -v "General Commands Manual" < /build/source/Plus/PlusGUI.1.txt |  > /build/source/PlusGUI.1.gz
+       > /nix/store/ciarnmsx8lvsrmdbjddpmx0pqjrm8imb-bash-5.3p3/bin/bash: line 1: P: command not found
+       > P chicago95-theme-plus -r chicago95-theme-plus -d "June 2020" -t "Chicago95" -s 1 -v "General Commands Manual" < /build/source/Plus/ChicagoPlus.1.txt |  > /build/source/ChicagoPlus.1.gz
+       > /nix/store/ciarnmsx8lvsrmdbjddpmx0pqjrm8imb-bash-5.3p3/bin/bash: line 1: P: command not found
+       > Running phase: glibPreInstallPhase
+       > Running phase: installPhase
+       > Running phase: dropIconThemeCache
+       > Removing /nix/store/15q5kjb9pd2xrkvymys0bdswnylfyi2a-chicago95-3.0.1/share/icons/Chicago95/icon-theme.cache
+       > Running phase: fixupPhase
+       > shrinking RPATHs of ELF executables and libraries in /nix/store/15q5kjb9pd2xrkvymys0bdswnylfyi2a-chicago95-3.0.1
+       > checking for references to /build/ in /nix/store/15q5kjb9pd2xrkvymys0bdswnylfyi2a-chicago95-3.0.1...
+       > patching script interpreter paths in /nix/store/15q5kjb9pd2xrkvymys0bdswnylfyi2a-chicago95-3.0.1
+       > /nix/store/15q5kjb9pd2xrkvymys0bdswnylfyi2a-chicago95-3.0.1/share/icons/Chicago95/apps/scalable/links.sh: interpreter directive changed from "#!/bin/bash" to "/nix/store/ciarnmsx8lvsrmdbjddpmx0pqjrm8imb-bash-5.3p3/bin/bash"
+       > /nix/store/15q5kjb9pd2xrkvymys0bdswnylfyi2a-chicago95-3.0.1/share/themes/Chicago95/gnome-shell/assets-render/render-assets.sh: interpreter directive changed from "#! /bin/bash" to "/nix/store/ciarnmsx8lvsrmdbjddpmx0pqjrm8imb-bash-5.3p3/bin/bash"
+       > ERROR: noBrokenSymlinks: the symlink /nix/store/15q5kjb9pd2xrkvymys0bdswnylfyi2a-chicago95-3.0.1/share/icons/Chicago95/apps/22/org.gnome.seahorse.Application.png points to a missing target: /nix/store/15q5kjb9pd2xrkvymys0bdswnylfyi2a-chicago95-3.0.1/share/icons/Chicago95/apps/22/stock_keyring.png
+       > ERROR: noBrokenSymlinks: found 1 dangling symlinks, 0 reflexive symlinks and 0 unreadable symlinks
+       For full logs, run:
+         nix log /nix/store/v3y9lwcpwhwrrsnni7hfczbc3j12bqzf-chicago95-3.0.1.drv
+

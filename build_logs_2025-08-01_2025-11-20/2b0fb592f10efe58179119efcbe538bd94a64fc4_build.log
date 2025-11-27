@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmpc1vr9me9.nix' --no-link
+Exit code: 1
+Build time: 1.31s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while evaluating the attribute 'drvPath'
+         at /nix/store/662jhmbp6c94zmk1nrsrc5mid4qbgnzm-source/lib/customisation.nix:429:7:
+          428|     // {
+          429|       drvPath =
+             |       ^
+          430|         assert condition;
+
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:37:12:
+           36|
+           37|   strict = derivationStrict drvAttrs;
+             |            ^
+           38|
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: path '/tmp/setup-hook.sh' does not exist
+

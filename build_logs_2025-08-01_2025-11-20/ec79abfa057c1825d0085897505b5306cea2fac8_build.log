@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmpbmzmthjh.nix' --no-link
+Exit code: 1
+Build time: 0.41s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmpbmzmthjh.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmpbmzmthjh.nix':
+
+       … while evaluating the attribute 'ocamlPackages.oui'
+         at /tmp/tmpbmzmthjh.nix:15:7:
+           14|     ocamlPackages = super.ocamlPackages // {
+           15|       oui = self.ocamlPackages.callPackage (
+             |       ^
+           16|         # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: evaluation aborted with the following error message: 'lib.customisation.callPackageWith: Function called without required argument "opam-client" at /tmp/tmpbmzmthjh.nix:25'
+

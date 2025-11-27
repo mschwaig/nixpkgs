@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmpfwb50qhk.nix' --no-link
+Exit code: 1
+Build time: 2.57s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmpfwb50qhk.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmpfwb50qhk.nix':
+
+       … while evaluating the attribute 'qt-color-widgets'
+         at /tmp/tmpfwb50qhk.nix:14:5:
+           13|   overlay = self: super: {
+           14|     qt-color-widgets = self.callPackage (
+             |     ^
+           15|       # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: evaluation aborted with the following error message: 'lib.customisation.callPackageWith: Function called without required argument "qtbase" at /tmp/tmpfwb50qhk.nix:21, did you mean "_9base", "debase" or "hbase"?'
+

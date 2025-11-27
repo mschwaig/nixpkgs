@@ -1,0 +1,58 @@
+Build command: nix build --impure --expr 'import /tmp/tmpjxey4wbb.nix' --no-link
+Exit code: 1
+Build time: 18.78s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+these 3 derivations will be built:
+  /nix/store/kp4isnpi29q4ak9hysynmzxakbfdn30s-venator-1.0.4-vendor-staging.drv
+  /nix/store/8s8s890ppcva0rm5c3880awm757ncsyn-venator-1.0.4-vendor.drv
+  /nix/store/vrc5xrl2g9vw0z873vzrc54z6divm318-venator-1.0.4.drv
+these 11 paths will be fetched (236.41 MiB download, 1094.55 MiB unpacked):
+  /nix/store/yfkhz8nrg2lnxvq3sd3x1rz3az01bjmq-auditable-cargo-1.90.0
+  /nix/store/7p3nmbil903hjk0b66a0073s8kynaygg-cargo-1.90.0
+  /nix/store/y3z0g4295glbday1i8qq14q0aicn8873-gst-plugins-bad-1.26.5
+  /nix/store/g30p06w25silq9pyzahfyrnflwaqa0yi-gtk4-4.20.2
+  /nix/store/mcvbl62xdzp44768chnadb3i0mc69bv6-gtk4-4.20.2-dev
+  /nix/store/7iswvayhhfv9sh2p6ky1rvxis5ccjz53-openal-soft-1.24.3
+  /nix/store/yz76nbpfkazazi99d7bk8xbzinwq68qz-rustc-1.90.0
+  /nix/store/pw6j8mfpz3j9jf5vmxcn5q2b55s6ifri-rustc-wrapper-1.90.0
+  /nix/store/1dchc5rbi8srnffsdg8vk208k3rv3ckr-tauri-hook
+  /nix/store/fljnq0m74av4fwjd7b31sf7s70chiski-webkitgtk-2.50.1+abi=4.1-dev
+  /nix/store/q39nr1cmzp136xs5av2a3jkcm5j5hghc-wrap-gapps-hook
+copying path '/nix/store/fljnq0m74av4fwjd7b31sf7s70chiski-webkitgtk-2.50.1+abi=4.1-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/yz76nbpfkazazi99d7bk8xbzinwq68qz-rustc-1.90.0' from 'https://cache.nixos.org'...
+copying path '/nix/store/7iswvayhhfv9sh2p6ky1rvxis5ccjz53-openal-soft-1.24.3' from 'https://cache.nixos.org'...
+building '/nix/store/8xf0h5cgbjb1y115rnjym1j9vmm8pyr0-venator-1.0.4-vendor-staging.drv'...
+copying path '/nix/store/y3z0g4295glbday1i8qq14q0aicn8873-gst-plugins-bad-1.26.5' from 'https://cache.nixos.org'...
+error: builder for '/nix/store/8xf0h5cgbjb1y115rnjym1j9vmm8pyr0-venator-1.0.4-vendor-staging.drv' failed with exit code 1;
+       last 22 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/9mk843n5013fk97247hw2rw1qqyiki8c-source
+       > source root is source
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: buildPhase
+       > Traceback (most recent call last):
+       >   File "/nix/store/f2aiivbcplcfk3c30dmjgl0iw96yvwaz-fetch-cargo-vendor-util/bin/fetch-cargo-vendor-util", line 349, in <module>
+       >     main()
+       >     ~~~~^^
+       >   File "/nix/store/f2aiivbcplcfk3c30dmjgl0iw96yvwaz-fetch-cargo-vendor-util/bin/fetch-cargo-vendor-util", line 345, in main
+       >     subcommand_func()
+       >     ~~~~~~~~~~~~~~~^^
+       >   File "/nix/store/f2aiivbcplcfk3c30dmjgl0iw96yvwaz-fetch-cargo-vendor-util/bin/fetch-cargo-vendor-util", line 336, in <lambda>
+       >     "create-vendor-staging": lambda: create_vendor_staging(lockfile_path=Path(sys.argv[2]), out_dir=Path(sys.argv[3])),
+       >                                      ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+       >   File "/nix/store/f2aiivbcplcfk3c30dmjgl0iw96yvwaz-fetch-cargo-vendor-util/bin/fetch-cargo-vendor-util", line 127, in create_vendor_staging
+       >     cargo_lock_toml = load_toml(lockfile_path)
+       >   File "/nix/store/f2aiivbcplcfk3c30dmjgl0iw96yvwaz-fetch-cargo-vendor-util/bin/fetch-cargo-vendor-util", line 23, in load_toml
+       >     with open(path, "rb") as f:
+       >          ~~~~^^^^^^^^^^^^
+       > FileNotFoundError: [Errno 2] No such file or directory: 'Cargo.lock'
+       For full logs, run:
+         nix log /nix/store/8xf0h5cgbjb1y115rnjym1j9vmm8pyr0-venator-1.0.4-vendor-staging.drv
+error: 1 dependencies of derivation '/nix/store/8s8s890ppcva0rm5c3880awm757ncsyn-venator-1.0.4-vendor.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/vrc5xrl2g9vw0z873vzrc54z6divm318-venator-1.0.4.drv' failed to build
+

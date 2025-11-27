@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmptzcbq42p.nix' --no-link
+Exit code: 1
+Build time: 0.47s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmptzcbq42p.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmptzcbq42p.nix':
+
+       … while evaluating the attribute 'python3Packages.uplink-protobuf'
+         at /tmp/tmptzcbq42p.nix:15:7:
+           14|     python3Packages = super.python3Packages // {
+           15|       uplink-protobuf = self.python3Packages.callPackage (
+             |       ^
+           16|         # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: evaluation aborted with the following error message: 'lib.customisation.callPackageWith: Function called without required argument "uplink" at /tmp/tmptzcbq42p.nix:22, did you mean "plink", "blink" or "flink"?'
+

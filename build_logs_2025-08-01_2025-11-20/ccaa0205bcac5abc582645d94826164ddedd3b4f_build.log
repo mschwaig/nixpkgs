@@ -1,0 +1,41 @@
+Build command: nix build --impure --expr 'import /tmp/tmppmnibqqo.nix' --no-link
+Exit code: 1
+Build time: 75.58s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+this derivation will be built:
+  /nix/store/vbizs26l3srkbpzh7pr43px5l4n9h9ai-typesetter-0.5.0.drv
+building '/nix/store/vbizs26l3srkbpzh7pr43px5l4n9h9ai-typesetter-0.5.0.drv'...
+error: builder for '/nix/store/vbizs26l3srkbpzh7pr43px5l4n9h9ai-typesetter-0.5.0.drv' failed with exit code 101;
+       last 25 log lines:
+       >       - /nix/store/27czksni7m3kji791lvfdl40n99f71q8-libxcb-1.17.0-dev/lib/pkgconfig
+       >       - /nix/store/y4cf6q9h3qgdvn98a9k9dcwrr78wjysj-gtk4-4.18.6-dev/lib/pkgconfig
+       >       - /nix/store/jbg4x930kfzpjfrw239y78bl6df4i8xw-graphene-1.10.8-dev/lib/pkgconfig
+       >       - /nix/store/8xd82yxllimranyhgx3372c16iydxgsa-pango-1.56.4-dev/lib/pkgconfig
+       >       - /nix/store/izaxd55idp7vqyxsw8kci0y4d12zbc7h-harfbuzz-12.1.0-dev/lib/pkgconfig
+       >       - /nix/store/xpwg3r0dcmn431h2ms1j0zq66ag3qsb7-graphite2-1.3.14-dev/lib/pkgconfig
+       >       - /nix/store/y2kz6kw58c3hdya6h7xx308v3vj2p023-libxft-2.3.9-dev/lib/pkgconfig
+       >       - /nix/store/465lj8xn3vp4xfand16iqlwx1kqgc4id-wayland-1.24.0-dev/lib/pkgconfig
+       >       - /nix/store/szq0xnk6r3wnq1j9xl77vbxsc4xi87wb-vulkan-loader-1.4.328.0-dev/lib/pkgconfig
+       >       - /nix/store/03iq7iqv9avzxhxpf791n0asqg11rj3a-gsettings-desktop-schemas-48.0/share/pkgconfig
+       >       - /nix/store/335s7pl278ckajxdj0744qdq5fk7v65q-gtksourceview-5.16.0-dev/lib/pkgconfig
+       >       - /nix/store/57dcm4px0phwpdfrv3mvwnm7yjls76pn-shared-mime-info-2.4-dev/share/pkgconfig
+       >       - /nix/store/4mf139617dkg3hlf18bymnv286141ic6-libadwaita-1.7.6-dev/lib/pkgconfig
+       >       - /nix/store/zczax2hxqiqryqspg3jcx09122m6bnss-libspelling-0.4.9-dev/lib/pkgconfig
+       >       - /nix/store/4vm27ldxmphlgyj3vf1h7dlgvj5hvj0w-openssl-3.6.0-dev/lib/pkgconfig
+       >
+       >   HINT: you may need to install a package such as gtksourceview-5, gtksourceview-5-dev or gtksourceview-5-devel.
+       >
+       > warning: build failed, waiting for other jobs to finish...
+       > [1/4] Generating data/typesetter_gresource with a custom command
+       > xml-stripblanks preprocessing requested, but XMLLINT is not set, and xmllint is not in PATH
+       > [3/4] Merging translations for data/net.trowell.typesetter.metainfo.xml
+       > FAILED: [code=101] src/typesetter
+       > /nix/store/xs8scz9w9jp4hpqycx3n3bah5y07ymgj-coreutils-9.8/bin/env CARGO_HOME=/build/source/build/cargo-home /nix/store/ynhfvh8h1da3l2hnm15ab2fh3h8a6lf4-cargo-1.89.0/bin/cargo build --manifest-path /build/source/Cargo.toml --target-dir /build/source/build/src && cp src/debug/typesetter src/typesetter
+       > ninja: build stopped: subcommand failed.
+       For full logs, run:
+         nix log /nix/store/vbizs26l3srkbpzh7pr43px5l4n9h9ai-typesetter-0.5.0.drv
+

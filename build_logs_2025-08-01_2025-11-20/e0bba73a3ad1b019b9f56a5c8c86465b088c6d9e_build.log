@@ -1,0 +1,32 @@
+Build command: nix build --impure --expr 'import /tmp/tmp94tr3i4y.nix' --no-link
+Exit code: 1
+Build time: 4.77s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmp94tr3i4y.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmp94tr3i4y.nix':
+
+       … while evaluating the attribute 'yaziPlugins.recycle-bin'
+         at /tmp/tmp94tr3i4y.nix:15:7:
+           14|     yaziPlugins = super.yaziPlugins // {
+           15|       recycle-bin = self.yaziPlugins.callPackage (
+             |       ^
+           16|         # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: attribute 'callPackage' missing
+       at /tmp/tmp94tr3i4y.nix:15:21:
+           14|     yaziPlugins = super.yaziPlugins // {
+           15|       recycle-bin = self.yaziPlugins.callPackage (
+             |                     ^
+           16|         # Package content from commit
+

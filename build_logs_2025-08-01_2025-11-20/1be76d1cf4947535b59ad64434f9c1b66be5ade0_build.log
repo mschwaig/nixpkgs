@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmp_a8bekzm.nix' --no-link
+Exit code: 1
+Build time: 0.40s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmp_a8bekzm.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmp_a8bekzm.nix':
+
+       … while evaluating the attribute 'hyprpwcenter'
+         at /tmp/tmp_a8bekzm.nix:14:5:
+           13|   overlay = self: super: {
+           14|     hyprpwcenter = self.callPackage (
+             |     ^
+           15|       # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: evaluation aborted with the following error message: 'lib.customisation.callPackageWith: Function called without required argument "hyprtoolkit" at /tmp/tmp_a8bekzm.nix:25'
+

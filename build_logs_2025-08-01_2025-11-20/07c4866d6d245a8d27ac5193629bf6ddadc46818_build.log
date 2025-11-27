@@ -1,0 +1,32 @@
+Build command: nix build --impure --expr 'import /tmp/tmppz8u6k2m.nix' --no-link
+Exit code: 1
+Build time: 3.22s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmppz8u6k2m.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmppz8u6k2m.nix':
+
+       … while evaluating the attribute 'vimPlugins.fff-nvim'
+         at /tmp/tmppz8u6k2m.nix:15:7:
+           14|     vimPlugins = super.vimPlugins // {
+           15|       fff-nvim = self.vimPlugins.callPackage (
+             |       ^
+           16|         # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: attribute 'callPackage' missing
+       at /tmp/tmppz8u6k2m.nix:15:18:
+           14|     vimPlugins = super.vimPlugins // {
+           15|       fff-nvim = self.vimPlugins.callPackage (
+             |                  ^
+           16|         # Package content from commit
+

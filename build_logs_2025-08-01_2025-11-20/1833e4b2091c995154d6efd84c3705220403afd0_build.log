@@ -1,0 +1,32 @@
+Build command: nix build --impure --expr 'import /tmp/tmpyzgrj1ct.nix' --no-link
+Exit code: 1
+Build time: 0.53s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while evaluating the attribute 'drvPath'
+         at /nix/store/ipyw6f3ah05zxy1imaydg5bmr8qmsiyc-source/lib/customisation.nix:429:7:
+          428|     // {
+          429|       drvPath =
+             |       ^
+          430|         assert condition;
+
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:37:12:
+           36|
+           37|   strict = derivationStrict drvAttrs;
+             |            ^
+           38|
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: attribute 'testData' missing
+       at /tmp/tmpyzgrj1ct.nix:60:5:
+           59|     pytestCheckHook
+           60|     pyhanko.testData
+             |     ^
+           61|     requests-mock
+

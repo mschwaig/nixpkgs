@@ -1,0 +1,30 @@
+Build command: nix build --impure --expr 'import /tmp/tmpvfjx9ht4.nix' --no-link
+Exit code: 1
+Build time: 5.22s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:37:12:
+           36|
+           37|   strict = derivationStrict drvAttrs;
+             |            ^
+           38|
+
+       … while evaluating derivation 'bork'
+         whose name attribute is located at /nix/store/201v6s1hyhfb4m6flp3gqiva1yy23dvj-source/pkgs/stdenv/generic/make-derivation.nix:482:13
+
+       … while evaluating attribute 'postPatch' of derivation 'bork'
+         at /tmp/tmpvfjx9ht4.nix:49:3:
+           48|
+           49|   postPatch = ''
+             |   ^
+           50|     ln -s ${callPackage ./deps.nix { }} $ZIG_GLOBAL_CACHE_DIR/p
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: path '/tmp/deps.nix' does not exist
+

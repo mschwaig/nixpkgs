@@ -1,0 +1,33 @@
+Build command: nix build --impure --expr 'import /tmp/tmpxj__sm14.nix' --no-link
+Exit code: 1
+Build time: 0.35s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmpxj__sm14.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmpxj__sm14.nix':
+
+       … while evaluating the attribute 'kdePackage.glaxnimate'
+         at /tmp/tmpxj__sm14.nix:14:5:
+           13|   overlay = self: super: {
+           14|     kdePackage = super.kdePackage // {
+             |     ^
+           15|       glaxnimate = self.kdePackage.callPackage (
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: attribute 'kdePackage' missing
+       at /tmp/tmpxj__sm14.nix:14:18:
+           13|   overlay = self: super: {
+           14|     kdePackage = super.kdePackage // {
+             |                  ^
+           15|       glaxnimate = self.kdePackage.callPackage (
+       Did you mean kdePackages?
+

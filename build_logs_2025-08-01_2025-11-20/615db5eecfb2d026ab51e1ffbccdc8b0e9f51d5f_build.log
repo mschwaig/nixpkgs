@@ -1,0 +1,30 @@
+Build command: nix build --impure --expr 'import /tmp/tmpfzx4y4ji.nix' --no-link
+Exit code: 1
+Build time: 0.61s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:37:12:
+           36|
+           37|   strict = derivationStrict drvAttrs;
+             |            ^
+           38|
+
+       … while evaluating derivation 'llama-swap-156'
+         whose name attribute is located at /nix/store/b0vlbbvnq40yca0r0dx39092inxzlp5i-source/pkgs/stdenv/generic/make-derivation.nix:538:13
+
+       … while evaluating attribute 'goModules' of derivation 'llama-swap-156'
+         at /nix/store/b0vlbbvnq40yca0r0dx39092inxzlp5i-source/pkgs/build-support/go/module.nix:77:7:
+           76|         ;
+           77|       goModules =
+             |       ^
+           78|         if (finalAttrs.vendorHash == null) then
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: path '/tmp/ui.nix' does not exist
+

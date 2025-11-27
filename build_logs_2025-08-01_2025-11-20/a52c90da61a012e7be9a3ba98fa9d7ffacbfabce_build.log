@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmp13td6e2m.nix' --no-link
+Exit code: 1
+Build time: 0.32s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmp13td6e2m.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmp13td6e2m.nix':
+
+       … while evaluating the attribute 'freelens-bin'
+         at /tmp/tmp13td6e2m.nix:14:5:
+           13|   overlay = self: super: {
+           14|     freelens-bin = self.callPackage (
+             |     ^
+           15|       # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: path '/tmp/linux.nix' does not exist
+

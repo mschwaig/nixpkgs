@@ -1,0 +1,21 @@
+Build command: nix build --impure --expr 'import /tmp/tmpu2joak16.nix' --no-link
+Exit code: 1
+Build time: 0.03s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmpu2joak16.nix
+             | ^
+
+       error: syntax error, unexpected PATH, expecting INHERIT
+       at /tmp/tmpu2joak16.nix:14:5:
+           13|   overlay = self: super: {
+           14|     nixos/timekpr = self.callPackage (
+             |     ^
+           15|       # Package content from commit
+

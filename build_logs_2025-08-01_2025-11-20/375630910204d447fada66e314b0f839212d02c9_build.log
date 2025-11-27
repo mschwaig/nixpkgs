@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmpo2kzrbhi.nix' --no-link
+Exit code: 1
+Build time: 0.47s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmpo2kzrbhi.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmpo2kzrbhi.nix':
+
+       … while evaluating the attribute 'python3Packages.ipsw-parser'
+         at /tmp/tmpo2kzrbhi.nix:15:7:
+           14|     python3Packages = super.python3Packages // {
+           15|       ipsw-parser = self.python3Packages.callPackage (
+             |       ^
+           16|         # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: evaluation aborted with the following error message: 'lib.customisation.callPackageWith: Function called without required argument "pyimg4" at /tmp/tmpo2kzrbhi.nix:26, did you mean "pyamg"?'
+

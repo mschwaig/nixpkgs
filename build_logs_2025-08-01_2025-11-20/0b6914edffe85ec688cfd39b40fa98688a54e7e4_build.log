@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmpjtoelc8e.nix' --no-link
+Exit code: 1
+Build time: 0.40s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmpjtoelc8e.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmpjtoelc8e.nix':
+
+       … while evaluating the attribute 'python3Packages.pymobiledevice3'
+         at /tmp/tmpjtoelc8e.nix:15:7:
+           14|     python3Packages = super.python3Packages // {
+           15|       pymobiledevice3 = self.python3Packages.callPackage (
+             |       ^
+           16|         # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: evaluation aborted with the following error message: 'lib.customisation.callPackageWith: Function called without required argument "developer-disk-image" at /tmp/tmpjtoelc8e.nix:25'
+

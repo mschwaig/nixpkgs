@@ -1,0 +1,32 @@
+Build command: nix build --impure --expr 'import /tmp/tmp3mkt30f_.nix' --no-link
+Exit code: 1
+Build time: 0.92s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmp3mkt30f_.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmp3mkt30f_.nix':
+
+       … while evaluating the attribute 'copyparty'
+         at /tmp/tmp3mkt30f_.nix:14:5:
+           13|   overlay = self: super: {
+           14|     copyparty = self.callPackage (
+             |     ^
+           15|       # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: infinite recursion encountered
+       at /tmp/tmp3mkt30f_.nix:17:1:
+           16|       { copyparty }:
+           17| copyparty.override {
+             | ^
+           18|   withHashedPasswords = true;
+

@@ -1,0 +1,39 @@
+Build command: nix build --impure --expr 'import /tmp/tmp0zsugz8k.nix' --no-link
+Exit code: 1
+Build time: 4.40s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+this derivation will be built:
+  /nix/store/3h4xb70dn9mxgym6n7agnlv6jd3dzwmk-ocaml5.3.0-why3find-1.2.0.drv
+building '/nix/store/3h4xb70dn9mxgym6n7agnlv6jd3dzwmk-ocaml5.3.0-why3find-1.2.0.drv'...
+error: builder for '/nix/store/3h4xb70dn9mxgym6n7agnlv6jd3dzwmk-ocaml5.3.0-why3find-1.2.0.drv' failed with exit code 1;
+       last 23 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/562y3r0v0s55x7gs891c3mfii16h89ax-why3find-1.2.0.tbz
+       > source root is why3find-1.2.0
+       > setting SOURCE_DATE_EPOCH to timestamp 1754048533 of file "why3find-1.2.0/why3find.opam"
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > no configure script, doing nothing
+       > Running phase: buildPhase
+       > Warning: Cache directories could not be created: Permission denied; disabling
+       > cache
+       > Hint: Make sure the directory /homeless-shelter/.cache/dune/db/temp can be
+       > created
+       > File "src/dune", line 2, characters 8-12:
+       > 2 |   (name main)
+       >             ^^^^
+       > (cd _build/default && /nix/store/y0fdsl9c7fwfl90g6ikiqgjzih0vqjk9-ocaml-5.3.0/bin/ocamlopt.opt -w -40 -w -9-69 -open Why3find -open Why3findUtils -g -o src/main.exe -linkall /nix/store/y0fdsl9c7fwfl90g6ikiqgjzih0vqjk9-ocaml-5.3.0/lib/ocaml/unix/unix.cmxa /nix/store/y0fdsl9c7fwfl90g6ikiqgjzih0vqjk9-ocaml-5.3.0/lib/ocaml/str/str.cmxa /nix/store/0mwscgx7xvksd8r5g1qfkr12hbfl2kf2-ocaml5.3.0-yojson-2.2.2/lib/ocaml/5.3.0/site-lib/yojson/yojson.cmxa /nix/store/gml5p5p1i6hxsjwxzrbhyjfm37y2xwd7-ocaml5.3.0-terminal_size-0.2.0/lib/ocaml/5.3.0/site-lib/terminal_size/terminal_size.cmxa -I /nix/store/gml5p5p1i6hxsjwxzrbhyjfm37y2xwd7-ocaml5.3.0-terminal_size-0.2.0/lib/ocaml/5.3.0/site-lib/terminal_size utils/Why3findUtils.cmxa /nix/store/3hl5spkmczxfayfjc2z6j7sx2229vi30-ocaml5.3.0-menhirLib-20240715/lib/ocaml/5.3.0/site-lib/menhirLib/menhirLib.cmxa /nix/store/6kbdvqmp4rdzvw7nwrs3fz2cpdkrdz4q-ocaml5.3.0-re-1.12.0/lib/ocaml/5.3.0/site-lib/re/re.cmxa /nix/store/j73p7q0hrk1sfw0zvfiky1q5xsjf9r0b-ocaml5.3.0-zarith-1.14/lib/ocaml/5.3.0/site-lib/zarith/zarith.cmxa -I /nix/store/j73p7q0hrk1sfw0zvfiky1q5xsjf9r0b-ocaml5.3.0-zarith-1.14/lib/ocaml/5.3.0/site-lib/zarith /nix/store/y0fdsl9c7fwfl90g6ikiqgjzih0vqjk9-ocaml-5.3.0/lib/ocaml/dynlink/dynlink.cmxa /nix/store/fk8lmg58i1hxqc9aicw5yklwkckjr4r5-ocaml5.3.0-camlzip-1.11/lib/ocaml/5.3.0/site-lib/zip/zip.cmxa -I /nix/store/fk8lmg58i1hxqc9aicw5yklwkckjr4r5-ocaml5.3.0-camlzip-1.11/lib/ocaml/5.3.0/site-lib/zip /nix/store/28a63rbp2zs7k7l8xb9vxl6f7hjhck7p-ocaml5.3.0-sexplib0-0.17.0/lib/ocaml/5.3.0/site-lib/sexplib0/sexplib0.cmxa /nix/store/gc43xny6sqbkhi9plkdncy15219jy3mn-ocaml5.3.0-parsexp-0.17.0/lib/ocaml/5.3.0/site-lib/parsexp/parsexp.cmxa /nix/store/1pqkryzg31znfbnxvrwl3csfpwcxc3ly-ocaml5.3.0-sexplib-0.17.0/lib/ocaml/5.3.0/site-lib/sexplib/sexplib.cmxa /nix/store/p2r6212bcgzczj0bvycyw3k2jsx5shxq-why3-1.8.1-dev/lib/ocaml/5.3.0/site-lib/why3/why3.cmxa /nix/store/m0c665bdjwx0ff1r993pi2c1zf97r4ks-ocaml5.3.0-dune-private-libs-3.20.2/lib/ocaml/5.3.0/site-lib/dune-private-libs/dune-section/dune_section.cmxa /nix/store/jzin30rmqg9xr8s5w05iymdmdswcj7y4-ocaml5.3.0-dune-site-3.20.2/lib/ocaml/5.3.0/site-lib/dune-site/private/dune_site_private.cmxa src/.main.eobjs/native/dune_site__Dune_site_data.cmx /nix/store/jzin30rmqg9xr8s5w05iymdmdswcj7y4-ocaml5.3.0-dune-site-3.20.2/lib/ocaml/5.3.0/site-lib/dune-site/dune_site.cmxa lib/why3find.cmxa /nix/store/mpj80masszlax80750q8pvyjx03xfaj7-ocaml5.3.0-zmq-5.3.0/lib/ocaml/5.3.0/site-lib/zmq/zmq.cmxa -I /nix/store/mpj80masszlax80750q8pvyjx03xfaj7-ocaml5.3.0-zmq-5.3.0/lib/ocaml/5.3.0/site-lib/zmq src/.main.eobjs/native/dune__exe.cmx src/.main.eobjs/native/dune__exe__Debug.cmx src/.main.eobjs/native/dune__exe__Runner.cmx src/.main.eobjs/native/dune__exe__Calibration.cmx src/.main.eobjs/native/dune__exe__Client.cmx src/.main.eobjs/native/dune__exe__Axioms.cmx src/.main.eobjs/native/dune__exe__Token.cmx src/.main.eobjs/native/dune__exe__Cloning.cmx src/.main.eobjs/native/dune__exe__Proofs.cmx src/.main.eobjs/native/dune__exe__Docref.cmx src/.main.eobjs/native/dune__exe__Lexer.cmx src/.main.eobjs/native/dune__exe__Pdoc.cmx src/.main.eobjs/native/dune__exe__Soundness.cmx src/.main.eobjs/native/dune__exe__Docgen.cmx src/.main.eobjs/native/dune__exe__Hammer.cmx src/.main.eobjs/native/dune__exe__Lspserver.cmx src/.main.eobjs/native/dune__exe__Namespace.cmx src/.main.eobjs/native/dune__exe__Srcref.cmx src/.main.eobjs/native/dune__exe__Wenv.cmx src/.main.eobjs/native/dune__exe__Lspcc.cmx src/.main.eobjs/native/dune__exe__Prove.cmx src/.main.eobjs/native/dune__exe__Command.cmx src/.main.eobjs/native/dune__exe__Server.cmx src/.main.eobjs/native/dune__exe__Worker.cmx src/.main.eobjs/native/dune__exe__Main.cmx)
+       > /nix/store/xrwdb41dqi2ia6lr2s61w5bzfg2m71pi-binutils-2.44/bin/ld: cannot find -lzmq: No such file or directory
+       > /nix/store/xrwdb41dqi2ia6lr2s61w5bzfg2m71pi-binutils-2.44/bin/ld: note to link with /nix/store/mpj80masszlax80750q8pvyjx03xfaj7-ocaml5.3.0-zmq-5.3.0/lib/ocaml/5.3.0/site-lib/zmq/zmq.a use -l:zmq.a or rename it to libzmq.a
+       > collect2: error: ld returned 1 exit status
+       > File "caml_startup", line 1:
+       > Error: Error during linking (exit code 1)
+       >
+       For full logs, run:
+         nix log /nix/store/3h4xb70dn9mxgym6n7agnlv6jd3dzwmk-ocaml5.3.0-why3find-1.2.0.drv
+

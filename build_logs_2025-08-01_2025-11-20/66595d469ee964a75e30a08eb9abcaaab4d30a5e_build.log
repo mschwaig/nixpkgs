@@ -1,0 +1,32 @@
+Build command: nix build --impure --expr 'import /tmp/tmpj3uy8pij.nix' --no-link
+Exit code: 1
+Build time: 0.33s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmpj3uy8pij.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmpj3uy8pij.nix':
+
+       … while evaluating the attribute 'yaziPlugins.dupes'
+         at /tmp/tmpj3uy8pij.nix:15:7:
+           14|     yaziPlugins = super.yaziPlugins // {
+           15|       dupes = self.yaziPlugins.callPackage (
+             |       ^
+           16|         # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: attribute 'callPackage' missing
+       at /tmp/tmpj3uy8pij.nix:15:15:
+           14|     yaziPlugins = super.yaziPlugins // {
+           15|       dupes = self.yaziPlugins.callPackage (
+             |               ^
+           16|         # Package content from commit
+

@@ -1,0 +1,17 @@
+Build command: nix build --impure --expr 'import /tmp/tmpc7se2slh.nix' --no-link
+Exit code: 1
+Build time: 11.18s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+these 2 derivations will be built:
+  /nix/store/8lf0lzlk8yw1566inaasgl35ds3n9wnj-source.drv
+  /nix/store/82sz33y2cb6h6hf4nz23g5g89y1n0mna-python3.13-backports-zstd-1.0.0.drv
+building '/nix/store/cbvjjqx3q811sf5wjmffzlillqaq0yjl-source.drv'...
+error: hash mismatch in fixed-output derivation '/nix/store/cbvjjqx3q811sf5wjmffzlillqaq0yjl-source.drv':
+         specified: sha256-MRtj40vjCPtV9/RDgun/APzva4lv+TnXeBKD9RNlkII=
+            got:    sha256-PNM/iaj4r2M1IYh6RDRVMm4gn/UMHqlxnI5Lh4DTRmQ=
+error: 1 dependencies of derivation '/nix/store/82sz33y2cb6h6hf4nz23g5g89y1n0mna-python3.13-backports-zstd-1.0.0.drv' failed to build
+

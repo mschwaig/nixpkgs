@@ -1,0 +1,17 @@
+Build command: nix build --impure --expr 'import /tmp/tmpee6rnjpx.nix' --no-link
+Exit code: 1
+Build time: 3.28s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+these 2 derivations will be built:
+  /nix/store/vjz9rvrs937dayn1zdvg66zwy46592a7-source.drv
+  /nix/store/xfadpml6vf5c2la0j2mpprgzr2rcbcgh-feyngame-3.0.0.drv
+building '/nix/store/d78bb7mpr4wyki5vbfxi57lkg9c9ds7l-source.drv'...
+error: hash mismatch in fixed-output derivation '/nix/store/d78bb7mpr4wyki5vbfxi57lkg9c9ds7l-source.drv':
+         specified: sha256-PhdspIr0Lnuv4e8bjMEAXnVDK1YVlrI5XI+rP9qXNQ0=
+            got:    sha256-keqRXs51Bi9kuyakgvNpkvV3RD1nLO/acji/KgsCxOM=
+error: 1 dependencies of derivation '/nix/store/xfadpml6vf5c2la0j2mpprgzr2rcbcgh-feyngame-3.0.0.drv' failed to build
+

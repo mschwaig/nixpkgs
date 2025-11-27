@@ -1,0 +1,33 @@
+Build command: nix build --impure --expr 'import /tmp/tmpl7js3xl3.nix' --no-link
+Exit code: 1
+Build time: 0.36s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmpl7js3xl3.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmpl7js3xl3.nix':
+
+       … while evaluating the attribute 'python3Pacakges.clx-sdk-xms'
+         at /tmp/tmpl7js3xl3.nix:14:5:
+           13|   overlay = self: super: {
+           14|     python3Pacakges = super.python3Pacakges // {
+             |     ^
+           15|       clx-sdk-xms = self.python3Pacakges.callPackage (
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: attribute 'python3Pacakges' missing
+       at /tmp/tmpl7js3xl3.nix:14:23:
+           13|   overlay = self: super: {
+           14|     python3Pacakges = super.python3Pacakges // {
+             |                       ^
+           15|       clx-sdk-xms = self.python3Pacakges.callPackage (
+       Did you mean python3Packages?
+

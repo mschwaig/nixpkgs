@@ -1,0 +1,50 @@
+Build command: nix build --impure --expr 'import /tmp/tmpgvjbkxd3.nix' --no-link
+Exit code: 1
+Build time: 0.34s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … in the condition of the assert statement
+         at /nix/store/cq5yypfzbfxmnch6cfiayc545ib58q8b-source/lib/customisation.nix:430:9:
+          429|       drvPath =
+          430|         assert condition;
+             |         ^
+          431|         drv.drvPath;
+
+       … while evaluating the attribute 'handled'
+         at /nix/store/cq5yypfzbfxmnch6cfiayc545ib58q8b-source/pkgs/stdenv/generic/check-meta.nix:751:9:
+          750|         # or, alternatively, just output a warning message.
+          751|         handled = (
+             |         ^
+          752|           if valid == "yes" then
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: Package ‘meetingbar-4.11.6’ in /tmp/tmpgvjbkxd3.nix:49 is not available on the requested hostPlatform:
+         hostPlatform.system = "x86_64-linux"
+         package.meta.platforms = [
+           "x86_64-darwin"
+           "aarch64-darwin"
+         ]
+         package.meta.badPlatforms = [ ]
+       , refusing to evaluate.
+
+       a) To temporarily allow packages that are unsupported for this system, you can use an environment variable
+          for a single invocation of the nix tools.
+
+            $ export NIXPKGS_ALLOW_UNSUPPORTED_SYSTEM=1
+
+          Note: When using `nix shell`, `nix build`, `nix develop`, etc with a flake,
+                then pass `--impure` in order to allow use of environment variables.
+
+       b) For `nixos-rebuild` you can set
+         { nixpkgs.config.allowUnsupportedSystem = true; }
+       in configuration.nix to override this.
+
+       c) For `nix-env`, `nix-build`, `nix-shell` or any other Nix command you can add
+         { allowUnsupportedSystem = true; }
+       to ~/.config/nixpkgs/config.nix.
+

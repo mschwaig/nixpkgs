@@ -1,0 +1,36 @@
+Build command: nix build --impure --expr 'import /tmp/tmph8qgw17o.nix' --no-link
+Exit code: 1
+Build time: 1.68s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:37:12:
+           36|
+           37|   strict = derivationStrict drvAttrs;
+             |            ^
+           38|
+
+       … while evaluating derivation 'coq9.0-validsdp-1.1.0'
+         whose name attribute is located at /nix/store/xyylylpxjnms8qb7w3i3zbl98b091j1m-source/pkgs/stdenv/generic/make-derivation.nix:539:13
+
+       … while evaluating attribute 'propagatedBuildInputs' of derivation 'coq9.0-validsdp-1.1.0'
+         at /nix/store/xyylylpxjnms8qb7w3i3zbl98b091j1m-source/pkgs/stdenv/generic/make-derivation.nix:598:13:
+          597|             depsHostHostPropagated = elemAt (elemAt propagatedDependencies 1) 0;
+          598|             propagatedBuildInputs = elemAt (elemAt propagatedDependencies 1) 1;
+             |             ^
+          599|             depsTargetTargetPropagated = elemAt (elemAt propagatedDependencies 2) 0;
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: attribute 'osdp' missing
+       at /tmp/tmph8qgw17o.nix:84:9:
+           83|         coqeal
+           84|         coq.ocamlPackages.osdp
+             |         ^
+           85|         coq.ocamlPackages.ocplib-simplex
+       Did you mean one of lsp, odds, oidc, omd or oseq?
+

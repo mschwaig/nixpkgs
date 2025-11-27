@@ -1,0 +1,19 @@
+Build command: nix build --impure --expr 'import /tmp/tmp6pm05k1s.nix' --no-link
+Exit code: 1
+Build time: 12.49s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+these 3 derivations will be built:
+  /nix/store/9zs44hhxs0kgi8ia5wm7hl1iv51p8x73-mdbook-pandoc-0.6.4-vendor-staging.drv
+  /nix/store/7qcp6wan8yk1lmsbgmdh6adrq51sx06x-mdbook-pandoc-0.6.4-vendor.drv
+  /nix/store/0dp4xhf6gq68aqa4v7b9383wlyqpalw8-mdbook-pandoc-0.6.4.drv
+building '/nix/store/pqzqnziyi3r7s4vkiw85i43wv7gmmls1-mdbook-pandoc-0.6.4-vendor-staging.drv'...
+error: hash mismatch in fixed-output derivation '/nix/store/pqzqnziyi3r7s4vkiw85i43wv7gmmls1-mdbook-pandoc-0.6.4-vendor-staging.drv':
+         specified: sha256-XT/YkR8kRJ30bCXmfxKQJQL7tPl+eAPr4jIhmStJ8TM=
+            got:    sha256-H6jC4lQScfSK+bHd/tR/HK0AqR2nBJDnQw763DIMD2s=
+error: 1 dependencies of derivation '/nix/store/7qcp6wan8yk1lmsbgmdh6adrq51sx06x-mdbook-pandoc-0.6.4-vendor.drv' failed to build
+error: 1 dependencies of derivation '/nix/store/0dp4xhf6gq68aqa4v7b9383wlyqpalw8-mdbook-pandoc-0.6.4.drv' failed to build
+

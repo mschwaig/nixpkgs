@@ -1,0 +1,32 @@
+Build command: nix build --impure --expr 'import /tmp/tmp95091lox.nix' --no-link
+Exit code: 1
+Build time: 0.34s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmp95091lox.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmp95091lox.nix':
+
+       … while evaluating the attribute 'yaziPlugins.compress'
+         at /tmp/tmp95091lox.nix:15:7:
+           14|     yaziPlugins = super.yaziPlugins // {
+           15|       compress = self.yaziPlugins.callPackage (
+             |       ^
+           16|         # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: attribute 'callPackage' missing
+       at /tmp/tmp95091lox.nix:15:18:
+           14|     yaziPlugins = super.yaziPlugins // {
+           15|       compress = self.yaziPlugins.callPackage (
+             |                  ^
+           16|         # Package content from commit
+

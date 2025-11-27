@@ -1,0 +1,32 @@
+Build command: nix build --impure --expr 'import /tmp/tmpbjg7j71y.nix' --no-link
+Exit code: 1
+Build time: 1.98s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while evaluating the attribute 'drvPath'
+         at /nix/store/h5kqq4lnpdczwisd08avrcw8sbrcykkc-source/lib/customisation.nix:428:7:
+          427|     // {
+          428|       drvPath =
+             |       ^
+          429|         assert condition;
+
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:37:12:
+           36|
+           37|   strict = derivationStrict drvAttrs;
+             |            ^
+           38|
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: undefined variable 'zundler'
+       at /tmp/tmpbjg7j71y.nix:48:5:
+           47|     xdg-base-dirs
+           48|     zundler
+             |     ^
+           49|   ];
+

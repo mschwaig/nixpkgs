@@ -1,0 +1,41 @@
+Build command: nix build --impure --expr 'import /tmp/tmptrw46q77.nix' --no-link
+Exit code: 1
+Build time: 5.62s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+this derivation will be built:
+  /nix/store/q1yiz37wm325y4y51amylb8ilvrkmpl6-qodeassist-plugin-0.6.1.drv
+building '/nix/store/q1yiz37wm325y4y51amylb8ilvrkmpl6-qodeassist-plugin-0.6.1.drv'...
+error: builder for '/nix/store/q1yiz37wm325y4y51amylb8ilvrkmpl6-qodeassist-plugin-0.6.1.drv' failed with exit code 1;
+       last 25 log lines:
+       > -- Detecting C compile features
+       > -- Detecting C compile features - done
+       > -- Detecting CXX compiler ABI info
+       > -- Detecting CXX compiler ABI info - done
+       > -- Check for working CXX compiler: /nix/store/bcw9f6r9v2fm3kv7d15fcrya0mf34xds-gcc-wrapper-14.3.0/bin/g++ - skipped
+       > -- Detecting CXX compile features
+       > -- Detecting CXX compile features - done
+       > CMake Error at CMakeLists.txt:13 (find_package):
+       >   By not providing "FindQtCreator.cmake" in CMAKE_MODULE_PATH this project
+       >   has asked CMake to find a package configuration file provided by
+       >   "QtCreator", but CMake did not find one.
+       >
+       >   Could not find a package configuration file provided by "QtCreator" with
+       >   any of the following names:
+       >
+       >     QtCreatorConfig.cmake
+       >     qtcreator-config.cmake
+       >
+       >   Add the installation prefix of "QtCreator" to CMAKE_PREFIX_PATH or set
+       >   "QtCreator_DIR" to a directory containing one of the above files.  If
+       >   "QtCreator" provides a separate development package or SDK, be sure it has
+       >   been installed.
+       >
+       > 
+       > -- Configuring incomplete, errors occurred!
+       For full logs, run:
+         nix log /nix/store/q1yiz37wm325y4y51amylb8ilvrkmpl6-qodeassist-plugin-0.6.1.drv
+

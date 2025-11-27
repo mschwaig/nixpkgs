@@ -1,0 +1,33 @@
+Build command: nix build --impure --expr 'import /tmp/tmp0u242mlc.nix' --no-link
+Exit code: 1
+Build time: 0.36s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmp0u242mlc.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmp0u242mlc.nix':
+
+       … while evaluating the attribute 'python3packages.mkdocs-gen-files'
+         at /tmp/tmp0u242mlc.nix:14:5:
+           13|   overlay = self: super: {
+           14|     python3packages = super.python3packages // {
+             |     ^
+           15|       mkdocs-gen-files = self.python3packages.callPackage (
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: attribute 'python3packages' missing
+       at /tmp/tmp0u242mlc.nix:14:23:
+           13|   overlay = self: super: {
+           14|     python3packages = super.python3packages // {
+             |                       ^
+           15|       mkdocs-gen-files = self.python3packages.callPackage (
+       Did you mean one of python3Packages, python2Packages or pythonPackages?
+

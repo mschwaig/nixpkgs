@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmpe6boz33o.nix' --no-link
+Exit code: 1
+Build time: 0.43s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmpe6boz33o.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmpe6boz33o.nix':
+
+       … while evaluating the attribute 'ocamlPackages.letters'
+         at /tmp/tmpe6boz33o.nix:15:7:
+           14|     ocamlPackages = super.ocamlPackages // {
+           15|       letters = self.ocamlPackages.callPackage (
+             |       ^
+           16|         # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: evaluation aborted with the following error message: 'lib.customisation.callPackageWith: Function called without required argument "colombe" at /tmp/tmpe6boz33o.nix:21, did you mean "coulomb"?'
+

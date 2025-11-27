@@ -1,0 +1,17 @@
+Build command: nix build --impure --expr 'import /tmp/tmpmchpbmrl.nix' --no-link
+Exit code: 1
+Build time: 1.54s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+these 2 derivations will be built:
+  /nix/store/7yfdkj49krli35q2n00g7ms0ry52jy4n-source.drv
+  /nix/store/yhh10vg5skbnc1lv755yxxakzvh1njnb-bash-git-prompt-2.7.1-unstable-2025-04-23.drv
+building '/nix/store/9jzc0nlrwxq9cx2hx31ls9kywyy6a1yx-source.drv'...
+error: hash mismatch in fixed-output derivation '/nix/store/9jzc0nlrwxq9cx2hx31ls9kywyy6a1yx-source.drv':
+         specified: sha256-FWeYzISY4+cS2xg6skfcpTXgbkBs41E/EzEb3JNdFoQ=
+            got:    sha256-6uUoYSjpGJGOgnLiIR0SdmLZKPG4GNB+e2Y9HpJUODQ=
+error: 1 dependencies of derivation '/nix/store/yhh10vg5skbnc1lv755yxxakzvh1njnb-bash-git-prompt-2.7.1-unstable-2025-04-23.drv' failed to build
+

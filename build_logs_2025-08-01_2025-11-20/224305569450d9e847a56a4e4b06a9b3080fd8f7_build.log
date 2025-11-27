@@ -1,0 +1,30 @@
+Build command: nix build --impure --expr 'import /tmp/tmpvt8iundk.nix' --no-link
+Exit code: 1
+Build time: 0.34s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:37:12:
+           36|
+           37|   strict = derivationStrict drvAttrs;
+             |            ^
+           38|
+
+       … while evaluating derivation 'BinaryObjectScanner-3.3.1'
+         whose name attribute is located at /nix/store/ibws0zkigqq72l9269vx70isbcg5r0hp-source/pkgs/stdenv/generic/make-derivation.nix:538:13
+
+       … while evaluating attribute 'buildInputs' of derivation 'BinaryObjectScanner-3.3.1'
+         at /nix/store/ibws0zkigqq72l9269vx70isbcg5r0hp-source/pkgs/stdenv/generic/make-derivation.nix:590:13:
+          589|             depsHostHost = elemAt (elemAt dependencies 1) 0;
+          590|             buildInputs = elemAt (elemAt dependencies 1) 1;
+             |             ^
+          591|             depsTargetTarget = elemAt (elemAt dependencies 2) 0;
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: path '/tmp/deps.nix' does not exist
+

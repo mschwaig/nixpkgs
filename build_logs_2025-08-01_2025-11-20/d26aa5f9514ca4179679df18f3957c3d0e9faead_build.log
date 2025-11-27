@@ -1,0 +1,28 @@
+Build command: nix build --impure --expr 'import /tmp/tmpdpvep4y_.nix' --no-link
+Exit code: 1
+Build time: 4.16s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:37:12:
+           36|
+           37|   strict = derivationStrict drvAttrs;
+             |            ^
+           38|
+
+       … while evaluating derivation 'svgo-4.0.0'
+         whose name attribute is located at /nix/store/xqm19nd1aflarr7z23l89zky5jk6ri04-source/pkgs/stdenv/generic/make-derivation.nix:480:13
+
+       … while evaluating attribute 'missingHashes' of derivation 'svgo-4.0.0'
+         at /tmp/tmpdpvep4y_.nix:39:3:
+           38|
+           39|   missingHashes = ./missing-hashes.json;
+             |   ^
+           40|
+
+       error: path '/tmp/missing-hashes.json' does not exist
+

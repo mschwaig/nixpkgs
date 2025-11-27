@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmpwi5esyja.nix' --no-link
+Exit code: 1
+Build time: 0.43s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmpwi5esyja.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmpwi5esyja.nix':
+
+       … while evaluating the attribute 'python313Packages.zundler'
+         at /tmp/tmpwi5esyja.nix:15:7:
+           14|     python313Packages = super.python313Packages // {
+           15|       zundler = self.python313Packages.callPackage (
+             |       ^
+           16|         # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: evaluation aborted with the following error message: 'lib.customisation.callPackageWith: Function called without required argument "pytest-docker" at /tmp/tmpwi5esyja.nix:25, did you mean "pytest-socket"?'
+

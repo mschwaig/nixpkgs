@@ -1,0 +1,41 @@
+Build command: nix build --impure --expr 'import /tmp/tmpzg3gd_o5.nix' --no-link
+Exit code: 1
+Build time: 3.18s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+this derivation will be built:
+  /nix/store/4yrpj0xizzslrw9cx2l62bbjbb2b6c4y-python3.13-backports-asyncio-runner-1.2.0.drv
+building '/nix/store/4yrpj0xizzslrw9cx2l62bbjbb2b6c4y-python3.13-backports-asyncio-runner-1.2.0.drv'...
+error: builder for '/nix/store/4yrpj0xizzslrw9cx2l62bbjbb2b6c4y-python3.13-backports-asyncio-runner-1.2.0.drv' failed with exit code 1;
+       last 25 log lines:
+       > FAILED tests/test_asyncio_runner.py::RunnerTests::test_interrupt_call_soon - TypeError: Task.__init__() got an unexpected keyword argument 'context'
+       > FAILED tests/test_asyncio_runner.py::RunnerTests::test_interrupt_cancelled_task - TypeError: Task.__init__() got an unexpected keyword argument 'context'
+       > FAILED tests/test_asyncio_runner.py::RunnerTests::test_interrupt_wait - TypeError: Task.__init__() got an unexpected keyword argument 'context'
+       > FAILED tests/test_asyncio_runner.py::RunnerTests::test_no_repr_is_call_on_the_task_result - TypeError: Task.__init__() got an unexpected keyword argument 'context'
+       > FAILED tests/test_asyncio_runner.py::RunnerTests::test_recursive_run - TypeError: Task.__init__() got an unexpected keyword argument 'context'
+       > FAILED tests/test_asyncio_runner.py::RunnerTests::test_run - TypeError: Task.__init__() got an unexpected keyword argument 'context'
+       > FAILED tests/test_asyncio_runner.py::RunnerTests::test_run_keeps_context - TypeError: Task.__init__() got an unexpected keyword argument 'context'
+       > FAILED tests/test_asyncio_runner.py::RunnerTests::test_second_with_block_raises - TypeError: Task.__init__() got an unexpected keyword argument 'context'
+       > FAILED tests/test_asyncio_runner.py::RunnerTests::test_set_event_loop_called_once - TypeError: Task.__init__() got an unexpected keyword argument 'context'
+       > FAILED tests/test_asyncio_runner.py::RunnerTests::test_signal_install_not_supported_ok - TypeError: Task.__init__() got an unexpected keyword argument 'context'
+       > FAILED tests/test_extras.py::MissingCoverageTests::test_interrupted - TypeError: Task.__init__() got an unexpected keyword argument 'context'
+       > FAILED tests/test_extras.py::MissingCoverageTests::test_interrupted_not_done - TypeError: Task.__init__() got an unexpected keyword argument 'context'
+       > FAILED tests/test_extras.py::MissingCoverageTests::test_no_threading - TypeError: Task.__init__() got an unexpected keyword argument 'context'
+       > FAILED tests/test_extras.py::MissingCoverageTests::test_with_process - TypeError: Task.__init__() got an unexpected keyword argument 'context'
+       > FAILED tests/test_extras.py::MissingCoverageTests::test_with_process_and_delayed_task - TypeError: Task.__init__() got an unexpected keyword argument 'context'
+       > FAILED tests/test_extras.py::MissingCoverageTests::test_with_threading - TypeError: Task.__init__() got an unexpected keyword argument 'context'
+       > FAILED tests/test_extras.py::MissingCoverageTests::test_with_threading_and_delayed_task - TypeError: Task.__init__() got an unexpected keyword argument 'context'
+       > FAILED tests/test_signal.py::GenericTests::test_patched_int_to_enum - AssertionError: expected call not found.
+       > ================== 18 failed, 9 passed, 22 warnings in 0.71s ===================
+       > /nix/store/l9wxarvas1jpan9s1l0k1a5mx05g3qj6-python3.13-pytest-8.4.1/lib/python3.13/site-packages/_pytest/unraisableexception.py:33: RuntimeWarning: coroutine 'RunnerTests.test_second_with_block_raises.<locals>.f' was never awaited
+       >   gc.collect()
+       > RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+       > /nix/store/l9wxarvas1jpan9s1l0k1a5mx05g3qj6-python3.13-pytest-8.4.1/lib/python3.13/site-packages/_pytest/unraisableexception.py:33: RuntimeWarning: coroutine 'basic_coro' was never awaited
+       >   gc.collect()
+       > RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+       For full logs, run:
+         nix log /nix/store/4yrpj0xizzslrw9cx2l62bbjbb2b6c4y-python3.13-backports-asyncio-runner-1.2.0.drv
+

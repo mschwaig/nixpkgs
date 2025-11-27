@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmp9vkhgs9p.nix' --no-link
+Exit code: 1
+Build time: 0.35s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmp9vkhgs9p.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmp9vkhgs9p.nix':
+
+       … while evaluating the attribute 'python313Packages.ble-serial'
+         at /tmp/tmp9vkhgs9p.nix:15:7:
+           14|     python313Packages = super.python313Packages // {
+           15|       ble-serial = self.python313Packages.callPackage (
+             |       ^
+           16|         # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: do not use python3Packages when building Python packages, specify each used package as a separate argument
+

@@ -1,0 +1,62 @@
+Build command: nix build --impure --expr 'import /tmp/tmplulvrs1o.nix' --no-link
+Exit code: 1
+Build time: 0.84s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while evaluating the attribute 'drvPath'
+         at /nix/store/b0vlbbvnq40yca0r0dx39092inxzlp5i-source/lib/customisation.nix:428:7:
+          427|     // {
+          428|       drvPath =
+             |       ^
+          429|         assert condition;
+
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:37:12:
+           36|
+           37|   strict = derivationStrict drvAttrs;
+             |            ^
+           38|
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: Package ‘python-2.7.18.8’ in /nix/store/b0vlbbvnq40yca0r0dx39092inxzlp5i-source/pkgs/development/interpreters/python/cpython/2.7/default.nix:398 is marked as insecure, refusing to evaluate.
+
+
+       Known issues:
+        - Python 2.7 has reached its end of life after 2020-01-01. See https://www.python.org/doc/sunset-python-2/.
+
+       You can install it anyway by allowing this package, using the
+       following methods:
+
+       a) To temporarily allow all insecure packages, you can use an environment
+          variable for a single invocation of the nix tools:
+
+            $ export NIXPKGS_ALLOW_INSECURE=1
+
+          Note: When using `nix shell`, `nix build`, `nix develop`, etc with a flake,
+                then pass `--impure` in order to allow use of environment variables.
+
+       b) for `nixos-rebuild` you can add ‘python-2.7.18.8’ to
+          `nixpkgs.config.permittedInsecurePackages` in the configuration.nix,
+          like so:
+
+            {
+              nixpkgs.config.permittedInsecurePackages = [
+                "python-2.7.18.8"
+              ];
+            }
+
+       c) For `nix-env`, `nix-build`, `nix-shell` or any other Nix command you can add
+          ‘python-2.7.18.8’ to `permittedInsecurePackages` in
+          ~/.config/nixpkgs/config.nix, like so:
+
+            {
+              permittedInsecurePackages = [
+                "python-2.7.18.8"
+              ];
+            }
+

@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmpy0s1iad2.nix' --no-link
+Exit code: 1
+Build time: 0.72s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while evaluating the attribute 'drvPath'
+         at /nix/store/vzi81i1bxn529085x9daa1ns2yhmm98d-source/lib/customisation.nix:409:7:
+          408|     // {
+          409|       drvPath =
+             |       ^
+          410|         assert condition;
+
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:37:12:
+           36|
+           37|   strict = derivationStrict drvAttrs;
+             |            ^
+           38|
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: Dependency is not of a valid type: element 2 of buildInputs for libxml2
+

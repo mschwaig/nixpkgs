@@ -1,0 +1,29 @@
+Build command: nix build --impure --expr 'import /tmp/tmpedoe6je2.nix' --no-link
+Exit code: 1
+Build time: 0.32s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while evaluating the 'name' attribute of a derivation
+
+       … while evaluating a branch condition
+         at /nix/store/4bdm5fcwix168v4l6rr9p7a9iafgp6zs-source/lib/strings.nix:2933:5:
+         2932|     # First detect the common case of already valid strings, to speed those up
+         2933|     if stringLength string <= 207 && okRegex string != null then
+             |     ^
+         2934|       unsafeDiscardStringContext string
+
+       … in the left operand of the AND (&&) operator
+         at /nix/store/4bdm5fcwix168v4l6rr9p7a9iafgp6zs-source/lib/strings.nix:2933:35:
+         2932|     # First detect the common case of already valid strings, to speed those up
+         2933|     if stringLength string <= 207 && okRegex string != null then
+             |                                   ^
+         2934|       unsafeDiscardStringContext string
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: opening file '/tmp/sources.json': No such file or directory
+

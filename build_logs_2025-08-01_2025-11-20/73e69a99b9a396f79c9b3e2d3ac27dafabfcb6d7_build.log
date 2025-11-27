@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmp5hqqe6tu.nix' --no-link
+Exit code: 1
+Build time: 0.47s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmp5hqqe6tu.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmp5hqqe6tu.nix':
+
+       … while evaluating the attribute 'python313Packages.py-iam-expand'
+         at /tmp/tmp5hqqe6tu.nix:15:7:
+           14|     python313Packages = super.python313Packages // {
+           15|       py-iam-expand = self.python313Packages.callPackage (
+             |       ^
+           16|         # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: evaluation aborted with the following error message: 'lib.customisation.callPackageWith: Function called without required argument "iamdata" at /tmp/tmp5hqqe6tu.nix:21, did you mean "iodata"?'
+

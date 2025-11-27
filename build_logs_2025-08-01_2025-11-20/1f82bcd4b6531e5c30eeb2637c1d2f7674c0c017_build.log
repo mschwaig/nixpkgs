@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmp831cza15.nix' --no-link
+Exit code: 1
+Build time: 0.37s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … in the condition of the assert statement
+         at /nix/store/cxm2pydim6pkc7nh5qkbl7q21ipp5bmz-source/lib/customisation.nix:419:9:
+          418|       drvPath =
+          419|         assert condition;
+             |         ^
+          420|         drv.drvPath;
+
+       … in the right operand of the IMPL (->) operator
+         at /nix/store/cxm2pydim6pkc7nh5qkbl7q21ipp5bmz-source/pkgs/development/interpreters/python/python2/mk-python-derivation.nix:300:12:
+          299| lib.extendDerivation (
+          300|   disabled -> throw "${name} not supported for interpreter ${python.executable}"
+             |            ^
+          301| ) passthru self
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: pytest-plus-0.8.1 not supported for interpreter python2.7
+

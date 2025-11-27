@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmpxve6djme.nix' --no-link
+Exit code: 1
+Build time: 0.44s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmpxve6djme.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmpxve6djme.nix':
+
+       … while evaluating the attribute 'cudaPackages.buildRedist'
+         at /tmp/tmpxve6djme.nix:15:7:
+           14|     cudaPackages = super.cudaPackages // {
+           15|       buildRedist = self.cudaPackages.callPackage (
+             |       ^
+           16|         # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: evaluation aborted with the following error message: 'lib.customisation.callPackageWith: Function called without required argument "manifests" at /tmp/tmpxve6djme.nix:32'
+

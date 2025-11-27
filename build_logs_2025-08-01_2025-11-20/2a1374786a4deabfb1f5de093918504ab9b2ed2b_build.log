@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmpn03hhf5f.nix' --no-link
+Exit code: 1
+Build time: 0.46s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmpn03hhf5f.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmpn03hhf5f.nix':
+
+       … while evaluating the attribute 'python3.pkgs.rich-tables'
+         at /tmp/tmpn03hhf5f.nix:15:7:
+           14|     python3.pkgs = super.python3.pkgs // {
+           15|       rich-tables = self.python3.pkgs.callPackage (
+             |       ^
+           16|         # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: evaluation aborted with the following error message: 'lib.customisation.callPackageWith: Function called without required argument "coloraide" at /tmp/tmpn03hhf5f.nix:22'
+

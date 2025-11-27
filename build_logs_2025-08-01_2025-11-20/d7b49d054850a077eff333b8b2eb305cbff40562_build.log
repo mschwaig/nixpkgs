@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmpazuoqeds.nix' --no-link
+Exit code: 1
+Build time: 0.36s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … in the condition of the assert statement
+         at /nix/store/ibws0zkigqq72l9269vx70isbcg5r0hp-source/lib/customisation.nix:429:9:
+          428|       drvPath =
+          429|         assert condition;
+             |         ^
+          430|         drv.drvPath;
+
+       … in the right operand of the IMPL (->) operator
+         at /nix/store/ibws0zkigqq72l9269vx70isbcg5r0hp-source/pkgs/development/interpreters/python/python2/mk-python-derivation.nix:300:12:
+          299| lib.extendDerivation (
+          300|   disabled -> throw "${name} not supported for interpreter ${python.executable}"
+             |            ^
+          301| ) passthru self
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: azure-mgmt-resource-templatespecs-1.0.0b1 not supported for interpreter python2.7
+

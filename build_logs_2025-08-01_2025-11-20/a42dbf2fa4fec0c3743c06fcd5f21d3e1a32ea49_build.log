@@ -1,0 +1,32 @@
+Build command: nix build --impure --expr 'import /tmp/tmpxh7yxamy.nix' --no-link
+Exit code: 1
+Build time: 1.58s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while evaluating the attribute 'drvPath'
+         at /nix/store/cq5yypfzbfxmnch6cfiayc545ib58q8b-source/lib/customisation.nix:429:7:
+          428|     // {
+          429|       drvPath =
+             |       ^
+          430|         assert condition;
+
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:37:12:
+           36|
+           37|   strict = derivationStrict drvAttrs;
+             |            ^
+           38|
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: undefined variable 'edge-tts'
+       at /tmp/tmpxh7yxamy.nix:42:5:
+           41|   dependencies = with python3.pkgs; [
+           42|     edge-tts
+             |     ^
+           43|     markdown
+

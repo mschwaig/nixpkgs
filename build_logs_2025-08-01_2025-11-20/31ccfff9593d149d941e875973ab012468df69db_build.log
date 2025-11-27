@@ -1,0 +1,37 @@
+Build command: nix build --impure --expr 'import /tmp/tmpd2kl5eyf.nix' --no-link
+Exit code: 1
+Build time: 1.77s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+this derivation will be built:
+  /nix/store/xramgn5vbav5cc6yc78q93nwnfynj2cp-julefmt-0.0.0-unstable-2025-09-08.drv
+building '/nix/store/xramgn5vbav5cc6yc78q93nwnfynj2cp-julefmt-0.0.0-unstable-2025-09-08.drv'...
+error: builder for '/nix/store/xramgn5vbav5cc6yc78q93nwnfynj2cp-julefmt-0.0.0-unstable-2025-09-08.drv' failed with exit code 1;
+       last 21 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/xicgcvy63vpslvy4rwzx6q3j1ic21r46-source
+       > source root is source
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > no configure script, doing nothing
+       > Running phase: buildPhase
+       > Executing julecBuildHook
+       > error: type Expr has no field or method: Deep
+       >   --> /build/source/src/format.jule:387:11
+       >   387 | if c.Deep {
+       >       |      ^
+       >
+       > error: type Expr has no field or method: Type
+       >   --> /build/source/src/format.jule:390:24
+       >   390 | self.formatType(c.Type)
+       >       |                   ^
+       >
+       > === 2 error generated ===
+       >
+       For full logs, run:
+         nix log /nix/store/xramgn5vbav5cc6yc78q93nwnfynj2cp-julefmt-0.0.0-unstable-2025-09-08.drv
+

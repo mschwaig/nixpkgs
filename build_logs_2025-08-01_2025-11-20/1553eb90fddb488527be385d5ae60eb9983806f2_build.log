@@ -1,0 +1,32 @@
+Build command: nix build --impure --expr 'import /tmp/tmpq6c3kv_6.nix' --no-link
+Exit code: 1
+Build time: 0.77s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmpq6c3kv_6.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmpq6c3kv_6.nix':
+
+       … while evaluating the attribute 'ankiAddons.puppy-reinforcement'
+         at /tmp/tmpq6c3kv_6.nix:15:7:
+           14|     ankiAddons = super.ankiAddons // {
+           15|       puppy-reinforcement = self.ankiAddons.callPackage (
+             |       ^
+           16|         # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: attribute 'callPackage' missing
+       at /tmp/tmpq6c3kv_6.nix:15:29:
+           14|     ankiAddons = super.ankiAddons // {
+           15|       puppy-reinforcement = self.ankiAddons.callPackage (
+             |                             ^
+           16|         # Package content from commit
+

@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmpx1c3ayma.nix' --no-link
+Exit code: 1
+Build time: 0.86s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while evaluating the attribute 'drvPath'
+         at /nix/store/k5s8fqk94zzga84iym6wvaqnhmq7ykwf-source/lib/customisation.nix:429:7:
+          428|     // {
+          429|       drvPath =
+             |       ^
+          430|         assert condition;
+
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:37:12:
+           36|
+           37|   strict = derivationStrict drvAttrs;
+             |            ^
+           38|
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: future-1.0.0 not supported for interpreter python3.13
+

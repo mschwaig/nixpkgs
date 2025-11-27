@@ -1,0 +1,33 @@
+Build command: nix build --impure --expr 'import /tmp/tmpcqfebyg7.nix' --no-link
+Exit code: 1
+Build time: 0.37s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmpcqfebyg7.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmpcqfebyg7.nix':
+
+       … while evaluating the attribute 'python3Package.sentence-stream'
+         at /tmp/tmpcqfebyg7.nix:14:5:
+           13|   overlay = self: super: {
+           14|     python3Package = super.python3Package // {
+             |     ^
+           15|       sentence-stream = self.python3Package.callPackage (
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: attribute 'python3Package' missing
+       at /tmp/tmpcqfebyg7.nix:14:22:
+           13|   overlay = self: super: {
+           14|     python3Package = super.python3Package // {
+             |                      ^
+           15|       sentence-stream = self.python3Package.callPackage (
+       Did you mean one of python3Packages, python2Packages or pythonPackages?
+

@@ -1,0 +1,41 @@
+Build command: nix build --impure --expr 'import /tmp/tmpdxbxhvd6.nix' --no-link
+Exit code: 1
+Build time: 8.25s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+this derivation will be built:
+  /nix/store/m9hqvg8rphq4fgxsa3fdad073lmw3p72-vtk-dicom-0.8.17.drv
+building '/nix/store/m9hqvg8rphq4fgxsa3fdad073lmw3p72-vtk-dicom-0.8.17.drv'...
+error: builder for '/nix/store/m9hqvg8rphq4fgxsa3fdad073lmw3p72-vtk-dicom-0.8.17.drv' failed with exit code 1;
+       last 25 log lines:
+       > 
+       > CMake Warning (dev) at /nix/store/4ksds1mx0jr0b73xm5gdab8y7va3ls8n-vtk-9.5.0/lib/cmake/vtk/vtkModule.cmake:2624 (cmake_parse_arguments):
+       >   The TEST_OUTPUT_DATA_DIRECTORY keyword was followed by an empty string or
+       >   no value at all.  Policy CMP0174 is not set, so cmake_parse_arguments()
+       >   will unset the _vtk_build_TEST_OUTPUT_DATA_DIRECTORY variable rather than
+       >   setting it to an empty string.
+       > Call Stack (most recent call first):
+       >   CMakeLists.txt:202 (vtk_module_build)
+       > This warning is for project developers.  Use -Wno-dev to suppress it.
+       > 
+       > CMake Warning (dev) at /nix/store/4ksds1mx0jr0b73xm5gdab8y7va3ls8n-vtk-9.5.0/lib/cmake/vtk/vtkModule.cmake:2624 (cmake_parse_arguments):
+       >   The USE_EXTERNAL keyword was followed by an empty string or no value at
+       >   all.  Policy CMP0174 is not set, so cmake_parse_arguments() will unset the
+       >   _vtk_build_USE_EXTERNAL variable rather than setting it to an empty string.
+       > Call Stack (most recent call first):
+       >   CMakeLists.txt:202 (vtk_module_build)
+       > This warning is for project developers.  Use -Wno-dev to suppress it.
+       > 
+       > CMake Error at /nix/store/4ksds1mx0jr0b73xm5gdab8y7va3ls8n-vtk-9.5.0/lib/cmake/vtk/vtkModule.cmake:3118 (export):
+       >   export Export set "DICOM" not found.
+       > Call Stack (most recent call first):
+       >   CMakeLists.txt:202 (vtk_module_build)
+       >
+       > 
+       > -- Configuring incomplete, errors occurred!
+       For full logs, run:
+         nix log /nix/store/m9hqvg8rphq4fgxsa3fdad073lmw3p72-vtk-dicom-0.8.17.drv
+

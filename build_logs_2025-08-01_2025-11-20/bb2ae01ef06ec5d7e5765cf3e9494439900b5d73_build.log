@@ -1,0 +1,32 @@
+Build command: nix build --impure --expr 'import /tmp/tmp213zbvqb.nix' --no-link
+Exit code: 1
+Build time: 2.57s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while evaluating the attribute 'drvPath'
+         at /nix/store/4bdm5fcwix168v4l6rr9p7a9iafgp6zs-source/lib/customisation.nix:428:7:
+          427|     // {
+          428|       drvPath =
+             |       ^
+          429|         assert condition;
+
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:37:12:
+           36|
+           37|   strict = derivationStrict drvAttrs;
+             |            ^
+           38|
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: undefined variable 'zenlog'
+       at /tmp/tmp213zbvqb.nix:70:5:
+           69|     pyradios_1-0-2
+           70|     zenlog
+             |     ^
+           71|     requests-cache
+

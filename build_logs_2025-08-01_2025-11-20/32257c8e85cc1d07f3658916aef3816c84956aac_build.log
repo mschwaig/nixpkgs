@@ -1,0 +1,32 @@
+Build command: nix build --impure --expr 'import /tmp/tmppqpw1aq6.nix' --no-link
+Exit code: 1
+Build time: 0.89s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while evaluating the attribute 'drvPath'
+         at /nix/store/a412rr7xw2j7vz3valksjhibad8jg4xk-source/lib/customisation.nix:429:7:
+          428|     // {
+          429|       drvPath =
+             |       ^
+          430|         assert condition;
+
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:37:12:
+           36|
+           37|   strict = derivationStrict drvAttrs;
+             |            ^
+           38|
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: attribute 'yaml' missing
+       at /tmp/tmppqpw1aq6.nix:66:8:
+           65|     ++ beautifulsoup4.optional-dependencies.lxml
+           66|     ++ msgspec.optional-dependencies.yaml
+             |        ^
+           67|     ++ sqlalchemy.optional-dependencies.aiosqlite
+

@@ -1,0 +1,41 @@
+Build command: nix build --impure --expr 'import /tmp/tmp68yvgv57.nix' --no-link
+Exit code: 1
+Build time: 8.77s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+this derivation will be built:
+  /nix/store/wv1nh8vswkpddfbvidp58dq6ykb62q5n-python3.13-lerobot-0.3.3.drv
+building '/nix/store/wv1nh8vswkpddfbvidp58dq6ykb62q5n-python3.13-lerobot-0.3.3.drv'...
+error: builder for '/nix/store/wv1nh8vswkpddfbvidp58dq6ykb62q5n-python3.13-lerobot-0.3.3.drv' failed with exit code 1;
+       last 25 log lines:
+       > adding 'lerobot/utils/random_utils.py'
+       > adding 'lerobot/utils/robot_utils.py'
+       > adding 'lerobot/utils/train_utils.py'
+       > adding 'lerobot/utils/transition.py'
+       > adding 'lerobot/utils/utils.py'
+       > adding 'lerobot/utils/visualization_utils.py'
+       > adding 'lerobot/utils/wandb_utils.py'
+       > adding 'lerobot-0.3.3.dist-info/licenses/LICENSE'
+       > adding 'lerobot-0.3.3.dist-info/METADATA'
+       > adding 'lerobot-0.3.3.dist-info/WHEEL'
+       > adding 'lerobot-0.3.3.dist-info/entry_points.txt'
+       > adding 'lerobot-0.3.3.dist-info/top_level.txt'
+       > adding 'lerobot-0.3.3.dist-info/RECORD'
+       > removing build/bdist.linux-x86_64/wheel
+       > Successfully built lerobot-0.3.3-py3-none-any.whl
+       > Finished creating a wheel...
+       > /build/source/dist /build/source
+       > Unpacking to: unpacked/lerobot-0.3.3...OK
+       > Repacking wheel as ./lerobot-0.3.3-py3-none-any.whl...OK
+       > /build/source
+       > Finished executing pypaBuildPhase
+       > Running phase: pythonRuntimeDepsCheckHook
+       > Executing pythonRuntimeDepsCheck
+       > Checking runtime dependencies for lerobot-0.3.3-py3-none-any.whl
+       >   - av>=14.2.0 not satisfied by version 14.1.0
+       For full logs, run:
+         nix log /nix/store/wv1nh8vswkpddfbvidp58dq6ykb62q5n-python3.13-lerobot-0.3.3.drv
+

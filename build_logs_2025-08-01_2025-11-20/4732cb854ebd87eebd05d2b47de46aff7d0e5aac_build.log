@@ -1,0 +1,27 @@
+Build command: nix build --impure --expr 'import /tmp/tmp__hvbwox.nix' --no-link
+Exit code: 1
+Build time: 0.36s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while calling the 'import' builtin
+         at «string»:1:1:
+            1| import /tmp/tmp__hvbwox.nix
+             | ^
+
+       … while evaluating the file '/tmp/tmp__hvbwox.nix':
+
+       … while evaluating the attribute 'yaxmldiff'
+         at /tmp/tmp__hvbwox.nix:14:5:
+           13|   overlay = self: super: {
+           14|     yaxmldiff = self.callPackage (
+             |     ^
+           15|       # Package content from commit
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: evaluation aborted with the following error message: 'lib.customisation.callPackageWith: Function called without required argument "buildPythonPackage" at /tmp/tmp__hvbwox.nix:18'
+

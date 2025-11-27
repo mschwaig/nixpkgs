@@ -1,0 +1,50 @@
+Build command: nix build --impure --expr 'import /tmp/tmplem94b_v.nix' --no-link
+Exit code: 1
+Build time: 2.38s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+this derivation will be built:
+  /nix/store/rdd8qkzh8i9wkxrd9g0jg0k38df40yyj-python3.13-snakemake-interface-scheduler-plugins-2.0.1.drv
+these 4 paths will be fetched (0.08 MiB download, 0.45 MiB unpacked):
+  /nix/store/khm1sgx1h2f99j7clm4lsyhaykajhh7c-python3.13-argparse-dataclass-2.0.0
+  /nix/store/k7vjw131iifzn0h7x081cphr70c409pa-python3.13-configargparse-1.7.1
+  /nix/store/xnl4yfl8j0c02wns9v78fs9wj9iwbqz4-python3.13-snakemake-interface-common-1.17.4
+  /nix/store/gv4ldfc04jxbx44mwz26glmxb34qd8p0-source
+copying path '/nix/store/gv4ldfc04jxbx44mwz26glmxb34qd8p0-source' from 'https://cache.nixos.org'...
+copying path '/nix/store/khm1sgx1h2f99j7clm4lsyhaykajhh7c-python3.13-argparse-dataclass-2.0.0' from 'https://cache.nixos.org'...
+copying path '/nix/store/k7vjw131iifzn0h7x081cphr70c409pa-python3.13-configargparse-1.7.1' from 'https://cache.nixos.org'...
+copying path '/nix/store/xnl4yfl8j0c02wns9v78fs9wj9iwbqz4-python3.13-snakemake-interface-common-1.17.4' from 'https://cache.nixos.org'...
+building '/nix/store/rdd8qkzh8i9wkxrd9g0jg0k38df40yyj-python3.13-snakemake-interface-scheduler-plugins-2.0.1.drv'...
+error: builder for '/nix/store/rdd8qkzh8i9wkxrd9g0jg0k38df40yyj-python3.13-snakemake-interface-scheduler-plugins-2.0.1.drv' failed with exit code 1;
+       last 25 log lines:
+       > Sourcing python-imports-check-hook.sh
+       > Using pythonImportsCheckPhase
+       > Sourcing python-namespaces-hook
+       > Sourcing python-catch-conflicts-hook.sh
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/gv4ldfc04jxbx44mwz26glmxb34qd8p0-source
+       > source root is source
+       > setting SOURCE_DATE_EPOCH to timestamp 315619200 of file "source/tests/tests.py"
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > no configure script, doing nothing
+       > Running phase: buildPhase
+       > Executing pypaBuildPhase
+       > Creating a wheel...
+       > pypa build flags: --no-isolation --outdir dist/ --wheel
+       > * Getting build dependencies for wheel...
+       > * Building wheel...
+       > Successfully built snakemake_interface_scheduler_plugins-2.0.1-py3-none-any.whl
+       > Finished creating a wheel...
+       > Finished executing pypaBuildPhase
+       > Running phase: pythonRuntimeDepsCheckHook
+       > Executing pythonRuntimeDepsCheck
+       > Checking runtime dependencies for snakemake_interface_scheduler_plugins-2.0.1-py3-none-any.whl
+       >   - snakemake-interface-common<2.0,>=1.20.1 not satisfied by version 1.17.4
+       For full logs, run:
+         nix log /nix/store/rdd8qkzh8i9wkxrd9g0jg0k38df40yyj-python3.13-snakemake-interface-scheduler-plugins-2.0.1.drv
+

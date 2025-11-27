@@ -1,0 +1,28 @@
+Build command: nix build --impure --expr 'import /tmp/tmp49iwlz_9.nix' --no-link
+Exit code: 1
+Build time: 1.12s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+this derivation will be built:
+  /nix/store/m7vj1k4fmr5wkn3cfbk5jc9vlanarbv4-juledoc-0.0.0-unstable-2025-09-09.drv
+building '/nix/store/m7vj1k4fmr5wkn3cfbk5jc9vlanarbv4-juledoc-0.0.0-unstable-2025-09-09.drv'...
+error: builder for '/nix/store/m7vj1k4fmr5wkn3cfbk5jc9vlanarbv4-juledoc-0.0.0-unstable-2025-09-09.drv' failed with exit code 1;
+       last 12 log lines:
+       > Running phase: unpackPhase
+       > unpacking source archive /nix/store/phjd1an356g0565kpw57gnlq6qydi583-source
+       > source root is source
+       > Running phase: patchPhase
+       > Running phase: updateAutotoolsGnuConfigScriptsPhase
+       > Running phase: configurePhase
+       > no configure script, doing nothing
+       > Running phase: buildPhase
+       > Executing julecBuildHook
+       > module file has syntax error(s)
+       > === 1 error generated ===
+       >
+       For full logs, run:
+         nix log /nix/store/m7vj1k4fmr5wkn3cfbk5jc9vlanarbv4-juledoc-0.0.0-unstable-2025-09-09.drv
+

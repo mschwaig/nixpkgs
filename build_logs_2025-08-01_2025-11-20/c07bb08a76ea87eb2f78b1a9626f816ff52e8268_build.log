@@ -1,0 +1,32 @@
+Build command: nix build --impure --expr 'import /tmp/tmphqzevfup.nix' --no-link
+Exit code: 1
+Build time: 2.19s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while evaluating the attribute 'drvPath'
+         at /nix/store/201v6s1hyhfb4m6flp3gqiva1yy23dvj-source/lib/customisation.nix:418:7:
+          417|     // {
+          418|       drvPath =
+             |       ^
+          419|         assert condition;
+
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:37:12:
+           36|
+           37|   strict = derivationStrict drvAttrs;
+             |            ^
+           38|
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: undefined variable 'sipsimple'
+       at /tmp/tmphqzevfup.nix:55:5:
+           54|     python3-gnutls
+           55|     sipsimple
+             |     ^
+           56|     wokkel
+

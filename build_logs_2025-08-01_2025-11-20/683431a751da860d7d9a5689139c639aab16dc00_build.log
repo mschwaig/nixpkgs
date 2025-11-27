@@ -1,0 +1,49 @@
+Build command: nix build --impure --expr 'import /tmp/tmpgp7g0ypl.nix' --no-link
+Exit code: 1
+Build time: 2.79s
+
+=== STDOUT ===
+
+
+=== STDERR ===
+error:
+       … while evaluating the attribute 'drvPath'
+         at /nix/store/m0bbnp5vqlyn5rz6qijvzjffhaxjjr5m-source/lib/customisation.nix:428:7:
+          427|     // {
+          428|       drvPath =
+             |       ^
+          429|         assert condition;
+
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:37:12:
+           36|
+           37|   strict = derivationStrict drvAttrs;
+             |            ^
+           38|
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: Package ‘python3.12-mlx-0.28.0’ in /nix/store/m0bbnp5vqlyn5rz6qijvzjffhaxjjr5m-source/pkgs/development/python-modules/mlx/default.nix:153 is not available on the requested hostPlatform:
+         hostPlatform.system = "x86_64-linux"
+         package.meta.platforms = [
+           "aarch64-darwin"
+         ]
+         package.meta.badPlatforms = [ ]
+       , refusing to evaluate.
+
+       a) To temporarily allow packages that are unsupported for this system, you can use an environment variable
+          for a single invocation of the nix tools.
+
+            $ export NIXPKGS_ALLOW_UNSUPPORTED_SYSTEM=1
+
+          Note: When using `nix shell`, `nix build`, `nix develop`, etc with a flake,
+                then pass `--impure` in order to allow use of environment variables.
+
+       b) For `nixos-rebuild` you can set
+         { nixpkgs.config.allowUnsupportedSystem = true; }
+       in configuration.nix to override this.
+
+       c) For `nix-env`, `nix-build`, `nix-shell` or any other Nix command you can add
+         { allowUnsupportedSystem = true; }
+       to ~/.config/nixpkgs/config.nix.
+
