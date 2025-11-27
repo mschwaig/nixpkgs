@@ -1,22 +1,26 @@
-mschwaig@mutalisk ~/nixpkgs (vibenix_dataset_tools)> python3 analyze_package_additions.py "2025-08-01" "2025-11-20"
-Fetching commits from 2025-08-01 to 2025-11-20...
-Running: git log --diff-filter=A --name-only --pretty=format:%H|%ai|%an|%s --since=2025-08-01 --until=2025-11-20 -- pkgs/by-name/*/*/package.nix
-Applying exclusion rules to 537 NEW commits...
+mschwaig@mutalisk ~/nixpkgs (vibenix_dataset_tools)> python3 analyze_package_additions.py 2025-08-01 2025-11-20 nixpkgs_channel_bumps.txt
+[...]
+  Building 763/764: python3Packages.yourdfpy...
+  Building 764/764: ting...
+Successfully built 622/764 packages
+Moved 142 build failures to EXCLUDED
+Build logs saved in build_logs_2025-08-01_2025-11-20/
 
 ================================================================================
-SUMMARY: Found 1119 commits that added package.nix files
+SUMMARY: Found 1191 commits that added package.nix or default.nix files
 ================================================================================
-NEW packages:      461
-EXCLUDED:           76
-OTHER changes:     564
-MANUAL review:      18
+NEW packages:      622
+EXCLUDED:          289
+OTHER changes:     268
+MANUAL review:      12
 ================================================================================
 
-Written 461 commits to new_packages_2025-08-01_2025-11-20.txt
-Written 76 commits to excluded_packages_2025-08-01_2025-11-20.txt
-Written 564 commits to other_changes_2025-08-01_2025-11-20.txt
-Written 18 commits to manual_review_2025-08-01_2025-11-20.txt
+Written 622 commits to new_packages_2025-08-01_2025-11-20.csv
+Written 289 commits to excluded_packages_2025-08-01_2025-11-20.csv
+Written 268 commits to other_changes_2025-08-01_2025-11-20.csv
+Written 12 commits to manual_review_2025-08-01_2025-11-20.csv
 mschwaig@mutalisk ~/nixpkgs (vibenix_dataset_tools)>
 
+I did not go over all of the new packages for this run yet, to come up with manual exclusions, or over the 12 commits that I was not able to categorize automatically (we could just keep those out of the dataset if we want to).
+There are some manual exclusions already for an earlier run in the manual_exclusions.txt file, but they  were done for an earlier run, which was only targetting package.nix file, not default.nix files, and I don't know how applicable they still are (if they still count as new packages).
 
-I also did 15 exclusions manually, which are listed in manual_exclusions.txt, which I have not looked at closely yet, and the 18 files marked for manual review could also end up in the NEW package category, unless for simplicity we want to just stick to the current regex for finding new packages.
