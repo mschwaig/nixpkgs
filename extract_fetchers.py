@@ -165,6 +165,10 @@ def analyze_package(pkg: PackageInfo) -> None:
     direct_fetchers = [f for f in pkg.fetchers if f['type'] not in INDIRECT_FETCHERS]
     pkg.direct_fetcher_count = len(direct_fetchers)
 
+    # Check for packages with no fetchers (regex limitation)
+    if pkg.raw_fetcher_count == 0:
+        pkg.exclusion_reasons.add('no_fetchers_found')
+
 
 def main():
     if len(sys.argv) < 2:
