@@ -208,13 +208,17 @@ def main():
         print(f"  [{i}/{len(packages)}] {pkg.package_name}...", file=sys.stderr)
         analyze_package(pkg)
 
-    # Write results
+    # Filter packages with exclusion reasons
+    excluded_pkgs = [pkg for pkg in packages if pkg.exclusion_reasons]
+    included_pkgs = [pkg for pkg in packages if not pkg.exclusion_reasons]
+
+    # Write results (only included packages)
     print(f"\nWriting results to {fetchers_csv}...", file=sys.stderr)
     with open(fetchers_csv, 'w', newline='') as f:
         writer = csv.writer(f, lineterminator='\n')
         writer.writerow(['commit_hash', 'package_name', 'raw_fetcher_count', 'direct_fetcher_count', 'fetcher_types', 'nixpkgs_target_bump'])
 
-        for pkg in packages:
+        for pkg in included_pkgs:
             fetcher_types = ','.join([f['type'] for f in pkg.fetchers])
             writer.writerow([
                 pkg.commit_hash,
@@ -224,10 +228,6 @@ def main():
                 fetcher_types,
                 pkg.test_base_commit
             ])
-
-    # Filter packages with exclusion reasons
-    excluded_pkgs = [pkg for pkg in packages if pkg.exclusion_reasons]
-    included_pkgs = [pkg for pkg in packages if not pkg.exclusion_reasons]
 
     # Write exclusions file
     if excluded_pkgs:
