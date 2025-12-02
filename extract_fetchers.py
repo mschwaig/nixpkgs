@@ -195,16 +195,14 @@ def main():
     print(f"\nWriting results to {fetchers_csv}...", file=sys.stderr)
     with open(fetchers_csv, 'w', newline='') as f:
         writer = csv.writer(f, lineterminator='\n')
-        writer.writerow(['commit_hash', 'package_name', 'fetcher_count', 'fetcher_types', 'package_file'])
+        writer.writerow(['commit_hash', 'package_name', 'fetcher_count', 'nixpkgs_target_bump'])
 
         for pkg in packages:
-            fetcher_types = ','.join([f['type'] for f in pkg.fetchers])
             writer.writerow([
                 pkg.commit_hash,
                 pkg.package_name,
                 pkg.fetcher_count,
-                fetcher_types,
-                pkg.package_file or ''
+                pkg.test_base_commit
             ])
 
     # Filter packages with exclusion reasons
@@ -217,14 +215,13 @@ def main():
         print(f"\nWriting {len(excluded_pkgs)} excluded packages to {exclusions_csv}...", file=sys.stderr)
         with open(exclusions_csv, 'w', newline='') as f:
             writer = csv.writer(f, lineterminator='\n')
-            writer.writerow(['commit_hash', 'package_name', 'exclusion_reasons', 'package_file'])
+            writer.writerow(['commit_hash', 'exclusion_reasons', 'nixpkgs_target_bump'])
 
             for pkg in excluded_pkgs:
                 writer.writerow([
                     pkg.commit_hash,
-                    pkg.package_name,
                     ','.join(sorted(pkg.exclusion_reasons)),
-                    pkg.package_file or ''
+                    pkg.test_base_commit
                 ])
 
     # Filter and write packages with single fetcher (only from included packages)
@@ -233,7 +230,7 @@ def main():
 
     with open(single_fetcher_csv, 'w', newline='') as f:
         writer = csv.writer(f, lineterminator='\n')
-        writer.writerow(['commit_hash', 'package_name', 'pname', 'version', 'fetcher_type', 'fetcher_content', 'package_file'])
+        writer.writerow(['commit_hash', 'package_name', 'pname', 'version', 'fetcher', 'nixpkgs_target_bump'])
 
         for pkg in single_fetcher_pkgs:
             fetcher = pkg.fetchers[0]  # Only one fetcher
@@ -242,9 +239,8 @@ def main():
                 pkg.package_name,
                 pkg.pname,
                 pkg.version,
-                fetcher['type'],
                 fetcher['content'],
-                pkg.package_file or ''
+                pkg.test_base_commit
             ])
 
     # Filter and write packages with multiple fetchers (only from included packages)
@@ -253,16 +249,14 @@ def main():
 
     with open(multiple_fetchers_csv, 'w', newline='') as f:
         writer = csv.writer(f, lineterminator='\n')
-        writer.writerow(['commit_hash', 'package_name', 'fetcher_count', 'fetcher_types', 'package_file'])
+        writer.writerow(['commit_hash', 'package_name', 'fetcher_count', 'nixpkgs_target_bump'])
 
         for pkg in multiple_fetchers:
-            fetcher_types = ','.join([f['type'] for f in pkg.fetchers])
             writer.writerow([
                 pkg.commit_hash,
                 pkg.package_name,
                 pkg.fetcher_count,
-                fetcher_types,
-                pkg.package_file or ''
+                pkg.test_base_commit
             ])
 
     # Print summary
