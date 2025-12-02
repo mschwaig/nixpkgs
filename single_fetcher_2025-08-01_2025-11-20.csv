@@ -299,6 +299,12 @@ f640ab99a9d1368af30c181957d9b88693c6aa14,qusb2snes,qusb2snes,0.7.35,"fetchFromGi
     fetchSubmodules = true;
     hash = ""sha256-521L4awWr4L2W12vAZUMheq4plXUXKYo4d3S6AfHgPA="";
   }",f6b44b2401525650256b977063dbcf830f762369
+8e9939c0c779d1900153761bddbc7945392fddce,svg-term,svg-term,2.1.1,"fetchFromGitHub {
+    owner = ""marionebl"";
+    repo = ""svg-term-cli"";
+    tag = ""v${finalAttrs.version}"";
+    hash = ""sha256-sB4/SM48UmqaYKj6kzfjzITroL0l/QL4Gg5GSrQ+pdk="";
+  }",e1ebeec86b771e9d387dd02d82ffdc77ac753abc
 fa819afd505d9d7dbadf79d62ac7ab9d751896ce,evil-winrm-py,evil-winrm-py,1.5.0,"fetchFromGitHub {
     owner = ""adityatelange"";
     repo = ""evil-winrm-py"";
@@ -743,6 +749,12 @@ d3edbad75fba40eb8e7dadc375ddcb8343de29c9,dedupe-levenshtein-search,dedupe-levens
     tag = ""v${version}"";
     hash = ""sha256-9eX41eoME5Vdtq+c04eQbMYnViy6QKOhKkafrkeMylI="";
   }",d5faa84122bc0a1fd5d378492efce4e289f8eac1
+ec212ce238feb98f60925abebb1ded418ca38245,vicinae,vicinae,0.15.5,"fetchFromGitHub {
+    owner = ""vicinaehq"";
+    repo = ""vicinae"";
+    tag = ""v${finalAttrs.version}"";
+    hash = ""sha256-3pKexTUWfohL/S/yWsVMShmtMlBFI9zsd7NFzySKG0w="";
+  }",c12c63cd6c5eb34c7b4c3076c6a99e00fcab86ec
 ed6551c9e74fefb28909b8b9730adf2b3ba9846c,jart-jsoncpp,json.cpp,0-unstable-2025-10-25,"fetchFromGitHub {
     owner = ""jart"";
     repo = ""json.cpp"";
@@ -760,6 +772,12 @@ ed6551c9e74fefb28909b8b9730adf2b3ba9846c,jart-jsoncpp,json.cpp,0-unstable-2025-1
     repo = ""stasis"";
     tag = ""v${finalAttrs.version}"";
     hash = ""sha256-gJB/y6jSBJZjBTQB9sxbVpllSfF6jwKOEeLqlgIStMA="";
+  }",02f2cb8e0feb4596d20cc52fda73ccee960e3538
+f89b079591c41fcd28841e146f80364bc18ca838,kide,kide,1.0.40,"fetchFromGitHub {
+    owner = ""openobserve"";
+    repo = ""kide"";
+    tag = ""v${finalAttrs.version}"";
+    hash = ""sha256-lRkFPS+hkACj3CxWde4B7phHUMh+2643Jgd0Wt3nUSo="";
   }",02f2cb8e0feb4596d20cc52fda73ccee960e3538
 8d05f6fe3a0ceb97caee74c92257c7eb0d57ff15,victron-vrm,victron-vrm,0.1.8,"fetchFromGitHub {
     owner = ""KSoft-Si"";
@@ -1098,6 +1116,18 @@ a57dccaf8206a10da5578ac75d85669ead787577,gendarme,gendarme,0.3,"fetchFromGitHub 
     rev = ""af573b9e067e8b6cbcc4825946e7e636b30c748f"";
     hash = ""sha256-1NmqG73sP25Uqf7DiSPgt7drONOg9ZkrtCS0tYVjSU0="";
   }",c12c63cd6c5eb34c7b4c3076c6a99e00fcab86ec
+e25088272415352af572a1a79d775c3a49f429ad,immich-kiosk,immich-kiosk,0.25.0,"fetchFromGitHub {
+    owner = ""damongolding"";
+    repo = ""immich-kiosk"";
+    tag = ""v${version}"";
+    hash = ""sha256-p/DP0rTO+1CVtREAIcP43mTd5zeeQaYRM2BlfqCfUm4="";
+  }",c12c63cd6c5eb34c7b4c3076c6a99e00fcab86ec
+fdb77670d937a2b1e2755084b761e72b87e3b320,reflink-copy,reflink-copy,0.3.3,"fetchFromGitHub {
+    owner = ""iterative"";
+    repo = ""reflink-copy"";
+    tag = version;
+    hash = ""sha256-HxUAsqV5kjstfBfY/nEGJ3epUVT5WXoTqKerUggKDyo="";
+  }",2dad7af78a183b6c486702c18af8a9544f298377
 e12e058f03b90373be0ccac06168ee59cc3bb027,hyprmon,hyprmon,0.0.12,"fetchFromGitHub {
     owner = ""erans"";
     repo = ""hyprmon"";
@@ -1152,6 +1182,12 @@ d443501cb0c57c5604aef8c0bfb39c91ebadb440,pgit,pgit,1.1.0,"fetchFromGitHub {
     rev = ""caf1af301e388e97dca31ee7fdc12f17cff34f82"";
     sha256 = ""sha256-62ykvAIfOCXH+3bF1IkR+WukeJBLcYC/4Mv3ptqAxEM="";
   }",362791944032cb532aabbeed7887a441496d5e6e
+a75588c6c505e6dc71b40154286f13601218ab0d,atuin-desktop,atuin-desktop,0.1.3,"fetchFromGitHub {
+    owner = ""atuinsh"";
+    repo = ""desktop"";
+    tag = ""v${finalAttrs.version}"";
+    hash = ""sha256-woYWWDJ2JeyghlRh5IKhPfDy4WmcAGlBJgjBPg1hHq8="";
+  }",8b5c9dd8856f0c0cf46cc91f2c21c106a9d42e25
 c52421c27184696ad7a86aa81191ba6d6734cff9,rapidcsv,rapidcsv,8.89,"fetchFromGitHub {
     owner = ""d99kris"";
     repo = ""rapidcsv"";
@@ -1274,6 +1310,12 @@ d20cfa8f5f4bfd576c6da5fca8b2b0c3ec4cb454,ctagdrc,ctagdrc,0.1.1,"fetchFromGitHub 
     hash = ""sha256-szBI8ESJz1B/JuGcZD8D53c1yJeUW1uK4GewQExtD9Q="";
     fetchSubmodules = true;
   }",88cef159e47c0dc56f151593e044453a39a6e547
+a3542b9d27a6d0d26425fe878a7c9b9656c06334,samira,samira,0.5.1,"fetchFromGitHub {
+    owner = ""jsnli"";
+    repo = ""Samira"";
+    tag = ""v${finalAttrs.version}"";
+    hash = ""sha256-SZg4N9fm4+p2vROCx7BLdphHeWlFkQrjQETObwPP8H0="";
+  }",d7f52a7a640bc54c7bb414cca603835bf8dd4b10
 a0bf33115e5b7044bb93a48ece2b404b4e42ccb0,lacy,lacy,0.5.1,"fetchFromGitHub {
     owner = ""timothebot"";
     repo = ""lacy"";
@@ -1298,6 +1340,12 @@ dad647d699081d36f19f1cca840b4428ebb9bccd,hygg,hygg,0.1.19,"fetchFromGitHub {
     tag = ""v${version}"";
     hash = ""sha256-6vvPIu+Zi+9ndcWHP43X0Qd+XCO7+tr8XCFm+bwCazE="";
   }",0832d1b3a08fe4c695507a075d547ebfa818dfa0
+bff87305ed7f15a6246df44e2c37fce4c5c1396c,changelogen,changelogen,0.6.2,"fetchFromGitHub {
+    owner = ""unjs"";
+    repo = ""changelogen"";
+    tag = ""v${finalAttrs.version}"";
+    hash = ""sha256-N6X9Wffl9WumCXvAt4y+vs3ZJY7NheK+O8BObmuIa/g="";
+  }",d7f52a7a640bc54c7bb414cca603835bf8dd4b10
 2b2f2574bf3601e8b4ab54e43ccadc048473abd3,terraform-backend,terraform-backend,0.1.3,"fetchFromGitHub {
     owner = ""nimbolus"";
     repo = ""terraform-backend"";
@@ -1661,6 +1709,12 @@ ef4adebc71f6ac1af296f06a8eede7042c900303,tmuxai,tmuxai,1.1.1,"fetchFromGitHub {
     inherit pname version;
     hash = ""sha256-UXDhvNT8y1K9vf8wCxS2hzBIO8RvaiqJ964rsCTk0Tk="";
   }",58dcbf1ec551914c3756c267b8b9c8c86baa1b2f
+13568e4c6477caa5faa35b957f90aa92d242a177,garage-webui,garage-webui,1.1.0,"fetchFromGitHub {
+    owner = ""khairul169"";
+    repo = ""garage-webui"";
+    tag = finalAttrs.version;
+    hash = ""sha256-bqUAhZBSQkWZ1QsgPslEUDwt8NOg25Os0NGlPoyjPL4="";
+  }",f4b140d5b253f5e2a1ff4e5506edbf8267724bde
 e0c829f65a80e78ecebc48f8ae1d89e25b835c87,gklib,gklib,5.1.1-unstable-2023-03-27,"fetchFromGitHub {
     owner = ""KarypisLab"";
     repo = ""GKlib"";
@@ -1820,6 +1874,12 @@ c8757324a48e9eb776faf2b55686a3f5a8c8a2e1,super-collections,super-collections,0.5
     tag = ""v${finalAttrs.version}"";
     hash = ""sha256-s42nWQC2tD7vhQNPdTQNRokwXqeBhELidVYTlos+No0="";
   }",d33e926c80e6521a55da380a4c4c44a7462af405
+d4b75c56083a889b23be7c95f27d64a8af39fca2,pyiceberg-core,pyiceberg-core,0.6.0,"fetchFromGitHub {
+    owner = ""apache"";
+    repo = ""iceberg-rust"";
+    tag = ""v${version}"";
+    hash = ""sha256-vRSZnMkZptGkLZBN1RRu0YGRQCOgJioBIghXnvU9UXc="";
+  }",d33e926c80e6521a55da380a4c4c44a7462af405
 935c9cc8793a9b4d19eb2887bf5e609d8a8615c9,biocutils,biocutils,0.2.3,"fetchFromGitHub {
     owner = ""BiocPy"";
     repo = ""BiocUtils"";
@@ -1962,6 +2022,12 @@ b68ec0c4bfc7052e465ccb579c2b1ab0f3c747ef,targ,targ,0.6.0,"fetchFromGitHub {
     tag = version;
     hash = ""sha256-myQe8Gpnx5CqKnYNK0PZ2P7o+eVWKLInjyTaZd30WxU="";
   }",ca77296380960cd497a765102eeb1356eb80fed0
+561fd4e670ad296c5b7a2850442243e6fb51f265,fast-query-parsers,fast-query-parsers,1.0.3,"fetchFromGitHub {
+    owner = ""litestar-org"";
+    repo = ""fast-query-parsers"";
+    tag = ""v${version}"";
+    hash = ""sha256-08xL0sOmUzsZYtM1thYUV93bj9ERr3LaVrW46zBrzeE="";
+  }",ca77296380960cd497a765102eeb1356eb80fed0
 7d00bc8d8c5607cc32e8661fafac1ab7a4d83f8d,beanhub-inbox,beanhub-inbox,0.2.3,"fetchFromGitHub {
     owner = ""LaunchPlatform"";
     repo = ""beanhub-inbox"";
@@ -2061,6 +2127,12 @@ fcea3563e6d7f0cd60eebd698408c8c443e1fc53,semtools,semtools,1.2.0,"fetchFromGitHu
     tag = ""v${finalAttrs.version}"";
     hash = ""sha256-wpOKEESM3uG9m/EqWnF2uXITbrwIhwe2MSA0FN7Fu+w="";
   }",aaff8c16d7fc04991cac6245bee1baa31f72b1e1
+7be2f4cdc6b5e12cea3b3674cb95f20f9e4b20c3,moyopy,moyopy,0.4.4,"fetchFromGitHub {
+    owner = ""spglib"";
+    repo = ""moyo"";
+    tag = ""v${version}"";
+    hash = ""sha256-TWZAqvtPeJqKXUFiNxD8H/aqjiDSWaTkMEQW0cuhEMY="";
+  }",aaff8c16d7fc04991cac6245bee1baa31f72b1e1
 951fbc91a4fff1eed37d8e3b23f190ac27a13a7a,yaml2nix,yaml2nix,0.3.0,"fetchFromGitHub {
     owner = ""euank"";
     repo = ""yaml2nix"";
@@ -2131,6 +2203,10 @@ f9dc3b0ad0168b6074b5ee9fb9e904b3ea1e06ad,picocrypt-ng,picocrypt-ng,2.00,"fetchFr
     tag = finalAttrs.version;
     hash = ""sha256-+Ecvy4h0aC9Gra9BcN8L/vgpnflq6W7KcnYCVr8uaQQ="";
   }",a918bb3594dd243c2f8534b3be01b3cb4ed35fd1
+81cdc8766c5103825776294feec58f7db037234f,loro,loro,1.5.4,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-vC1SLkwCkiytZe9d9t1OH+Vd360657XxdU81bM9C9jk="";
+  }",aca2499b79170038df0dbaec8bf2f689b506ad32
 036b471cb6bc50b3ae59f699a812aea4799c75ab,syne-tune,syne-tune,0.14.2,"fetchFromGitHub {
     owner = ""syne-tune"";
     repo = ""syne-tune"";
@@ -2142,6 +2218,11 @@ e379076e2dbc61b917d294fe158149cdbafe58ca,pyosoenergyapi,pyosoenergyapi,1.2.4,"fe
     repo = ""apyosohotwaterapi"";
     tag = version;
     hash = ""sha256-hpbmiSOLawKVSh7BGV70bRi45HCDKmdxEEhCOdJuIww="";
+  }",c73522789a3c7552b1122773d6eaa34e1491cc1c
+148297d3322537d0c7ac54d944af8b1f3fce6057,ipv8-rust-tunnels,ipv8-rust-tunnels,0.1.33,"fetchPypi {
+    inherit version;
+    pname = ""ipv8_rust_tunnels"";
+    hash = ""sha256-LwQL/u+h6mwCo207OxSk9YKxuLuxXQhh07rSWrNFh7w="";
   }",c73522789a3c7552b1122773d6eaa34e1491cc1c
 76b3a4643608994507e97d8af9984590a9ace19a,bodoni-moda,bodoni-moda,2.4-unstable-2024-02-18,"fetchFromGitHub {
     owner = ""indestructible-type"";
@@ -2216,6 +2297,12 @@ dc5be8dcdbd1050684eec1c104937ac957e89973,clearpasspy,clearpasspy,1.1.3,"fetchPyp
     inherit pname version;
     hash = ""sha256-HAi9z7DT5g0Pkr+rASUK18/tEsorWXScCODE95Q+ZZ0="";
   }",f937f8ecd1c70efd7e9f90ba13dfb400cf559de4
+50d4df879c1f26846a50a65bd67e07a6b0ff30fe,openai-harmony,openai-harmony,0.0.4,"fetchFromGitHub {
+    owner = ""openai"";
+    repo = ""harmony"";
+    rev = ""v${version}"";
+    hash = ""sha256-2LOrMLrNR1D3isbjiv5w+1Ni9IMwMEPPTOnG1rm//ag="";
+  }",ddd1826f294a0ee5fdc198ab72c8306a0ea73aa9
 01ed3e1d4be862617ea5177cb1edae9c125a5532,zhong-hong-hvac,zhong-hong-hvac,1.0.13,"fetchFromGitHub {
     owner = ""crhan"";
     repo = ""ZhongHongHVAC"";
@@ -2238,6 +2325,12 @@ c6bcb7dfb18861ed106239dbf062f027b5e4e862,bstr,bstr,0.0.2,"fetchurl {
     tag = ""v${version}"";
     hash = ""sha256-jYuRaKtoWaWq6QWinXnuBfqanTCMibouwwWHfcmioGo="";
   }",c3e5d9f86b3f5678d0d8c9f0b9f081ab1ccdbe05
+0834814d77c65b95b275b9ef3b2d097f74d2ea33,serve,serve,14.2.4,"fetchFromGitHub {
+    owner = ""vercel"";
+    repo = ""serve"";
+    tag = finalAttrs.version;
+    hash = ""sha256-QVbau4MrpgEQkwlWx4tU9H93zdM0mSZgIzXpjHRM5mk="";
+  }",ddd1826f294a0ee5fdc198ab72c8306a0ea73aa9
 c0750cee3d328bf0bc6da910a9a58045e1252f5f,mtk-uartboot,mtk-uartboot,0-unstable-2024-12-07,"fetchFromGitHub {
     owner = ""981213"";
     repo = ""mtk_uartboot"";
@@ -2247,6 +2340,12 @@ c0750cee3d328bf0bc6da910a9a58045e1252f5f,mtk-uartboot,mtk-uartboot,0-unstable-20
 5fc0353343ade68fdfb955d19d7b0443a78701f9,cmudict,cmudict,1.1.1,"fetchPypi {
     inherit pname version;
     hash = ""sha256-I8ORTIVGX2p9JtLYl0+jQd17ySTR/6UBtBQGuTaSPbE="";
+  }",ddd1826f294a0ee5fdc198ab72c8306a0ea73aa9
+4393259b5a631d7ba2bcedfc074fb5734509370f,vivify,vivify,0.8.2,"fetchFromGitHub {
+    owner = ""jannis-baum"";
+    repo = ""Vivify"";
+    tag = ""v${finalAttrs.version}"";
+    hash = ""sha256-2lxf21T9y4GMFlk0+qbaJJ/twRffYEBoBXZXe/NRDQk="";
   }",ddd1826f294a0ee5fdc198ab72c8306a0ea73aa9
 7aa0280e7e0f96eadf2f33810ad48ec409b6960f,qemu-qmp,qemu-qmp,0.0.3,"fetchFromGitLab {
     owner = ""qemu-project"";
@@ -2441,6 +2540,12 @@ e7c7aae4c2e100a76988e1e173bd7b966941b08e,python-clementine-remote,python-clement
     tag = ""v${version}"";
     hash = ""sha256-torDjfQcQ+ytv/Qab7PNugt1eLQJ0pPPz6p4f4kcFws="";
   }",f937f8ecd1c70efd7e9f90ba13dfb400cf559de4
+10534f21bba7a6919421c1d7b9709ff270eaf4f0,qh3,qh3,1.5.4,"fetchFromGitHub {
+    owner = ""jawah"";
+    repo = ""qh3"";
+    tag = ""v${version}"";
+    hash = ""sha256-VlqkZk+7803dzwMBFpsSSQUSVu5/1jKouwuK7jNuMGU="";
+  }",f937f8ecd1c70efd7e9f90ba13dfb400cf559de4
 55024503f61c7363a1ab80824decf75d549d0129,xscreenruler,xscreenruler,1.0.2,"fetchFromGitHub {
     owner = ""julian-hoch"";
     repo = ""xscreenruler"";
@@ -2553,6 +2658,18 @@ c78c366c0b08bbd5a99ef60fa037c1b5f5d3c760,rtklib-ex,rtklib-ex,2.5.0,"fetchFromGit
       date -u -d ""@$(git log -1 --pretty=%ct)"" ""+%Y-%m-%dT%H:%M:%SZ"" > $out/SOURCE_DATE_EPOCH
       find ""$out"" -name .git -print0 | xargs -0 rm -rf
     '';
+  }",09906cab24f49dedbb5b429f8b6c840d4e75b1b7
+ffb190df0e0cc8323cd8c996f9d245c77ea3a56b,e-imzo-manager,e-imzo-manager,0.1.1,"fetchFromGitHub {
+    owner = ""xinux-org"";
+    repo = ""e-imzo"";
+    tag = finalAttrs.version;
+    hash = ""sha256-uDaqkz2VDvqTgi+k8EGGKjLkjoH93xXHQcgUc1NVo30="";
+  }",a595dde4d0d31606e19dcec73db02279db59d201
+6b7378b1defda2fe0707325114aae8aa239eaaca,eaf-git,eaf-git,0-unstable-2025-07-10,"fetchFromGitHub {
+    owner = ""emacs-eaf"";
+    repo = ""eaf-git"";
+    rev = ""24c3887075630a21d0a53ddb95b01ef70694f03a"";
+    hash = ""sha256-ggxgwMTk46WDLKxrNkzX3pSO/yLoLTJVH08T4o70fEM="";
   }",09906cab24f49dedbb5b429f8b6c840d4e75b1b7
 342d1b05d6832ae3af7e315c360691d662831beb,radicle-tui,radicle-tui,0.6.0,"fetchgit {
     url = ""https://seed.radicle.xyz/z39mP9rQAaGmERfUMPULfPUi473tY.git"";
@@ -2710,6 +2827,12 @@ b93cba9d953f1273cfd57361b6c49b9ec66311fa,image,image,1.5.33,"fetchPypi {
     tag = finalAttrs.version;
     hash = ""sha256-wmYsAfgdwn6ZLF70avNmjoU5VZNBZdV7dPSe8ycNdHE="";
   }",32f313e49e42f715491e1ea7b306a87c16fe0388
+79d6b181c9d75ce6baaccfe2d05a032e1b713bd7,starkiller,starkiller,3.0.1,"fetchFromGitHub {
+    owner = ""bc-security"";
+    repo = ""starkiller"";
+    rev = ""v${finalAttrs.version}"";
+    hash = ""sha256-+q+toH5AvIdFPOY0Q06lWDlPrhIpEnukV+8JlwDZVPE="";
+  }",e9e0d35e5f735bf3d1e96815272f46fe7083232c
 d068f46f9173762849e2a2c99231b0123ca34ce8,cctv-viewer,cctv-viewer,0.1.9-unstable-2025-06-13,"fetchFromGitHub {
     owner = ""iEvgeny"";
     repo = ""cctv-viewer"";
@@ -2723,6 +2846,12 @@ d068f46f9173762849e2a2c99231b0123ca34ce8,cctv-viewer,cctv-viewer,0.1.9-unstable-
     tag = ""v${finalAttrs.version}"";
     hash = ""sha256-FXJUEEyCw7ChuzmSAzwXd2LoJXT6vpH+j3muXx5TjPI="";
   }",c860cf0b3a0829f0f6cf344ca8de83a2bbfab428
+4113c68e441cea4bf1db6e48fe30424c4b9a1817,arro3,arro3-vendor,0.5.1,"fetchFromGitHub {
+    owner = ""kylebarron"";
+    repo = ""arro3"";
+    tag = ""py-v${version}"";
+    hash = ""sha256-RTr+mf5slfxxvXp9cwPuy08AZUswPtIIRz+vngdg/k0="";
+  }",e45f8f193029378d0aaee5431ba098dc80054e9a
 2cce7033c3c002c3a9ee0205995cb6aae6b8050f,slh-dsa,slh-dsa,0.1.3,"fetchPypi {
     pname = ""slh_dsa"";
     inherit version;
@@ -2805,6 +2934,12 @@ efbf097c9b1e698b64f5d1ec290a2cc1093db52b,hyper-connections,hyper-connections,0.2
     tag = version;
     hash = ""sha256-9dMiyxzrZBlDxKeehXjoIjbzAkGSkAFxQZZX3LJJAig="";
   }",e9e0d35e5f735bf3d1e96815272f46fe7083232c
+5788f48b96684b42a035a88a3122e090aa55f4c4,pyluwen,pyluwen,0.7.11,"fetchFromGitHub {
+    owner = ""tenstorrent"";
+    repo = ""luwen"";
+    tag = ""v${version}"";
+    hash = ""sha256-eQpKEeuy0mVrmu8ssAOWBcXi7zutStu+RbZOEF/IJ98="";
+  }",e9e0d35e5f735bf3d1e96815272f46fe7083232c
 6cb7f918fcd1104bce96443f1ae04682567ebe4e,python-etherscan-api,python-etherscan-api,2.1.0,"fetchFromGitHub {
     owner = ""pcko1"";
     repo = ""etherscan-python"";
@@ -2827,6 +2962,12 @@ efbf097c9b1e698b64f5d1ec290a2cc1093db52b,hyper-connections,hyper-connections,0.2
     pname = ""rsstail"";
     inherit version;
     hash = ""sha256-nAqk8qomG02SVq2cbQAO0MidGbxCHCk2kPNB+7YgGOQ="";
+  }",e45f8f193029378d0aaee5431ba098dc80054e9a
+f8c9aa18ba409d9272d8003a1d91eeb09abca410,eaf-browser,eaf-browser,0-unstable-2025-06-14,"fetchFromGitHub {
+    owner = ""emacs-eaf"";
+    repo = ""eaf-browser"";
+    rev = ""120967319132f361a2b27f89ee54d1984aa23eaf"";
+    hash = ""sha256-DsPrctB1bSGBPQLI2LsnSUtqnzWpZRrWrVZM8lS9fms="";
   }",e45f8f193029378d0aaee5431ba098dc80054e9a
 92375e4bc96f330075ff5d201fb2f5d70ab57434,colombe,colombe,0.12.0,"fetchurl {
     url = ""https://github.com/mirage/colombe/releases/download/v${version}/colombe-${version}.tbz"";
@@ -3049,6 +3190,12 @@ d5206856bbcdb7d44fe450bbdc530a909d5032db,pyitachip2ir,pyitachip2ir,0.0.7,"fetchP
     tag = ""v${version}"";
     hash = ""sha256-0RVI9DX5JaVWntSu5du5SU45NC70TZJyVrvMuVR7grA="";
   }",1ef586712f85b4b004caecd385d6b023e7fd2450
+dd323d2bfe9aac779b0ebc07f86bc24996b969d1,qwen-code,qwen-code,0.0.5,"fetchFromGitHub {
+    owner = ""QwenLM"";
+    repo = ""qwen-code"";
+    tag = ""v${finalAttrs.version}"";
+    hash = ""sha256-/PuykGiXpjk2Fp1Sif59hvOIepZ7KcJRvL/9RMatQJA="";
+  }",cab778239e705082fe97bb4990e0d24c50924c04
 75cdc4782e0e4e2675ce0c679f0e06197b13f181,thingspeak,thingspeak,1.0.0,"fetchFromGitHub {
     owner = ""mchwalisz"";
     repo = ""thingspeak"";
@@ -3337,6 +3484,12 @@ f2af4a5483f3709956bd12909de86753b981469d,tattoy,tattoy,0.1.8,"fetchFromGitHub {
     repo = ""tattoy"";
     tag = ""tattoy-v${attrs.version}"";
     hash = ""sha256-44rXygZVbwwC/jOB69iHydsjYr/WeVU4Eky3BPqJzyc="";
+  }",94bcd9f5bcc94c0a1451ea873e38dddea7360bdc
+f514ce3fb5e275d58613ee3c0af07866ef0311fa,wayvr-dashboard,wayvr-dashboard,0.3.5,"fetchFromGitHub {
+    owner = ""olekolek1000"";
+    repo = ""wayvr-dashboard"";
+    tag = version;
+    hash = ""sha256-C23O9EFOpGwamJuKjluBAMFF7YaNDqd61JVDkWyoy+E="";
   }",94bcd9f5bcc94c0a1451ea873e38dddea7360bdc
 26bde9126b414cfc30db9fe666e6336d648f4b7e,mdwatch,mdwatch,0.1.11,"fetchFromGitHub {
     owner = ""santoshxshrestha"";

@@ -11,6 +11,14 @@ import sys
 from dataclasses import dataclass, field
 from typing import List, Dict
 
+# Indirect fetchers - fetch locked dependencies without any parameters about the origin like a url
+INDIRECT_FETCHERS = [
+    'fetchCargoVendor',
+    'fetchNpmDeps',
+    'fetchDeps',
+    'fetchYarnDeps',
+]
+
 @dataclass
 class PackageInfo:
     commit_hash: str
@@ -21,7 +29,8 @@ class PackageInfo:
     build_time: float
     package_file: str = None
     fetchers: List[Dict[str, str]] = field(default_factory=list)  # List of {type, content}
-    fetcher_count: int = 0
+    raw_fetcher_count: int = 0  # Total count of all fetchers
+    direct_fetcher_count: int = 0  # Count excluding indirect fetchers
     pname: str = None
     version: str = None
     exclusion_reasons: set = field(default_factory=set)
@@ -150,7 +159,11 @@ def analyze_package(pkg: PackageInfo) -> None:
 
     # Extract fetchers
     pkg.fetchers = extract_fetchers(content)
-    pkg.fetcher_count = len(pkg.fetchers)
+    pkg.raw_fetcher_count = len(pkg.fetchers)
+
+    # Calculate direct fetcher count (excluding indirect fetchers)
+    direct_fetchers = [f for f in pkg.fetchers if f['type'] not in INDIRECT_FETCHERS]
+    pkg.direct_fetcher_count = len(direct_fetchers)
 
 
 def main():
@@ -195,13 +208,16 @@ def main():
     print(f"\nWriting results to {fetchers_csv}...", file=sys.stderr)
     with open(fetchers_csv, 'w', newline='') as f:
         writer = csv.writer(f, lineterminator='\n')
-        writer.writerow(['commit_hash', 'package_name', 'fetcher_count', 'nixpkgs_target_bump'])
+        writer.writerow(['commit_hash', 'package_name', 'raw_fetcher_count', 'direct_fetcher_count', 'fetcher_types', 'nixpkgs_target_bump'])
 
         for pkg in packages:
+            fetcher_types = ','.join([f['type'] for f in pkg.fetchers])
             writer.writerow([
                 pkg.commit_hash,
                 pkg.package_name,
-                pkg.fetcher_count,
+                pkg.raw_fetcher_count,
+                pkg.direct_fetcher_count,
+                fetcher_types,
                 pkg.test_base_commit
             ])
 
@@ -224,8 +240,8 @@ def main():
                     pkg.test_base_commit
                 ])
 
-    # Filter and write packages with single fetcher (only from included packages)
-    single_fetcher_pkgs = [pkg for pkg in included_pkgs if pkg.fetcher_count == 1]
+    # Filter and write packages with single direct fetcher (only from included packages)
+    single_fetcher_pkgs = [pkg for pkg in included_pkgs if pkg.direct_fetcher_count == 1]
     print(f"\nWriting {len(single_fetcher_pkgs)} packages with single fetcher to {single_fetcher_csv}...", file=sys.stderr)
 
     with open(single_fetcher_csv, 'w', newline='') as f:
@@ -243,19 +259,22 @@ def main():
                 pkg.test_base_commit
             ])
 
-    # Filter and write packages with multiple fetchers (only from included packages)
-    multiple_fetchers = [pkg for pkg in included_pkgs if pkg.fetcher_count > 1]
+    # Filter and write packages with multiple direct fetchers (only from included packages)
+    multiple_fetchers = [pkg for pkg in included_pkgs if pkg.direct_fetcher_count > 1]
     print(f"Writing {len(multiple_fetchers)} packages with multiple fetchers to {multiple_fetchers_csv}...", file=sys.stderr)
 
     with open(multiple_fetchers_csv, 'w', newline='') as f:
         writer = csv.writer(f, lineterminator='\n')
-        writer.writerow(['commit_hash', 'package_name', 'fetcher_count', 'nixpkgs_target_bump'])
+        writer.writerow(['commit_hash', 'package_name', 'raw_fetcher_count', 'direct_fetcher_count', 'fetcher_types', 'nixpkgs_target_bump'])
 
         for pkg in multiple_fetchers:
+            fetcher_types = ','.join([f['type'] for f in pkg.fetchers])
             writer.writerow([
                 pkg.commit_hash,
                 pkg.package_name,
-                pkg.fetcher_count,
+                pkg.raw_fetcher_count,
+                pkg.direct_fetcher_count,
+                fetcher_types,
                 pkg.test_base_commit
             ])
 
@@ -275,9 +294,9 @@ def main():
         for reason, count in sorted(exclusion_reason_counts.items()):
             print(f"    - {reason}: {count}", file=sys.stderr)
     print(f"Included packages: {len(included_pkgs)}", file=sys.stderr)
-    print(f"  - with 0 fetchers: {len([p for p in included_pkgs if p.fetcher_count == 0])}", file=sys.stderr)
-    print(f"  - with 1 fetcher: {len([p for p in included_pkgs if p.fetcher_count == 1])}", file=sys.stderr)
-    print(f"  - with >1 fetchers: {len([p for p in included_pkgs if p.fetcher_count > 1])}", file=sys.stderr)
+    print(f"  - with 0 direct fetchers: {len([p for p in included_pkgs if p.direct_fetcher_count == 0])}", file=sys.stderr)
+    print(f"  - with 1 direct fetcher: {len([p for p in included_pkgs if p.direct_fetcher_count == 1])}", file=sys.stderr)
+    print(f"  - with >1 direct fetchers: {len([p for p in included_pkgs if p.direct_fetcher_count > 1])}", file=sys.stderr)
     print(f"{'='*80}", file=sys.stderr)
 
     # Show fetcher type distribution (only for included packages)
@@ -286,7 +305,7 @@ def main():
     multiple_fetcher_counts = {}
 
     for pkg in included_pkgs:
-        is_single = pkg.fetcher_count == 1
+        is_single = pkg.direct_fetcher_count == 1
         for fetcher in pkg.fetchers:
             fetcher_type = fetcher['type']
             all_fetcher_counts[fetcher_type] = all_fetcher_counts.get(fetcher_type, 0) + 1
