@@ -34,11 +34,19 @@ a5140ab27c95319aebaded41b1ebc7ed04530cda,elkoep-aio-mqtt,elkoep-aio-mqtt,0.1.0.b
     tag = ""v${version}"";
     hash = ""sha256-uCgpNvDJZKwxX4HYF8tyvJ1AiQLmybuxrZkYK/u5xlg="";
   }",85a6c4a07faa12aaccd81b36ba9bfc2bec974fa1
+eb10ce12a24a5885051617a2243c8ea96c26b7b6,dataconf,dataconf,3.6.0,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-hcZi8n290GZkgIM074Z1Ne2gOS5WDmX8fPR+BJGZyzU="";
+  }",91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
 d2d197b954393044669872a031e8061f688b9a0d,pytest-gitconfig,pytest-gitconfig,0.8.0,"fetchFromGitHub {
     owner = ""noirbizarre"";
     repo = ""pytest-gitconfig"";
     tag = version;
     hash = ""sha256-5DfG74mEvsWHH2xPyG1mNcWp9/DgpveLbaSEOoRzD+g="";
+  }",1d4c88323ac36805d09657d13a5273aea1b34f0c
+899d61fe3171696d154b6abedae59ad13af7ec9a,uncompresspy,uncompresspy,0.4.1,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-556tZurtjUI2TYB8C6PzqK7w4Ah6m+rxpg8jqAimwUc="";
   }",1d4c88323ac36805d09657d13a5273aea1b34f0c
 63c81066c92412a7faad0a95ec3097a844387b8c,pycrdt-store,pycrdt-store,0.1.3b1,"fetchFromGitHub {
     owner = ""y-crdt"";
@@ -1216,6 +1224,10 @@ c821dc3bc6ab812b2d0fd1745cb4ba7282ad1b6f,sigstore-models,sigstore-models,0.0.5,"
     tag = ""v${version}"";
     hash = ""sha256-zlIZzfgHZPEuiZu3JNX74Cg1jPNaO1HUhMtpxoyOoqk="";
   }",9547cfd27b5158eb612a6812dfc5c7b3d118b996
+02720349e3a57029e0baff510f5a5b44a9a8313d,color-matcher,color-matcher,0.6.0,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-e6igB4LD5eWTHdp7H7nFcqzoLeDGyXZUQyt8/gqnSEM="";
+  }",ab6de70223e1d4c475e0dbac6aaa37fbfdf4d08c
 b8f1d99ca276591e469301b2b7fda2acaf0c43c6,tree-sitter-zeek,tree-sitter-zeek,0.2.9,"fetchFromGitHub {
     owner = ""zeek"";
     repo = ""tree-sitter-zeek"";
@@ -1288,6 +1300,10 @@ fa9ebfa44d828d1ab8f9563790dd9cdfa87d1625,pyportainer,pyportainer,1.0.1,"fetchFro
     tag = ""v${finalAttrs.version}"";
     hash = ""sha256-zH7eeAJzazDf4LnfBxFKMIPIB4Gx4rn7DCEqBV5zIWo="";
   }",a1f79a1770d05af18111fbbe2a3ab2c42c0f6cd0
+faa6893b66a5e512910c8bcbf2deb9b6977b99f7,peakutils,peakutils,1.3.5,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-T/Ln8zMLkwJP6Noe4E4AOJ4mvLLveb0vnPhszUli4RQ="";
+  }",e3a3b32cc234f1683258d36c6232f150d57df015
 a11e8d076eeaca3edcff35e1df1840564c377c9d,busylight-core,busylight-core,0.15.2,"fetchFromGitHub {
     owner = ""JnyJny"";
     repo = ""busylight-core"";
@@ -1436,6 +1452,10 @@ ca1deead6800c81e80628cc8fa827d9dc696ed8a,jetuml,jetuml,3.9,"fetchurl {
     tag = finalAttrs.version;
     hash = ""sha256-wTilbEK3BZehklAd+3SS2tW/vc8WEeMPUsYdDVRC/Ho="";
   }",f4b140d5b253f5e2a1ff4e5506edbf8267724bde
+8432ab232e64d1cb33f88b773a8aa2e3191f08dd,flatlatex,flatlatex,0.15,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-UXDhvNT8y1K9vf8wCxS2hzBIO8RvaiqJ964rsCTk0Tk="";
+  }",58dcbf1ec551914c3756c267b8b9c8c86baa1b2f
 13568e4c6477caa5faa35b957f90aa92d242a177,garage-webui,garage-webui,1.1.0,"fetchFromGitHub {
     owner = ""khairul169"";
     repo = ""garage-webui"";
@@ -1467,6 +1487,12 @@ e0c829f65a80e78ecebc48f8ae1d89e25b835c87,gklib,gklib,5.1.1-unstable-2023-03-27,"
     tag = ""v${finalAttrs.version}"";
     hash = ""sha256-ti8IDslgSPTITrzjVRio1zsV92u505ySr16GfRKxtp8="";
   }",124b966f89fad5468ca67ac7ee15af4ecce49b47
+01174307fc0c228ce2624e70ebcb8bef4b3a5369,cron-converter,cron-converter,1.2.2,"fetchFromGitHub {
+    owner = ""Sonic0"";
+    repo = pname;
+    rev = ""v${version}"";
+    hash = ""sha256-XpkpEMurRrhq1S4XnhPRW5CCBk+HzljOSQfZ98VJ7UE="";
+  }",08b8f92ac6354983f5382124fef6006cade4a1c1
 05810d4eb44fa65223cda52e93e3922df70d6bbb,l8w8jwt,l8w8jwt,2.5.0,"fetchFromGitea {
     domain = ""codeberg.org"";
     owner = ""GlitchedPolygons"";
@@ -1517,6 +1543,12 @@ c5cb903e37dd55fdd406b2791ac64cff42d1adfa,ycm-cmake-modules,ycm-cmake-modules,0.1
     tag = ""v${finalAttrs.version}"";
     hash = ""sha256-gKb0cTpCPlyvJFthV1csn8HaVcUvXq+KC+nTT5sGhww="";
   }",ca77296380960cd497a765102eeb1356eb80fed0
+f7548864712cccad29d63af212c7563f274be5d7,cloudflare-ddns,cloudflare-ddns,1.15.1,"fetchFromGitHub {
+    owner = ""favonia"";
+    repo = pname;
+    rev = ""v${version}"";
+    hash = ""sha256-/806eUsuWhiCnvO1DasPW2xVFYYxnmki3KIDre7gjrg="";
+  }",dab3a6e781554f965bde3def0aa2fda4eb8f1708
 a2b1feab7461c2af0f87016650cf7daa3c1f3468,types-regex,types-regex,2025.9.1.20250903,"fetchPypi {
     pname = ""types_regex"";
     inherit version;
@@ -1673,6 +1705,10 @@ f8d0dc70c010667499743a164bf415015a1d5c3c,plakar,plakar,1.0.3,"fetchFromGitHub {
     tag = ""v${version}"";
     hash = ""sha256-dwUmAMogBBzpMFsoF2OP0otMz1tH9Jo3fchjWqMWIV0="";
   }",ca77296380960cd497a765102eeb1356eb80fed0
+0efa842a7648dc80f6e743edc0f6c4989ff07fc5,texsurgery,texsurgery,0.6.3,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-zoOeTRHcpDnXJ1QC7BIz9guzqL9Q7kmJ5VSGEyqanfY="";
+  }",ca77296380960cd497a765102eeb1356eb80fed0
 5c61cbbe65b9bffb225508e43ac55fa8c59fa98c,llama-stack-client,llama-stack-client,0.2.20,"fetchPypi {
     pname = ""llama_stack_client"";
     inherit version;
@@ -1723,6 +1759,18 @@ b68ec0c4bfc7052e465ccb579c2b1ab0f3c747ef,targ,targ,0.6.0,"fetchFromGitHub {
     tag = version;
     hash = ""sha256-WWfZsJRm2rJI85vmFt/AtV++5vpSTJZpRrk3PdHMhAA="";
   }",ca77296380960cd497a765102eeb1356eb80fed0
+87f19f9c8ca7ffa35b2659d7b51f8e4b9f1b293a,meshcore,meshcore,2.1.5,"fetchPypi {
+    inherit pname version;
+    sha256 = ""sha256-gXofzLmydfN0Shrrlbwk+6Rr2kARPqypP6+43rHZOJE="";
+  }",ca77296380960cd497a765102eeb1356eb80fed0
+1fe43afee2cb3f0ab767b10b72eb25d5597aa00e,timg,timg,1.1.6,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-k42TmsNQIwD3ueParfXaD4jFuG/eWILXO0Op0Ci9S/0="";
+  }",58dcbf1ec551914c3756c267b8b9c8c86baa1b2f
+eb8a4b0917a38479708873584a6ca34d5993f096,sixelcrop,sixelcrop,0.1.9,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-1sBaxPvW4gH3lK3tEjAPtCdXMXLAVEof0lpIpmpbyG8="";
+  }",58dcbf1ec551914c3756c267b8b9c8c86baa1b2f
 b102c5b9af712ab6217925ebbec0f71e87c951d6,globus-cli,globus-cli,3.36.0,"fetchFromGitHub {
     owner = ""globus"";
     repo = ""globus-cli"";
@@ -1801,6 +1849,10 @@ e30106c7f831b14315655240dc1bbec03285d843,metee,metee,6.0.1,"fetchFromGitHub {
     tag = ""v${version}"";
     hash = ""sha256-XyMz0CeLQderzzz/Z3H6rja619wPzx42X3jz30wt6a8="";
   }",a918bb3594dd243c2f8534b3be01b3cb4ed35fd1
+87c2d6a4f68915480b2bf9ff5c7d776cc885ad26,pbc,pbc,1.0.0,"fetchurl {
+    url = ""https://crypto.stanford.edu/pbc/files/${finalAttrs.pname}-${finalAttrs.version}.tar.gz"";
+    hash = ""sha256-GCdaNnKDB3uv419EMgBJnjsZxKN1SVPaKhsvDWtZItw="";
+  }",58dcbf1ec551914c3756c267b8b9c8c86baa1b2f
 1236f2ad0b808d493e8cb2742083ae81ae4a72bd,colcon-recursive-crawl,colcon-recursive-crawl,0.2.3,"fetchFromGitHub {
     owner = ""colcon"";
     repo = ""colcon-recursive-crawl"";
@@ -1843,6 +1895,10 @@ f9dc3b0ad0168b6074b5ee9fb9e904b3ea1e06ad,picocrypt-ng,picocrypt-ng,2.00,"fetchFr
     tag = finalAttrs.version;
     hash = ""sha256-+Ecvy4h0aC9Gra9BcN8L/vgpnflq6W7KcnYCVr8uaQQ="";
   }",a918bb3594dd243c2f8534b3be01b3cb4ed35fd1
+81cdc8766c5103825776294feec58f7db037234f,loro,loro,1.5.4,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-vC1SLkwCkiytZe9d9t1OH+Vd360657XxdU81bM9C9jk="";
+  }",aca2499b79170038df0dbaec8bf2f689b506ad32
 036b471cb6bc50b3ae59f699a812aea4799c75ab,syne-tune,syne-tune,0.14.2,"fetchFromGitHub {
     owner = ""syne-tune"";
     repo = ""syne-tune"";
@@ -1929,6 +1985,10 @@ a14a2d5e2967880fe012fcd4703c8489a20d42ee,webio-api,webio-api,0.1.11,"fetchPypi {
     inherit version;
     hash = ""sha256-fPlAWu/P9gOjlQ62qAesLcLkNznAiMAAqxAlQi9oxZk="";
   }",6b0b1559e918d4f7d1df398ee1d33aeac586d4d6
+dc5be8dcdbd1050684eec1c104937ac957e89973,clearpasspy,clearpasspy,1.1.3,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-HAi9z7DT5g0Pkr+rASUK18/tEsorWXScCODE95Q+ZZ0="";
+  }",f937f8ecd1c70efd7e9f90ba13dfb400cf559de4
 50d4df879c1f26846a50a65bd67e07a6b0ff30fe,openai-harmony,openai-harmony,0.0.4,"fetchFromGitHub {
     owner = ""openai"";
     repo = ""harmony"";
@@ -1969,6 +2029,10 @@ c0750cee3d328bf0bc6da910a9a58045e1252f5f,mtk-uartboot,mtk-uartboot,0-unstable-20
     rev = ""b0ec7bdf1bab7089df948e745e17d206f3426dc1"";
     hash = ""sha256-wUF1e0TfP9khfC9WruJkIg4j4DClOJTTPRABIe4Ma4U="";
   }",ddd1826f294a0ee5fdc198ab72c8306a0ea73aa9
+5fc0353343ade68fdfb955d19d7b0443a78701f9,cmudict,cmudict,1.1.1,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-I8ORTIVGX2p9JtLYl0+jQd17ySTR/6UBtBQGuTaSPbE="";
+  }",ddd1826f294a0ee5fdc198ab72c8306a0ea73aa9
 4393259b5a631d7ba2bcedfc074fb5734509370f,vivify,vivify,0.8.2,"fetchFromGitHub {
     owner = ""jannis-baum"";
     repo = ""Vivify"";
@@ -2000,12 +2064,20 @@ bf4b1b86b09c0d196300a6780627e2cd079b18e1,pythinkingcleaner,pythinkingcleaner,0.0
     tag = version;
     hash = ""sha256-YaHBZwJvgI3uFkFtZ4KWrKKGRPuNhBBrhCvGC65Jsks="";
   }",4c202d26483c5ccf3cb95e0053163facde9f047e
+4875da785dea20b0e297f90ff6ecd46d93fc374f,tapsaff,tapsaff,0.2.1,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-Q3VLbPsgXAYvZsjcW1m3lus2SFMjNJ8AmkcNK0THB6I="";
+  }",4c202d26483c5ccf3cb95e0053163facde9f047e
 eca97313c15caaeb884f983343101a2f615b44ce,libopaque,libopaque,1.0.1,"fetchFromGitHub {
     owner = ""stef"";
     repo = ""libopaque"";
     tag = ""v${finalAttrs.version}"";
     hash = ""sha256-VVD4489yWAJTWLGrpXYe8or5QjDnAuQ9/tzlNJJu/lo="";
   }",4c202d26483c5ccf3cb95e0053163facde9f047e
+70bf6928aabdaec084bd3b32590a3d62e80ace00,btfdump,btfdump,0.0.4,"fetchCrate {
+    inherit pname version;
+    hash = ""sha256-iLYGFXB4goiY7eJXXBhX9Y1TOltsW40ogeBhvTV2NvU="";
+  }",84c256e42600cb0fdf25763b48d28df2f25a0c8b
 6c6fdfe3d869e3892d65c56213069cf6a6fbd409,_0xffff,0xFFFF,0.10,"fetchFromGitHub {
     owner = ""pali"";
     repo = ""0xFFFF"";
@@ -2068,11 +2140,23 @@ c18a6a58174642ca88ef23e10f7ba0ae64eb2a5d,grpc-health-probe,grpc-health-probe,0.4
     tag = version;
     hash = ""sha256-9dpZyQ7i3WNdDVyEBLz4bJcWF1Ap7SH089PXWYI6UOA="";
   }",6b0b1559e918d4f7d1df398ee1d33aeac586d4d6
+afc3818084c8ea0d4100059263f9e8853735530e,plumlightpad,plumlightpad,0.0.11,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-5J+kk/fn45v/1WIsBuq6o7hivXkCaJ1Of7BLRf10rCk="";
+  }",6b0b1559e918d4f7d1df398ee1d33aeac586d4d6
+761cf127e77586dd84936f06222bd78bc9057263,greenwavereality,greenwavereality,0.5.1,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-bNTO9qHoOe3A7TYiUwLBVq4eWyGoIfCoguizM1hKk/Y="";
+  }",6b0b1559e918d4f7d1df398ee1d33aeac586d4d6
 87d45a7383af79b707d576c288d8c5f5f9862972,horimote,horimote,0.4.1,"fetchFromGitHub {
     owner = ""benleb"";
     repo = ""horimote"";
     tag = ""v${version}"";
     hash = ""sha256-rEtE0Z/PV/n9pz2mLbHeREv/sl4SexTSOq2yx4LDnAo="";
+  }",6b0b1559e918d4f7d1df398ee1d33aeac586d4d6
+d96e3ea7af4e464fb53e161d35d85e90ee7730ce,gitterpy,gitterpy,0.1.7,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-nmZ6sVjrHRLfvXMr/fYiN+a4Wly87YKwAR+heP/sNkE="";
   }",6b0b1559e918d4f7d1df398ee1d33aeac586d4d6
 9b41674ef3a3f3ae6cca14266d4ce45cc8538f21,pizzapi,pizzapi,0.0.6,"fetchFromGitHub {
     owner = ""ggrammar"";
@@ -2085,6 +2169,10 @@ c18a6a58174642ca88ef23e10f7ba0ae64eb2a5d,grpc-health-probe,grpc-health-probe,0.4
     repo = ""mpdris2-rs"";
     tag = ""v${finalAttrs.version}"";
     hash = ""sha256-E9H6bjmWZx35fZo/ZPvJL1w/YQ34pJ7z81YbB5fUZSU="";
+  }",f937f8ecd1c70efd7e9f90ba13dfb400cf559de4
+5b727d64cadeff58ecb73da158d4bcaabcac3021,pycmus,pycmus,0.1.1,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-Wk9J/XjKZB13o8QmdByVWHcAdfNOicwLaH2Sh4qJcIw="";
   }",f937f8ecd1c70efd7e9f90ba13dfb400cf559de4
 e7c7aae4c2e100a76988e1e173bd7b966941b08e,python-clementine-remote,python-clementine-remote,1.0.3,"fetchFromGitHub {
     owner = ""jjmontesl"";
@@ -2116,6 +2204,10 @@ e7c7aae4c2e100a76988e1e173bd7b966941b08e,python-clementine-remote,python-clement
     tag = version;
     hash = ""sha256-wVzXKOKljENAKppod+guqm+0XMPenLgOsZzMQVTBo+k="";
   }",f937f8ecd1c70efd7e9f90ba13dfb400cf559de4
+9d45bc2ab26493467f828bc6a6a0be8676c0dfcf,proliphix,proliphix,0.5.0,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-Tf6gTRofZXY6ikrXBARgp6grzZGQMjvN5njT+7SRZNQ="";
+  }",f937f8ecd1c70efd7e9f90ba13dfb400cf559de4
 15b8551c882ef641c680b6ff3316d14b0a7bd7c2,iglo,iglo,1.2.7,"fetchFromGitHub {
     owner = ""jesserockz"";
     repo = ""python-iglo"";
@@ -2127,6 +2219,18 @@ e7c7aae4c2e100a76988e1e173bd7b966941b08e,python-clementine-remote,python-clement
     repo = ""qh3"";
     tag = ""v${version}"";
     hash = ""sha256-VlqkZk+7803dzwMBFpsSSQUSVu5/1jKouwuK7jNuMGU="";
+  }",f937f8ecd1c70efd7e9f90ba13dfb400cf559de4
+f51a786cff2607ecd4c6653d909908ef65004227,rfk101py,rfk101py,0.0.1,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-O8W404opbjH4AIUAfM01xrzXM/2WzU6q7uxM5ySgdhg="";
+  }",f937f8ecd1c70efd7e9f90ba13dfb400cf559de4
+99fc3f4e4c04c5999c2d1308c8a8780e26d800d1,yeelightsunflower,yeelightsunflower,0.0.10,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-l4Rl6WSCK68/XBwCndonNu3kePDXfSs/uIXaCkrIT7g=="";
+  }",f937f8ecd1c70efd7e9f90ba13dfb400cf559de4
+f7cb3d5cb7eabe6dbaea25283e6bdec45e287b38,coloraide,coloraide,4.7.2,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-fomOKtF3hzgJvR9f2x2QYYrYdASf6tlS/0Rw0VdmbUs="";
   }",f937f8ecd1c70efd7e9f90ba13dfb400cf559de4
 e5a5b0de7dad339f23e30a061551d545a7340c93,numato-gpio,numato-gpio,0.14.0,"fetchFromGitHub {
     owner = ""clssn"";
@@ -2163,6 +2267,10 @@ b91ed9354e1d0d7a85a1c21f209ca9bb0149199b,pyirishrail,pyirishrail,0.0.2,"fetchFro
     repo = ""pyirishrail"";
     tag = version;
     hash = ""sha256-NgARqhcXP0lgGpgBRiNtQaSn9JcRNtCcZPljcL7t3Xc="";
+  }",97eb7ee0da337d385ab015a23e15022c865be75c
+fba28231b35a04aead556c064544643bf378455e,python-ripple-api,python-ripple-api,0.0.3,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-hlgc7swcCimpQueyxuy/zvr6WdBHWnjnqHTS/cUghss="";
   }",97eb7ee0da337d385ab015a23e15022c865be75c
 4c75542c64411e50e02a3c6d5ccbb805366a8042,gow,gow,0-unstable-2025-08-13,"fetchFromGitHub {
     owner = ""mitranim"";
@@ -2231,6 +2339,10 @@ e6a500c43149848ee6b4d72632e603cea4f7326e,kurve,kurve,0.4.0,"fetchFromGitHub {
     tag = ""v${finalAttrs.version}"";
     hash = ""sha256-Ra+ySuvBqmVOTD8TlWDJklXYuwXPb/2a3BSY+gQMiiA="";
   }",09906cab24f49dedbb5b429f8b6c840d4e75b1b7
+a8fd68487459c647712cce20f52f262da453eb0b,oru,oru,0.2.3,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-wLD1v98Ez5rexQEvtR7XBiY40I8Lb2X9WzU9kcE5iVY="";
+  }",09906cab24f49dedbb5b429f8b6c840d4e75b1b7
 d32278bffa25fe906680fd026bd79da943039e7d,concord232,concord232,0.15,"fetchFromGitHub {
     owner = ""JasonCarter80"";
     repo = ""concord232"";
@@ -2259,6 +2371,10 @@ da3913b61b59c4440e9e34beb983eb49d4abf397,tikteck,tikteck,0.4,"fetchPypi {
     inherit version;
     hash = ""sha256-PQ0ZOFLGVllz/Jxw2CN6D5Ypza5/Ck3dtk3DuB+eHiA="";
   }",09906cab24f49dedbb5b429f8b6c840d4e75b1b7
+2a859bfb6bbd6ea48fc782caf03c231c6033a774,pysesame2,pysesame2,1.0.2,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-djKvmmYePdpcMt9bKkQyKsKAT5hhXMPJwC0EkfY8vWU="";
+  }",09906cab24f49dedbb5b429f8b6c840d4e75b1b7
 9d8255d7fe7f16fe29e0af6abe2e2328082daf03,hyprmagnifier,hyprmagnifier,0.0.1-unstable-2025-05-16,"fetchFromGitHub {
     owner = ""st0rmbtw"";
     repo = ""hyprmagnifier"";
@@ -2277,6 +2393,10 @@ da3913b61b59c4440e9e34beb983eb49d4abf397,tikteck,tikteck,0.4,"fetchPypi {
     repo = ""sshwifty"";
     tag = finalAttrs.version;
     hash = ""sha256-7ZfS46+aflKIQ8S9T18JjCb7bY8mB6cJl/lgJi5Hukg="";
+  }",b6b47963d86aca847fe9754627b1f20f5fd0181d
+820dcf0439a638b49b9d4ba0273de6e658c459a7,pyw800rf32,pyW800rf32,0.4,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-i0XXqohKY5pWIjcOCUxUQdx/FSSqgTnTaWcDxnIYjMk="";
   }",b6b47963d86aca847fe9754627b1f20f5fd0181d
 6ab2bd99d9fc333a87dd3e48f9057821a1888476,pyjpegls,pyjpegls,1.5.1,"fetchFromGitHub {
     owner = ""pydicom"";
@@ -2314,6 +2434,10 @@ b976804e14c6020ea68c3bf2bac609b98963ada6,sointu,sointu,0.4.1-unstable-2025-08-13
     tag = version;
     hash = ""sha256-8KLEeyf1uwYjsBfIoi+736cu+We6OjLvptCXL539bDA="";
   }",a650b5d0de99158323597f048667c4d914243224
+2742235f4f9b1a2d1391ae43f80fd1120b58adbb,python-gc100,python-gc100,1.0.3a0,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-thuAmJUczTpKy/yZuVqGY3K3fyimw2PW/rGiyi7bwC4="";
+  }",a650b5d0de99158323597f048667c4d914243224
 206937dab6e23bb4a6202126ed66bb301172b982,pysmarty2,pysmarty2,0.10.2,"fetchFromGitHub {
     owner = ""martinssipenko"";
     repo = ""pysmarty2"";
@@ -2338,6 +2462,10 @@ a75b67387e7b1bcd96cd313a91934f5f9eba6c06,aiohomematic,aiohomematic,2025.8.6,"fet
     tag = version;
     hash = ""sha256-HmcBl+uFjEeyZdilqqTxQ8wrFbDr/8tsh/l0yoVfYJg="";
   }",a650b5d0de99158323597f048667c4d914243224
+b93cba9d953f1273cfd57361b6c49b9ec66311fa,image,image,1.5.33,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-uqLgkXgnfapQ8i/W0dUex48ZwSaIkhy5q1gIdD8JcSY="";
+  }",641d909c4a7538f1539da9240dedb1755c907e40
 4bfe6c41f1005eee6ef61e0fdab2b88a58142910,arashi,arashi,25.08.3,"fetchFromGitHub {
     owner = ""0hStormy"";
     repo = ""Arashi"";
@@ -2415,6 +2543,10 @@ a5bebf0fb7ed36fbb16148c7f09f5cc9907289ef,pysodium,pysodium,0.7.18,"fetchFromGitH
     repo = ""pysecstr"";
     tag = ""v${version}"";
     hash = ""sha256-FV5NUPberA5nqHad8IwkQLMldT1DPqTGpqOwgQ2zSdI="";
+  }",a595dde4d0d31606e19dcec73db02279db59d201
+0d12a403da64c42f82e7b13182e50bf11df36136,mopidyapi,mopidyapi,1.1.0,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-n1BJGHFZvuGSSumEXWIjH/CiHs5w/8skhz7yfR7Jplw="";
   }",a595dde4d0d31606e19dcec73db02279db59d201
 66eed59381f8999f2fa2fca5bf44bbc52394faca,pyworxcloud,pyworxcloud,4.1.43,"fetchFromGitHub {
     owner = ""MTrab"";
@@ -2514,6 +2646,10 @@ f35e564ec5dd8aa23b6672d395e101bc2a2ee99f,colcon-package-information,colcon-packa
     url = ""https://github.com/molarmanful/kirsch/releases/download/v${finalAttrs.version}/kirsch-release_v${finalAttrs.version}.zip"";
     hash = ""sha256-6POi3N1JX6FFWHwqOlB3mrkHMYG+TJXz9URarbSPrZw="";
   }",372d9eeeafa5b15913201e2b92e8e539ac7c64d1
+e370730f131a975394d0195c3fc63db5f0383f4a,pynetio,pynetio,0.1.8,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-SSe6OHubWszOTnwytL/3GhzD4lGIz9kxS75kuJv7vKA="";
+  }",5a983011e0f4b3b286aaa73e011ce32b1449a528
 798c206c3676b871bc09d886611f3f25e4d72022,tiered-debug,tiered-debug,1.3.0,"fetchFromGitHub {
     owner = ""untergeek"";
     repo = ""tiered-debug"";
@@ -2580,6 +2716,18 @@ f006d6460d8d8925003b6cb4b08bbef951b3021c,xs1-api-client,xs1-api-client,3.0.1,"fe
     tag = ""v${version}"";
     hash = ""sha256-bAxrqtjoJaPkTzeeOeXSTpJN3rPszi5W4q6Q7ZRo0hc="";
   }",641d909c4a7538f1539da9240dedb1755c907e40
+af92342df56a2bb14308eab86ea9f940f165db8f,python-blockchain-api,python-blockchain-api,0.0.2,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-JC/FWkSq+Rc/XX39RQgLBnlncuRRumFNArODNJDzAHw="";
+  }",641d909c4a7538f1539da9240dedb1755c907e40
+ed8c0bf5bf169f62246764b9cd18574a3e19dcbd,starlingbank,starlingbank,3.2,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-pqWnRyCAc50KQmbqYq9Mje+PWXCFmTAjs8jA13YM0nA="";
+  }",641d909c4a7538f1539da9240dedb1755c907e40
+d5f29a5b5504fd7f4185cb48db6a70b4cb4cc882,pyrepetierng,pyrepetierng,0.1.0,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-0+Qr2yrjk1/K4Yg55d8sdmI6BtBYI76DCQiPlp6dzrc="";
+  }",641d909c4a7538f1539da9240dedb1755c907e40
 defecd64a3ac1dddf483b5d89bddeac2c85cd776,kawa,kawa,3.1.1,"fetchurl {
     url = ""mirror://gnu/kawa/kawa-${finalAttrs.version}.tar.gz"";
     hash = ""sha256-jJpQzWsQAVTJAb0ZCzrNL7g1PzNiLEos6Po5Kn8J4Bk="";
@@ -2589,6 +2737,10 @@ defecd64a3ac1dddf483b5d89bddeac2c85cd776,kawa,kawa,3.1.1,"fetchurl {
     repo = ""pymochad"";
     tag = version;
     hash = ""sha256-nwh97sbYkt4F/u02zTDemWEztSco27oJCemd6kTnCMk="";
+  }",641d909c4a7538f1539da9240dedb1755c907e40
+69df914cf951a6679d6be332a995508d3a9d9ae8,baidu-aip,baidu-aip,4.16.1,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-zNYjEVVwhqFAR7w7CR3rWYefUZcM+sPZ87KYfDDLxN0="";
   }",641d909c4a7538f1539da9240dedb1755c907e40
 f6a46d05584e59c5bf69dff4cc38c25bc64e85e4,electrickiwi-api,electrickiwi-api,0.9.14,"fetchFromGitHub {
     owner = ""mikey0000"";
@@ -2632,11 +2784,19 @@ f6a46d05584e59c5bf69dff4cc38c25bc64e85e4,electrickiwi-api,electrickiwi-api,0.9.1
     tag = version;
     hash = ""sha256-z9dOJ7WgUR2ntU6boUInRyKxSPBSoNWGtE3pOZcFYA0="";
   }",641d909c4a7538f1539da9240dedb1755c907e40
+1fb3026f0aa431a9f268d1b8f60244c493d1adf6,ebusdpy,ebusdpy,0.0.17,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-t6O/fOBrJuDYpCVnkL+hUzyqMoGKFj5UYNoD6ExikNM="";
+  }",641d909c4a7538f1539da9240dedb1755c907e40
 4cf97d64a1798e3ce7510afab9aee720150e9057,plus-jakarta-sans,plus-jakarta-sans,2.7.1,"fetchzip {
     url = ""https://github.com/tokotype/PlusJakartaSans/releases/download/${finalAttrs.version}/PlusJakartaSans-${finalAttrs.version}.zip"";
     stripRoot = false;
     hash = ""sha256-+ghkQ4/wxou3FB68ceCwBeGrSCaHJhb16MybvN6mCSc="";
   }",1ef586712f85b4b004caecd385d6b023e7fd2450
+d5206856bbcdb7d44fe450bbdc530a909d5032db,pyitachip2ir,pyitachip2ir,0.0.7,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-T/Q3tZTTwqlaHDR2l2nRLISC4LLrOPZZv14sRxYyqDQ="";
+  }",641d909c4a7538f1539da9240dedb1755c907e40
 49db9c55fb0be705229fb7b3bd0d0bc783b314cb,pypjlink2,pypjlink2,1.2.1,"fetchFromGitHub {
     owner = ""benoitlouy"";
     repo = ""pypjlink"";
@@ -2763,6 +2923,13 @@ e0fd0de587aa7a19d007694d0f2f753f05ac5c81,uvicorn-worker,uvicorn-worker,0.3.0,"fe
     tag = version;
     hash = ""sha256-a5L4H1Bym5Dx9/pGL/Vz6ZO699t/1Wmc1ExIb0t/ISc="";
   }",b069b7c1e2fe1a3a24221428558bf44128d3d5c8
+7db71df6a3531bc4f2f91b9cbb892166944f13b1,filius,filius,2.9.4,"fetchFromGitLab {
+    owner = ""filius1"";
+    repo = pname;
+    # they seem to have stopped using the ""v"" prefix since 2.9.3
+    tag = version;
+    hash = ""sha256-nQyDPLDQe5kFH3PhCmLqAt8kVnitPwX5K3xLnyntF5k="";
+  }",871381d997e4a063f25a3994ce8a9ac595246610
 bb61e94d92597251b35fbebe1446f6d221a8e405,nexusrpc,nexus-rpc,1.1.0,"fetchFromGitHub {
     owner = ""nexus-rpc"";
     repo = ""sdk-python"";
@@ -2776,11 +2943,23 @@ bb61e94d92597251b35fbebe1446f6d221a8e405,nexusrpc,nexus-rpc,1.1.0,"fetchFromGitH
     tag = ""v${version}"";
     hash = ""sha256-3PbGK8e/W4pHlXwIvW6kmyeBMvzBIS2DrV0pxafgJOY="";
   }",e7eabdc701d7dbb810fd91a97ec358caa4c1fc50
+bf8fce02ae3b244a16781441855aa6c3351f2b7f,kaiterra-async-client,kaiterra-async-client,1.1.0,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-Wap+yJaIIwPfOUtbVijr85BU3F/JIN2p7nRWW3tsPP8="";
+  }",a683adc19ff5228af548c6539dbc3440509bfed3
 16ae57087a91a72b3312139667a8a601f1b7ec31,oathtool,oathtool,2.4.0,"fetchFromGitHub {
     owner = ""jaraco"";
     repo = ""oathtool"";
     tag = ""v${version}"";
     hash = ""sha256-Qa4/fVa7Ws8t42MxZpEVKI7Wyux/uN77VP0JBnrmgq0="";
+  }",a683adc19ff5228af548c6539dbc3440509bfed3
+5b51168e8242dcb2b9f4b257f25548ccef0732ec,speak2mary,speak2mary,1.5.0,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-5W2E/leT/IiXFVXD+LSPE99zGlz+yKm5XCv830rt8O0="";
+  }",a683adc19ff5228af548c6539dbc3440509bfed3
+9746a806156421be341fa02165cbd7d0784f1792,hko,hko,0.3.2,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-6FzdaSaw7sX52wM8HbHFGtKdR2JBg3B2cMZnP7RfQzs="";
   }",a683adc19ff5228af548c6539dbc3440509bfed3
 3d0a214d1e9818a952f518154959aec772207000,tcping-rs,tcping-rs,1.2.18,"fetchFromGitHub {
     owner = ""lvillis"";
@@ -2788,6 +2967,10 @@ bb61e94d92597251b35fbebe1446f6d221a8e405,nexusrpc,nexus-rpc,1.1.0,"fetchFromGitH
     tag = version;
     hash = ""sha256-G9LZ9XlIl/JYji/GgznQnIbnV83qi9kZqCkaZJ0kENI="";
   }",fa64ec5c1ca6f17746f3defedb988b9248e97616
+b053278a36133562363fa711e25e1417d11bcfd0,triggercmd,triggercmd,0.0.27,"fetchPypi {
+    inherit pname version;
+    hash = ""sha256-4MTRtDo4kD/1Bifw8wx++TZ3K2M4TMVRyvwqGL5cHC8="";
+  }",a683adc19ff5228af548c6539dbc3440509bfed3
 c1513a4fd70640aea4ce53fe9b3c99b4bde19990,qdldl,qdldl,0.1.8,"fetchFromGitHub {
     owner = ""osqp"";
     repo = ""qdldl"";

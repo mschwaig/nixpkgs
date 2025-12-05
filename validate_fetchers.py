@@ -24,20 +24,11 @@ def read_fetchers_csv(csv_path: str) -> List[Dict]:
 def evaluate_fetcher(fetcher_content: str, version: str, pname: str) -> Tuple[bool, str]:
     """
     Evaluate a fetcher expression using nix instantiate (fast, no actual evaluation).
-    Mimics the EXACT structure from run.py:242-244:
-    rec { version = "..."; finalAttrs.version = version; src = <fetcher>; }
 
-    NOTE: pname is NOT set in this context, only version!
     Returns (success, error_message).
     """
-    # Match the exact expression from run.py:242-244
-    # version_attrs = f'version = "{version}"; finalAttrs.version = version;' if version else ''
-    # wrapped_expr = f"rec {{ {version_attrs} src = {content}; }}"
+    wrapped_expr = f'rec {{ pname = "{pname}"; finalAttrs.pname = pname; version = "{version}"; finalAttrs.version = version; src = {fetcher_content}; }}'
 
-    version_attrs = f'version = "{version}"; finalAttrs.version = version;' if version else ''
-    wrapped_expr = f"rec {{ {version_attrs} src = {fetcher_content}; }}"
-
-    # Use the same pattern as run.py but with nix-instantiate for speed
     nix_expr = f"""with import <nixpkgs> {{}}; ({wrapped_expr}).src"""
 
     cmd = [
@@ -66,19 +57,19 @@ def evaluate_fetcher(fetcher_content: str, version: str, pname: str) -> Tuple[bo
     except Exception as e:
         return False, f"Exception: {str(e)}"
 
-def fetch_source(fetcher_content: str, version: str) -> Tuple[bool, str, str]:
+def fetch_source(fetcher_content: str, version: str, pname: str) -> Tuple[bool, str, str]:
     """
     Fetch the actual source code using the fetcher expression.
 
     Args:
         fetcher_content: The fetcher expression (e.g., fetchFromGitHub { ... })
         version: The version string
+        pname: The package name
 
     Returns:
         (success, source_path, error_message)
     """
-    version_attrs = f'version = "{version}"; finalAttrs.version = version;' if version else ''
-    wrapped_expr = f"rec {{ {version_attrs} src = {fetcher_content}; }}"
+    wrapped_expr = f'rec {{ pname = "{pname}"; finalAttrs.pname = pname; version = "{version}"; finalAttrs.version = version; src = {fetcher_content}; }}'
     nix_expr = f"with import <nixpkgs> {{}}; ({wrapped_expr}).src"
 
     try:
@@ -93,7 +84,6 @@ def fetch_source(fetcher_content: str, version: str) -> Tuple[bool, str, str]:
         if result.returncode != 0:
             return False, "", f"Source fetch failed: {result.stderr.strip()}"
 
-        # nix-build outputs the store path
         source_path = result.stdout.strip()
         return True, source_path, ""
     except subprocess.TimeoutExpired:
@@ -182,7 +172,7 @@ def main():
             # Evaluation succeeded, now fetch source and check for .nix files
             print(f"  [{i}/{total}] Evaluating {package_name}... ✓ ", end='', flush=True)
 
-            fetch_success, source_path, fetch_error = fetch_source(fetcher, version)
+            fetch_success, source_path, fetch_error = fetch_source(fetcher, version, pname)
 
             if fetch_success:
                 # Check for .nix files in the source
