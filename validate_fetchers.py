@@ -11,6 +11,8 @@ from pathlib import Path
 from typing import Dict, List, Tuple
 from collections import defaultdict
 import sys
+import hashlib
+import random
 
 def read_fetchers_csv(csv_path: str) -> List[Dict]:
     """Read fetchers from CSV file."""
@@ -20,6 +22,33 @@ def read_fetchers_csv(csv_path: str) -> List[Dict]:
         for row in reader:
             fetchers.append(row)
     return fetchers
+
+def generate_stable_random_order(rows: List[Dict]) -> List[int]:
+    """
+    Generate a stable random permutation based on the content of the rows.
+
+    The permutation is deterministic - same rows will always get the same ordering.
+    Uses a hash of all package names to seed the random number generator.
+
+    Args:
+        rows: List of dictionaries with package data
+
+    Returns:
+        List of integers from 1 to len(rows) in a stable random order
+    """
+    # Create a stable seed from the sorted package names
+    # This ensures the same set of packages always gets the same permutation
+    package_names = sorted([row['package_name'] for row in rows])
+    seed_string = '|'.join(package_names)
+    seed_hash = hashlib.sha256(seed_string.encode('utf-8')).hexdigest()
+    seed = int(seed_hash[:8], 16)  # Use first 8 hex chars as seed
+
+    # Create a shuffled list of numbers 1 to N
+    rng = random.Random(seed)
+    order = list(range(1, len(rows) + 1))
+    rng.shuffle(order)
+
+    return order
 
 def evaluate_fetcher(fetcher_content: str, version: str, pname: str) -> Tuple[bool, str]:
     """
@@ -265,19 +294,30 @@ def main():
 
     # Write filtered CSV with only successful fetchers
     if successes:
+        # Generate stable random ordering
+        random_order = generate_stable_random_order(successes)
+
+        # Add random_order to each row
+        for i, row in enumerate(successes):
+            row['random_order'] = random_order[i]
+
         # Determine output path based on input
         input_path = Path(csv_path)
         filtered_csv_path = input_path.parent / f"{input_path.stem}_validated{input_path.suffix}"
 
         with open(filtered_csv_path, 'w', newline='', encoding='utf-8') as f:
-            # Use the same fieldnames as the input CSV
-            fieldnames = list(successes[0].keys())
+            # Put random_order as the first column, then the rest
+            original_fieldnames = list(successes[0].keys())
+            original_fieldnames.remove('random_order')
+            fieldnames = ['random_order'] + original_fieldnames
+
             writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator='\n')
             writer.writeheader()
             writer.writerows(successes)
 
         print(f"Filtered CSV (validated fetchers only) written to: {filtered_csv_path}")
         print(f"  Contains {len(successes)} validated fetchers")
+        print(f"  Added stable random ordering (1-{len(successes)})")
 
     # Write exclusions CSV (failures with reasons)
     if failures:
