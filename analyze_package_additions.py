@@ -17,7 +17,7 @@ from typing import List, Set
 import sys
 
 # Processing limit for faster iteration (set to None for no limit)
-COMMIT_LIMIT = 100
+COMMIT_LIMIT = None
 
 # Classification patterns
 NEW_PATTERNS = [
