@@ -104,6 +104,7 @@ def fetch_commits(since: str, until: str) -> List[CommitInfo]:
     """Fetch commits that added package.nix or default.nix files in pkgs/"""
     cmd = [
         "git", "log",
+        "6f31285c160a1b1bce983bb29f70423de6709bb6",  # Only commits up to and including base
         "--diff-filter=A",  # Only additions
         "--name-only",
         "--pretty=format:%H|%ai|%an|%s",
