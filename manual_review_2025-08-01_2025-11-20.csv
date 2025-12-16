@@ -1,13 +1,11 @@
-commit_hash,date,packages,subject,test_base_commit
-e9c0f4d15df6dce7906ef13a82256525a5a6266f,2025-10-24,intel-ipsec-mb,intel-ipsec-mb: add package for 2.0.1,d5faa84122bc0a1fd5d378492efce4e289f8eac1
-4fcb3e00b510b976c9b96a73f936332bef90f2f9,2025-10-08,lfe,lfe: simplify to single version support,fb5cf53218b987f2703a5bbc292a030c0fe33443
-c05ecfd6f0317d20a969fcd3bd0ee41eea8087b0,2025-10-04,vscode-icons-team.vscode-icons,vscode-extensions.vscode-icons-team.vscode-icons: build from source at 12.14.0,0d4f673a88f8405ae14484e6a1ea870e0ba4ca26
-ee2ae14303e2be2aa516b3ffa95d220636c9d732,2025-09-28,eamodio.gitlens,vscode-extensions.eamodio.gitlens: build from source at 17.5.1,dc704e6102e76aad573f63b74c742cd96f8f1e6c
-c98f2c15716276045a4350441e93a52887e7f2b2,2025-09-29,tcs-lib,ocamlPackages.tcs-lib: 0.3 → 0.6,9547cfd27b5158eb612a6812dfc5c7b3d118b996
-ba0d0d88ce18691886c433e340603a0cb4ce8c20,2025-08-22,plex-for-kodi,kodi.packages.plex: Add plex-for-kodi to Kodi addons,f937f8ecd1c70efd7e9f90ba13dfb400cf559de4
-f542f4d66da35a62e5a3a4b9175aa74f117d6367,2025-09-02,azure-mgmt-resource-deployments,pythonPackages.azure-mgmt-resource-deployments: int at 1.0.0b1,58dcbf1ec551914c3756c267b8b9c8c86baa1b2f
-fb9155a57662b9c1bbcb7d79fcbe9b1cdcff70dd,2025-08-29,bluez-headers,bluez-headers: expose bluez header files,c73522789a3c7552b1122773d6eaa34e1491cc1c
-c48d39166f8a04abec6bf95df83f9b34fd8cb872,2025-08-27,pinecone-plugin-assistant,python3Packages.pinecone-plugin-inference: remove due to deprecation,4c202d26483c5ccf3cb95e0053163facde9f047e
-d6426fb7ea83fd538dee3aed4b74eb6fc7fd2d60,2025-07-28,greenx,greenx: initi at 2.2,c10013702f1e18305d4d53154cb3fab3b5742c43
-03f16593904f8a0811ed47143dd4f0f8d73db74b,2025-08-20,livebook,livebook: move under beam modules,c3fc1fe6d8765d99c8614c6f82d611dc56b9ae37
-2c8adb01de4777f376a4685ff8e8ba356519fc0b,2025-05-30,pokemon-colorscripts,pokemon-colorscripts: 0-unstable-2024-10-19,a683adc19ff5228af548c6539dbc3440509bfed3
+commit_hash,date,packages,fully_qualified_name,subject,test_base_commit
+e9c0f4d15df6dce7906ef13a82256525a5a6266f,2025-10-24,intel-ipsec-mb,intel-ipsec-mb,intel-ipsec-mb: add package for 2.0.1,d5faa84122bc0a1fd5d378492efce4e289f8eac1
+4fcb3e00b510b976c9b96a73f936332bef90f2f9,2025-10-08,lfe,lfe,lfe: simplify to single version support,fb5cf53218b987f2703a5bbc292a030c0fe33443
+c05ecfd6f0317d20a969fcd3bd0ee41eea8087b0,2025-10-04,vscode-icons-team.vscode-icons,vscode-extensions.vscode-icons-team.vscode-icons,vscode-extensions.vscode-icons-team.vscode-icons: build from source at 12.14.0,0d4f673a88f8405ae14484e6a1ea870e0ba4ca26
+ee2ae14303e2be2aa516b3ffa95d220636c9d732,2025-09-28,eamodio.gitlens,vscode-extensions.eamodio.gitlens,vscode-extensions.eamodio.gitlens: build from source at 17.5.1,dc704e6102e76aad573f63b74c742cd96f8f1e6c
+c98f2c15716276045a4350441e93a52887e7f2b2,2025-09-29,tcs-lib,ocamlPackages.tcs-lib,ocamlPackages.tcs-lib: 0.3 → 0.6,9547cfd27b5158eb612a6812dfc5c7b3d118b996
+ba0d0d88ce18691886c433e340603a0cb4ce8c20,2025-08-22,plex-for-kodi,kodi.packages.plex,kodi.packages.plex: Add plex-for-kodi to Kodi addons,f937f8ecd1c70efd7e9f90ba13dfb400cf559de4
+f542f4d66da35a62e5a3a4b9175aa74f117d6367,2025-09-02,azure-mgmt-resource-deployments,pythonPackages.azure-mgmt-resource-deployments,pythonPackages.azure-mgmt-resource-deployments: int at 1.0.0b1,58dcbf1ec551914c3756c267b8b9c8c86baa1b2f
+fb9155a57662b9c1bbcb7d79fcbe9b1cdcff70dd,2025-08-29,bluez-headers,bluez-headers,bluez-headers: expose bluez header files,c73522789a3c7552b1122773d6eaa34e1491cc1c
+c48d39166f8a04abec6bf95df83f9b34fd8cb872,2025-08-27,pinecone-plugin-assistant,python3Packages.pinecone-plugin-inference,python3Packages.pinecone-plugin-inference: remove due to deprecation,4c202d26483c5ccf3cb95e0053163facde9f047e
+03f16593904f8a0811ed47143dd4f0f8d73db74b,2025-08-20,livebook,livebook,livebook: move under beam modules,c3fc1fe6d8765d99c8614c6f82d611dc56b9ae37

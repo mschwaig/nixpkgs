@@ -1,269 +1,245 @@
-commit_hash,date,packages,subject,test_base_commit
-64e6e3f26a748bef854b6ffca49048a49bbeabf7,2025-11-17,"clight-gui,clightd","clight,clight-gui,clightd: migrate to pkgs/by-name, modernize",8b6600824693a9c706ef09bd86711ca393703466
-f8a26c443a08644b37d0775bd637bc0901959190,2025-11-16,font-misc-misc,"font-misc-misc: refactor, move to pkgs/by-name and rename from xorg.fontmiscmisc",1d4c88323ac36805d09657d13a5273aea1b34f0c
-b84617f14e674406bdd0c147d45c77ebea8d1748,2025-11-16,font-misc-meltho,"font-misc-meltho: refactor, move to pkgs/by-name and rename from xorg.fontmiscmeltho",1d4c88323ac36805d09657d13a5273aea1b34f0c
-42fca86f89f37ee92f2c8bf8a8bed221f1404c0d,2025-11-15,font-jis-misc,"font-jis-misc: refactor, move to pkgs/by-name and rename from xorg.fontjismisc",1d4c88323ac36805d09657d13a5273aea1b34f0c
-506db072ab0419ab38f213d87d269f49ea92547c,2025-11-15,font-ibm-type1,"font-ibm-type1: refactor, move to pkgs/by-name and rename from xorg.fontibmtype1",1d4c88323ac36805d09657d13a5273aea1b34f0c
-db23a88b9a80583c22dba7c2b4b45866f1dd23ca,2025-11-15,font-dec-misc,"font-dec-misc: refactor, move to pkgs/by-name and rename from xorg.fontdecmisc",1d4c88323ac36805d09657d13a5273aea1b34f0c
-961f70725cd3b92f76288a48bc95bcd3232d7b12,2025-11-15,font-daewoo-misc,"font-daewoo-misc: refactor, move to pkgs/by-name and rename from xorg.fontdaewoomisc",1d4c88323ac36805d09657d13a5273aea1b34f0c
-4a82229180a5beac6b84fde576820ebd17c72422,2025-11-15,font-cursor-misc,"font-cursor-misc: refactor, move to pkgs/by-name and rename from xorg.fontcursormisc",1d4c88323ac36805d09657d13a5273aea1b34f0c
-1c66cd8f6539e67482bbf51e8838d7d081c76ba0,2025-11-15,font-arabic-misc,"font-arabic-misc: refactor, move to pkgs/by-name and rename from xorg.fontarabicmisc",1d4c88323ac36805d09657d13a5273aea1b34f0c
-630803b2cdb823b1a7b0a07a66100762d3f93a17,2025-11-14,elm-graphql,elmPackages.elm-graphql: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
-d10e9c065621e33344bb2235a492272ac5a3bd9d,2025-11-14,elm-git-install,elmPackages.elm-git-install: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
-c4853893c8d03265903be2c90baf899740f29731,2025-11-14,elm-optimize-level-2,elmPackages.elm-optimize-level-2: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
-3b3da8abf115cfa3b478bd31e4e1895cf3d48a75,2025-11-14,elm-xref,elmPackages.elm-xref: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
-2767324cf8bbdcaf5f7b9a800caf73a398b248f0,2025-11-14,elm-verify-examples,elmPackages.elm-verify-examples: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
-8fbb32445cd8c9a10dfd8217a944d073d715091a,2025-11-14,elm-upgrade,elmPackages.elm-upgrade: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
-f6bbac2dfd6d1102e3dde57aa929d25bc42f3d6d,2025-11-14,elm-spa,elmPackages.elm-spa: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
-32b2a7955b2f11893a17c1b77845759d9830c0c2,2025-11-14,elm-live,elmPackages.elm-live: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
-096c513053a083b1e22c872029c51a7ba5f7df48,2025-11-14,elm-analyse,elmPackages.elm-analyse: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
-436ecd5821dfdb2aff99b3de0b8e52edaa9c8191,2025-11-14,elm-language-server,elmPackages.elm-language-server: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
-0816f456ffe47a9ca094d6f2117f586efe374f46,2025-11-14,elm-doc-preview,elmPackages.elm-doc-preview: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
-87258df63377ebc38f7217271b645eb4a8cca7dc,2025-11-10,peerflix-server,peerflix-server: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
-727d02790a7f072396337f85c24d078528a823b9,2025-11-10,tiddlywiki,tiddlywiki: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
-bd16d452b0adb8446fd45aab74cf5f974a114ce5,2025-11-10,svelte-check,svelte-check: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
-9731d5459097191e28990d64d3cc1e98cc0dd396,2025-11-10,cdk8s-cli,ckd8s-cli: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
-39c4aa65ec553304fde23e5162fe48f179b13076,2025-11-08,nrm,nrm: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
-2bdcf95276a78d96b31daaa44692f6b389ec0e98,2025-11-08,conventional-changelog-cli,conventional-changelog-cli: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
-d8e0983f4fb6816ae8082cf21d41f88734d2f118,2025-11-08,localtunnel,localtunnel: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
-e99bf3b9616ba34ba15c46c32cc72573dfbf3484,2025-11-08,katex,katex: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
-0d94a711119266f5be117c53042e9f5bd65cd176,2025-11-08,diff2html-cli,diff2html-cli: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
-9cf3ceab665cb2896754bb3e34c5794c6f0f1983,2025-11-08,code-theme-converter,code-theme-converter: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
-42ec1c05896ee7703f6a8cbcdd0f18a3d2e1be45,2025-11-08,coc-nginx,coc-nginx: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
-983751956ff932c3357fa18b0d0d42461fce1820,2025-11-08,commitlint,commitlint: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
-6c3af5d19523f5c0b3f5ae4686924d96b131a7fa,2025-11-08,json-diff,json-diff: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
-fb236b375f662801c22d98f1fa7c0e879de12de2,2025-10-21,abseil-cpp_202505,"Revert ""abseil-cpp_202505: drop""",f6b44b2401525650256b977063dbcf830f762369
-bebb1065ac8c1524b42aeb564f9e0f72593c00c8,2025-11-06,"wasm-text-gen,wast-refmt,webassemblyjs-cli,webassemblyjs-repl",nodePackages.@webassemblyjs/*: repackage or drop,f6b44b2401525650256b977063dbcf830f762369
-ecf72265ab93582917e5f160f2d8c5c1e8a0f1b2,2025-11-06,jshint,jshint: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-c3a23aaf853a4a3d8507ed8cfd0d1e73aa9bf3d8,2025-11-05,coc-yank,coc-yank: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-a5d418f44312e4da4b3427fd3b1969e063429cd2,2025-11-05,coc-yaml,coc-yaml: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-ee22f9dea6d8def0942d53f01a7ec52b823ba6f4,2025-11-05,coc-wxml,coc-wxml: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-8a33e287e5309a5c4806bb80b847e0344742ed63,2025-11-05,coc-vimtex,coc-vimtex: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-0e1e74d71dce62bd3f7a31d6e1f30351d45cecf6,2025-11-05,coc-vimlsp,coc-vimlsp: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-012cccc12929b5119061236f9551c64cfe6d4764,2025-11-05,coc-texlab,coc-texlab: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-ef2f4bdc396ce7126b0b1f7048655e54271400be,2025-11-05,coc-tabnine,coc-tabnine: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-4647cf35a0b3bdc54f25ae6ff3b28d8c8ce62a6e,2025-11-05,coc-sumneko-lua,coc-sumneko-lua: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-7e9c70a2e27c4385684cd266540145010192b2db,2025-11-05,coc-stylelint,coc-stylelint: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-8d69b4a264e0e562c8fd28e13cd20d672e18934f,2025-11-05,coc-sqlfluff,coc-sqlfluff: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-65dc92e99a6a3f7d35993e7aea8b72a3a8b7b7c6,2025-11-05,coc-solargraph,coc-solargraph: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-63bccd4eaba04ce8dbb51baf68c476f947f73c26,2025-11-05,coc-snippets,coc-snippets: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-fe207f1a0949e268128d0b876ea6de89304b9f41,2025-11-05,coc-smartf,coc-smartf: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-89aa372f0c05df5475a3dba675ca2fa682dfff31,2025-11-05,coc-rust-analyzer,coc-rust-analyzer: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-8d8538bdc19c0c02104f1eb23410957b301d52b8,2025-11-05,coc-r-lsp,coc-r-lsp: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-5b047f88c5eab03db5ffae1c97b894aacf83f1e7,2025-11-05,coc-prettier,coc-prettier: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-b96b2c33bb5a6209a453206efee1367badf30260,2025-11-05,coc-pairs,coc-pairs: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-6c67d0ee2dc62806500de7a4582e423175342250,2025-11-05,coc-markdownlint,coc-markdownlint: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-d43cfa79ee8eee752f83f9dfdf9901383a2f00b5,2025-11-05,coc-lists,coc-lists: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-63ff9dd0c3a786d77d155084c4c5d7d634d3e36d,2025-11-05,coc-json,coc-json: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-e1e09af914c0d2676cce14f780be55a4474b19d1,2025-11-05,coc-jest,coc-jest: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-2e191e2b1a51fb55c816e01261b4460fbcbb749b,2025-11-05,coc-java,coc-java: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-5028d9b6441991f24988e6439cf8f2f06b648ae3,2025-11-05,coc-html,coc-html: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-8c72d3555bfebe44fb482a0dad9b14c72e2ffd62,2025-11-05,coc-highlight,coc-highlight: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-9ec68a08a425c0a56de07bd711d41235ba44f4fc,2025-11-05,coc-haxe,coc-haxe: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-57a98fb2839429ba0330dd465395058e9ed81a68,2025-11-05,coc-flutter,coc-flutter: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-6667711e2c0c903f96064f16ba0c072809f75ec6,2025-11-05,coc-eslint,coc-eslint: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-f66077b5a85046bb7ed0f938e3be0981e3d7e8a2,2025-11-05,coc-emmet,coc-emmet: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-86cfef9c19dfec0bd096b4ecdc82f2539bd81f5a,2025-11-06,json-server,json-server: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-f56221596a841f4a5a319b2ca5d0bb874cb32fab,2025-11-06,js-beautify,js-beautify: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-81a676c92b0620f29fad0c0b46e6495d11341173,2025-11-04,mocha,mocha: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-315f634c9696e9d375a7aa356d5b87a4f4d7d947,2024-12-03,gatsby-cli,gatsby-cli: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
-4f2c8f225774f1dcfe8d4f42e969fdb7406de8cb,2025-11-02,joplin-cli,joplin-cli: migrate from nodePackages,12c1f0253aa9a54fdf8ec8aecaafada64a111e24
-233755a3d0468db70a6d48078cc410bdbf17cfe3,2025-11-04,vega-lite,vega-lite: migrate from nodePackages,12c1f0253aa9a54fdf8ec8aecaafada64a111e24
-8acc954e72324149241cce9b1b9140d4721078ef,2025-11-04,jsonplaceholder,jsonplaceholder: migrate from nodePackages,12c1f0253aa9a54fdf8ec8aecaafada64a111e24
-685e3a6176136693758d0aa9d8ae5203618cf50f,2025-11-01,uppy-companion,uppy-companion: migrate from nodePackages,7241bcbb4f099a66aafca120d37c65e8dda32717
-7554a7371314836bec4c0e66fc850bd52dbb6a16,2025-10-27,lspmux,ra-multiplex: 0.2.5 -> lspmux 0.3.0,f1e8ae508a9a467a9f51d29b8639e96db2b52c30
-27b3cce3f2501df4499769154b9a6879ad415368,2025-11-01,fetchmail_7,fetchmail_7: move to pkgs/by-name,f1e8ae508a9a467a9f51d29b8639e96db2b52c30
-772dc221ae01f5de99f24d55b3692178937ddf6a,2025-10-29,udisks,udisks: move to pkgs/by-name,f1e8ae508a9a467a9f51d29b8639e96db2b52c30
-9b316df866ea4b3cc2ae2a3472fd98da2604198b,2025-10-31,"fmodex,zandronum-server",pkgs/games/doom-ports: migrate to by-name,a7fc11be66bdfb5cdde611ee5ce381c183da8386
-97f4dd3ef7972117b9e7588c73be662d7c67ac8b,2025-10-24,vkquake,vkquake: move to by-name,a7fc11be66bdfb5cdde611ee5ce381c183da8386
-c9a798a92686d58a7fefe3b09050dd18b790e59a,2025-10-29,teamtype,ethersync: 0.8.0 -> teamtype: 0.9.0; update editor plugins,a7fc11be66bdfb5cdde611ee5ce381c183da8386
-7cd480deb60e524e57ce85f2a1e95d1b88d92b0c,2025-10-29,gitbeaker-cli,gitbeaker-cli: migrate from nodePackages,e99366c665bdd53b7b500ccdc5226675cfc51f45
-d871c165c52d7881b94bb78e772172e047547371,2025-10-16,"beets-minimal,beets,beets-alternatives,beets-audible,beets-copyartifacts,beets-filetote,beets","beets{,Packages}: rewrite / reform",de69d2ba6c70e747320df9c096523b623d3a4c35
-98a16089ef58d31311fdc177fdf07189658b3fb8,2025-10-20,botan3,botan3: move to by-name,d5faa84122bc0a1fd5d378492efce4e289f8eac1
-d17e964c45da45d795ea1d91425025f35efcf29b,2025-06-01,rofi-emoji,"rofi-emoji: move to pkgs/by-name, use v4",cb82756ecc37fa623f8cf3e88854f9bf7f64af93
-343db01d3188f6e0de3c822033fa25c8e7e34696,2025-10-21,ladspaH,"ladspa{H,-sdk}: modernize, move to by-name/",cb82756ecc37fa623f8cf3e88854f9bf7f64af93
-89d1c448c15200fa772aeef5aa6bb182474201f3,2025-10-20,mbrola-voices,mbrola{-voices}: move to by-name/,cb82756ecc37fa623f8cf3e88854f9bf7f64af93
-72641301aef9fbd5376f231f78b8f9a2821613bc,2025-10-20,mt32emu-qt,"mt32emu-qt: modernize, move to by-name/",cb82756ecc37fa623f8cf3e88854f9bf7f64af93
-8496210f3d38c148e950c7e45134267da5b19add,2025-09-20,idris2,idris2: Move to by-name,cb82756ecc37fa623f8cf3e88854f9bf7f64af93
-9227e50841ab9e67a14bdfa5d8a214ffbafa3319,2025-10-20,keyoxide-cli,nodePackages.keyoxide: migrate from nodePackages,cb82756ecc37fa623f8cf3e88854f9bf7f64af93
-a816199c3faf36ce00548ed305077124f0d4783a,2025-10-18,mt32emu-smf2wav,"mt32emu-smf2wav: modernize, move to by-name/",36226520e9f7a35bf341cbe3b6a1ff9047bec6d9
-6697b05926566fc88ae8365549c5354e7128c07c,2025-10-18,libmt32emu,"libmt32emu: modernize, move to by-name/",36226520e9f7a35bf341cbe3b6a1ff9047bec6d9
-8f4420f92ec1f32dcdc61769b68b1ea43ca3b717,2025-10-18,bitwig-studio3,"bitwig-studio3: modernize, move to by-name/",36226520e9f7a35bf341cbe3b6a1ff9047bec6d9
-1b168e31013d222969f2b9758a6806d38b9e9d2d,2025-10-15,rclone-browser,rclone-browser: move to pkgs/by-name,35f590344ff791e6b1d6d6b8f3523467c9217caf
-124ed3c01cb0c196418d6378302c3a05efaf0644,2025-10-10,elementary-monitor,pantheon.elementary-monitor: 0.17.2 -> 8.0.0,bce5fe2bb998488d8e7e7856315f90496723793c
-2e717f480752794e0ccb41c347a16a60e43fe6dd,2025-09-20,"duckstation-bin,duckstation","Revert ""duckstation: remove due to lack of viable upstream (#430501)""",870493f9a8cb0b074ae5b411b2f232015db19a65
-9df9e47f5ea8471dde0a6fb76279e4007ccb3662,2025-10-09,amoeba-data,"amoeba-data: move to by-name, modernize",2dad7af78a183b6c486702c18af8a9544f298377
-9e538a05144d9d077065ea6312ae2cec613ad6c4,2025-10-09,lincity-ng,"lincity-ng: move to by-name, modernize",2dad7af78a183b6c486702c18af8a9544f298377
-9924426fd0fa60bd0b9053f71d895a918f1e17f3,2025-10-09,bloodspilot-server,"bloodspilot-server: move to by-name, modernize",2dad7af78a183b6c486702c18af8a9544f298377
-355e927e8cb7d4128898a2afefde1a0a7e77ae2f,2025-10-09,bloodspilot-client,"bloodspilot-client: move to by-name, modernize",2dad7af78a183b6c486702c18af8a9544f298377
-7dd4833b77b2c26a73e5bc26a0c4da9b497696bf,2025-10-08,libutp_3_4,libutp: move to by-name,2dad7af78a183b6c486702c18af8a9544f298377
-0a81759d2cb08e409506d81c2045303b16feaca0,2025-10-07,frog,frog: move to by-name,bce5fe2bb998488d8e7e7856315f90496723793c
-daa9c7c2a93586aeb6f8c0fe3104c81f63d243ab,2025-10-07,frogdata,frogdata: move to by-name,bce5fe2bb998488d8e7e7856315f90496723793c
-c76d7e78e652487c6eb7412793adbae27e28930b,2025-10-07,mbt,mbt: move to by-name,bce5fe2bb998488d8e7e7856315f90496723793c
-bb380596cea6a85f0d48fbf6f66ba44e28073baa,2025-10-07,timblserver,timblserver: move to by-name,bce5fe2bb998488d8e7e7856315f90496723793c
-6196a9548540890eb4527103b39e7b636904aaae,2025-10-07,timbl,timbl: move to by-name,bce5fe2bb998488d8e7e7856315f90496723793c
-f7ddbc808d9e337976099993405acde3b06d7a6f,2025-10-07,ucto,ucto: move to by-name,bce5fe2bb998488d8e7e7856315f90496723793c
-12a7f7384e3bd0d2e15d66be5d73e23b6a5561e4,2025-10-07,uctodata,uctodata: move to by-name,bce5fe2bb998488d8e7e7856315f90496723793c
-33008aefc918ac901644748d28663d978092c705,2025-10-07,libfolia,libfolia: move to by-name,bce5fe2bb998488d8e7e7856315f90496723793c
-7180468bc2cf3e379d6d2f373e3564a036501d8a,2025-10-07,ticcutils,ticcutils: move to by-name,bce5fe2bb998488d8e7e7856315f90496723793c
-69c633ef1e52ae64e105082c0beb0be3063f8205,2025-10-06,oneDNN_2,"Revert ""oneDNN_2: drop""",d7f52a7a640bc54c7bb414cca603835bf8dd4b10
-b26d919c4a5b19695f2dd768cd9f2925f567b0f1,2025-10-05,"brasero,lukesmithxyz-bible-kjv",various: migrate to by-name,d7f52a7a640bc54c7bb414cca603835bf8dd4b10
-6859773df864e6677d0f4a7928cf17ce7b024521,2025-10-04,"heroic-unwrapped,heroic",heroic: restore,ee4cd98afba682ca27242f2d7fdbd8583f6ef51a
-445d18171f877c81023a96f89ca8e3e74b1b798a,2025-10-02,cdktf-cli,cdktf-cli: migrate from nodePackages,625ad6366178f03acd79f9e3822606dd7985b657
-c82863e17dedabcbf9781d6df30258d5808c4cf5,2025-10-01,coc-sh,coc-sh: migrate from nodePackages,625ad6366178f03acd79f9e3822606dd7985b657
-721d8186c6ea703e6d630f91a75cd76a6de8a997,2025-10-01,coc-explorer,coc-explorer: migrate from nodePackages,625ad6366178f03acd79f9e3822606dd7985b657
-5ba77d6ad87b78512812bafc290ccb804767e583,2025-10-01,coc-git,coc-git: migrate from nodePackages,625ad6366178f03acd79f9e3822606dd7985b657
-ac533eee7cac22f5cc041d991b7b3d0eba7f4df5,2025-10-01,coc-spell-checker,coc-spell-checker: migrate from nodePackages,625ad6366178f03acd79f9e3822606dd7985b657
-d0b5fc24a1c3714b277e47d6e0da71a8e3cd641e,2025-10-02,omegat,omegat: migrate to by-name,ee4cd98afba682ca27242f2d7fdbd8583f6ef51a
-f3fa5ff106d9b6b7a48a5bdb0348155a17e3f088,2025-10-01,cspell,cspell: migrate from nodePackages,ee4cd98afba682ca27242f2d7fdbd8583f6ef51a
-9a693ae7fe44c3b7ae1f8bde19b69ba50e937b29,2025-10-01,coc-docker,nodePackages.coc-docker: migrate to pkgs/by-name,ee4cd98afba682ca27242f2d7fdbd8583f6ef51a
-ae968b82ac31020b4b8fd1e4dd609facf96f0a7b,2025-09-29,prometheus-mysqld-exporter,prometheus-mysqld-exporter: move to pkgs/by-name,9547cfd27b5158eb612a6812dfc5c7b3d118b996
-4be62ca52cd604eaef5d5a158939acb34b725179,2025-09-29,catkin-pkg,"Revert ""python3Packages.catkin-pkg: remove package""",a1f79a1770d05af18111fbbe2a3ab2c42c0f6cd0
-2088c727470acbef55bcc029e77078cd913b3dff,2025-09-21,flint,flint: Move to by-name,90ade7da38aa49c2e2693a04a44662a0e61530e9
-3ccc4089b6a1a9edd2be3ac472688e65be67b24c,2025-09-10,xeyes,"xeyes: 1.3.0 -> 1.3.1, refactor & move to pkgs/by-name from xorg namespace",e2642aa7d5a15eae586932a56f4294934f959c14
-63640282de5a4a32dfcbbaeb14b664d9287c1e60,2025-09-10,xcompmgr,xcompmgr: refactor & move to pkgs/by-name from xorg namespace,e2642aa7d5a15eae586932a56f4294934f959c14
-69c34bfba44abb1b5f12e7cc41443fbe337296fb,2025-08-23,xcalc,xcalc: refactor and move to pkgs/by-name from xorg namespace,e2642aa7d5a15eae586932a56f4294934f959c14
-4cc11e680666d397cd24bf1dd82275e8664ecb57,2025-09-10,x11perf,"x11perf: 1.6.1 -> 1.7.0, refactor & move to pkgs/by-name from xorg namespace",e2642aa7d5a15eae586932a56f4294934f959c14
-19d5fe041003703206072988771ebe0de2d8e275,2025-09-10,libxtst,"libxtst: refactor, move to pkgs/by-name and rename from xorg.libXtst",e2642aa7d5a15eae586932a56f4294934f959c14
-b72cbd7789c88bf92c560514f8bc2f1ef62a50d7,2025-09-10,libxshmfence,libxshmfence: refactor & move to pkgs/by-name from xorg namespace,e2642aa7d5a15eae586932a56f4294934f959c14
-dbdc0d8f06ca7201917501056d0c6cc8a1a4a0a4,2025-06-08,libxkbfile,libxkbfile: refactor and migrate to pkgs/by-name from xorg namespace,e2642aa7d5a15eae586932a56f4294934f959c14
-67af63a0765d43a7eb08c62da06fecc61d31cc36,2025-08-31,libxinerama,"libxinerama: refactor, move to pkgs/by-name and rename from xorg.libXinerama",e2642aa7d5a15eae586932a56f4294934f959c14
-781cbbf25837da89eaf6bcca747d69fb648322f3,2025-06-08,libwindowswm,libwindowswm: refactor and migrate to pkgs/by-name from xorg.libWindowsWM,e2642aa7d5a15eae586932a56f4294934f959c14
-4c4fd26ced7988897342f6386cc73af6d267c227,2025-08-27,font-bitstream-type1,"font-bitstream-type1: refactor, move to pkgs/by-name and rename from xorg.fontbitstreamtype1",a1f79a1770d05af18111fbbe2a3ab2c42c0f6cd0
-e6a9281e35e2135f333717a1abcec32b939643f5,2025-08-27,font-bitstream-75dpi,"font-bitstream-75dpi: refactor, move to pkgs/by-name and rename from xorg.fontbitstream75dpi",a1f79a1770d05af18111fbbe2a3ab2c42c0f6cd0
-b96325543a358a168dc1a7c0f2dcac02a7642dfd,2025-08-27,font-bitstream-100dpi,"font-bitstream-100dpi: refactor, move to pkgs/by-name and rename from xorg.fontbitstream100dpi",a1f79a1770d05af18111fbbe2a3ab2c42c0f6cd0
-ab945fb3310d1a61f5ac38d333441443179314ad,2025-08-23,libxscrnsaver,"libxscrnsaver: refactor, move to pkgs/by-name and rename from xorg.libxscrnsaver",a1f79a1770d05af18111fbbe2a3ab2c42c0f6cd0
-741655d77aa56cd6d548d4300cabe714653de98e,2025-08-23,libxres,"libxres: refactor, move to pkgs/by-name and rename from xorg.libXres",a1f79a1770d05af18111fbbe2a3ab2c42c0f6cd0
-512533926e3e93025da420bb444a88d080374db8,2025-08-23,libxpresent,"libxpresent: refactor, move to pkgs/by-name and rename from xorg.libXpresent",a1f79a1770d05af18111fbbe2a3ab2c42c0f6cd0
-f8da5444ae47dbfcd376e19c420380fb29b2648a,2025-08-23,libxp,"libxp: refactor, move to pkgs/by-name and rename from xorg.libXp",a1f79a1770d05af18111fbbe2a3ab2c42c0f6cd0
-443539a91c246cbbf76cca57fdbb9cbb20b78be6,2025-09-16,libmusicbrainz,libmusicbrainz: move to `by-name`,0d7c15863b251a7a50265e57c1dca1a7add2e291
-b592c8b91213a7b9ca228a33f01a3a6233e4cbcb,2025-09-12,aqlprofile,rocmPackages: 6.3.3 -> 6.4.2,88cef159e47c0dc56f151593e044453a39a6e547
-157a4e3863a766c9d7977002e911a976fcb92940,2025-08-30,font-xfree86-type1,"font-xfree86-type1: refactor, move to pkgs/by-name and rename from xorg.fontxfree86type1",c73522789a3c7552b1122773d6eaa34e1491cc1c
-a8c9ed2a405a0b5081108b6ff5c336090a9ca593,2025-08-30,font-winitzki-cyrillic,"font-winitzki-cyrillic: refactor, move to pkgs/by-name and rename from xorg.fontwinitzkicyrillic",c73522789a3c7552b1122773d6eaa34e1491cc1c
-154002f5a64ce55c07e2ced6cbfe65c80fac43f4,2025-08-30,font-sun-misc,"font-sun-misc: refactor, move to pkgs/by-name and rename from xorg.fontsunmisc",c73522789a3c7552b1122773d6eaa34e1491cc1c
-667074fff0bff5275b9c707ce965142a186d05f5,2025-08-30,font-sony-misc,"font-sony-misc: refactor, move to pkgs/by-name and rename from xorg.fontsonymisc",c73522789a3c7552b1122773d6eaa34e1491cc1c
-d3a2b393f37c31683a25b2247297849166916c49,2025-08-30,font-screen-cyrillic,"font-screen-cyrillic: refactor, move to pkgs/by-name and rename from xorg.fontscreencyrillic",c73522789a3c7552b1122773d6eaa34e1491cc1c
-2dc1d4e9370144e4ef8ec84c33f05bea98feb452,2025-08-30,font-schumacher-misc,"font-schumacher-misc: refactor, move to pkgs/by-name and rename from xorg.fontschumachermisc",c73522789a3c7552b1122773d6eaa34e1491cc1c
-e013f09554c54ac19c32d2ec2252c025c5a3dee0,2025-08-28,font-misc-ethiopic,"font-misc-ethiopic: refactor, move to pkgs/by-name and rename from xorg.fontmiscethiopic",a918bb3594dd243c2f8534b3be01b3cb4ed35fd1
-62e6b67dd0d7165ba3a9abaeee06c1182db4b75c,2025-08-28,font-misc-cyrillic,"font-misc-cyrillic: refactor, move to pkgs/by-name and rename from xorg.fontmisccyrillic",a918bb3594dd243c2f8534b3be01b3cb4ed35fd1
-ce9e0b565a3a4db63f015bf605134efddba2d4b1,2025-08-28,font-micro-misc,"font-micro-misc: refactor, move to pkgs/by-name and rename from xorg.fontmicromisc",a918bb3594dd243c2f8534b3be01b3cb4ed35fd1
-191109e0d90ec68854a894499607ba1bd6945e9d,2025-08-28,font-isas-misc,"font-isas-misc: refactor, move to pkgs/by-name and rename from xorg.fontisasmisc",a918bb3594dd243c2f8534b3be01b3cb4ed35fd1
-5e23f445e5d81021389cdae7449e143cd3811a5b,2025-08-27,font-cronyx-cyrillic,"font-cronyx-cyrillic: refactor, move to pkgs/by-name and rename from xorg.fontcronyxcyrillic",a918bb3594dd243c2f8534b3be01b3cb4ed35fd1
-837e11d2c395a452d2a488142345a3229838338f,2025-08-26,font-bh-lucidatypewriter-75dpi,"font-bh-lucidatypewriter-75dpi: refactor, move to pkgs/by-name and rename from xorg.fontbhlucidatypewriter75dpi",61308fbb163ae7045c9b3004a0d067822984df33
-7abbe6b31ef74a20b96405abaf09c4a0773d3f44,2025-09-13,font-bh-lucidatypewriter-100dpi,"font-bh-lucidatypewriter-100dpi: refactor, move to pkgs/by-name & rename from xorg.fontbhlucidatypewriter100dpi",61308fbb163ae7045c9b3004a0d067822984df33
-14cf636039e48082bc98432798cc4ad9444f47dc,2025-09-13,font-bh-75dpi,"font-bh-75dpi: refactor, move to pkgs/by-name & rename from xorg.fontbh75dpi",61308fbb163ae7045c9b3004a0d067822984df33
-0922a4b685bc61cd7ad8e31e7d6dd2c79a06418a,2025-09-13,font-bh-100dpi,"font-bh-100dpi: refactor, migrate to pkgs/by-name & rename from xorg.fontbh100dpi",61308fbb163ae7045c9b3004a0d067822984df33
-5fcf09051edc0bc4f693e98f28434d80e16025aa,2025-09-02,"mkdocs-macros-plugin,mkdocs-macros-test",python3Packages.mkdocs-macros-plugin: 1.0.5 -> 1.3.9,ca77296380960cd497a765102eeb1356eb80fed0
-5c340597a9063d512baf9e26a64525a634bad479,2025-08-22,xbacklight,xbacklight: refactor and move to pkgs/by-name from xorg namespace,61308fbb163ae7045c9b3004a0d067822984df33
-111ec2bfcebffbdc927f16e501e899360fb11e13,2025-08-22,xauth,xauth: refactor and move to pkgs/by-name from xorg namespace,61308fbb163ae7045c9b3004a0d067822984df33
-9a2fb1ec7e28fcc9a5771ceebcdda7e5851c1b02,2025-08-22,tab-window-manager,"tab-window-manager: refactor, move to pkgs/by-name & rename from xorg.twm",61308fbb163ae7045c9b3004a0d067822984df33
-829014a2d00615627335727b10c3c47e82a1427d,2025-03-26,netsurf-browser,netsurf-browser: move to by-name,ca77296380960cd497a765102eeb1356eb80fed0
-279c298cbb0e5488ab2864e743bc2c0c455501c1,2025-03-26,nsgenbind,nsgenbind: move to by-name,ca77296380960cd497a765102eeb1356eb80fed0
-9bc2f708ae92bcf6f82b6226eb0bf5dfb28b69b7,2025-03-26,libutf8proc,libutf8proc: move to by-name,ca77296380960cd497a765102eeb1356eb80fed0
-792039a935ed02d5cc2f4415c57186d162086d36,2025-03-26,libsvgtiny,libsvgtiny: move to by-name,ca77296380960cd497a765102eeb1356eb80fed0
-7a24681060945dff04373c0dd36b20af5f113111,2025-03-26,libnsutils,libnsutils: move to by-name,ca77296380960cd497a765102eeb1356eb80fed0
-da5860d2b6c26d081e7610975f0940b9224d3ad3,2025-03-26,libnspsl,libnspsl: move to by-name,ca77296380960cd497a765102eeb1356eb80fed0
-8d08e7a079def6207ad28f409024d28938661384,2025-03-26,libnslog,libnslog: move to by-name,ca77296380960cd497a765102eeb1356eb80fed0
-b6689d7480ff8b7b974ec2cbe7db22cf7d766274,2025-03-26,libnsgif,libnsgif: move to by-name,ca77296380960cd497a765102eeb1356eb80fed0
-c5fe62044e05b64cd3a9428eeb651a373a0ce5f9,2025-03-26,libnsfb,libnsfb: move to by-name,ca77296380960cd497a765102eeb1356eb80fed0
-41c1934d04936687ec1bc89d3f9e110e0b316c4c,2025-03-26,libnsbmp,libnsbmp: move to by-name,ca77296380960cd497a765102eeb1356eb80fed0
-398e1eec0785b1769b1ed17c47bba160317d6434,2025-03-26,libdom,libdom: move to by-name,ca77296380960cd497a765102eeb1356eb80fed0
-24296f56983f9692a940d8e4a73100e4f6509d83,2025-03-26,libhubbub,libhubbub: move to by-name,ca77296380960cd497a765102eeb1356eb80fed0
-04a49fa416bae75f5bc2d5de43bf19c542319729,2025-03-26,libcss,libcss: move to by-name,ca77296380960cd497a765102eeb1356eb80fed0
-79097233b9cfe7cffdaeffaad27cbed828159451,2025-03-26,libwapcaplet,libwapcaplet: move to by-name,ca77296380960cd497a765102eeb1356eb80fed0
-caba7ceefbebddf4edd40e81cde8aca87c194580,2025-03-26,libparserutils,libparserutils: move to by-name,ca77296380960cd497a765102eeb1356eb80fed0
-2ce9d785135a536552b788d5d83eb495b13d2123,2025-03-26,netsurf-buildsystem,netsurf-buildsystem: move to by-name,ca77296380960cd497a765102eeb1356eb80fed0
-b59476139c900187dad784b0a1fc5f26d844475a,2025-09-04,qcsxcad,"qcsxcad: migrate to pkgs/by-name, use qt6",c6a788f552b7b7af703b1a29802a7233c0067908
-2e074e65372aa6dce545e62354142a9165fb5801,2025-09-04,"platformio-chrootenv,platformio-core",platformioPackages: move packages inside to top-level,c6a788f552b7b7af703b1a29802a7233c0067908
-fb03576605b4721cb3911821b5755852ad894741,2025-09-03,spicedb-zed,spicedb-zed: move to pkgs/by-name,aaff8c16d7fc04991cac6245bee1baa31f72b1e1
-4e7b9f82a42f059eba92d3ffd329faa17f81f125,2025-09-01,systemtap-unwrapped,systemtap-unwrapped: extract from linuxPackages,58dcbf1ec551914c3756c267b8b9c8c86baa1b2f
-a58b98e968e482ee4afd481ecf24bad9a6bf40d8,2025-07-04,"openmw,tes3mp",openmw: refactor,c73522789a3c7552b1122773d6eaa34e1491cc1c
-10a2efa52e7974da4bffb17ab061c7a6f6bc64f4,2025-08-23,xstdcmap,xstdcmap: refactor and move to pkgs/by-name from xorg namespace,a918bb3594dd243c2f8534b3be01b3cb4ed35fd1
-9c66bf85e8617e523c574d99c221337dd0d2fcb5,2025-08-23,xsm,xsm: refactor and move to pkgs/by-name from xorg namespace,a918bb3594dd243c2f8534b3be01b3cb4ed35fd1
-f25482f3dcb3c9e282abca1a9df41b1b56dedd26,2025-08-23,xsetroot,xsetroot: refactor and move to pkgs/by-name from xorg namespace,a918bb3594dd243c2f8534b3be01b3cb4ed35fd1
-413f94911546b19aa961799fe7dd823b0ca28ea0,2025-08-23,xset,xset: refactor and move to pkgs/by-name from xorg namespace,a918bb3594dd243c2f8534b3be01b3cb4ed35fd1
-acb05054f64df107cf18e07b6846473253f6bf70,2025-08-20,catch2_3,catch2_3: move to pkgs/by-name,c73522789a3c7552b1122773d6eaa34e1491cc1c
-3c24cb60ff576568fa0bbe8c67f38669d8f26490,2025-08-23,xkill,xkill: refactor and move to pkgs/by-name from xorg namespace,c73522789a3c7552b1122773d6eaa34e1491cc1c
-fea40463335f6a2885d20c59f558268f27b3178b,2025-08-23,xkbutils,xkbutils: refactor and move to pkgs/by-name from xorg namespace,c73522789a3c7552b1122773d6eaa34e1491cc1c
-744120dbc7899fcbede9e9935306dad692574230,2025-08-23,xhost,xhost: refactor and move to pkgs/by-name from xorg namespace,c73522789a3c7552b1122773d6eaa34e1491cc1c
-47b8e80c55ea416ee98017dba2802f3cac34dab9,2025-08-23,xgc,"xgc: 1.0.6 -> 1.0.7, refactor & move to pkgs/by-name from xorg namespace",c73522789a3c7552b1122773d6eaa34e1491cc1c
-240d5045b60ff898ce4705d9d816a3b12c80adcd,2025-08-23,xgamma,"xgamma: 1.0.7 -> 1.0.8, refactor & move to pkgs/by-name from xorg namespace",c73522789a3c7552b1122773d6eaa34e1491cc1c
-9ef0609cf31fccaeb2811d939929bba677231e99,2025-08-26,font-adobe-utopia-type1,"font-adobe-utopia-type1: refactor, move to pkgs/by-name and rename from xorg.fontadobeutopiatype1",aca2499b79170038df0dbaec8bf2f689b506ad32
-98df87ea67a2ef46069c8e5f1a1741026a50af8a,2025-08-26,font-adobe-utopia-75dpi,"font-adobe-utopia-75dpi: refactor, move to pkgs/by-name and rename from xorg.fontadobeutopia75dpi",aca2499b79170038df0dbaec8bf2f689b506ad32
-e21431a16558e4b69ebcf187691d9af81bccbfd8,2025-08-26,font-adobe-utopia-100dpi,"font-adobe-utopia-100dpi: refactor, move to pkgs/by-name and rename from xorg.fontadobeutopia100dpi",aca2499b79170038df0dbaec8bf2f689b506ad32
-657ebfddbb0365705acaaccec01c48525dd9231e,2025-08-21,font-adobe-100dpi,"font-adobe-100dpi: refactor, move to pkgs/by-name and rename from xorg.fontadobe100dpi",aca2499b79170038df0dbaec8bf2f689b506ad32
-f8136a0f82e7f36b9e412c75645efc00fb9411d4,2025-04-26,font-adobe-75dpi,"font-adobe-75dpi: refactor, move to pkgs/by-name and rename from xorg.fontadobe75dpi",aca2499b79170038df0dbaec8bf2f689b506ad32
-c13b2020514036718171d1c674e71eef1e09591a,2025-08-28,xinput-calibrator,xinput-calibrator: 0.7.5 -> 0.8.0,ddd1826f294a0ee5fdc198ab72c8306a0ea73aa9
-2fc4da0c7ad9f7b3814e8fbb33cd9f8fac309109,2025-08-27,gnunet-gtk,"gnunet{,-gtk}: move to by-name",ddd1826f294a0ee5fdc198ab72c8306a0ea73aa9
-2786ce62888fb955ae8a15d29812e2c876f1320e,2025-08-27,slade-unstable,sladeUnstable: move to by/name,4c202d26483c5ccf3cb95e0053163facde9f047e
-7e96b523d10942786a3b8371ef0eafabd1231a87,2025-08-23,appres,appres: refactor and move to pkgs/by-name from xorg namespace,61308fbb163ae7045c9b3004a0d067822984df33
-203364c3a78622c67f9caca6aa98e80da92d3109,2025-08-23,libxi,"libxi: refactor, move to pkgs/by-name and rename from xorg.libXi",61308fbb163ae7045c9b3004a0d067822984df33
-0b402f072535c1ecd9e96ac279bf2d2c466cb33d,2025-08-23,libxft,"libxft: refactor, move to pkgs/by-name and rename from xorg.libXft",61308fbb163ae7045c9b3004a0d067822984df33
-5e02ae89216ed8f187188e06ec397527a62496bf,2025-08-23,"libxfont_1,libxfont_2","libxfont_{1,2}: refactor, move to pkgs/by-name and rename from xorg.libXfont{,2}",61308fbb163ae7045c9b3004a0d067822984df33
-9e7b4cc4776000b8cd709277ec6f27212f422b74,2025-08-18,libxdamage,"libxdamage: refactor, move to pkgs/by-name and rename from xorg.libXdamage",61308fbb163ae7045c9b3004a0d067822984df33
-d3e3c7aaf473b3cc065ef19a2651fbfacf5776f0,2025-08-23,libxcomposite,"libxcomposite: refactor, move to pkgs/by-name and rename from xorg.libXcomposite",61308fbb163ae7045c9b3004a0d067822984df33
-9b4e7b6fdedf43c76d650b5ce0e656fc1b1f6e4e,2025-08-23,xmore,xmore: refactor and move to pkgs/by-name from xorg namespace,61308fbb163ae7045c9b3004a0d067822984df33
-6f159706b73ea8b8de64f334e4c130d6aa016031,2025-08-23,xmessage,xmessage: refactor and move to pkgs/by-name from xorg namespace,61308fbb163ae7045c9b3004a0d067822984df33
-227c2a7ccccf99a9d81e894262b43fc9ca99d244,2025-08-23,xmag,xmag: refactor and move to pkgs/by-name from xorg namespace,61308fbb163ae7045c9b3004a0d067822984df33
-458daf8c44874a96bd6371f4608d2208f529db7f,2025-08-19,libxcb-cursor,"libxcb-cursor: refactor, move to pkgs/by-name and rename from xorg.xcbutilcursor",61308fbb163ae7045c9b3004a0d067822984df33
-4cd91610a474a98a2b9e7daefb4bc222e1b853d5,2025-08-23,xconsole,xconsole: refactor and move to pkgs/by-name from xorg namespace,61308fbb163ae7045c9b3004a0d067822984df33
-ec5f820b38b3cda32c393d4ba8c35268782b9f4a,2025-08-22,smproxy,smproxy: refactor and move to pkgs/by-name from xorg namespace,61308fbb163ae7045c9b3004a0d067822984df33
-8d6077c1efd4997d9e5c5d3465333a32fd725985,2025-08-22,listres,listres: refactor and move to pkgs/by-name from xorg namespace,61308fbb163ae7045c9b3004a0d067822984df33
-5684229ccf75fbd05a219c51ccba781027c4d7ae,2025-08-22,viewres,viewres: refactor and move to pkgs/by-name from xorg namespace,61308fbb163ae7045c9b3004a0d067822984df33
-a525a830f29bbabd662bb322c6eaa09cfb4bfc00,2025-08-21,font-mutt-misc,"font-mutt-misc: refactor, move to pkgs/by-name and rename from xorg.fontmuttmisc",97eb7ee0da337d385ab015a23e15022c865be75c
-472fb3da5adfbfe3a1289e020c9b4eb1bcc58514,2025-08-21,font-bh-type1,"font-bh-type1: refactor, move to pkgs/by-name and rename from xorg.fontbhtype1",97eb7ee0da337d385ab015a23e15022c865be75c
-0fec3fb91cf5f6f2a116b58b754065f920818942,2025-08-20,font-bh-ttf,"font-bh-ttf: refactor, move to pkgs/by-name and rename from xorg.fontbhttf",97eb7ee0da337d385ab015a23e15022c865be75c
-4bd0b9c7ab548711a03922851eebef7bc2ce9f1b,2025-08-23,chameleon-cli,"Reapply ""Merge remote-tracking branch 'origin/master' into staging-next""",f937f8ecd1c70efd7e9f90ba13dfb400cf559de4
-f75522c6b9f06efe8da5d9fa896b94c923b70e94,2025-08-21,tetgen_1_4,tetgen_1_4: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
-42f42f268541c37f9a8e26c991cb4a4b81552d47,2025-08-21,obitools3,obitools3: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
-85693031b6f79fa44132f20700ed81c33e0e0f39,2025-08-21,leo3-bin,leo3-bin: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
-d3967f76ddb8eb9343884df540e4e3b19a5f3e63,2025-08-21,tlaplus-toolbox,tlaplus-toolbox: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
-e036b87a3b743b69ecd282043e6d71e223c9489f,2025-08-21,tlaplus18,tlaplus18: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
-826df19a28ca8a46416ebbfeafbe74748aec14e9,2025-08-21,geogebra6,geogebra6: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
-7848b51567e942391306484271ad193731266679,2025-08-21,gp2c,gp2c: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
-d8cf97574277a3791804181580e0e91b8ef1b879,2025-08-21,cups-filters,cups-filters: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
-f881edd2302b954fc745effb1f1783391bbcd2d3,2025-08-21,cups-pk-helper,cups-pk-helper: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
-3b5ed6c7888ac952a4d6fe275fa9a5f1e8d4f79d,2025-08-21,fahclient,fahclient: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
-58aa71747c70e63ba53c81dd949d6e2e1853297c,2025-08-21,gotrue-supabase,gotrue-supabase: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
-c48b39b1361a02a9f4d49cb82dae696ab748f926,2025-08-21,utsushi-networkscan,utsushi-networkscan: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
-92b63189be447b478784bac8fe4d8ec82e4ab415,2025-08-21,jack1,jack1: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
-6c7ad09fd633982a5d9731fe38cc094bac63d452,2025-08-21,jack-example-tools,jack-example-tools: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
-047dd7b524da8dd2da3da887a4d6b50829a11cc8,2025-08-21,nixos-icons,nixos-icons: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
-d64d3245d36e4f3e8c956d2d30ade962cfa77b13,2025-08-21,xsane,xsane: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
-65d1858dcfcba857f6dfbf06feaebfe8d303656b,2025-08-21,bullet-roboschool,bullet-roboschool: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
-859f3347e3b16f4efd78336159b86854e356e3fc,2025-08-21,zettlr,zettlr: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
-21a80441cc9f14fdff48eac5d2f259bb66c3d14f,2025-08-21,xvinfo,xvinfo: refactor and move to pkgs/by-name from xorg namespace,97eb7ee0da337d385ab015a23e15022c865be75c
-f4db99ab73512c452c26d52facbeda418968c296,2025-08-21,xrandr,xrandr: refactor and move to pkgs/by-name from xorg namespace,97eb7ee0da337d385ab015a23e15022c865be75c
-12e753b55c1ec322ee12ee4a36c70a0768fd8d99,2025-08-21,xfsinfo,"xfsinfo: 1.0.7 -> 1.0.8, refactor & move to pkgs/by-name from xorg namespace",97eb7ee0da337d385ab015a23e15022c865be75c
-60176ccb0429f65d7a84ce0dbcb6b49476d7950b,2025-08-21,xev,xev: refactor and move to pkgs/by-name from xorg namespace,97eb7ee0da337d385ab015a23e15022c865be75c
-66ca0ad28cff983efd2dca71e9e4a7cd544508ad,2025-08-21,xcursor-themes,"xcursor-themes: refactor, move to pkgs/by-name and rename from xorg.xcursorthemes",97eb7ee0da337d385ab015a23e15022c865be75c
-22b9ac1e5cf9ef1ad47ced474173467b814e23d7,2025-08-21,xcursorgen,xcursorgen: refactor and move to pkgs/by-name from xorg namespace,97eb7ee0da337d385ab015a23e15022c865be75c
-2fa8f417f169dc2b9a441d44c18dffe4e5710f9b,2025-04-26,font-encodings,"font-encodings: refactor, move to pkgs/by-name and rename from xorg.encodings",97eb7ee0da337d385ab015a23e15022c865be75c
-3edf0cc9ce5ce96a85eea76e42f6d60c9e2b8ba1,2025-08-19,libxcb-wm,"libxcb-wm: refactor, move to pkgs/by-name and rename from xorg.xcbutilwm",97eb7ee0da337d385ab015a23e15022c865be75c
-c1db54b7d85931b61a9fed9bd6a541504be71e1e,2025-08-19,libxcb-render-util,"libxcb-render-util: refactor, move to pkgs/by-name and rename from xorg.xcbutilrenderutil",97eb7ee0da337d385ab015a23e15022c865be75c
-6a2c2ed9208bd32313b6a322f005cfa0847a42f4,2025-08-19,libxcb-keysyms,"libxcb-keysyms: refactor, move to pkgs/by-name and rename from xorg.xcbutilkeysyms",97eb7ee0da337d385ab015a23e15022c865be75c
-a2a6f2a295ff1c4febdbede3da80af5307edf012,2025-08-19,libxcb-image,"libxcb-image: refactor, move to pkgs/by-name and rename from xorg.xcbutilimage",97eb7ee0da337d385ab015a23e15022c865be75c
-d051ea0c859fa14e7f63a16b26183ed886709f00,2025-08-19,libxcb-errors,"libxcb-errors: refactor, move to pkgs/by-name and rename from xorg.xcbutilerrors",97eb7ee0da337d385ab015a23e15022c865be75c
-d41e8bba2271fc6be2fd6814e38530d79a5f5c3e,2025-08-18,libxcb-util,"libxcb-util: refactor, move to pkgs/by-name and rename from xorg.xcbutil",97eb7ee0da337d385ab015a23e15022c865be75c
-f5077a75cf102fe252c338c8587dc6fff4727f45,2025-08-18,libxxf86vm,"libxxf86vm: refactor, move to pkgs/by-name and rename from xorg.libXxf86vm",97eb7ee0da337d385ab015a23e15022c865be75c
-cdda889cee20a007f23cd7204c0ea0eea4ef2499,2025-08-18,libxxf86misc,"libxxf86misc: refactor, move to pkgs/by-name and rename from xorg.libXxf86misc",97eb7ee0da337d385ab015a23e15022c865be75c
-809bf617cfdd7d6998726b778e69dc05d5140361,2025-08-18,libxxf86dga,"libxxf86dga: refactor, move to pkgs/by-name and rename from xorg.libXxf86dga",97eb7ee0da337d385ab015a23e15022c865be75c
-b7a50d3f5348688f00c4040ef1e2b5e5d26b8cd4,2025-08-18,libxvmc,"libxvmc: refactor, move to pkgs/by-name and rename from xorg.libXvMC",97eb7ee0da337d385ab015a23e15022c865be75c
-847dbb84a3dd2e98f120f438c3b76a45b72e44f9,2025-08-18,libxaw,"libxaw: refactor, move to pkgs/by-name and rename from xorg.libXaw",97eb7ee0da337d385ab015a23e15022c865be75c
-2301e67b505cfb20722c74aa0de628992e63e0e6,2025-08-18,libxpm,"libxpm: refactor, move to pkgs/by-name and rename from xorg.libXpm",97eb7ee0da337d385ab015a23e15022c865be75c
-ee1a92b0c935e27d0530d9377217ed18766a62f6,2025-08-18,libxmu,"libxmu: refactor, move to pkgs/by-name and rename from xorg.libXmu",97eb7ee0da337d385ab015a23e15022c865be75c
-96349f4b00899c20e3e796e515da19bfd23d769d,2025-08-18,libxt,"libxt: refactor, move to pkgs/by-name and rename from xorg.libXt",97eb7ee0da337d385ab015a23e15022c865be75c
-365735436e5d5b216eba0a3eb1f07bfc9e80fae8,2025-08-18,libsm,"libsm: refactor, move to pkgs/by-name and rename from xorg.libSM",97eb7ee0da337d385ab015a23e15022c865be75c
-a79f97b971d903a229f919d7920063dae8cf731d,2025-08-18,libice,"libice: refactor, move to pkgs/by-name and rename from xorg.libICE",97eb7ee0da337d385ab015a23e15022c865be75c
-890d03374fedcd5f7f3e8156fcfd89c07d78ee45,2025-08-19,"alerta,hasura-cli,rosenpass-tools,steck,zpaqd",treewide: move to by-name part 3,97eb7ee0da337d385ab015a23e15022c865be75c
-c6435a9da7bdc323c7a2a5336b61c6138ab08d0f,2025-08-10,"irods-icommands,irods","{irods,irods-icommands}: 4.3.3 -> 5.0.1",a3f75d80983edb6010b08b9e6ce889811129a26c
-106b1418bc30cbae35addcb643a883e22de9573b,2025-08-15,imaginer,"Revert ""Merge remote-tracking branch 'origin/master' into staging-next""",c5e2e42c112de623adfd662b3e51f0805bf9ff83
-db05d3b4a2774764fcede7c6648376802c8fed0c,2025-08-11,3_4,etcd_3_4: 3.4.28 -> 3.4.37,9585e9192aadc13ec3e49f33f8333bd3cda524df
-fb7d7c5fe02f8204445a7f56c78f3ccbacd870df,2025-08-02,calamares,"calamares: 3.3.13 -> 3.4.0, qt6-ize, clean up, move to by-name",641d909c4a7538f1539da9240dedb1755c907e40
-c6137ada4bb9492821c9ff54a3a7508a56f87a90,2025-08-07,hijridate,python3Packages.hijridate: rename from hijri-converter;  2.3.2.post1 -> 2.5.0,00b574b1ba8a352f0601c4dde4faff4b534ebb1e
-190f6932af0a62fc7d61bc2a643625bc0da10626,2025-08-07,meerk40t-camera,meerk40t: migrate to by-name,a683adc19ff5228af548c6539dbc3440509bfed3
-6f3bed56f6cc5f576b9640eee4cc3d9c8081a51f,2025-07-29,paraview,paraview: 5.13.2 -> 6.0.0,871381d997e4a063f25a3994ce8a9ac595246610
-409e80d2446aa57e888eeb5327c035819466c220,2025-08-05,ktimetracker,ktimetracker: migrate to by-name,a683adc19ff5228af548c6539dbc3440509bfed3
-3d98a4985618ad4c76c006b3c4942beb1a9aabfb,2025-07-22,"gtkgreet,qtgreet,regreet,tuigreet,wlgreet",greetd.*: move to 'pkgs/by-name' and top level,7b6929d8b900de3142638310f8bc40cff4f2c507
-147d02e310b472fcf1c1498d7d6bebb1acdbd6e7,2025-08-01,"roapi-http,sickgear",treewide: move to by-name part 2,e7eabdc701d7dbb810fd91a97ec358caa4c1fc50
-7d442d6579a4cd5963170e0cf57a4f0c9b3ae921,2025-08-01,exegol,exegol: 4.3.11 -> 5.1.1,e7eabdc701d7dbb810fd91a97ec358caa4c1fc50
+commit_hash,date,packages,fully_qualified_name,subject,test_base_commit
+64e6e3f26a748bef854b6ffca49048a49bbeabf7,2025-11-17,"clight-gui,clightd","clight,clight-gui,clightd","clight,clight-gui,clightd: migrate to pkgs/by-name, modernize",8b6600824693a9c706ef09bd86711ca393703466
+f8a26c443a08644b37d0775bd637bc0901959190,2025-11-16,font-misc-misc,font-misc-misc,"font-misc-misc: refactor, move to pkgs/by-name and rename from xorg.fontmiscmisc",1d4c88323ac36805d09657d13a5273aea1b34f0c
+b84617f14e674406bdd0c147d45c77ebea8d1748,2025-11-16,font-misc-meltho,font-misc-meltho,"font-misc-meltho: refactor, move to pkgs/by-name and rename from xorg.fontmiscmeltho",1d4c88323ac36805d09657d13a5273aea1b34f0c
+42fca86f89f37ee92f2c8bf8a8bed221f1404c0d,2025-11-15,font-jis-misc,font-jis-misc,"font-jis-misc: refactor, move to pkgs/by-name and rename from xorg.fontjismisc",1d4c88323ac36805d09657d13a5273aea1b34f0c
+506db072ab0419ab38f213d87d269f49ea92547c,2025-11-15,font-ibm-type1,font-ibm-type1,"font-ibm-type1: refactor, move to pkgs/by-name and rename from xorg.fontibmtype1",1d4c88323ac36805d09657d13a5273aea1b34f0c
+db23a88b9a80583c22dba7c2b4b45866f1dd23ca,2025-11-15,font-dec-misc,font-dec-misc,"font-dec-misc: refactor, move to pkgs/by-name and rename from xorg.fontdecmisc",1d4c88323ac36805d09657d13a5273aea1b34f0c
+961f70725cd3b92f76288a48bc95bcd3232d7b12,2025-11-15,font-daewoo-misc,font-daewoo-misc,"font-daewoo-misc: refactor, move to pkgs/by-name and rename from xorg.fontdaewoomisc",1d4c88323ac36805d09657d13a5273aea1b34f0c
+4a82229180a5beac6b84fde576820ebd17c72422,2025-11-15,font-cursor-misc,font-cursor-misc,"font-cursor-misc: refactor, move to pkgs/by-name and rename from xorg.fontcursormisc",1d4c88323ac36805d09657d13a5273aea1b34f0c
+1c66cd8f6539e67482bbf51e8838d7d081c76ba0,2025-11-15,font-arabic-misc,font-arabic-misc,"font-arabic-misc: refactor, move to pkgs/by-name and rename from xorg.fontarabicmisc",1d4c88323ac36805d09657d13a5273aea1b34f0c
+630803b2cdb823b1a7b0a07a66100762d3f93a17,2025-11-14,elm-graphql,elmPackages.elm-graphql,elmPackages.elm-graphql: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
+d10e9c065621e33344bb2235a492272ac5a3bd9d,2025-11-14,elm-git-install,elmPackages.elm-git-install,elmPackages.elm-git-install: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
+c4853893c8d03265903be2c90baf899740f29731,2025-11-14,elm-optimize-level-2,elmPackages.elm-optimize-level-2,elmPackages.elm-optimize-level-2: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
+3b3da8abf115cfa3b478bd31e4e1895cf3d48a75,2025-11-14,elm-xref,elmPackages.elm-xref,elmPackages.elm-xref: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
+2767324cf8bbdcaf5f7b9a800caf73a398b248f0,2025-11-14,elm-verify-examples,elmPackages.elm-verify-examples,elmPackages.elm-verify-examples: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
+8fbb32445cd8c9a10dfd8217a944d073d715091a,2025-11-14,elm-upgrade,elmPackages.elm-upgrade,elmPackages.elm-upgrade: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
+f6bbac2dfd6d1102e3dde57aa929d25bc42f3d6d,2025-11-14,elm-spa,elmPackages.elm-spa,elmPackages.elm-spa: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
+32b2a7955b2f11893a17c1b77845759d9830c0c2,2025-11-14,elm-live,elmPackages.elm-live,elmPackages.elm-live: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
+096c513053a083b1e22c872029c51a7ba5f7df48,2025-11-14,elm-analyse,elmPackages.elm-analyse,elmPackages.elm-analyse: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
+436ecd5821dfdb2aff99b3de0b8e52edaa9c8191,2025-11-14,elm-language-server,elmPackages.elm-language-server,elmPackages.elm-language-server: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
+0816f456ffe47a9ca094d6f2117f586efe374f46,2025-11-14,elm-doc-preview,elmPackages.elm-doc-preview,elmPackages.elm-doc-preview: migrate from internal node-packages.nix set,91c9a64ce2a84e648d0cf9671274bb9c2fb9ba60
+87258df63377ebc38f7217271b645eb4a8cca7dc,2025-11-10,peerflix-server,peerflix-server,peerflix-server: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
+727d02790a7f072396337f85c24d078528a823b9,2025-11-10,tiddlywiki,tiddlywiki,tiddlywiki: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
+bd16d452b0adb8446fd45aab74cf5f974a114ce5,2025-11-10,svelte-check,svelte-check,svelte-check: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
+9731d5459097191e28990d64d3cc1e98cc0dd396,2025-11-10,cdk8s-cli,ckd8s-cli,ckd8s-cli: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
+39c4aa65ec553304fde23e5162fe48f179b13076,2025-11-08,nrm,nrm,nrm: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
+2bdcf95276a78d96b31daaa44692f6b389ec0e98,2025-11-08,conventional-changelog-cli,conventional-changelog-cli,conventional-changelog-cli: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
+d8e0983f4fb6816ae8082cf21d41f88734d2f118,2025-11-08,localtunnel,localtunnel,localtunnel: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
+e99bf3b9616ba34ba15c46c32cc72573dfbf3484,2025-11-08,katex,katex,katex: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
+0d94a711119266f5be117c53042e9f5bd65cd176,2025-11-08,diff2html-cli,diff2html-cli,diff2html-cli: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
+9cf3ceab665cb2896754bb3e34c5794c6f0f1983,2025-11-08,code-theme-converter,code-theme-converter,code-theme-converter: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
+42ec1c05896ee7703f6a8cbcdd0f18a3d2e1be45,2025-11-08,coc-nginx,coc-nginx,coc-nginx: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
+983751956ff932c3357fa18b0d0d42461fce1820,2025-11-08,commitlint,commitlint,commitlint: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
+6c3af5d19523f5c0b3f5ae4686924d96b131a7fa,2025-11-08,json-diff,json-diff,json-diff: migrate from nodePackages,f6b44b2401525650256b977063dbcf830f762369
+fb236b375f662801c22d98f1fa7c0e879de12de2,2025-10-21,abseil-cpp_202505,"Revert ""abseil-cpp_202505","Revert ""abseil-cpp_202505: drop""",f6b44b2401525650256b977063dbcf830f762369
+bebb1065ac8c1524b42aeb564f9e0f72593c00c8,2025-11-06,"wasm-text-gen,wast-refmt,webassemblyjs-cli,webassemblyjs-repl",nodePackages.@webassemblyjs/*,nodePackages.@webassemblyjs/*: repackage or drop,f6b44b2401525650256b977063dbcf830f762369
+ecf72265ab93582917e5f160f2d8c5c1e8a0f1b2,2025-11-06,jshint,jshint,jshint: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+c3a23aaf853a4a3d8507ed8cfd0d1e73aa9bf3d8,2025-11-05,coc-yank,coc-yank,coc-yank: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+a5d418f44312e4da4b3427fd3b1969e063429cd2,2025-11-05,coc-yaml,coc-yaml,coc-yaml: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+ee22f9dea6d8def0942d53f01a7ec52b823ba6f4,2025-11-05,coc-wxml,coc-wxml,coc-wxml: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+8a33e287e5309a5c4806bb80b847e0344742ed63,2025-11-05,coc-vimtex,coc-vimtex,coc-vimtex: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+0e1e74d71dce62bd3f7a31d6e1f30351d45cecf6,2025-11-05,coc-vimlsp,coc-vimlsp,coc-vimlsp: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+012cccc12929b5119061236f9551c64cfe6d4764,2025-11-05,coc-texlab,coc-texlab,coc-texlab: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+ef2f4bdc396ce7126b0b1f7048655e54271400be,2025-11-05,coc-tabnine,coc-tabnine,coc-tabnine: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+4647cf35a0b3bdc54f25ae6ff3b28d8c8ce62a6e,2025-11-05,coc-sumneko-lua,coc-sumneko-lua,coc-sumneko-lua: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+7e9c70a2e27c4385684cd266540145010192b2db,2025-11-05,coc-stylelint,coc-stylelint,coc-stylelint: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+8d69b4a264e0e562c8fd28e13cd20d672e18934f,2025-11-05,coc-sqlfluff,coc-sqlfluff,coc-sqlfluff: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+65dc92e99a6a3f7d35993e7aea8b72a3a8b7b7c6,2025-11-05,coc-solargraph,coc-solargraph,coc-solargraph: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+63bccd4eaba04ce8dbb51baf68c476f947f73c26,2025-11-05,coc-snippets,coc-snippets,coc-snippets: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+fe207f1a0949e268128d0b876ea6de89304b9f41,2025-11-05,coc-smartf,coc-smartf,coc-smartf: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+89aa372f0c05df5475a3dba675ca2fa682dfff31,2025-11-05,coc-rust-analyzer,coc-rust-analyzer,coc-rust-analyzer: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+8d8538bdc19c0c02104f1eb23410957b301d52b8,2025-11-05,coc-r-lsp,coc-r-lsp,coc-r-lsp: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+5b047f88c5eab03db5ffae1c97b894aacf83f1e7,2025-11-05,coc-prettier,coc-prettier,coc-prettier: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+b96b2c33bb5a6209a453206efee1367badf30260,2025-11-05,coc-pairs,coc-pairs,coc-pairs: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+6c67d0ee2dc62806500de7a4582e423175342250,2025-11-05,coc-markdownlint,coc-markdownlint,coc-markdownlint: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+d43cfa79ee8eee752f83f9dfdf9901383a2f00b5,2025-11-05,coc-lists,coc-lists,coc-lists: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+63ff9dd0c3a786d77d155084c4c5d7d634d3e36d,2025-11-05,coc-json,coc-json,coc-json: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+e1e09af914c0d2676cce14f780be55a4474b19d1,2025-11-05,coc-jest,coc-jest,coc-jest: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+2e191e2b1a51fb55c816e01261b4460fbcbb749b,2025-11-05,coc-java,coc-java,coc-java: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+5028d9b6441991f24988e6439cf8f2f06b648ae3,2025-11-05,coc-html,coc-html,coc-html: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+8c72d3555bfebe44fb482a0dad9b14c72e2ffd62,2025-11-05,coc-highlight,coc-highlight,coc-highlight: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+9ec68a08a425c0a56de07bd711d41235ba44f4fc,2025-11-05,coc-haxe,coc-haxe,coc-haxe: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+57a98fb2839429ba0330dd465395058e9ed81a68,2025-11-05,coc-flutter,coc-flutter,coc-flutter: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+6667711e2c0c903f96064f16ba0c072809f75ec6,2025-11-05,coc-eslint,coc-eslint,coc-eslint: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+f66077b5a85046bb7ed0f938e3be0981e3d7e8a2,2025-11-05,coc-emmet,coc-emmet,coc-emmet: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+86cfef9c19dfec0bd096b4ecdc82f2539bd81f5a,2025-11-06,json-server,json-server,json-server: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+f56221596a841f4a5a319b2ca5d0bb874cb32fab,2025-11-06,js-beautify,js-beautify,js-beautify: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+81a676c92b0620f29fad0c0b46e6495d11341173,2025-11-04,mocha,mocha,mocha: migrate from nodePackages,ffcdcf99d65c61956d882df249a9be53e5902ea5
+4f2c8f225774f1dcfe8d4f42e969fdb7406de8cb,2025-11-02,joplin-cli,joplin-cli,joplin-cli: migrate from nodePackages,12c1f0253aa9a54fdf8ec8aecaafada64a111e24
+233755a3d0468db70a6d48078cc410bdbf17cfe3,2025-11-04,vega-lite,vega-lite,vega-lite: migrate from nodePackages,12c1f0253aa9a54fdf8ec8aecaafada64a111e24
+8acc954e72324149241cce9b1b9140d4721078ef,2025-11-04,jsonplaceholder,jsonplaceholder,jsonplaceholder: migrate from nodePackages,12c1f0253aa9a54fdf8ec8aecaafada64a111e24
+685e3a6176136693758d0aa9d8ae5203618cf50f,2025-11-01,uppy-companion,uppy-companion,uppy-companion: migrate from nodePackages,7241bcbb4f099a66aafca120d37c65e8dda32717
+7554a7371314836bec4c0e66fc850bd52dbb6a16,2025-10-27,lspmux,ra-multiplex,ra-multiplex: 0.2.5 -> lspmux 0.3.0,f1e8ae508a9a467a9f51d29b8639e96db2b52c30
+27b3cce3f2501df4499769154b9a6879ad415368,2025-11-01,fetchmail_7,fetchmail_7,fetchmail_7: move to pkgs/by-name,f1e8ae508a9a467a9f51d29b8639e96db2b52c30
+772dc221ae01f5de99f24d55b3692178937ddf6a,2025-10-29,udisks,udisks,udisks: move to pkgs/by-name,f1e8ae508a9a467a9f51d29b8639e96db2b52c30
+9b316df866ea4b3cc2ae2a3472fd98da2604198b,2025-10-31,"fmodex,zandronum-server",pkgs/games/doom-ports,pkgs/games/doom-ports: migrate to by-name,a7fc11be66bdfb5cdde611ee5ce381c183da8386
+97f4dd3ef7972117b9e7588c73be662d7c67ac8b,2025-10-24,vkquake,vkquake,vkquake: move to by-name,a7fc11be66bdfb5cdde611ee5ce381c183da8386
+c9a798a92686d58a7fefe3b09050dd18b790e59a,2025-10-29,teamtype,ethersync,ethersync: 0.8.0 -> teamtype: 0.9.0; update editor plugins,a7fc11be66bdfb5cdde611ee5ce381c183da8386
+7cd480deb60e524e57ce85f2a1e95d1b88d92b0c,2025-10-29,gitbeaker-cli,gitbeaker-cli,gitbeaker-cli: migrate from nodePackages,e99366c665bdd53b7b500ccdc5226675cfc51f45
+d871c165c52d7881b94bb78e772172e047547371,2025-10-16,"beets-minimal,beets,beets-alternatives,beets-audible,beets-copyartifacts,beets-filetote,beets","beets{,Packages}","beets{,Packages}: rewrite / reform",de69d2ba6c70e747320df9c096523b623d3a4c35
+98a16089ef58d31311fdc177fdf07189658b3fb8,2025-10-20,botan3,botan3,botan3: move to by-name,d5faa84122bc0a1fd5d378492efce4e289f8eac1
+343db01d3188f6e0de3c822033fa25c8e7e34696,2025-10-21,ladspaH,"ladspa{H,-sdk}","ladspa{H,-sdk}: modernize, move to by-name/",cb82756ecc37fa623f8cf3e88854f9bf7f64af93
+89d1c448c15200fa772aeef5aa6bb182474201f3,2025-10-20,mbrola-voices,mbrola{-voices},mbrola{-voices}: move to by-name/,cb82756ecc37fa623f8cf3e88854f9bf7f64af93
+72641301aef9fbd5376f231f78b8f9a2821613bc,2025-10-20,mt32emu-qt,mt32emu-qt,"mt32emu-qt: modernize, move to by-name/",cb82756ecc37fa623f8cf3e88854f9bf7f64af93
+8496210f3d38c148e950c7e45134267da5b19add,2025-09-20,idris2,idris2,idris2: Move to by-name,cb82756ecc37fa623f8cf3e88854f9bf7f64af93
+9227e50841ab9e67a14bdfa5d8a214ffbafa3319,2025-10-20,keyoxide-cli,nodePackages.keyoxide,nodePackages.keyoxide: migrate from nodePackages,cb82756ecc37fa623f8cf3e88854f9bf7f64af93
+a816199c3faf36ce00548ed305077124f0d4783a,2025-10-18,mt32emu-smf2wav,mt32emu-smf2wav,"mt32emu-smf2wav: modernize, move to by-name/",36226520e9f7a35bf341cbe3b6a1ff9047bec6d9
+6697b05926566fc88ae8365549c5354e7128c07c,2025-10-18,libmt32emu,libmt32emu,"libmt32emu: modernize, move to by-name/",36226520e9f7a35bf341cbe3b6a1ff9047bec6d9
+8f4420f92ec1f32dcdc61769b68b1ea43ca3b717,2025-10-18,bitwig-studio3,bitwig-studio3,"bitwig-studio3: modernize, move to by-name/",36226520e9f7a35bf341cbe3b6a1ff9047bec6d9
+1b168e31013d222969f2b9758a6806d38b9e9d2d,2025-10-15,rclone-browser,rclone-browser,rclone-browser: move to pkgs/by-name,35f590344ff791e6b1d6d6b8f3523467c9217caf
+124ed3c01cb0c196418d6378302c3a05efaf0644,2025-10-10,elementary-monitor,pantheon.elementary-monitor,pantheon.elementary-monitor: 0.17.2 -> 8.0.0,bce5fe2bb998488d8e7e7856315f90496723793c
+2e717f480752794e0ccb41c347a16a60e43fe6dd,2025-09-20,"duckstation-bin,duckstation","Revert ""duckstation","Revert ""duckstation: remove due to lack of viable upstream (#430501)""",870493f9a8cb0b074ae5b411b2f232015db19a65
+9df9e47f5ea8471dde0a6fb76279e4007ccb3662,2025-10-09,amoeba-data,amoeba-data,"amoeba-data: move to by-name, modernize",2dad7af78a183b6c486702c18af8a9544f298377
+9e538a05144d9d077065ea6312ae2cec613ad6c4,2025-10-09,lincity-ng,lincity-ng,"lincity-ng: move to by-name, modernize",2dad7af78a183b6c486702c18af8a9544f298377
+9924426fd0fa60bd0b9053f71d895a918f1e17f3,2025-10-09,bloodspilot-server,bloodspilot-server,"bloodspilot-server: move to by-name, modernize",2dad7af78a183b6c486702c18af8a9544f298377
+355e927e8cb7d4128898a2afefde1a0a7e77ae2f,2025-10-09,bloodspilot-client,bloodspilot-client,"bloodspilot-client: move to by-name, modernize",2dad7af78a183b6c486702c18af8a9544f298377
+7dd4833b77b2c26a73e5bc26a0c4da9b497696bf,2025-10-08,libutp_3_4,libutp,libutp: move to by-name,2dad7af78a183b6c486702c18af8a9544f298377
+0a81759d2cb08e409506d81c2045303b16feaca0,2025-10-07,frog,frog,frog: move to by-name,bce5fe2bb998488d8e7e7856315f90496723793c
+daa9c7c2a93586aeb6f8c0fe3104c81f63d243ab,2025-10-07,frogdata,frogdata,frogdata: move to by-name,bce5fe2bb998488d8e7e7856315f90496723793c
+c76d7e78e652487c6eb7412793adbae27e28930b,2025-10-07,mbt,mbt,mbt: move to by-name,bce5fe2bb998488d8e7e7856315f90496723793c
+bb380596cea6a85f0d48fbf6f66ba44e28073baa,2025-10-07,timblserver,timblserver,timblserver: move to by-name,bce5fe2bb998488d8e7e7856315f90496723793c
+6196a9548540890eb4527103b39e7b636904aaae,2025-10-07,timbl,timbl,timbl: move to by-name,bce5fe2bb998488d8e7e7856315f90496723793c
+f7ddbc808d9e337976099993405acde3b06d7a6f,2025-10-07,ucto,ucto,ucto: move to by-name,bce5fe2bb998488d8e7e7856315f90496723793c
+12a7f7384e3bd0d2e15d66be5d73e23b6a5561e4,2025-10-07,uctodata,uctodata,uctodata: move to by-name,bce5fe2bb998488d8e7e7856315f90496723793c
+33008aefc918ac901644748d28663d978092c705,2025-10-07,libfolia,libfolia,libfolia: move to by-name,bce5fe2bb998488d8e7e7856315f90496723793c
+7180468bc2cf3e379d6d2f373e3564a036501d8a,2025-10-07,ticcutils,ticcutils,ticcutils: move to by-name,bce5fe2bb998488d8e7e7856315f90496723793c
+69c633ef1e52ae64e105082c0beb0be3063f8205,2025-10-06,oneDNN_2,"Revert ""oneDNN_2","Revert ""oneDNN_2: drop""",d7f52a7a640bc54c7bb414cca603835bf8dd4b10
+b26d919c4a5b19695f2dd768cd9f2925f567b0f1,2025-10-05,"brasero,lukesmithxyz-bible-kjv",various,various: migrate to by-name,d7f52a7a640bc54c7bb414cca603835bf8dd4b10
+6859773df864e6677d0f4a7928cf17ce7b024521,2025-10-04,"heroic-unwrapped,heroic",heroic,heroic: restore,ee4cd98afba682ca27242f2d7fdbd8583f6ef51a
+445d18171f877c81023a96f89ca8e3e74b1b798a,2025-10-02,cdktf-cli,cdktf-cli,cdktf-cli: migrate from nodePackages,625ad6366178f03acd79f9e3822606dd7985b657
+c82863e17dedabcbf9781d6df30258d5808c4cf5,2025-10-01,coc-sh,coc-sh,coc-sh: migrate from nodePackages,625ad6366178f03acd79f9e3822606dd7985b657
+721d8186c6ea703e6d630f91a75cd76a6de8a997,2025-10-01,coc-explorer,coc-explorer,coc-explorer: migrate from nodePackages,625ad6366178f03acd79f9e3822606dd7985b657
+5ba77d6ad87b78512812bafc290ccb804767e583,2025-10-01,coc-git,coc-git,coc-git: migrate from nodePackages,625ad6366178f03acd79f9e3822606dd7985b657
+ac533eee7cac22f5cc041d991b7b3d0eba7f4df5,2025-10-01,coc-spell-checker,coc-spell-checker,coc-spell-checker: migrate from nodePackages,625ad6366178f03acd79f9e3822606dd7985b657
+d0b5fc24a1c3714b277e47d6e0da71a8e3cd641e,2025-10-02,omegat,omegat,omegat: migrate to by-name,ee4cd98afba682ca27242f2d7fdbd8583f6ef51a
+f3fa5ff106d9b6b7a48a5bdb0348155a17e3f088,2025-10-01,cspell,cspell,cspell: migrate from nodePackages,ee4cd98afba682ca27242f2d7fdbd8583f6ef51a
+9a693ae7fe44c3b7ae1f8bde19b69ba50e937b29,2025-10-01,coc-docker,nodePackages.coc-docker,nodePackages.coc-docker: migrate to pkgs/by-name,ee4cd98afba682ca27242f2d7fdbd8583f6ef51a
+ae968b82ac31020b4b8fd1e4dd609facf96f0a7b,2025-09-29,prometheus-mysqld-exporter,prometheus-mysqld-exporter,prometheus-mysqld-exporter: move to pkgs/by-name,9547cfd27b5158eb612a6812dfc5c7b3d118b996
+4be62ca52cd604eaef5d5a158939acb34b725179,2025-09-29,catkin-pkg,"Revert ""python3Packages.catkin-pkg","Revert ""python3Packages.catkin-pkg: remove package""",a1f79a1770d05af18111fbbe2a3ab2c42c0f6cd0
+2088c727470acbef55bcc029e77078cd913b3dff,2025-09-21,flint,flint,flint: Move to by-name,90ade7da38aa49c2e2693a04a44662a0e61530e9
+3ccc4089b6a1a9edd2be3ac472688e65be67b24c,2025-09-10,xeyes,xeyes,"xeyes: 1.3.0 -> 1.3.1, refactor & move to pkgs/by-name from xorg namespace",e2642aa7d5a15eae586932a56f4294934f959c14
+63640282de5a4a32dfcbbaeb14b664d9287c1e60,2025-09-10,xcompmgr,xcompmgr,xcompmgr: refactor & move to pkgs/by-name from xorg namespace,e2642aa7d5a15eae586932a56f4294934f959c14
+69c34bfba44abb1b5f12e7cc41443fbe337296fb,2025-08-23,xcalc,xcalc,xcalc: refactor and move to pkgs/by-name from xorg namespace,e2642aa7d5a15eae586932a56f4294934f959c14
+4cc11e680666d397cd24bf1dd82275e8664ecb57,2025-09-10,x11perf,x11perf,"x11perf: 1.6.1 -> 1.7.0, refactor & move to pkgs/by-name from xorg namespace",e2642aa7d5a15eae586932a56f4294934f959c14
+19d5fe041003703206072988771ebe0de2d8e275,2025-09-10,libxtst,libxtst,"libxtst: refactor, move to pkgs/by-name and rename from xorg.libXtst",e2642aa7d5a15eae586932a56f4294934f959c14
+b72cbd7789c88bf92c560514f8bc2f1ef62a50d7,2025-09-10,libxshmfence,libxshmfence,libxshmfence: refactor & move to pkgs/by-name from xorg namespace,e2642aa7d5a15eae586932a56f4294934f959c14
+67af63a0765d43a7eb08c62da06fecc61d31cc36,2025-08-31,libxinerama,libxinerama,"libxinerama: refactor, move to pkgs/by-name and rename from xorg.libXinerama",e2642aa7d5a15eae586932a56f4294934f959c14
+4c4fd26ced7988897342f6386cc73af6d267c227,2025-08-27,font-bitstream-type1,font-bitstream-type1,"font-bitstream-type1: refactor, move to pkgs/by-name and rename from xorg.fontbitstreamtype1",a1f79a1770d05af18111fbbe2a3ab2c42c0f6cd0
+e6a9281e35e2135f333717a1abcec32b939643f5,2025-08-27,font-bitstream-75dpi,font-bitstream-75dpi,"font-bitstream-75dpi: refactor, move to pkgs/by-name and rename from xorg.fontbitstream75dpi",a1f79a1770d05af18111fbbe2a3ab2c42c0f6cd0
+b96325543a358a168dc1a7c0f2dcac02a7642dfd,2025-08-27,font-bitstream-100dpi,font-bitstream-100dpi,"font-bitstream-100dpi: refactor, move to pkgs/by-name and rename from xorg.fontbitstream100dpi",a1f79a1770d05af18111fbbe2a3ab2c42c0f6cd0
+ab945fb3310d1a61f5ac38d333441443179314ad,2025-08-23,libxscrnsaver,libxscrnsaver,"libxscrnsaver: refactor, move to pkgs/by-name and rename from xorg.libxscrnsaver",a1f79a1770d05af18111fbbe2a3ab2c42c0f6cd0
+741655d77aa56cd6d548d4300cabe714653de98e,2025-08-23,libxres,libxres,"libxres: refactor, move to pkgs/by-name and rename from xorg.libXres",a1f79a1770d05af18111fbbe2a3ab2c42c0f6cd0
+512533926e3e93025da420bb444a88d080374db8,2025-08-23,libxpresent,libxpresent,"libxpresent: refactor, move to pkgs/by-name and rename from xorg.libXpresent",a1f79a1770d05af18111fbbe2a3ab2c42c0f6cd0
+f8da5444ae47dbfcd376e19c420380fb29b2648a,2025-08-23,libxp,libxp,"libxp: refactor, move to pkgs/by-name and rename from xorg.libXp",a1f79a1770d05af18111fbbe2a3ab2c42c0f6cd0
+443539a91c246cbbf76cca57fdbb9cbb20b78be6,2025-09-16,libmusicbrainz,libmusicbrainz,libmusicbrainz: move to `by-name`,0d7c15863b251a7a50265e57c1dca1a7add2e291
+b592c8b91213a7b9ca228a33f01a3a6233e4cbcb,2025-09-12,aqlprofile,rocmPackages,rocmPackages: 6.3.3 -> 6.4.2,88cef159e47c0dc56f151593e044453a39a6e547
+157a4e3863a766c9d7977002e911a976fcb92940,2025-08-30,font-xfree86-type1,font-xfree86-type1,"font-xfree86-type1: refactor, move to pkgs/by-name and rename from xorg.fontxfree86type1",c73522789a3c7552b1122773d6eaa34e1491cc1c
+a8c9ed2a405a0b5081108b6ff5c336090a9ca593,2025-08-30,font-winitzki-cyrillic,font-winitzki-cyrillic,"font-winitzki-cyrillic: refactor, move to pkgs/by-name and rename from xorg.fontwinitzkicyrillic",c73522789a3c7552b1122773d6eaa34e1491cc1c
+154002f5a64ce55c07e2ced6cbfe65c80fac43f4,2025-08-30,font-sun-misc,font-sun-misc,"font-sun-misc: refactor, move to pkgs/by-name and rename from xorg.fontsunmisc",c73522789a3c7552b1122773d6eaa34e1491cc1c
+667074fff0bff5275b9c707ce965142a186d05f5,2025-08-30,font-sony-misc,font-sony-misc,"font-sony-misc: refactor, move to pkgs/by-name and rename from xorg.fontsonymisc",c73522789a3c7552b1122773d6eaa34e1491cc1c
+d3a2b393f37c31683a25b2247297849166916c49,2025-08-30,font-screen-cyrillic,font-screen-cyrillic,"font-screen-cyrillic: refactor, move to pkgs/by-name and rename from xorg.fontscreencyrillic",c73522789a3c7552b1122773d6eaa34e1491cc1c
+2dc1d4e9370144e4ef8ec84c33f05bea98feb452,2025-08-30,font-schumacher-misc,font-schumacher-misc,"font-schumacher-misc: refactor, move to pkgs/by-name and rename from xorg.fontschumachermisc",c73522789a3c7552b1122773d6eaa34e1491cc1c
+e013f09554c54ac19c32d2ec2252c025c5a3dee0,2025-08-28,font-misc-ethiopic,font-misc-ethiopic,"font-misc-ethiopic: refactor, move to pkgs/by-name and rename from xorg.fontmiscethiopic",a918bb3594dd243c2f8534b3be01b3cb4ed35fd1
+62e6b67dd0d7165ba3a9abaeee06c1182db4b75c,2025-08-28,font-misc-cyrillic,font-misc-cyrillic,"font-misc-cyrillic: refactor, move to pkgs/by-name and rename from xorg.fontmisccyrillic",a918bb3594dd243c2f8534b3be01b3cb4ed35fd1
+ce9e0b565a3a4db63f015bf605134efddba2d4b1,2025-08-28,font-micro-misc,font-micro-misc,"font-micro-misc: refactor, move to pkgs/by-name and rename from xorg.fontmicromisc",a918bb3594dd243c2f8534b3be01b3cb4ed35fd1
+191109e0d90ec68854a894499607ba1bd6945e9d,2025-08-28,font-isas-misc,font-isas-misc,"font-isas-misc: refactor, move to pkgs/by-name and rename from xorg.fontisasmisc",a918bb3594dd243c2f8534b3be01b3cb4ed35fd1
+5e23f445e5d81021389cdae7449e143cd3811a5b,2025-08-27,font-cronyx-cyrillic,font-cronyx-cyrillic,"font-cronyx-cyrillic: refactor, move to pkgs/by-name and rename from xorg.fontcronyxcyrillic",a918bb3594dd243c2f8534b3be01b3cb4ed35fd1
+837e11d2c395a452d2a488142345a3229838338f,2025-08-26,font-bh-lucidatypewriter-75dpi,font-bh-lucidatypewriter-75dpi,"font-bh-lucidatypewriter-75dpi: refactor, move to pkgs/by-name and rename from xorg.fontbhlucidatypewriter75dpi",61308fbb163ae7045c9b3004a0d067822984df33
+7abbe6b31ef74a20b96405abaf09c4a0773d3f44,2025-09-13,font-bh-lucidatypewriter-100dpi,font-bh-lucidatypewriter-100dpi,"font-bh-lucidatypewriter-100dpi: refactor, move to pkgs/by-name & rename from xorg.fontbhlucidatypewriter100dpi",61308fbb163ae7045c9b3004a0d067822984df33
+14cf636039e48082bc98432798cc4ad9444f47dc,2025-09-13,font-bh-75dpi,font-bh-75dpi,"font-bh-75dpi: refactor, move to pkgs/by-name & rename from xorg.fontbh75dpi",61308fbb163ae7045c9b3004a0d067822984df33
+0922a4b685bc61cd7ad8e31e7d6dd2c79a06418a,2025-09-13,font-bh-100dpi,font-bh-100dpi,"font-bh-100dpi: refactor, migrate to pkgs/by-name & rename from xorg.fontbh100dpi",61308fbb163ae7045c9b3004a0d067822984df33
+5fcf09051edc0bc4f693e98f28434d80e16025aa,2025-09-02,"mkdocs-macros-plugin,mkdocs-macros-test",python3Packages.mkdocs-macros-plugin,python3Packages.mkdocs-macros-plugin: 1.0.5 -> 1.3.9,ca77296380960cd497a765102eeb1356eb80fed0
+5c340597a9063d512baf9e26a64525a634bad479,2025-08-22,xbacklight,xbacklight,xbacklight: refactor and move to pkgs/by-name from xorg namespace,61308fbb163ae7045c9b3004a0d067822984df33
+111ec2bfcebffbdc927f16e501e899360fb11e13,2025-08-22,xauth,xauth,xauth: refactor and move to pkgs/by-name from xorg namespace,61308fbb163ae7045c9b3004a0d067822984df33
+9a2fb1ec7e28fcc9a5771ceebcdda7e5851c1b02,2025-08-22,tab-window-manager,tab-window-manager,"tab-window-manager: refactor, move to pkgs/by-name & rename from xorg.twm",61308fbb163ae7045c9b3004a0d067822984df33
+b59476139c900187dad784b0a1fc5f26d844475a,2025-09-04,qcsxcad,qcsxcad,"qcsxcad: migrate to pkgs/by-name, use qt6",c6a788f552b7b7af703b1a29802a7233c0067908
+2e074e65372aa6dce545e62354142a9165fb5801,2025-09-04,"platformio-chrootenv,platformio-core",platformioPackages,platformioPackages: move packages inside to top-level,c6a788f552b7b7af703b1a29802a7233c0067908
+fb03576605b4721cb3911821b5755852ad894741,2025-09-03,spicedb-zed,spicedb-zed,spicedb-zed: move to pkgs/by-name,aaff8c16d7fc04991cac6245bee1baa31f72b1e1
+4e7b9f82a42f059eba92d3ffd329faa17f81f125,2025-09-01,systemtap-unwrapped,systemtap-unwrapped,systemtap-unwrapped: extract from linuxPackages,58dcbf1ec551914c3756c267b8b9c8c86baa1b2f
+10a2efa52e7974da4bffb17ab061c7a6f6bc64f4,2025-08-23,xstdcmap,xstdcmap,xstdcmap: refactor and move to pkgs/by-name from xorg namespace,a918bb3594dd243c2f8534b3be01b3cb4ed35fd1
+9c66bf85e8617e523c574d99c221337dd0d2fcb5,2025-08-23,xsm,xsm,xsm: refactor and move to pkgs/by-name from xorg namespace,a918bb3594dd243c2f8534b3be01b3cb4ed35fd1
+f25482f3dcb3c9e282abca1a9df41b1b56dedd26,2025-08-23,xsetroot,xsetroot,xsetroot: refactor and move to pkgs/by-name from xorg namespace,a918bb3594dd243c2f8534b3be01b3cb4ed35fd1
+413f94911546b19aa961799fe7dd823b0ca28ea0,2025-08-23,xset,xset,xset: refactor and move to pkgs/by-name from xorg namespace,a918bb3594dd243c2f8534b3be01b3cb4ed35fd1
+acb05054f64df107cf18e07b6846473253f6bf70,2025-08-20,catch2_3,catch2_3,catch2_3: move to pkgs/by-name,c73522789a3c7552b1122773d6eaa34e1491cc1c
+3c24cb60ff576568fa0bbe8c67f38669d8f26490,2025-08-23,xkill,xkill,xkill: refactor and move to pkgs/by-name from xorg namespace,c73522789a3c7552b1122773d6eaa34e1491cc1c
+fea40463335f6a2885d20c59f558268f27b3178b,2025-08-23,xkbutils,xkbutils,xkbutils: refactor and move to pkgs/by-name from xorg namespace,c73522789a3c7552b1122773d6eaa34e1491cc1c
+744120dbc7899fcbede9e9935306dad692574230,2025-08-23,xhost,xhost,xhost: refactor and move to pkgs/by-name from xorg namespace,c73522789a3c7552b1122773d6eaa34e1491cc1c
+47b8e80c55ea416ee98017dba2802f3cac34dab9,2025-08-23,xgc,xgc,"xgc: 1.0.6 -> 1.0.7, refactor & move to pkgs/by-name from xorg namespace",c73522789a3c7552b1122773d6eaa34e1491cc1c
+240d5045b60ff898ce4705d9d816a3b12c80adcd,2025-08-23,xgamma,xgamma,"xgamma: 1.0.7 -> 1.0.8, refactor & move to pkgs/by-name from xorg namespace",c73522789a3c7552b1122773d6eaa34e1491cc1c
+9ef0609cf31fccaeb2811d939929bba677231e99,2025-08-26,font-adobe-utopia-type1,font-adobe-utopia-type1,"font-adobe-utopia-type1: refactor, move to pkgs/by-name and rename from xorg.fontadobeutopiatype1",aca2499b79170038df0dbaec8bf2f689b506ad32
+98df87ea67a2ef46069c8e5f1a1741026a50af8a,2025-08-26,font-adobe-utopia-75dpi,font-adobe-utopia-75dpi,"font-adobe-utopia-75dpi: refactor, move to pkgs/by-name and rename from xorg.fontadobeutopia75dpi",aca2499b79170038df0dbaec8bf2f689b506ad32
+e21431a16558e4b69ebcf187691d9af81bccbfd8,2025-08-26,font-adobe-utopia-100dpi,font-adobe-utopia-100dpi,"font-adobe-utopia-100dpi: refactor, move to pkgs/by-name and rename from xorg.fontadobeutopia100dpi",aca2499b79170038df0dbaec8bf2f689b506ad32
+657ebfddbb0365705acaaccec01c48525dd9231e,2025-08-21,font-adobe-100dpi,font-adobe-100dpi,"font-adobe-100dpi: refactor, move to pkgs/by-name and rename from xorg.fontadobe100dpi",aca2499b79170038df0dbaec8bf2f689b506ad32
+c13b2020514036718171d1c674e71eef1e09591a,2025-08-28,xinput-calibrator,xinput-calibrator,xinput-calibrator: 0.7.5 -> 0.8.0,ddd1826f294a0ee5fdc198ab72c8306a0ea73aa9
+2fc4da0c7ad9f7b3814e8fbb33cd9f8fac309109,2025-08-27,gnunet-gtk,"gnunet{,-gtk}","gnunet{,-gtk}: move to by-name",ddd1826f294a0ee5fdc198ab72c8306a0ea73aa9
+2786ce62888fb955ae8a15d29812e2c876f1320e,2025-08-27,slade-unstable,sladeUnstable,sladeUnstable: move to by/name,4c202d26483c5ccf3cb95e0053163facde9f047e
+7e96b523d10942786a3b8371ef0eafabd1231a87,2025-08-23,appres,appres,appres: refactor and move to pkgs/by-name from xorg namespace,61308fbb163ae7045c9b3004a0d067822984df33
+203364c3a78622c67f9caca6aa98e80da92d3109,2025-08-23,libxi,libxi,"libxi: refactor, move to pkgs/by-name and rename from xorg.libXi",61308fbb163ae7045c9b3004a0d067822984df33
+0b402f072535c1ecd9e96ac279bf2d2c466cb33d,2025-08-23,libxft,libxft,"libxft: refactor, move to pkgs/by-name and rename from xorg.libXft",61308fbb163ae7045c9b3004a0d067822984df33
+5e02ae89216ed8f187188e06ec397527a62496bf,2025-08-23,"libxfont_1,libxfont_2","libxfont_{1,2}","libxfont_{1,2}: refactor, move to pkgs/by-name and rename from xorg.libXfont{,2}",61308fbb163ae7045c9b3004a0d067822984df33
+9e7b4cc4776000b8cd709277ec6f27212f422b74,2025-08-18,libxdamage,libxdamage,"libxdamage: refactor, move to pkgs/by-name and rename from xorg.libXdamage",61308fbb163ae7045c9b3004a0d067822984df33
+d3e3c7aaf473b3cc065ef19a2651fbfacf5776f0,2025-08-23,libxcomposite,libxcomposite,"libxcomposite: refactor, move to pkgs/by-name and rename from xorg.libXcomposite",61308fbb163ae7045c9b3004a0d067822984df33
+9b4e7b6fdedf43c76d650b5ce0e656fc1b1f6e4e,2025-08-23,xmore,xmore,xmore: refactor and move to pkgs/by-name from xorg namespace,61308fbb163ae7045c9b3004a0d067822984df33
+6f159706b73ea8b8de64f334e4c130d6aa016031,2025-08-23,xmessage,xmessage,xmessage: refactor and move to pkgs/by-name from xorg namespace,61308fbb163ae7045c9b3004a0d067822984df33
+227c2a7ccccf99a9d81e894262b43fc9ca99d244,2025-08-23,xmag,xmag,xmag: refactor and move to pkgs/by-name from xorg namespace,61308fbb163ae7045c9b3004a0d067822984df33
+458daf8c44874a96bd6371f4608d2208f529db7f,2025-08-19,libxcb-cursor,libxcb-cursor,"libxcb-cursor: refactor, move to pkgs/by-name and rename from xorg.xcbutilcursor",61308fbb163ae7045c9b3004a0d067822984df33
+4cd91610a474a98a2b9e7daefb4bc222e1b853d5,2025-08-23,xconsole,xconsole,xconsole: refactor and move to pkgs/by-name from xorg namespace,61308fbb163ae7045c9b3004a0d067822984df33
+ec5f820b38b3cda32c393d4ba8c35268782b9f4a,2025-08-22,smproxy,smproxy,smproxy: refactor and move to pkgs/by-name from xorg namespace,61308fbb163ae7045c9b3004a0d067822984df33
+8d6077c1efd4997d9e5c5d3465333a32fd725985,2025-08-22,listres,listres,listres: refactor and move to pkgs/by-name from xorg namespace,61308fbb163ae7045c9b3004a0d067822984df33
+5684229ccf75fbd05a219c51ccba781027c4d7ae,2025-08-22,viewres,viewres,viewres: refactor and move to pkgs/by-name from xorg namespace,61308fbb163ae7045c9b3004a0d067822984df33
+a525a830f29bbabd662bb322c6eaa09cfb4bfc00,2025-08-21,font-mutt-misc,font-mutt-misc,"font-mutt-misc: refactor, move to pkgs/by-name and rename from xorg.fontmuttmisc",97eb7ee0da337d385ab015a23e15022c865be75c
+472fb3da5adfbfe3a1289e020c9b4eb1bcc58514,2025-08-21,font-bh-type1,font-bh-type1,"font-bh-type1: refactor, move to pkgs/by-name and rename from xorg.fontbhtype1",97eb7ee0da337d385ab015a23e15022c865be75c
+0fec3fb91cf5f6f2a116b58b754065f920818942,2025-08-20,font-bh-ttf,font-bh-ttf,"font-bh-ttf: refactor, move to pkgs/by-name and rename from xorg.fontbhttf",97eb7ee0da337d385ab015a23e15022c865be75c
+4bd0b9c7ab548711a03922851eebef7bc2ce9f1b,2025-08-23,chameleon-cli,,"Reapply ""Merge remote-tracking branch 'origin/master' into staging-next""",f937f8ecd1c70efd7e9f90ba13dfb400cf559de4
+f75522c6b9f06efe8da5d9fa896b94c923b70e94,2025-08-21,tetgen_1_4,tetgen_1_4,tetgen_1_4: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
+42f42f268541c37f9a8e26c991cb4a4b81552d47,2025-08-21,obitools3,obitools3,obitools3: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
+85693031b6f79fa44132f20700ed81c33e0e0f39,2025-08-21,leo3-bin,leo3-bin,leo3-bin: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
+d3967f76ddb8eb9343884df540e4e3b19a5f3e63,2025-08-21,tlaplus-toolbox,tlaplus-toolbox,tlaplus-toolbox: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
+e036b87a3b743b69ecd282043e6d71e223c9489f,2025-08-21,tlaplus18,tlaplus18,tlaplus18: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
+826df19a28ca8a46416ebbfeafbe74748aec14e9,2025-08-21,geogebra6,geogebra6,geogebra6: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
+7848b51567e942391306484271ad193731266679,2025-08-21,gp2c,gp2c,gp2c: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
+d8cf97574277a3791804181580e0e91b8ef1b879,2025-08-21,cups-filters,cups-filters,cups-filters: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
+f881edd2302b954fc745effb1f1783391bbcd2d3,2025-08-21,cups-pk-helper,cups-pk-helper,cups-pk-helper: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
+3b5ed6c7888ac952a4d6fe275fa9a5f1e8d4f79d,2025-08-21,fahclient,fahclient,fahclient: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
+58aa71747c70e63ba53c81dd949d6e2e1853297c,2025-08-21,gotrue-supabase,gotrue-supabase,gotrue-supabase: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
+c48b39b1361a02a9f4d49cb82dae696ab748f926,2025-08-21,utsushi-networkscan,utsushi-networkscan,utsushi-networkscan: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
+92b63189be447b478784bac8fe4d8ec82e4ab415,2025-08-21,jack1,jack1,jack1: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
+6c7ad09fd633982a5d9731fe38cc094bac63d452,2025-08-21,jack-example-tools,jack-example-tools,jack-example-tools: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
+047dd7b524da8dd2da3da887a4d6b50829a11cc8,2025-08-21,nixos-icons,nixos-icons,nixos-icons: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
+d64d3245d36e4f3e8c956d2d30ade962cfa77b13,2025-08-21,xsane,xsane,xsane: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
+65d1858dcfcba857f6dfbf06feaebfe8d303656b,2025-08-21,bullet-roboschool,bullet-roboschool,bullet-roboschool: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
+859f3347e3b16f4efd78336159b86854e356e3fc,2025-08-21,zettlr,zettlr,zettlr: move to by-name,596312aae91421d6923f18cecce934a7d3bfd6b8
+21a80441cc9f14fdff48eac5d2f259bb66c3d14f,2025-08-21,xvinfo,xvinfo,xvinfo: refactor and move to pkgs/by-name from xorg namespace,97eb7ee0da337d385ab015a23e15022c865be75c
+f4db99ab73512c452c26d52facbeda418968c296,2025-08-21,xrandr,xrandr,xrandr: refactor and move to pkgs/by-name from xorg namespace,97eb7ee0da337d385ab015a23e15022c865be75c
+12e753b55c1ec322ee12ee4a36c70a0768fd8d99,2025-08-21,xfsinfo,xfsinfo,"xfsinfo: 1.0.7 -> 1.0.8, refactor & move to pkgs/by-name from xorg namespace",97eb7ee0da337d385ab015a23e15022c865be75c
+60176ccb0429f65d7a84ce0dbcb6b49476d7950b,2025-08-21,xev,xev,xev: refactor and move to pkgs/by-name from xorg namespace,97eb7ee0da337d385ab015a23e15022c865be75c
+66ca0ad28cff983efd2dca71e9e4a7cd544508ad,2025-08-21,xcursor-themes,xcursor-themes,"xcursor-themes: refactor, move to pkgs/by-name and rename from xorg.xcursorthemes",97eb7ee0da337d385ab015a23e15022c865be75c
+22b9ac1e5cf9ef1ad47ced474173467b814e23d7,2025-08-21,xcursorgen,xcursorgen,xcursorgen: refactor and move to pkgs/by-name from xorg namespace,97eb7ee0da337d385ab015a23e15022c865be75c
+3edf0cc9ce5ce96a85eea76e42f6d60c9e2b8ba1,2025-08-19,libxcb-wm,libxcb-wm,"libxcb-wm: refactor, move to pkgs/by-name and rename from xorg.xcbutilwm",97eb7ee0da337d385ab015a23e15022c865be75c
+c1db54b7d85931b61a9fed9bd6a541504be71e1e,2025-08-19,libxcb-render-util,libxcb-render-util,"libxcb-render-util: refactor, move to pkgs/by-name and rename from xorg.xcbutilrenderutil",97eb7ee0da337d385ab015a23e15022c865be75c
+6a2c2ed9208bd32313b6a322f005cfa0847a42f4,2025-08-19,libxcb-keysyms,libxcb-keysyms,"libxcb-keysyms: refactor, move to pkgs/by-name and rename from xorg.xcbutilkeysyms",97eb7ee0da337d385ab015a23e15022c865be75c
+a2a6f2a295ff1c4febdbede3da80af5307edf012,2025-08-19,libxcb-image,libxcb-image,"libxcb-image: refactor, move to pkgs/by-name and rename from xorg.xcbutilimage",97eb7ee0da337d385ab015a23e15022c865be75c
+d051ea0c859fa14e7f63a16b26183ed886709f00,2025-08-19,libxcb-errors,libxcb-errors,"libxcb-errors: refactor, move to pkgs/by-name and rename from xorg.xcbutilerrors",97eb7ee0da337d385ab015a23e15022c865be75c
+d41e8bba2271fc6be2fd6814e38530d79a5f5c3e,2025-08-18,libxcb-util,libxcb-util,"libxcb-util: refactor, move to pkgs/by-name and rename from xorg.xcbutil",97eb7ee0da337d385ab015a23e15022c865be75c
+f5077a75cf102fe252c338c8587dc6fff4727f45,2025-08-18,libxxf86vm,libxxf86vm,"libxxf86vm: refactor, move to pkgs/by-name and rename from xorg.libXxf86vm",97eb7ee0da337d385ab015a23e15022c865be75c
+cdda889cee20a007f23cd7204c0ea0eea4ef2499,2025-08-18,libxxf86misc,libxxf86misc,"libxxf86misc: refactor, move to pkgs/by-name and rename from xorg.libXxf86misc",97eb7ee0da337d385ab015a23e15022c865be75c
+809bf617cfdd7d6998726b778e69dc05d5140361,2025-08-18,libxxf86dga,libxxf86dga,"libxxf86dga: refactor, move to pkgs/by-name and rename from xorg.libXxf86dga",97eb7ee0da337d385ab015a23e15022c865be75c
+b7a50d3f5348688f00c4040ef1e2b5e5d26b8cd4,2025-08-18,libxvmc,libxvmc,"libxvmc: refactor, move to pkgs/by-name and rename from xorg.libXvMC",97eb7ee0da337d385ab015a23e15022c865be75c
+847dbb84a3dd2e98f120f438c3b76a45b72e44f9,2025-08-18,libxaw,libxaw,"libxaw: refactor, move to pkgs/by-name and rename from xorg.libXaw",97eb7ee0da337d385ab015a23e15022c865be75c
+2301e67b505cfb20722c74aa0de628992e63e0e6,2025-08-18,libxpm,libxpm,"libxpm: refactor, move to pkgs/by-name and rename from xorg.libXpm",97eb7ee0da337d385ab015a23e15022c865be75c
+ee1a92b0c935e27d0530d9377217ed18766a62f6,2025-08-18,libxmu,libxmu,"libxmu: refactor, move to pkgs/by-name and rename from xorg.libXmu",97eb7ee0da337d385ab015a23e15022c865be75c
+96349f4b00899c20e3e796e515da19bfd23d769d,2025-08-18,libxt,libxt,"libxt: refactor, move to pkgs/by-name and rename from xorg.libXt",97eb7ee0da337d385ab015a23e15022c865be75c
+365735436e5d5b216eba0a3eb1f07bfc9e80fae8,2025-08-18,libsm,libsm,"libsm: refactor, move to pkgs/by-name and rename from xorg.libSM",97eb7ee0da337d385ab015a23e15022c865be75c
+a79f97b971d903a229f919d7920063dae8cf731d,2025-08-18,libice,libice,"libice: refactor, move to pkgs/by-name and rename from xorg.libICE",97eb7ee0da337d385ab015a23e15022c865be75c
+890d03374fedcd5f7f3e8156fcfd89c07d78ee45,2025-08-19,"alerta,hasura-cli,rosenpass-tools,steck,zpaqd",treewide,treewide: move to by-name part 3,97eb7ee0da337d385ab015a23e15022c865be75c
+c6435a9da7bdc323c7a2a5336b61c6138ab08d0f,2025-08-10,"irods-icommands,irods","{irods,irods-icommands}","{irods,irods-icommands}: 4.3.3 -> 5.0.1",a3f75d80983edb6010b08b9e6ce889811129a26c
+106b1418bc30cbae35addcb643a883e22de9573b,2025-08-15,imaginer,,"Revert ""Merge remote-tracking branch 'origin/master' into staging-next""",c5e2e42c112de623adfd662b3e51f0805bf9ff83
+db05d3b4a2774764fcede7c6648376802c8fed0c,2025-08-11,3_4,etcd_3_4,etcd_3_4: 3.4.28 -> 3.4.37,9585e9192aadc13ec3e49f33f8333bd3cda524df
+fb7d7c5fe02f8204445a7f56c78f3ccbacd870df,2025-08-02,calamares,calamares,"calamares: 3.3.13 -> 3.4.0, qt6-ize, clean up, move to by-name",641d909c4a7538f1539da9240dedb1755c907e40
+c6137ada4bb9492821c9ff54a3a7508a56f87a90,2025-08-07,hijridate,python3Packages.hijridate,python3Packages.hijridate: rename from hijri-converter;  2.3.2.post1 -> 2.5.0,00b574b1ba8a352f0601c4dde4faff4b534ebb1e
+190f6932af0a62fc7d61bc2a643625bc0da10626,2025-08-07,meerk40t-camera,meerk40t,meerk40t: migrate to by-name,a683adc19ff5228af548c6539dbc3440509bfed3
+409e80d2446aa57e888eeb5327c035819466c220,2025-08-05,ktimetracker,ktimetracker,ktimetracker: migrate to by-name,a683adc19ff5228af548c6539dbc3440509bfed3
+147d02e310b472fcf1c1498d7d6bebb1acdbd6e7,2025-08-01,"roapi-http,sickgear",treewide,treewide: move to by-name part 2,e7eabdc701d7dbb810fd91a97ec358caa4c1fc50
+7d442d6579a4cd5963170e0cf57a4f0c9b3ae921,2025-08-01,exegol,exegol,exegol: 4.3.11 -> 5.1.1,e7eabdc701d7dbb810fd91a97ec358caa4c1fc50
+f9461320ae0553c7b4720fdb7be9615ae133541f,2025-08-01,tremor-language-server,treewide,treewide: move to by-name,a7822a17050fedda63794775b9090880c8214290
