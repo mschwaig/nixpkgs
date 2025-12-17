@@ -205,18 +205,6 @@ cd2090d9d12f9b0da4bf814d5166101dda3e038a,radicle-native-ci,radicle-native-ci,rad
     tag = ""v${finalAttrs.version}"";
     hash = ""sha256-OjQBq4QopT4dr1/z73fqlGLjQIjUY51/II9m2qQMW1w="";
   }",e57b3b16ad8758fd681511a078f35c416a8cc939,finalAttr typo (should be finalAttrs)
-9a70845186c7b335de8e54e1962ab96b7ebe355d,radicle-ci-broker,radicle-ci-broker,radicle-ci-broker,0.21.0,"fetchFromRadicle {
-    seed = ""seed.radicle.xyz"";
-    repo = ""zwTxygwuz5LDGBq255RA2CbNGrz8"";
-    node = ""z6MkgEMYod7Hxfy9qCvDv5hYHkZ4ciWmLFgfvm3Wn1b2w2FV"";
-    tag = ""v${finalAttrs.version}"";
-    hash = ""sha256-c0Qo6dnR9rP4mLXODkNZp+AnhKS0tqJeh1KgzfHBRV4="";
-    leaveDotGit = true;
-    postFetch = ''
-      git -C $out rev-parse --short HEAD > $out/.git_head
-      rm -rf $out/.git
-    '';
-  }",e57b3b16ad8758fd681511a078f35c416a8cc939,finalAttr typo (should be finalAttrs)
 2445df41981877574ef63b423506f13393661321,yaookctl,yaookctl,yaookctl,0-unstable-2025-08-25,"fetchFromGitLab {
     owner = ""yaook"";
     repo = ""yaookctl"";
@@ -272,12 +260,6 @@ a784a11d3ab7c29473592e5968316c11e3ebd485,dli,dli,dli,0-unstable-2025-09-06,"fetc
     rev = ""4eb836158607c83d47226703de5a043519586782"";
     hash = ""sha256-sNhTdJTxNxHMVswyzizgBfGbmJhYmMZY/5nVD7ScLjM="";
   }",ca77296380960cd497a765102eeb1356eb80fed0,contains_nix_code
-d3410cf27e8970ef21e63a7a72985f4195333101,ee,ee,ee,1.5.2,"fetchgit {
-    url = ""https://git.freebsd.org/src.git"";
-    tag = ""release/14.3.0"";
-    outputHash = ""sha256-nMhHXeoam9VtUuhhi0eoGZfcW9zZhpYQKVYbkAbfgc0="";
-    rootDir = ""contrib/ee"";
-  }",aaff8c16d7fc04991cac6245bee1baa31f72b1e1,Other error
 2255d0e133c7ea0a8e801b77cf02783819666821,mado,mado,mado,0.3.0,"fetchFromGitHub {
     owner = ""akiomik"";
     repo = ""mado"";

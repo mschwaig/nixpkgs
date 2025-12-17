@@ -1285,6 +1285,13 @@ random_order,commit_hash,package_name,fully_qualified_name,pname,version,fetcher
     tag = ""v${finalAttrs.version}"";
     hash = ""sha256-PuNE/lKsNNd4KDEcSsaz+IfP2hgT5M5VgLY1kVy1KCc="";
   }",e57b3b16ad8758fd681511a078f35c416a8cc939
+344,cd2090d9d12f9b0da4bf814d5166101dda3e038a,radicle-native-ci,radicle-native-ci,0.11.1,"fetchFromRadicle {
+    seed = ""seed.radicle.xyz"";
+    repo = ""z3qg5TKmN83afz2fj9z3fQjU8vaYE"";
+    node = ""z6MkgEMYod7Hxfy9qCvDv5hYHkZ4ciWmLFgfvm3Wn1b2w2FV"";
+    tag = ""v${finalAttrs.version}"";
+    hash = ""sha256-OjQBq4QopT4dr1/z73fqlGLjQIjUY51/II9m2qQMW1w="";
+  }",e57b3b16ad8758fd681511a078f35c416a8cc939
 293,1981a619ae761a7b8b689cde90d451c14e3f0d5f,typr,typr,typr,1.0.1.21,"fetchFromGitHub {
     owner = ""DriftingOtter"";
     repo = ""Typr"";
@@ -1682,6 +1689,12 @@ random_order,commit_hash,package_name,fully_qualified_name,pname,version,fetcher
     rev = ""6c07f4955a85eb32fcc0589238d5a00c1a8722f2"";
     sha256 = ""sha256-CXpN57T+o5MPoUxwL48GfEedz05TK8+jPFgdSIdqk+8="";
   }",0987f8f26d7b889e23a7c533ae6d998b27924899
+170,d3410cf27e8970ef21e63a7a72985f4195333101,ee,ee,1.5.2,"fetchgit {
+    url = ""https://git.freebsd.org/src.git"";
+    tag = ""release/14.3.0"";
+    outputHash = ""sha256-nMhHXeoam9VtUuhhi0eoGZfcW9zZhpYQKVYbkAbfgc0="";
+    rootDir = ""contrib/ee"";
+  }",aaff8c16d7fc04991cac6245bee1baa31f72b1e1
 464,3a2e210a3e868e5250b40b7955e8a2748def9763,colcon-installed-package-information,python313Packages.colcon-installed-package-information,colcon-installed-package-information,0.2.1,"fetchFromGitHub {
     owner = ""colcon"";
     repo = ""colcon-installed-package-information"";
