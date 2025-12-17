@@ -1,0 +1,1897 @@
+Welcome to fish, the friendly interactive shell
+Type help for instructions on how to use fish
+mschwaig@hydralisk ~/nixpkgs (vibenix_dataset_tools)> python3 /home/mschwaig/git/vibepkgs/dataset_generation/scripts/core/phase3_validate_fetchers.py --nixpkgs-path ~/nixpkgs single_fetcher_2025-08-01_2025-11-20.csv
+Reading CSV file: single_fetcher_2025-08-01_2025-11-20.csv
+Found 533 fetchers to validate
+
+WARNING: Found 1 duplicate package(s) by package_name:
+  - dependency-groups: 2 occurrences (commits: ac7917005d63, 928d75540aa6)
+  Excluding 1 duplicate(s), keeping first occurrence of each
+  Proceeding with 532 fetchers after duplicate removal
+
+Validating fetchers (this may take a while)...
+================================================================================
+  [1/532] Evaluating drawy... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [2/532] Evaluating ocb... ✓ Fetching... ✓ Scanning... ✓
+  [3/532] Evaluating ekey-bionyxpy... ✓ Fetching... ✓ Scanning... ✓
+  [4/532] Evaluating hyprwire... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [5/532] Evaluating hyprtoolkit... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [6/532] ✗ ptcpdump: finalAttr typo (should be finalAttrs)
+  [7/532] Evaluating elkoep-aio-mqtt... ✓ Fetching... ✓ Scanning... ✓
+  [8/532] Evaluating pascube... ✓ Fetching... ✓ Scanning... ✓
+  [9/532] Evaluating types-webencodings... ✓ Fetching... ✓ Scanning... ✓
+  [10/532] Evaluating chatlas... ✓ Fetching... ✓ Scanning... ✓
+  [11/532] Evaluating pytest-gitconfig... ✓ Fetching... ✓ Scanning... ✓
+  [12/532] Evaluating uncompresspy... ✓ Fetching... ✓ Scanning... ✓
+  [13/532] Evaluating pycrdt-store... ✓ Fetching... ✓ Scanning... ✓
+  [14/532] Evaluating reddix... ✓ Fetching... ✓ Scanning... ✓
+  [15/532] Evaluating django-modelsearch... ✓ Fetching... ✓ Scanning... ✓
+  [16/532] Evaluating fava-dashboards... ✓ Fetching... ✓ Scanning... ✓
+  [17/532] Evaluating temporal_capi... ✓ Fetching... ✓ Scanning... ✓
+  [18/532] Evaluating mangowc... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [19/532] Evaluating lenspect... ✓ Fetching... ✓ Scanning... ✓
+  [20/532] Evaluating togrill-bluetooth... ✓ Fetching... ✓ Scanning... ✓
+  [21/532] Evaluating pandoc-ext-diagram... ✓ Fetching... ✓ Scanning... ✓
+  [22/532] Evaluating xapp-symbolic-icons... ✓ Fetching... ✓ Scanning... ✓
+  [23/532] Evaluating zlsplitter... ✓ Fetching... ✓ Scanning... ✓
+  [24/532] Evaluating zlcompressor... ✓ Fetching... ✓ Scanning... ✓
+  [25/532] Evaluating zlequalizer... ✓ Fetching... ✓ Scanning... ✓
+  [26/532] Evaluating zzz... ✓ Fetching... ✓ Scanning... ✓
+  [27/532] Evaluating xleak... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [28/532] Evaluating azure-mgmt-hybridcompute... ✓ Fetching... ✓ Scanning... ✓
+  [29/532] Evaluating azure-mgmt-dashboard... ✓ Fetching... ✓ Scanning... ✓
+  [30/532] Evaluating torchdata... ✓ Fetching... ✓ Scanning... ✓
+  [31/532] Evaluating in-toto-attestation... ✓ Fetching... ✓ Scanning... ✓
+  [32/532] Evaluating nebula-lighthouse-service... ✓ Fetching... ✓ Scanning... ✓
+  [33/532] ✗ tzpfms: finalAttr typo (should be finalAttrs)
+  [34/532] Evaluating qbootctl... ✓ Fetching... ✓ Scanning... ✓
+  [35/532] Evaluating ssh-vault... ✓ Fetching... ✓ Scanning... ✓
+  [36/532] Evaluating vmas... ✓ Fetching... ✓ Scanning... ✓
+  [37/532] Evaluating mkdocs-section-index... ✓ Fetching... ✓ Scanning... ✓
+  [38/532] Evaluating mkdocs-literate-nav... ✓ Fetching... ✓ Scanning... ✓
+  [39/532] Evaluating ocaml-pds... ✓ Fetching... ✓ Scanning... ✓
+  [40/532] Evaluating xsdata-pydantic... ✓ Fetching... ✓ Scanning... ✓
+  [41/532] Evaluating pygpoabuse... ✓ Fetching... ✓ Scanning... ✓
+  [42/532] Evaluating ddcutil-service... ✓ Fetching... ✓ Scanning... ✓
+  [43/532] Evaluating edge-tts... ✓ Fetching... ✓ Scanning... ✓
+  [44/532] Evaluating protorpc... ✓ Fetching... ✓ Scanning... ✓
+  [45/532] Evaluating qusb2snes... ✓ Fetching... ✓ Scanning... ✓
+  [46/532] Evaluating svg-term... ✓ Fetching... ✓ Scanning... ✓
+  [47/532] Evaluating evil-winrm-py... ✓ Fetching... ✓ Scanning... ✓
+  [48/532] Evaluating treemd... ✓ Fetching... ✓ Scanning... ✓
+  [49/532] Evaluating duat... ✓ Fetching... ✓ Scanning... ✓
+  [50/532] Evaluating uni-algo... ✓ Fetching... ✓ Scanning... ✓
+  [51/532] Evaluating croncpp... ✓ Fetching... ✓ Scanning... ✓
+  [52/532] Evaluating regex-tui... ✓ Fetching... ✓ Scanning... ✓
+  [53/532] Evaluating prmt... ✓ Fetching... ✓ Scanning... ✓
+  [54/532] Evaluating millisecond... ✓ Fetching... ✓ Scanning... ✓
+  [55/532] Evaluating cucumber-expressions... ✓ Fetching... ✓ Scanning... ✓
+  [56/532] Evaluating unidns... ✓ Fetching... ✓ Scanning... ✓
+  [57/532] Evaluating nonestorage... ✓ Fetching... ✓ Scanning... ✓
+  [58/532] Evaluating toml-test... ✓ Fetching... ✓ Scanning... ✓
+  [59/532] Evaluating lance-namespace-urllib3-client... ✓ Fetching... ✓ Scanning... ✓
+  [60/532] Evaluating hive-metastore-client... ✓ Fetching... ✓ Scanning... ✓
+  [61/532] Evaluating microhs... ✓ Fetching... ✓ Scanning... ✓
+  [62/532] Evaluating solaredge-web... ✓ Fetching... ✓ Scanning... ✓
+  [63/532] Evaluating python-citybikes... ✓ Fetching... ✓ Scanning... ✓
+  [64/532] Evaluating pysrdaligateway... ✓ Fetching... ✓ Scanning... ✓
+  [65/532] Evaluating pynintendoparental... ✓ Fetching... ✓ Scanning... ✓
+  [66/532] Evaluating pyfirefly... ✓ Fetching... ✓ Scanning... ✓
+  [67/532] Evaluating meteo-lt-pkg... ✓ Fetching... ✓ Scanning... ✓
+  [68/532] Evaluating aio-ownet... ✓ Fetching... ✓ Scanning... ✓
+  [69/532] Evaluating actron-neo-api... ✓ Fetching... ✓ Scanning... ✓
+  [70/532] Evaluating compit-inext-api... ✓ Fetching... ✓ Scanning... ✓
+  [71/532] Evaluating gh-webhook... ✓ Fetching... ✓ Scanning... ✓
+  [72/532] Evaluating opencl-cts... ✓ Fetching... ✓ Scanning... ✓
+  [73/532] Evaluating django-postgres-extra... ✓ Fetching... ✓ Scanning... ✓
+  [74/532] Evaluating bit-logo... ✓ Fetching... ✓ Scanning... ✓
+  [75/532] Evaluating phytool... ✓ Fetching... ✓ Scanning... ✓
+  [76/532] Evaluating mdbook-plugins... ✓ Fetching... ✓ Scanning... ✓
+  [77/532] Evaluating nextvi... ✓ Fetching... ✓ Scanning... ✓
+  [78/532] Evaluating kserve-storage... ✓ Fetching... ✓ Scanning... ✓
+  [79/532] Evaluating cocoon... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [80/532] Evaluating librehardwaremonitor-api... ✓ Fetching... ✓ Scanning... ✓
+  [81/532] Evaluating zatackax... ✓ Fetching... ✓ Scanning... ✓
+  [82/532] Evaluating jack-link... ✓ Fetching... ✓ Scanning... ✓
+  [83/532] Evaluating igraph_0... ✓ Fetching... ✓ Scanning... ✓
+  [84/532] Evaluating literata... ✓ Fetching... ✓ Scanning... ✓
+  [85/532] Evaluating mtkclient... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [86/532] Evaluating tomat... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [87/532] Evaluating python-jsonpath... ✓ Fetching... ✓ Scanning... ✓
+  [88/532] Evaluating xeger... ✓ Fetching... ✓ Scanning... ✓
+  [89/532] Evaluating watchgha... ✓ Fetching... ✓ Scanning... ✓
+  [90/532] Evaluating karere... ✓ Fetching... ✓ Scanning... ✓
+  [91/532] Evaluating systemd-credsubst... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [92/532] Evaluating fakesip... ✓ Fetching... ✓ Scanning... ✓
+  [93/532] Evaluating fakehttp... ✓ Fetching... ✓ Scanning... ✓
+  [94/532] Evaluating mprisify... ✓ Fetching... ✓ Scanning... ✓
+  [95/532] Evaluating mdio-tools... ✓ Fetching... ✓ Scanning... ✓
+  [96/532] Evaluating nativefiledialog-extended... ✓ Fetching... ✓ Scanning... ✓
+  [97/532] Evaluating torchcodec... ✓ Fetching... ✓ Scanning... ✓
+  [98/532] Evaluating nixbit... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [99/532] Evaluating fastd-exporter... ✓ Fetching... ✓ Scanning... ✓
+  [100/532] Evaluating hyprfreeze... ✓ Fetching... ✓ Scanning... ✓
+  [101/532] Evaluating tinygltf... ✓ Fetching... ✓ Scanning... ✓
+  [102/532] Evaluating batticonplus... ✓ Fetching... ✓ Scanning... ✓
+  [103/532] Evaluating uhhyou-plugins-juce... ✓ Fetching... ✓ Scanning... ✓
+  [104/532] Evaluating uhhyou-plugins... ✓ Fetching... ✓ Scanning... ✓
+  [105/532] Evaluating ocp-browser... ✓ Fetching... ✓ Scanning... ✓
+  [106/532] Evaluating chipwhisperer... ✓ Fetching... ✓ Scanning... ✓
+  [107/532] Evaluating numpy-typing-compat... ✓ Fetching... ✓ Scanning... ✓
+  [108/532] Evaluating beammp-launcher... ✓ Fetching... ✓ Scanning... ✓
+  [109/532] Evaluating go-csp-collector... ✓ Fetching... ✓ Scanning... ✓
+  [110/532] Evaluating zope-index... ✓ Fetching... ✓ Scanning... ✓
+  [111/532] Evaluating simplecosine... ✓ Fetching... ✓ Scanning... ✓
+  [112/532] Evaluating doublemetaphone... ✓ Fetching... ✓ Scanning... ✓
+  [113/532] Evaluating dedupe-pylbfgs... ✓ Fetching... ✓ Scanning... ✓
+  [114/532] Evaluating dedupe-levenshtein-search... ✓ Fetching... ✓ Scanning... ✓
+  [115/532] Evaluating categorical-distance... ✓ Fetching... ✓ Scanning... ✓
+  [116/532] Evaluating affinegap... ✓ Fetching... ✓ Scanning... ✓
+  [117/532] Evaluating vicinae... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [118/532] Evaluating jart-jsoncpp... ✓ Fetching... ✓ Scanning... ✓
+  [119/532] Evaluating pydroplet... ✓ Fetching... ✓ Scanning... ✓
+  [120/532] Evaluating stasis... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [121/532] Evaluating kide... ✓ Fetching... ✓ Scanning... ✓
+  [122/532] Evaluating victron-vrm... ✓ Fetching... ✓ Scanning... ✓
+  [123/532] Evaluating gitfetch... ✓ Fetching... ✓ Scanning... ✓
+  [124/532] Evaluating pycync... ✓ Fetching... ✓ Scanning... ✓
+  [125/532] Evaluating sampo... ✓ Fetching... ✓ Scanning... ✓
+  [126/532] Evaluating kaitai-struct-cpp-stl-runtime... ✓ Fetching... ✓ Scanning... ✓
+  [127/532] Evaluating kubazip... ✓ Fetching... ✓ Scanning... ✓
+  [128/532] Evaluating coq-tools... ✓ Fetching... ✓ Scanning... ✓
+  [129/532] Evaluating iio-niri... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [130/532] Evaluating django-treenode... ✓ Fetching... ✓ Scanning... ✓
+  [131/532] Evaluating zsh-completion-sync... ✓ Fetching... ✓ Scanning... ✓
+  [132/532] Evaluating flying-carpet... ✓ Fetching... ✓ Scanning... ✓
+  [133/532] Evaluating gdscript-formatter... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [134/532] Evaluating sigsum... ✓ Fetching... ✓ Scanning... ✓
+  [135/532] Evaluating framework-tool-tui... ✓ Fetching... ✓ Scanning... ✓
+  [136/532] Evaluating discord-rich-presence-plex... ✓ Fetching... ✓ Scanning... ✓
+  [137/532] Evaluating miro... ✓ Fetching... ✓ Scanning... ✓
+  [138/532] Evaluating standard-sndhdr... ✓ Fetching... ✓ Scanning... ✓
+  [139/532] Evaluating iocaine... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [140/532] Evaluating libtatsu... ✓ Fetching... ✓ Scanning... ✓
+  [141/532] Evaluating icesprog... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [142/532] Evaluating prometheus-qbittorrent-exporter... ✓ Fetching... ✓ Scanning... ✓
+  [143/532] Evaluating uhashring... ✓ Fetching... ✓ Scanning... ✓
+  [144/532] Evaluating frozen-containers... ✓ Fetching... ✓ Scanning... ✓
+  [145/532] Evaluating prometheus-tailscale-exporter... ✓ Fetching... ✓ Scanning... ✓
+  [146/532] Evaluating pyopen-wakeword... ✓ Fetching... ✓ Scanning... ✓
+  [147/532] Evaluating utitools... ✓ Fetching... ✓ Scanning... ✓
+  [148/532] Evaluating tocaia... ✓ Fetching... ✓ Scanning... ✓
+  [149/532] Evaluating gocheat... ✓ Fetching... ✓ Scanning... ✓
+  [150/532] Evaluating hatch-sphinx... ✓ Fetching... ✓ Scanning... ✓
+  [151/532] Evaluating columnize... ✓ Fetching... ✓ Scanning... ✓
+  [152/532] Evaluating farith... ✓ Fetching... ✓ Scanning... ✓
+  [153/532] Evaluating mio... ✓ Fetching... ✓ Scanning... ✓
+  [154/532] Evaluating ubase... ✓ Fetching... ✓ Scanning... ✓
+  [155/532] Evaluating legendsbrowser2... ✓ Fetching... ✓ Scanning... ✓
+  [156/532] Evaluating rumdl... ✓ Fetching... ✓ Scanning... ✓
+  [157/532] Evaluating noxdir... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [158/532] ✗ bc-mbedtls: finalAttr typo (should be finalAttrs)
+  [159/532] Evaluating fortitude... ✓ Fetching... ✓ Scanning... ✓
+  [160/532] Evaluating xdgcpp... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [161/532] Evaluating sslpsk-pmd3... ✓ Fetching... ✓ Scanning... ✓
+  [162/532] Evaluating python-pcapng... ✓ Fetching... ✓ Scanning... ✓
+  [163/532] Evaluating pykdebugparser... ✓ Fetching... ✓ Scanning... ✓
+  [164/532] Evaluating developer-disk-image... ✓ Fetching... ✓ Scanning... ✓
+  [165/532] Evaluating la-panic... ✓ Fetching... ✓ Scanning... ✓
+  [166/532] Evaluating pytun-pmd3... ✓ Fetching... ✓ Scanning... ✓
+  [167/532] Evaluating opack2... ✓ Fetching... ✓ Scanning... ✓
+  [168/532] Evaluating remotezip2... ✓ Fetching... ✓ Scanning... ✓
+  [169/532] Evaluating lzfse... ✓ Fetching... ✓ Scanning... ✓
+  [170/532] Evaluating pylzss... ✓ Fetching... ✓ Scanning... ✓
+  [171/532] Evaluating inquirer3... ✓ Fetching... ✓ Scanning... ✓
+  [172/532] Evaluating pygnuutils... ✓ Fetching... ✓ Scanning... ✓
+  [173/532] Evaluating parameter-decorators... ✓ Fetching... ✓ Scanning... ✓
+  [174/532] Evaluating gendarme... ✓ Fetching... ✓ Scanning... ✓
+  [175/532] Evaluating drat... ✓ Fetching... ✓ Scanning... ✓
+  [176/532] Evaluating immich-kiosk... ✓ Fetching... ✓ Scanning... ✓
+  [177/532] Evaluating reflink-copy... ✓ Fetching... ✓ Scanning... ✓
+  [178/532] Evaluating hyprmon... ✓ Fetching... ✓ Scanning... ✓
+  [179/532] Evaluating dockerfile... ✓ Fetching... ✓ Scanning... ✓
+  [180/532] Evaluating freifunk-meshviewer... ✓ Fetching... ✓ Scanning... ✓
+  [181/532] Evaluating timelength... ✓ Fetching... ✓ Scanning... ✓
+  [182/532] Evaluating 0install-solver... ✓ Fetching... ✓ Scanning... ✓
+  [183/532] Evaluating pgit... ✓ Fetching... ✓ Scanning... ✓
+  [184/532] Evaluating code... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [185/532] Evaluating kitget... ✓ Fetching... ✓ Scanning... ✓
+  [186/532] Evaluating tinycmmc... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [187/532] Evaluating atuin-desktop... ✓ Fetching... ✓ Scanning... ✓
+  [188/532] Evaluating rapidcsv... ✓ Fetching... ✓ Scanning... ✓
+  [189/532] Evaluating ete-unwrapped... ✓ Fetching... ✓ Scanning... ✓
+  [190/532] Evaluating python-path... ✓ Fetching... ✓ Scanning... ✓
+  [191/532] Evaluating live-chart... ✓ Fetching... ✓ Scanning... ✓
+  [192/532] Evaluating tt-system-tools... ✓ Fetching... ✓ Scanning... ✓
+  [193/532] Evaluating swagger-ui-py... ✓ Fetching... ✓ Scanning... ✓
+  [194/532] Evaluating price-parser... ✓ Fetching... ✓ Scanning... ✓
+  [195/532] Evaluating panzi-json-logic... ✓ Fetching... ✓ Scanning... ✓
+  [196/532] Evaluating hledger-fmt... ✓ Fetching... ✓ Scanning... ✓
+  [197/532] Evaluating jiratui... ✓ Fetching... ✓ Scanning... ✓
+  [198/532] Evaluating tsidp... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [199/532] Evaluating smtp-user-enum... ✓ Fetching... ✓ Scanning... ✓
+  [200/532] Evaluating trio-typing... ✓ Fetching... ✓ Scanning... ✓
+  [201/532] Evaluating pydo... ✓ Fetching... ✓ Scanning... ✓
+  [202/532] Evaluating cruise... ✓ Fetching... ✓ Scanning... ✓
+  [203/532] Evaluating librespot-ma... ✓ Fetching... ✓ Scanning... ✓
+  [204/532] Evaluating calceph... ✓ Fetching... ✓ Scanning... ✓
+  [205/532] Evaluating synchronizer... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [206/532] Evaluating pluginval... ✓ Fetching... ✓ Scanning... ✓
+  [207/532] Evaluating ctagdrc... ✓ Fetching... ✓ Scanning... ✓
+  [208/532] Evaluating samira... ✓ Fetching... ✓ Scanning... ✓
+  [209/532] Evaluating lacy... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [210/532] Evaluating moxnotify... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [211/532] Evaluating hygg... ✓ Fetching... ✓ Scanning... ✓
+  [212/532] Evaluating rendercanvas... ✓ Fetching... ✓ Scanning... ✓
+  [213/532] Evaluating changelogen... ✓ Fetching... ✓ Scanning... ✓
+  [214/532] Evaluating terraform-backend... ✓ Fetching... ✓ Scanning... ✓
+  [215/532] Evaluating ticketbooth... ✓ Fetching... ✓ Scanning... ✓
+  [216/532] Evaluating pytest-pycodestyle... ✓ Fetching... ✓ Scanning... ✓
+  [217/532] Evaluating ovhcloud-cli... ✓ Fetching... ✓ Scanning... ✓
+  [218/532] Evaluating ripplerx... ✓ Fetching... ✓ Scanning... ✓
+  [219/532] Evaluating gonzo... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [220/532] Evaluating petsctools... ✓ Fetching... ✓ Scanning... ✓
+  [221/532] Evaluating redland-wayland... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [222/532] Evaluating cachet... ✓ Fetching... ✓ Scanning... ✓
+  [223/532] Evaluating mdserve... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [224/532] Evaluating linyaps-web-store-installer... ✓ Fetching... ✓ Scanning... ✓
+  [225/532] Evaluating bulletty... ✓ Fetching... ✓ Scanning... ✓
+  [226/532] ✗ mbmd: finalAttr typo (should be finalAttrs)
+  [227/532] Evaluating sigstore-models... ✓ Fetching... ✓ Scanning... ✓
+  [228/532] Evaluating color-matcher... ✓ Fetching... ✓ Scanning... ✓
+  [229/532] Evaluating tree-sitter-zeek... ✓ Fetching... ✓ Scanning... ✓
+  [230/532] Evaluating cosmic-ext-applet-caffeine... ✓ Fetching... ✓ Scanning... ✓
+  [231/532] Evaluating openspeedrun... ✓ Fetching... ✓ Scanning... ✓
+  [232/532] Evaluating elementary-maps... ✓ Fetching... ✓ Scanning... ✓
+  [233/532] Evaluating claude-code-acp... ✓ Fetching... ✓ Scanning... ✓
+  [234/532] Evaluating momonga... ✓ Fetching... ✓ Scanning... ✓
+  [235/532] Evaluating pluginlib... ✓ Fetching... ✓ Scanning... ✓
+  [236/532] Evaluating irm-kmi-api... ✓ Fetching... ✓ Scanning... ✓
+  [237/532] Evaluating yatto... ✓ Fetching... ✓ Scanning... ✓
+  [238/532] Evaluating libvirt-dbus... ✓ Fetching... ✓ Scanning... ✓
+  [239/532] Evaluating pyportainer... ✓ Fetching... ✓ Scanning... ✓
+  [240/532] Evaluating gitlab-ci-linter... ✓ Fetching... ✓ Scanning... ✓
+  [241/532] Evaluating peakutils... ✓ Fetching... ✓ Scanning... ✓
+  [242/532] Evaluating busylight-core... ✓ Fetching... ✓ Scanning... ✓
+  [243/532] Evaluating starsessions... ✓ Fetching... ✓ Scanning... ✓
+  [244/532] Evaluating benhsm-minesweeper... ✓ Fetching... ✓ Scanning... ✓
+  [245/532] Evaluating pwmenu... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [246/532] Evaluating lely-core... ✓ Fetching... ✓ Scanning... ✓
+  [247/532] ✗ radicle-native-ci: finalAttr typo (should be finalAttrs)
+  [248/532] ✗ radicle-ci-broker: finalAttr typo (should be finalAttrs)
+  [249/532] Evaluating typr... ✓ Fetching... ✓ Scanning... ✓
+  [250/532] Evaluating prometheus-storagebox-exporter... ✓ Fetching... ✓ Scanning... ✓
+  [251/532] Evaluating integratorxx... ✓ Fetching... ✓ Scanning... ✓
+  [252/532] Evaluating iamdata... ✓ Fetching... ✓ Scanning... ✓
+  [253/532] Evaluating cocom-tool-set... ✓ Fetching... ✓ Scanning... ✓
+  [254/532] Evaluating pixelmatch... ✓ Fetching... ✓ Scanning... ✓
+  [255/532] Evaluating nightdiamond-cursors... ✓ Fetching... ✓ Scanning... ✓
+  [256/532] Evaluating mkdocs-include-markdown-plugin... ✓ Fetching... ✓ Scanning... ✓
+  [257/532] Evaluating jj-pre-push... ✓ Fetching... ✓ Scanning... ✓
+  [258/532] Evaluating affine-gaps... ✓ Fetching... ✓ Scanning... ✓
+  [259/532] Evaluating aks-mcp-server... ✓ Fetching... ✓ Scanning... ✓
+  [260/532] Evaluating gotip... ✓ Fetching... ✓ Scanning... ✓
+  [261/532] Evaluating dissect-cramfs... ✓ Fetching... ✓ Scanning... ✓
+  [262/532] Evaluating yaookctl... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [263/532] Evaluating saiph... ✓ Fetching... ✓ Scanning... ✓
+  [264/532] Evaluating hyprviz... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [265/532] Evaluating jetuml... ✓ Fetching... ✓ Scanning... ✓
+  [266/532] Evaluating snowemu... ✓ Fetching... ✓ Scanning... ✓
+  [267/532] Evaluating linyaps-box... ✓ Fetching... ✓ Scanning... ✓
+  [268/532] Evaluating hx-lsp... ✓ Fetching... ✓ Scanning... ✓
+  [269/532] Evaluating tmuxai... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [270/532] Evaluating prisma-language-server... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [271/532] Evaluating garage-webui... ✓ Fetching... ✓ Scanning... ✓
+  [272/532] Evaluating gophertube... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [273/532] Evaluating vaporizer2... ✓ Fetching... ✓ Scanning... ✓
+  [274/532] Evaluating zeno... ✓ Fetching... ✓ Scanning... ✓
+  [275/532] Evaluating tektoncd-cli-pac... ✓ Fetching... ✓ Scanning... ✓
+  [276/532] Evaluating cron-converter... ✓ Fetching... ✓ Scanning... ✓
+  [277/532] Evaluating ostui... ✓ Fetching... ✓ Scanning... ✓
+  [278/532] Evaluating ycm-cmake-modules... ✓ Fetching... ✓ Scanning... ✓
+  [279/532] Evaluating hydrasect... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [280/532] Evaluating nirius... ✓ Fetching... ✓ Scanning... ✓
+  [281/532] Evaluating brush-splat... ✓ Fetching... ✓ Scanning... ✓
+  [282/532] Evaluating lrcsnc... ✓ Fetching... ✓ Scanning... ✓
+  [283/532] Evaluating cloudflare-ddns... ✓ Fetching... ✓ Scanning... ✓
+  [284/532] Evaluating types-regex... ✓ Fetching... ✓ Scanning... ✓
+  [285/532] Evaluating odhcp6c... ✓ Fetching... ✓ Scanning... ✓
+  [286/532] Evaluating abseil-cpp_202508... ✓ Fetching... ✓ Scanning... ✓
+  [287/532] Evaluating sphinx-last-updated-by-git... ✓ Fetching... ✓ Scanning... ✓
+  [288/532] Evaluating tf... ✓ Fetching... ✓ Scanning... ✓
+  [289/532] Evaluating emhash... ✓ Fetching... ✓ Scanning... ✓
+  [290/532] Evaluating audiomatch... ✓ Fetching... ✓ Scanning... ✓
+  [291/532] Evaluating super-collections... ✓ Fetching... ✓ Scanning... ✓
+  [292/532] Evaluating doubles... ✓ Fetching... ✓ Scanning... ✓
+  [293/532] Evaluating crates-lsp... ✓ Fetching... ✓ Scanning... ✓
+  [294/532] Evaluating pyiceberg-core... ✓ Fetching... ✓ Scanning... ✓
+  [295/532] Evaluating biocutils... ✓ Fetching... ✓ Scanning... ✓
+  [296/532] Evaluating spit... ✓ Fetching... ✓ Scanning... ✓
+  [297/532] Evaluating uradvd... ✓ Fetching... ✓ Scanning... ✓
+  [298/532] Evaluating prek... ✓ Fetching... ✓ Scanning... ✓
+  [299/532] Evaluating unordered_dense... ✓ Fetching... ✓ Scanning... ✓
+  [300/532] Evaluating victoriatraces... ✓ Fetching... ✓ Scanning... ✓
+  [301/532] Evaluating kantoku... ✓ Fetching... ✓ Scanning... ✓
+  [302/532] Evaluating shira... ✓ Fetching... ✓ Scanning... ✓
+  [303/532] Evaluating cv2-enumerate-cameras... ✓ Fetching... ✓ Scanning... ✓
+  [304/532] Evaluating locust-cloud... ✓ Fetching... ✓ Scanning... ✓
+  [305/532] Evaluating lazyssh... ✓ Fetching... ✓ Scanning... ✓
+  [306/532] Evaluating plakar... ✓ Fetching... ✓ Scanning... ✓
+  [307/532] Evaluating vacuum-tube... ✓ Fetching... ✓ Scanning... ✓
+  [308/532] Evaluating texsurgery... ✓ Fetching... ✓ Scanning... ✓
+  [309/532] Evaluating llama-stack-client... ✓ Fetching... ✓ Scanning... ✓
+  [310/532] Evaluating llama-index-vector-stores-milvus... ✓ Fetching... ✓ Scanning... ✓
+  [311/532] Evaluating llama-index-readers-docling... ✓ Fetching... ✓ Scanning... ✓
+  [312/532] Evaluating ia-writer-mono... ✓ Fetching... ✓ Scanning... ✓
+  [313/532] Evaluating llama-index-node-parser-docling... ✓ Fetching... ✓ Scanning... ✓
+  [314/532] ✗ gemini-cli-bin: finalAttr typo (should be finalAttrs)
+  [315/532] Evaluating targ... ✓ Fetching... ✓ Scanning... ✓
+  [316/532] Evaluating fast-query-parsers... ✓ Fetching... ✓ Scanning... ✓
+  [317/532] Evaluating beanhub-inbox... ✓ Fetching... ✓ Scanning... ✓
+  [318/532] Evaluating meshcore... ✓ Fetching... ✓ Scanning... ✓
+  [319/532] Evaluating dli... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [320/532] ✗ libfrida-core: finalAttr typo (should be finalAttrs)
+  [321/532] Evaluating lightway... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [322/532] Evaluating globus-cli... ✓ Fetching... ✓ Scanning... ✓
+  [323/532] Evaluating doxx... ✓ Fetching... ✓ Scanning... ✓
+  [324/532] Evaluating zuban... ✓ Fetching... ✓ Scanning... ✓
+  [325/532] Evaluating python-pooldose... ✓ Fetching... ✓ Scanning... ✓
+  [326/532] Evaluating hii... ✓ Fetching... ✓ Scanning... ✓
+  [327/532] ✗ ee: Other error
+  [328/532] Evaluating mado... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [329/532] Evaluating colcon-installed-package-information... ✓ Fetching... ✓ Scanning... ✓
+  [330/532] Evaluating semtools... ✓ Fetching... ✓ Scanning... ✓
+  [331/532] Evaluating yaml2nix... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [332/532] Evaluating metee... ✓ Fetching... ✓ Scanning... ✓
+  [333/532] Evaluating mkdocs-table-reader-plugin... ✓ Fetching... ✓ Scanning... ✓
+  [334/532] Evaluating pbc... ✓ Fetching... ✓ Scanning... ✓
+  [335/532] Evaluating angrr... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [336/532] Evaluating colcon-recursive-crawl... ✓ Fetching... ✓ Scanning... ✓
+  [337/532] Evaluating raccoin... ✓ Fetching... ✓ Scanning... ✓
+  [338/532] Evaluating finit... ✓ Fetching... ✓ Scanning... ✓
+  [339/532] Evaluating databackend... ✓ Fetching... ✓ Scanning... ✓
+  [340/532] Evaluating picocrypt-ng... ✓ Fetching... ✓ Scanning... ✓
+  [341/532] Evaluating loro... ✓ Fetching... ✓ Scanning... ✓
+  [342/532] Evaluating syne-tune... ✓ Fetching... ✓ Scanning... ✓
+  [343/532] Evaluating pyosoenergyapi... ✓ Fetching... ✓ Scanning... ✓
+  [344/532] Evaluating ipv8-rust-tunnels... ✓ Fetching... ✓ Scanning... ✓
+  [345/532] Evaluating bodoni-moda... ✓ Fetching... ✓ Scanning... ✓
+  [346/532] Evaluating besley... ✓ Fetching... ✓ Scanning... ✓
+  [347/532] Evaluating drafting-mono... ✓ Fetching... ✓ Scanning... ✓
+  [348/532] Evaluating cooper... ✓ Fetching... ✓ Scanning... ✓
+  [349/532] Evaluating pyinterp... ✓ Fetching... ✓ Scanning... ✓
+  [350/532] Evaluating tellcore-py... ✓ Fetching... ✓ Scanning... ✓
+  [351/532] Evaluating tellcore-net... ✓ Fetching... ✓ Scanning... ✓
+  [352/532] Evaluating ziggo-mediabox-xl... ✓ Fetching... ✓ Scanning... ✓
+  [353/532] Evaluating pwdsphinx... ✓ Fetching... ✓ Scanning... ✓
+  [354/532] Evaluating lw12... ✓ Fetching... ✓ Scanning... ✓
+  [355/532] Evaluating webio-api... ✓ Fetching... ✓ Scanning... ✓
+  [356/532] Evaluating clearpasspy... ✓ Fetching... ✓ Scanning... ✓
+  [357/532] Evaluating openai-harmony... ✓ Fetching... ✓ Scanning... ✓
+  [358/532] Evaluating zhong-hong-hvac... ✓ Fetching... ✓ Scanning... ✓
+  [359/532] Evaluating ibmiotf... ✓ Fetching... ✓ Scanning... ✓
+  [360/532] Evaluating bstr... ✓ Fetching... ✓ Scanning... ✓
+  [361/532] Evaluating travispy... ✓ Fetching... ✓ Scanning... ✓
+  [362/532] Evaluating serve... ✓ Fetching... ✓ Scanning... ✓
+  [363/532] Evaluating mtk-uartboot... ✓ Fetching... ✓ Scanning... ✓
+  [364/532] Evaluating cmudict... ✓ Fetching... ✓ Scanning... ✓
+  [365/532] Evaluating vivify... ✓ Fetching... ✓ Scanning... ✓
+  [366/532] Evaluating qemu-qmp... ✓ Fetching... ✓ Scanning... ✓
+  [367/532] Evaluating liberty-parser... ✓ Fetching... ✓ Scanning... ✓
+  [368/532] Evaluating uplink... ✓ Fetching... ✓ Scanning... ✓
+  [369/532] Evaluating pythinkingcleaner... ✓ Fetching... ✓ Scanning... ✓
+  [370/532] Evaluating tapsaff... ✓ Fetching... ✓ Scanning... ✓
+  [371/532] Evaluating libopaque... ✓ Fetching... ✓ Scanning... ✓
+  [372/532] Evaluating btfdump... ✓ Fetching... ✓ Scanning... ✓
+  [373/532] Evaluating _0xffff... ✓ Fetching... ✓ Scanning... ✓
+  [374/532] Evaluating jdenticon-cli... ✓ Fetching... ✓ Scanning... ✓
+  [375/532] Evaluating nasin-nanpa-helvetica... ✓ Fetching... ✓ Scanning... ✓
+  [376/532] Evaluating minefair... ✓ Fetching... ✓ Scanning... ✓
+  [377/532] Evaluating grpc-health-probe... ✓ Fetching... ✓ Scanning... ✓
+  [378/532] Evaluating nasin-nanpa-ucsur... ✓ Fetching... ✓ Scanning... ✓
+  [379/532] Evaluating yffi... ✓ Fetching... ✓ Scanning... ✓
+  [380/532] Evaluating progettihwsw... ✓ Fetching... ✓ Scanning... ✓
+  [381/532] Evaluating plumlightpad... ✓ Fetching... ✓ Scanning... ✓
+  [382/532] Evaluating greenwavereality... ✓ Fetching... ✓ Scanning... ✓
+  [383/532] Evaluating horimote... ✓ Fetching... ✓ Scanning... ✓
+  [384/532] Evaluating gitterpy... ✓ Fetching... ✓ Scanning... ✓
+  [385/532] Evaluating pizzapi... ✓ Fetching... ✓ Scanning... ✓
+  [386/532] Evaluating pycmus... ✓ Fetching... ✓ Scanning... ✓
+  [387/532] Evaluating python-clementine-remote... ✓ Fetching... ✓ Scanning... ✓
+  [388/532] Evaluating near-facsimile... ✓ Fetching... ✓ Scanning... ✓
+  [389/532] Evaluating openapv... ✓ Fetching... ✓ Scanning... ✓
+  [390/532] Evaluating btlewrap... ✓ Fetching... ✓ Scanning... ✓
+  [391/532] Evaluating scsgate... ✓ Fetching... ✓ Scanning... ✓
+  [392/532] Evaluating proliphix... ✓ Fetching... ✓ Scanning... ✓
+  [393/532] Evaluating iglo... ✓ Fetching... ✓ Scanning... ✓
+  [394/532] Evaluating xscreenruler... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [395/532] Evaluating rfk101py... ✓ Fetching... ✓ Scanning... ✓
+  [396/532] Evaluating yeelightsunflower... ✓ Fetching... ✓ Scanning... ✓
+  [397/532] Evaluating numato-gpio... ✓ Fetching... ✓ Scanning... ✓
+  [398/532] Evaluating esp-idf-size... ✓ Fetching... ✓ Scanning... ✓
+  [399/532] Evaluating npingler... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [400/532] Evaluating enpass-cli... ✓ Fetching... ✓ Scanning... ✓
+  [401/532] Evaluating pyebox... ✓ Fetching... ✓ Scanning... ✓
+  [402/532] Evaluating microbeespy... ✓ Fetching... ✓ Scanning... ✓
+  [403/532] Evaluating pyirishrail... ✓ Fetching... ✓ Scanning... ✓
+  [404/532] Evaluating python-ripple-api... ✓ Fetching... ✓ Scanning... ✓
+  [405/532] Evaluating gow... ✓ Fetching... ✓ Scanning... ✓
+  [406/532] Evaluating rofi-nerdy... ✓ Fetching... ✓ Scanning... ✓
+  [407/532] Evaluating rtklib-ex... ✓ Fetching... ✓ Scanning... ✓
+  [408/532] Evaluating opencc... ✓ Fetching... ✓ Scanning... ✓
+  [409/532] Evaluating bgutil-ytdlp-pot-provider... ✓ Fetching... ✓ Scanning... ✓
+  [410/532] Evaluating lazyhetzner... ✓ Fetching... ✓ Scanning... ✓
+  [411/532] Evaluating e-imzo-manager... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [412/532] Evaluating eaf-git... ✓ Fetching... ✓ Scanning... ✓
+  [413/532] Evaluating radicle-tui... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [414/532] Evaluating tukai... ✓ Fetching... ✓ Scanning... ✓
+  [415/532] Evaluating oru... ✓ Fetching... ✓ Scanning... ✓
+  [416/532] Evaluating concord232... ✓ Fetching... ✓ Scanning... ✓
+  [417/532] Evaluating raspyrfm-client... ✓ Fetching... ✓ Scanning... ✓
+  [418/532] Evaluating dmsdos... ✓ Fetching... ✓ Scanning... ✓
+  [419/532] Evaluating tikteck... ✓ Fetching... ✓ Scanning... ✓
+  [420/532] Evaluating medcom-ble... ✓ Fetching... ✓ Scanning... ✓
+  [421/532] Evaluating pysesame2... ✓ Fetching... ✓ Scanning... ✓
+  [422/532] Evaluating hyprmagnifier... ✓ Fetching... ✓ Scanning... ✓
+  [423/532] Evaluating pyw800rf32... ✓ Fetching... ✓ Scanning... ✓
+  [424/532] Evaluating jol... ✓ Fetching... ✓ Scanning... ✓
+  [425/532] Evaluating cargo-plumbing... ✓ Fetching... ✓ Scanning... ✓
+  [426/532] Evaluating projclean... ✓ Fetching... ✓ Scanning... ✓
+  [427/532] Evaluating sointu... ✓ Fetching... ✓ Scanning... ✓
+  [428/532] Evaluating pilight... ✓ Fetching... ✓ Scanning... ✓
+  [429/532] Evaluating python-gc100... ✓ Fetching... ✓ Scanning... ✓
+  [430/532] Evaluating pysmarty2... ✓ Fetching... ✓ Scanning... ✓
+  [431/532] Evaluating neurio... ✓ Fetching... ✓ Scanning... ✓
+  [432/532] Evaluating russound... ✓ Fetching... ✓ Scanning... ✓
+  [433/532] Evaluating aiohomematic... ✓ Fetching... ✓ Scanning... ✓
+  [434/532] Evaluating image... ✓ Fetching... ✓ Scanning... ✓
+  [435/532] Evaluating arashi... ✓ Fetching... ✓ Scanning... ✓
+  [436/532] Evaluating starkiller... ✓ Fetching... ✓ Scanning... ✓
+  [437/532] Evaluating cctv-viewer... ✓ Fetching... ✓ Scanning... ✓
+  [438/532] Evaluating arro3... ✓ Fetching... ✓ Scanning... ✓
+  [439/532] Evaluating slh-dsa... ✓ Fetching... ✓ Scanning... ✓
+  [440/532] Evaluating environ-config... ✓ Fetching... ✓ Scanning... ✓
+  [441/532] Evaluating jspecify... ✓ Fetching... ✓ Scanning... ✓
+  [442/532] Evaluating session-info2... ✓ Fetching... ✓ Scanning... ✓
+  [443/532] Evaluating dependency-groups... ✓ Fetching... ✓ Scanning... ✓
+  [444/532] Evaluating pysodium... ✓ Fetching... ✓ Scanning... ✓
+  [445/532] Evaluating securestring... ✓ Fetching... ✓ Scanning... ✓
+  [446/532] Evaluating mopidyapi... ✓ Fetching... ✓ Scanning... ✓
+  [447/532] Evaluating pyworxcloud... ✓ Fetching... ✓ Scanning... ✓
+  [448/532] Evaluating reprepro... ✓ Fetching... ✓ Scanning... ✓
+  [449/532] Evaluating asusrouter... ✓ Fetching... ✓ Scanning... ✓
+  [450/532] Evaluating noisereduce... ✓ Fetching... ✓ Scanning... ✓
+  [451/532] Evaluating hyper-connections... ✓ Fetching... ✓ Scanning... ✓
+  [452/532] Evaluating python-etherscan-api... ✓ Fetching... ✓ Scanning... ✓
+  [453/532] Evaluating rtmapi... ✓ Fetching... ✓ Scanning... ✓
+  [454/532] Evaluating equihash... ✓ Fetching... ✓ Scanning... ✓
+  [455/532] Evaluating rsstail-py... ✓ Fetching... ✓ Scanning... ✓
+  [456/532] Evaluating eaf-browser... ✓ Fetching... ✓ Scanning... ✓
+  [457/532] Evaluating liblp... ✓ Fetching... ✓ Scanning... ✓
+  [458/532] Evaluating mprisence... ✓ Fetching... ✓ Scanning... ✓
+  [459/532] Evaluating conman... ✓ Fetching... ✓ Scanning... ✓
+  [460/532] Evaluating kirsch... ✓ Fetching... ✓ Scanning... ✓
+  [461/532] Evaluating pynetio... ✓ Fetching... ✓ Scanning... ✓
+  [462/532] Evaluating tiered-debug... ✓ Fetching... ✓ Scanning... ✓
+  [463/532] Evaluating docstrfmt... ✓ Fetching... ✓ Scanning... ✓
+  [464/532] Evaluating legacy-api-wrap... ✓ Fetching... ✓ Scanning... ✓
+  [465/532] Evaluating sphinx-lint... ✓ Fetching... ✓ Scanning... ✓
+  [466/532] Evaluating rewaita... ✓ Fetching... ✓ Scanning... ✓
+  [467/532] Evaluating liboprf... ✓ Fetching... ✓ Scanning... ✓
+  [468/532] Evaluating xarray-dataclass... ✓ Fetching... ✓ Scanning... ✓
+  [469/532] Evaluating py-melissa-climate... ✓ Fetching... ✓ Scanning... ✓
+  [470/532] Evaluating pystiebeleltron... ✓ Fetching... ✓ Scanning... ✓
+  [471/532] Evaluating xs1-api-client... ✓ Fetching... ✓ Scanning... ✓
+  [472/532] Evaluating python-blockchain-api... ✓ Fetching... ✓ Scanning... ✓
+  [473/532] Evaluating starlingbank... ✓ Fetching... ✓ Scanning... ✓
+  [474/532] Evaluating pyrepetierng... ✓ Fetching... ✓ Scanning... ✓
+  [475/532] Evaluating pymochad... ✓ Fetching... ✓ Scanning... ✓
+  [476/532] Evaluating baidu-aip... ✓ Fetching... ✓ Scanning... ✓
+  [477/532] Evaluating electrickiwi-api... ✓ Fetching... ✓ Scanning... ✓
+  [478/532] Evaluating pyoppleio-legacy... ✓ Fetching... ✓ Scanning... ✓
+  [479/532] Evaluating protoletariat... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [480/532] Evaluating pyswitchmate... ✓ Fetching... ✓ Scanning... ✓
+  [481/532] Evaluating powerview... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [482/532] Evaluating pyrecswitch... ✓ Fetching... ✓ Scanning... ✓
+  [483/532] Evaluating ebusdpy... ✓ Fetching... ✓ Scanning... ✓
+  [484/532] Evaluating plus-jakarta-sans... ✓ Fetching... ✓ Scanning... ✓
+  [485/532] Evaluating pyitachip2ir... ✓ Fetching... ✓ Scanning... ✓
+  [486/532] Evaluating pypjlink2... ✓ Fetching... ✓ Scanning... ✓
+  [487/532] Evaluating qwen-code... ✓ Fetching... ✓ Scanning... ✓
+  [488/532] Evaluating thingspeak... ✓ Fetching... ✓ Scanning... ✓
+  [489/532] Evaluating pywmspro... ✓ Fetching... ✓ Scanning... ✓
+  [490/532] Evaluating pypasser... ✓ Fetching... ✓ Scanning... ✓
+  [491/532] Evaluating volvocarsapi... ✓ Fetching... ✓ Scanning... ✓
+  [492/532] Evaluating airos... ✓ Fetching... ✓ Scanning... ✓
+  [493/532] Evaluating pythonkuma... ✓ Fetching... ✓ Scanning... ✓
+  [494/532] Evaluating python-open-router... ✓ Fetching... ✓ Scanning... ✓
+  [495/532] Evaluating aioonkyo... ✓ Fetching... ✓ Scanning... ✓
+  [496/532] Evaluating dbt-protos... ✓ Fetching... ✓ Scanning... ✓
+  [497/532] Evaluating rfc3987-syntax... ✓ Fetching... ✓ Scanning... ✓
+  [498/532] Evaluating moehlenhoff-alpha2... ✓ Fetching... ✓ Scanning... ✓
+  [499/532] Evaluating st-pages... ✓ Fetching... ✓ Scanning... ✓
+  [500/532] Evaluating protobuf-language-server... ✓ Fetching... ✓ Scanning... ✓
+  [501/532] Evaluating dte... ✓ Fetching... ✓ Scanning... ✓
+  [502/532] Evaluating synology-srm... ✓ Fetching... ✓ Scanning... ✓
+  [503/532] Evaluating tomlc17... ✓ Fetching... ✓ Scanning... ✓
+  [504/532] Evaluating tilinggallery... ✓ Fetching... ✓ Scanning... ✓
+  [505/532] Evaluating uvicorn-worker... ✓ Fetching... ✓ Scanning... ✓
+  [506/532] Evaluating honeyfetch... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [507/532] Evaluating nexusrpc... ✓ Fetching... ✓ Scanning... ✓
+  [508/532] Evaluating netpeek... ✓ Fetching... ✓ Scanning... ✓
+  [509/532] Evaluating kaiterra-async-client... ✓ Fetching... ✓ Scanning... ✓
+  [510/532] Evaluating oathtool... ✓ Fetching... ✓ Scanning... ✓
+  [511/532] Evaluating speak2mary... ✓ Fetching... ✓ Scanning... ✓
+  [512/532] Evaluating hko... ✓ Fetching... ✓ Scanning... ✓
+  [513/532] Evaluating tcping-rs... ✓ Fetching... ✓ Scanning... ✓
+  [514/532] Evaluating triggercmd... ✓ Fetching... ✓ Scanning... ✓
+  [515/532] Evaluating ld-audit-search-mod... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [516/532] Evaluating qdldl... ✓ Fetching... ✓ Scanning... ✓
+  [517/532] Evaluating gnubik... ✓ Fetching... ✓ Scanning... ✓
+  [518/532] Evaluating london-tube-status... ✓ Fetching... ✓ Scanning... ✓
+  [519/532] Evaluating emmylua-check... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [520/532] Evaluating emmylua-ls... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [521/532] Evaluating emmylua-doc-cli... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [522/532] Evaluating xfce4-alsa-plugin... ✓ Fetching... ✓ Scanning... ✓
+  [523/532] Evaluating tinyio... ✓ Fetching... ✓ Scanning... ✓
+  [524/532] Evaluating qtappinstancemanager... ✓ Fetching... ✓ Scanning... ✓
+  [525/532] Evaluating hail... ✓ Fetching... ✓ Scanning... ✓
+  [526/532] Evaluating nucleus... ✓ Fetching... ✓ Scanning... ✓
+  [527/532] Evaluating abseil-cpp_202505... ✓ Fetching... ✓ Scanning... ✓
+  [528/532] Evaluating ip2asn... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [529/532] ✗ tattoy: finalAttr typo (should be finalAttrs)
+  [530/532] Evaluating mdwatch... ✓ Fetching... ✓ Scanning... ✗ contains_nix_code
+  [531/532] Evaluating rendercv-fonts... ✓ Fetching... ✓ Scanning... ✓
+  [532/532] Evaluating ting... ✓ Fetching... ✓ Scanning... ✓
+
+================================================================================
+VALIDATING FULLY QUALIFIED NAMES
+================================================================================
+Valid fully qualified names:   461
+Invalid fully qualified names: 9
+
+Fully qualified name issues (first 10):
+  1. momonga: Package 'python3Packages.momongo' not found at commit
+     FQN: python3Packages.momongo
+  2. nightdiamond-cursors: Package 'nightdiamond' not found at commit
+     FQN: nightdiamond
+  3. pythinkingcleaner: Package 'python3Packages.thinkingcleaner' not found at commit
+     FQN: python3Packages.thinkingcleaner
+  4. progettihwsw: Package 'python3Packages.ProgettiHWSW' not found at commit
+     FQN: python3Packages.ProgettiHWSW
+  5. microbeespy: Package 'python3Packages.microBeesPy' not found at commit
+     FQN: python3Packages.microBeesPy
+  6. pysesame2: Package 'python3Packages.pysesame' not found at commit
+     FQN: python3Packages.pysesame
+  7. pyw800rf32: Package 'python3Packages.pyW800rf32' not found at commit
+     FQN: python3Packages.pyW800rf32
+  8. arro3: Package 'python3Packages.arro3' not found at commit
+     FQN: python3Packages.arro3
+  9. ebusdpy: Package 'python3Packages.ebudspy' not found at commit
+     FQN: python3Packages.ebudspy
+
+Fully qualified name success rate: 98.1%
+
+================================================================================
+VALIDATION SUMMARY
+================================================================================
+Total fetchers:     532
+Successful:         470 (88.3%)
+Failed:             62 (11.7%)
+
+ERROR CATEGORIES:
+--------------------------------------------------------------------------------
+  contains_nix_code                           52 (83.9%)
+  finalAttr typo (should be finalAttrs)        9 (14.5%)
+  Other error                                  1 (1.6%)
+
+Detailed failure report written to: ./fetcher_validation_failures.json
+CSV failure report written to: ./fetcher_validation_failures.csv
+Filtered CSV (validated fetchers only) written to: single_fetcher_2025-08-01_2025-11-20_validated.csv
+  Contains 470 validated fetchers
+  Added stable random ordering (1-470)
+Exclusions CSV (failed fetchers with reasons) written to: single_fetcher_2025-08-01_2025-11-20_exclusions.csv
+  Contains 62 excluded fetchers
+
+================================================================================
+
+ALL FAILURES WITH COMPLETE FETCHER CODE:
+================================================================================
+
+[1/62] drawy
+Category: contains_nix_code
+Pname: drawy
+Version: 1.0.0-alpha-unstable-2025-11-17
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "Prayag2";
+    repo = "drawy";
+    rev = "ca02b66a9615c45c78f2e29839a40c1e5bf8f71c";
+    hash = "sha256-PzIeyhF/1wKD6JyybNRzruuxzSKJZvIq+L7X0rrcQUY=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[2/62] hyprwire
+Category: contains_nix_code
+Pname: hyprwire
+Version: 0.1.0
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "hyprwm";
+    repo = "hyprwire";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-84KqFPakU1Pv7axkwbSi1D5XssSHIW8B2xduOUq5Mw4=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[3/62] hyprtoolkit
+Category: contains_nix_code
+Pname: hyprtoolkit
+Version: 0.1.0
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "hyprwm";
+    repo = "hyprtoolkit";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-AQCTRH8VsrHzOHL0ueXt/6OQtSSfZbT3XUBI4sq8rx4=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[4/62] ptcpdump
+Category: finalAttr typo (should be finalAttrs)
+Pname: ptcpdump
+Version: 0.37.0
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "mozillazg";
+    repo = "ptcpdump";
+    tag = "v${finalAttr.version}";
+    hash = "sha256-ouH7VFWSCOElbmbSWAkmM4dtNVp545mC/FnoNAFtaEw=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+error:
+       … while evaluating the attribute 'src'
+         at «string»:1:130:
+            1| with import <nixpkgs> {}; (rec { pname = "ptcpdump"; finalAttrs.pname = pname; version = "0.37.0"; finalAttrs.version = version; src = fetchFromGitHub {
+             |
+
+================================================================================
+
+[5/62] mangowc
+Category: contains_nix_code
+Pname: mangowc
+Version: 0.10.5
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "DreamMaoMao";
+    repo = "mangowc";
+    tag = finalAttrs.version;
+    hash = "sha256-ZESyUtCiIQh6R0VYAo8YaP95Damw3MJVvKy5qU3pgTA=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[6/62] xleak
+Category: contains_nix_code
+Pname: xleak
+Version: 0.1.0
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "bgreenwell";
+    repo = "xleak";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-n9AFNGr5kRbQr2P/6QFT0KkuiE6KPun1FZjwrq2iQZs=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[7/62] tzpfms
+Category: finalAttr typo (should be finalAttrs)
+Pname: tzpfms
+Version: 0.4.1
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromSourcehut {
+    owner = "~nabijaczleweli";
+    repo = "tzpfms";
+    rev = "v${finalPackage.version}";
+    hash = "sha256-DHmJpfURyFPeOWxIkfwn4f0n2WeDYErevC1gY2oM3Vg=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+error:
+       … while evaluating the attribute 'src'
+         at «string»:1:127:
+            1| with import <nixpkgs> {}; (rec { pname = "tzpfms"; finalAttrs.pname = pname; version = "0.4.1"; finalAttrs.version = version; src = fetchFromSourcehut {
+             |
+
+================================================================================
+
+[8/62] cocoon
+Category: contains_nix_code
+Pname: cocoon
+Version: 0.5.0
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "haileyok";
+    repo = "cocoon";
+    tag = finalAttrs.version;
+    hash = "sha256-9gJj+edTGkQsHH72F2f7A6EWDet+k38+8UZ1KN2UGT0=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[9/62] mtkclient
+Category: contains_nix_code
+Pname: mtkclient
+Version: 2.0.1-unstable-2025-09-26
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "bkerler";
+    repo = "mtkclient";
+    rev = "399b3a1c25e73ddf4951f12efd20f7254ee04a39";
+    hash = "sha256-XNPYeVhp5P+zQdumS9IzlUd5+WebL56qcgs10WS2/LY=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[10/62] tomat
+Category: contains_nix_code
+Pname: tomat
+Version: 2.3.0
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "jolars";
+    repo = "tomat";
+    tag = "v${version}";
+    hash = "sha256-lkNBcTn7uXWifIVNoXmggPy+UjozL5YqVYorH9XAejo=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[11/62] systemd-credsubst
+Category: contains_nix_code
+Pname: systemd-credsubst
+Version: 0.1.0
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "yaxitech";
+    repo = "systemd-credsubst";
+    tag = "v${version}";
+    hash = "sha256-3KbO93OWJuiV8oYLSlqaj0i2x/2GwGxfQ7QwwSrfb1Y=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[12/62] nixbit
+Category: contains_nix_code
+Pname: nixbit
+Version: 0.1.5
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "pbek";
+    repo = "nixbit";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-DpjLPvmn61rEn6ui8cFfqeZEPYGyCUVVP/V7mQw1l5Y=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[13/62] vicinae
+Category: contains_nix_code
+Pname: vicinae
+Version: 0.15.5
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "vicinaehq";
+    repo = "vicinae";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-3pKexTUWfohL/S/yWsVMShmtMlBFI9zsd7NFzySKG0w=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[14/62] stasis
+Category: contains_nix_code
+Pname: stasis
+Version: 0.5.0
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "saltnpepper97";
+    repo = "stasis";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-gJB/y6jSBJZjBTQB9sxbVpllSfF6jwKOEeLqlgIStMA=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[15/62] iio-niri
+Category: contains_nix_code
+Pname: iio-niri
+Version: 1.2.1
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "Zhaith-Izaliel";
+    repo = "iio-niri";
+    tag = "v${version}";
+    hash = "sha256-IOMJ1xtjUkUoUgFZ9pxBf5XKdaUHu3WbUH5TlEiNRc4=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[16/62] gdscript-formatter
+Category: contains_nix_code
+Pname: gdscript-formatter
+Version: 0.14.0
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "GDQuest";
+    repo = "GDScript-formatter";
+    tag = finalAttrs.version;
+    hash = "sha256-cY6Ow1f8o40M9/knneAod8ABj7ObQAkzs3yODMpkCxQ=";
+    # Needed due to .gitattributes being used for the Godot addon and export-ignoring all files
+    deepClone = true;
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[17/62] iocaine
+Category: contains_nix_code
+Pname: iocaine
+Version: 2.5.1
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitea {
+    domain = "git.madhouse-project.org";
+    owner = "iocaine";
+    repo = "iocaine";
+    tag = "iocaine-${version}";
+    hash = "sha256-213QLpGBKSsT9r8O27PyMom5+OGPz0VtRBevxswISZA=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[18/62] icesprog
+Category: contains_nix_code
+Pname: icesprog
+Version: 1.1b
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "wuxx";
+    repo = "icesugar";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-LGmT+GEZvo0oxmr2kMfSztutnguPpNt2QJfVyBJo82w=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[19/62] noxdir
+Category: contains_nix_code
+Pname: noxdir
+Version: 0.9.0
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "crumbyte";
+    repo = "noxdir";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-sy94J+97fxg0t/GTSLzJQMDcQtOCQeo8TCTT8G4p6wY=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[20/62] bc-mbedtls
+Category: finalAttr typo (should be finalAttrs)
+Pname: mbedtls
+Version: 3.6.1-unstable-2025-08-11
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitLab {
+    inherit rev;
+
+    domain = "gitlab.linphone.org";
+    group = "BC";
+    owner = "public/external";
+    repo = "mbedtls";
+    sha256 = "sha256-jQpRn2F21sPKKAiaqsUvaKyuR80AnedG/hAyiNamKjc=";
+    fetchSubmodules = true;
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+error:
+       … while evaluating the attribute 'src'
+         at «string»:1:148:
+            1| with import <nixpkgs> {}; (rec { pname = "mbedtls"; finalAttrs.pname = pname; version = "3.6.1-unstable-2025-08-11"; finalAttrs.version = version; src = fetchFromGitLab {
+             |
+
+================================================================================
+
+[21/62] xdgcpp
+Category: contains_nix_code
+Pname: xdgcpp
+Version: 0-unstable-2024-05-26
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "Grumbel";
+    repo = "xdgcpp";
+    rev = "e2c40c081e2ee2d315d1d0b3ae5981d5fd77260e";
+    sha256 = "sha256-eujYRUw8UpDFgEvjHUPsJ/QJN+A+hzcebfgteM9kvXM=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[22/62] code
+Category: contains_nix_code
+Pname: code
+Version: 0.2.188
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "just-every";
+    repo = "code";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-xUhgA4poybzFehVgVWHKx1ejhncvYAnug2oxLwGNrk0=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[23/62] tinycmmc
+Category: contains_nix_code
+Pname: tinycmmc
+Version: 0.1.0-unstable-2025-07-21
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "Grumbel";
+    repo = "tinycmmc";
+    rev = "caf1af301e388e97dca31ee7fdc12f17cff34f82";
+    sha256 = "sha256-62ykvAIfOCXH+3bF1IkR+WukeJBLcYC/4Mv3ptqAxEM=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[24/62] tsidp
+Category: contains_nix_code
+Pname: tsidp
+Version: 0.0.4
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "tailscale";
+    repo = "tsidp";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-u6dQORtB4eNEFLlouuFV5oxedSN1fZ31YkZavfU1F0U=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[25/62] synchronizer
+Category: contains_nix_code
+Pname: synchronizer
+Version: 0.1
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "OCamlPro";
+    repo = "synchronizer";
+    tag = version;
+    hash = "sha256-VlKqORXTXafT88GXHIYkz+A1VkEL3jP9SMqDdMyEdrw=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[26/62] lacy
+Category: contains_nix_code
+Pname: lacy
+Version: 0.5.1
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "timothebot";
+    repo = "lacy";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-blQPIw8Ct+TGRuy+ybYr9rdlfOZdvAbhsB8sfwugS/w=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[27/62] moxnotify
+Category: contains_nix_code
+Pname: moxnotify
+Version: 0.1.0
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "mox-desktop";
+    repo = "moxnotify";
+    rev = "6726af08621072e0c95a147cf4ae63ea66c7e857";
+    hash = "sha256-tTgY/813WaW3K8QKbj6qwCVKOAA8zMqy97Q7Z5qA0JM=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[28/62] gonzo
+Category: contains_nix_code
+Pname: gonzo
+Version: 0.2.1
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "control-theory";
+    repo = "gonzo";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-P8Ntt8Dj5zq+Ff5MkZEvWabk2w5Cm6tXxl3ssMxDNok=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[29/62] redland-wayland
+Category: contains_nix_code
+Pname: redland-wayland
+Version: 0.1.0
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "domenkozar";
+    repo = "redland";
+    tag = "v${version}";
+    hash = "sha256-iZtRpxloZzneAQ6+5cW0x1E7Qbx/8i9PqkpOHbCZ4Qk=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[30/62] mdserve
+Category: contains_nix_code
+Pname: mdserve
+Version: 0.4.0
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "jfernandez";
+    repo = "mdserve";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-OCdWoQzmCvKo8EfLAczBud1FfY3vRMk7mivjhsqE840=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[31/62] mbmd
+Category: finalAttr typo (should be finalAttrs)
+Pname: mbmd
+Version: 0.13-unstable-2025-08-08
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    inherit rev;
+    owner = "volkszaehler";
+    repo = "mbmd";
+    hash = "sha256-HdldLF9+QgaIvGG8lAENvUiPonMwrdHUphGRSmaeRj8=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+error:
+       … while evaluating the attribute 'src'
+         at «string»:1:144:
+            1| with import <nixpkgs> {}; (rec { pname = "mbmd"; finalAttrs.pname = pname; version = "0.13-unstable-2025-08-08"; finalAttrs.version = version; src = fetchFromGitHub {
+             |
+
+================================================================================
+
+[32/62] pwmenu
+Category: contains_nix_code
+Pname: pwmenu
+Version: 0.3.0
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "e-tho";
+    repo = "pwmenu";
+    tag = "v${version}";
+    hash = "sha256-Q02kOMC6oQ3fNyDWW9ztLgMs3wR4cA53/wmkbecTr/o=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[33/62] radicle-native-ci
+Category: finalAttr typo (should be finalAttrs)
+Pname: radicle-native-ci
+Version: 0.11.1
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromRadicle {
+    seed = "seed.radicle.xyz";
+    repo = "z3qg5TKmN83afz2fj9z3fQjU8vaYE";
+    node = "z6MkgEMYod7Hxfy9qCvDv5hYHkZ4ciWmLFgfvm3Wn1b2w2FV";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-OjQBq4QopT4dr1/z73fqlGLjQIjUY51/II9m2qQMW1w=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+error:
+       … while evaluating the attribute 'src'
+         at «string»:1:139:
+            1| with import <nixpkgs> {}; (rec { pname = "radicle-native-ci"; finalAttrs.pname = pname; version = "0.11.1"; finalAttrs.version = version; src = fetchFromRadicle {
+             |
+
+================================================================================
+
+[34/62] radicle-ci-broker
+Category: finalAttr typo (should be finalAttrs)
+Pname: radicle-ci-broker
+Version: 0.21.0
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromRadicle {
+    seed = "seed.radicle.xyz";
+    repo = "zwTxygwuz5LDGBq255RA2CbNGrz8";
+    node = "z6MkgEMYod7Hxfy9qCvDv5hYHkZ4ciWmLFgfvm3Wn1b2w2FV";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-c0Qo6dnR9rP4mLXODkNZp+AnhKS0tqJeh1KgzfHBRV4=";
+    leaveDotGit = true;
+    postFetch = ''
+      git -C $out rev-parse --short HEAD > $out/.git_head
+      rm -rf $out/.git
+    '';
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+error:
+       … while evaluating the attribute 'src'
+         at «string»:1:139:
+            1| with import <nixpkgs> {}; (rec { pname = "radicle-ci-broker"; finalAttrs.pname = pname; version = "0.21.0"; finalAttrs.version = version; src = fetchFromRadicle {
+             |
+
+================================================================================
+
+[35/62] yaookctl
+Category: contains_nix_code
+Pname: yaookctl
+Version: 0-unstable-2025-08-25
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitLab {
+    owner = "yaook";
+    repo = "yaookctl";
+    rev = "205fab35f6680d15d86ef3596fe8a12590e3916c";
+    hash = "sha256-V30581TeBtk/IvqBebsyT2lJ8bp8UkCH4AIy+mnnzCc=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[36/62] hyprviz
+Category: contains_nix_code
+Pname: hyprviz
+Version: 0.6.1
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "timasoft";
+    repo = "hyprviz";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-xiAP5Xy30IokRcR25ObXLeM7qKjVXgEv9fQZA2KDxOA=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[37/62] tmuxai
+Category: contains_nix_code
+Pname: tmuxai
+Version: 1.1.1
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "alvinunreal";
+    repo = "tmuxai";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-L3PFyNkvEHfZ2pZFaurFKwHjhdZ+YBXtN2QuKFvktP4=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[38/62] prisma-language-server
+Category: contains_nix_code
+Pname: prisma-language-server
+Version: 6.16.2
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "prisma";
+    repo = "language-tools";
+    tag = "${finalAttrs.version}";
+    hash = "sha256-UZP0pLcbMeaYI0ytOJ68l/ZEC9dBhohJZyTU99p+1QM=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[39/62] gophertube
+Category: contains_nix_code
+Pname: gophertube
+Version: 2.8.0
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "KrishnaSSH";
+    repo = "GopherTube";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-0TStXYghfRR11ETJcK2lnkBtS2IUy/YgeFFn0wXpeOU=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[40/62] hydrasect
+Category: contains_nix_code
+Pname: hydrasect
+Version: 0.1.0-unstable-2025-08-27
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "blitz";
+    repo = "hydrasect";
+    rev = "88161c6d8dce16bf832599cf8ab544bbe5857c00";
+    hash = "sha256-Na7MlT+OXHZBtCKqJ0IzK4k3XfvQhsY+lnUJFG66YDU=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[41/62] gemini-cli-bin
+Category: finalAttr typo (should be finalAttrs)
+Pname: gemini-cli-bin
+Version: 0.3.4
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchurl {
+    url = "https://github.com/${owner}/${repo}/releases/download/v${finalAttrs.version}/${asset}";
+    hash = "sha256-aVcizpbzV1hPsuMSGRxgMGXTyF+0yBqGk7EwPnKFDyQ=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+error:
+       … while calling the 'getAttr' builtin
+         at <nix/derivation-internal.nix>:50:17:
+           49|     value = commonAttrs // {
+           50|       outPath = builtins.getAttr outputName strict;
+             |                 ^
+           51|       drvPath = strict.drvPath;
+
+
+
+================================================================================
+
+[42/62] dli
+Category: contains_nix_code
+Pname: dli
+Version: 0-unstable-2025-09-06
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "haylinmoore";
+    repo = "dli";
+    rev = "176302f80cf771a7a15d9df58c3296a979f18e28";
+    hash = "sha256-I8ozN5ucBhsArehSQibTLlYavq+4rBRUvU42Cli4KVo=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[43/62] libfrida-core
+Category: finalAttr typo (should be finalAttrs)
+Pname: libfrida-core
+Version: 17.2.17
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchurl {
+    inherit (source) url hash;
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+error:
+       … while evaluating the attribute 'src'
+         at «string»:1:136:
+            1| with import <nixpkgs> {}; (rec { pname = "libfrida-core"; finalAttrs.pname = pname; version = "17.2.17"; finalAttrs.version = version; src = fetchurl {
+             |
+
+================================================================================
+
+[44/62] lightway
+Category: contains_nix_code
+Pname: lightway
+Version: 0-unstable-2025-09-04
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "expressvpn";
+    repo = "lightway";
+    rev = "4eb836158607c83d47226703de5a043519586782";
+    hash = "sha256-sNhTdJTxNxHMVswyzizgBfGbmJhYmMZY/5nVD7ScLjM=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[45/62] ee
+Category: Other error
+Pname: ee
+Version: 1.5.2
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchgit {
+    url = "https://git.freebsd.org/src.git";
+    tag = "release/14.3.0";
+    outputHash = "sha256-nMhHXeoam9VtUuhhi0eoGZfcW9zZhpYQKVYbkAbfgc0=";
+    rootDir = "contrib/ee";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+error:
+       … while evaluating the attribute 'src'
+         at «string»:1:123:
+            1| with import <nixpkgs> {}; (rec { pname = "ee"; finalAttrs.pname = pname; version = "1.5.2"; finalAttrs.version = version; src = fetchgit {
+             |
+
+================================================================================
+
+[46/62] mado
+Category: contains_nix_code
+Pname: mado
+Version: 0.3.0
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "akiomik";
+    repo = "mado";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-wAuV4w0dKfUbJVLTdp59/u4y13SPy3wkRfTlpvyE/zY=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[47/62] yaml2nix
+Category: contains_nix_code
+Pname: yaml2nix
+Version: 0.3.0
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "euank";
+    repo = "yaml2nix";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-DkHWWpvBco2yodyOk40LjTNcoaJ1bFKf0JY9OwWgy5M=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[48/62] angrr
+Category: contains_nix_code
+Pname: angrr
+Version: 0.1.1
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "linyinfeng";
+    repo = "angrr";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-SL4UBDoD0pvpCKokQvKLAcS9cQJaFiA+IjswFARswdM=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[49/62] xscreenruler
+Category: contains_nix_code
+Pname: xscreenruler
+Version: 1.0.2
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "julian-hoch";
+    repo = "xscreenruler";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-oRbZ8r9EOPcLuuX8VyCBNt6ljdnko/EV8C8aeR85xYU=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[50/62] npingler
+Category: contains_nix_code
+Pname: npingler
+Version: unstable-2025-08-21
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "9999years";
+    repo = "npingler";
+    rev = "de47bb5c5c188ba3b36958c2284dbc6d24f2687f";
+    hash = "sha256-4Q8oG2iem9dgsTTEFfhyw2rPAxtXdGx+Uhb/9uAdUy4=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[51/62] e-imzo-manager
+Category: contains_nix_code
+Pname: e-imzo-manager
+Version: 0.1.1
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "xinux-org";
+    repo = "e-imzo";
+    tag = finalAttrs.version;
+    hash = "sha256-uDaqkz2VDvqTgi+k8EGGKjLkjoH93xXHQcgUc1NVo30=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[52/62] radicle-tui
+Category: contains_nix_code
+Pname: radicle-tui
+Version: 0.6.0
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchgit {
+    url = "https://seed.radicle.xyz/z39mP9rQAaGmERfUMPULfPUi473tY.git";
+    rev = "refs/namespaces/z6MkswQE8gwZw924amKatxnNCXA55BMupMmRg7LvJuim2C1V/refs/tags/${finalAttrs.version}";
+    hash = "sha256-rz9l9GtycqZoROUI6Hn0Fv5Br0YCIrcHlEWLMP4hasQ=";
+    leaveDotGit = true;
+    postFetch = ''
+      git -C $out rev-parse HEAD > $out/.git_head
+      git -C $out log -1 --pretty=%ct HEAD > $out/.git_time
+      rm -rf $out/.git
+    '';
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[53/62] protoletariat
+Category: contains_nix_code
+Pname: protoletariat
+Version: 3.3.10
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "cpcloud";
+    repo = "protoletariat";
+    tag = version;
+    hash = "sha256-oaZmgen/7WkX+nNuphrcyniL7Z/OaeqlcnbCnqR5h0w=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[54/62] powerview
+Category: contains_nix_code
+Pname: powerview
+Version: 2025.1.1
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "aniqfakhrul";
+    repo = "powerview.py";
+    tag = version;
+    hash = "sha256-kA7vb3YwUlolEnSJRFi+YZoq4yZsdMG+Snk7zsyOCmQ=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[55/62] honeyfetch
+Category: contains_nix_code
+Pname: honeyfetch
+Version: 1.5.0
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitLab {
+    owner = "ahoneybun";
+    repo = "honeyfetch";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-lFp7L3tcqZ1jAL7V7tfUJDPKO2WCvMekUx+p12fNlcM=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[56/62] ld-audit-search-mod
+Category: contains_nix_code
+Pname: ld-audit-search-mod
+Version: 0-unstable-2025-06-19
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    repo = "ld-audit-search-mod";
+    owner = "DDoSolitary";
+    rev = "261f475f154d0f1f0766d6756af9c714eeeb14ea";
+    hash = "sha256-c6ub+m4ihIE3gh6yHtLfJIVqm12C46wThrBCqp8SOLE=";
+    sparseCheckout = [ "src" ];
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[57/62] emmylua-check
+Category: contains_nix_code
+Pname: emmylua_check
+Version: 0.10.0
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "EmmyLuaLs";
+    repo = "emmylua-analyzer-rust";
+    tag = finalAttrs.version;
+    hash = "sha256-Fvg3G0C/YECDEWZ4mDC5b8qocWvyDJ9KdLYNtwIu0+I=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[58/62] emmylua-ls
+Category: contains_nix_code
+Pname: emmylua_ls
+Version: 0.10.0
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "EmmyLuaLs";
+    repo = "emmylua-analyzer-rust";
+    tag = finalAttrs.version;
+    hash = "sha256-Fvg3G0C/YECDEWZ4mDC5b8qocWvyDJ9KdLYNtwIu0+I=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[59/62] emmylua-doc-cli
+Category: contains_nix_code
+Pname: emmylua_doc_cli
+Version: 0.10.0
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "EmmyLuaLs";
+    repo = "emmylua-analyzer-rust";
+    tag = finalAttrs.version;
+    hash = "sha256-Fvg3G0C/YECDEWZ4mDC5b8qocWvyDJ9KdLYNtwIu0+I=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[60/62] ip2asn
+Category: contains_nix_code
+Pname: ip2asn
+Version: 0.1.2
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "x123";
+    repo = "ip2asn";
+    tag = finalAttrs.version;
+    hash = "sha256-2wuxBwllrkPdmmBCt7DPQ38E2k3igAjbICun51bhopY=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+
+================================================================================
+
+[61/62] tattoy
+Category: finalAttr typo (should be finalAttrs)
+Pname: tattoy
+Version: 0.1.8
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "tattoy-org";
+    repo = "tattoy";
+    tag = "tattoy-v${attrs.version}";
+    hash = "sha256-44rXygZVbwwC/jOB69iHydsjYr/WeVU4Eky3BPqJzyc=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+error:
+       … while evaluating the attribute 'src'
+         at «string»:1:127:
+            1| with import <nixpkgs> {}; (rec { pname = "tattoy"; finalAttrs.pname = pname; version = "0.1.8"; finalAttrs.version = version; src = fetchFromGitHub {
+             |
+
+================================================================================
+
+[62/62] mdwatch
+Category: contains_nix_code
+Pname: mdwatch
+Version: 0.1.11
+
+Fetcher code:
+--------------------------------------------------------------------------------
+fetchFromGitHub {
+    owner = "santoshxshrestha";
+    repo = "mdwatch";
+    tag = "v${finalAttrs.version}";
+    hash = "sha256-v+QsSPknUAFk+GC8D0wtA8VTcCWeb8DX6inL6WNl8gQ=";
+  }
+--------------------------------------------------------------------------------
+
+Error (first 300 chars):
+contains_nix_code
+mschwaig@hydralisk ~/nixpkgs (vibenix_dataset_tools)>
