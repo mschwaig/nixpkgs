@@ -222,10 +222,8 @@ bff87305ed7f15a6246df44e2c37fce4c5c1396c,2025-10-05,changelogen,changelogen,chan
 40d65767fab9bd171a7af8ab605c19f563a33736,2025-10-04,ticketbooth,ticketbooth,ticketbooth: init at 1.2.0,dc704e6102e76aad573f63b74c742cd96f8f1e6c,1.86
 fcb4e4480c548aaf5f3d775feea50840e549b4ea,2025-10-05,pytest-pycodestyle,python313Packages.pytest-pycodestyle,python313Packages.pytest-pycodestyle: init at 2.5.0,53614373268559d054c080d070cfc732dbe68ac4,6.59
 74728b8b4ef8a902827a61ee7d821aa41588368d,2025-10-04,ovhcloud-cli,ovhcloud-cli,ovhcloud-cli: init at 0.5.0,dc704e6102e76aad573f63b74c742cd96f8f1e6c,0.63
-9fc608e171920520b96d34fb1fde1994aec2b903,2025-09-07,hgrep,hgrep,hgrep: init at 0.3.8,ca77296380960cd497a765102eeb1356eb80fed0,0.77
 eb6d0c29a2dddf3a596c9d112b2436b5cc9fab45,2025-09-14,ripplerx,ripplerx,ripplerx: init at 1.5.18,6d7ec06d6868ac6d94c371458fc2391ded9ff13d,0.77
 a7d95643693b71373a3c82a81b85a6d9360f441f,2025-09-04,gonzo,gonzo,gonzo: init at 0.2.1,0987f8f26d7b889e23a7c533ae6d998b27924899,0.81
-de1de0eb13c999d2f2517f24b262484adf9e08a2,2025-10-04,unftp,unftp,unftp: init at 0.15.1,871381d997e4a063f25a3994ce8a9ac595246610,1.13
 45531d9caac4643208d666da229652fea130d1b7,2025-10-04,petsctools,python3Packages.petsctools,python3Packages.petsctools: init at 2025.2,dc704e6102e76aad573f63b74c742cd96f8f1e6c,6.29
 983ae777414d3cbd8ebb08cb8227c8c30747cb9d,2025-09-29,redland-wayland,redland-wayland,redland-wayland: init at 0.1.0,9547cfd27b5158eb612a6812dfc5c7b3d118b996,1.09
 1ab76fda977e6dea36f6b5cc92670b28c5b3eb53,2025-10-03,cachet,ocamlPackages.cachet,ocamlPackages.cachet: init at 0.0.2,dc704e6102e76aad573f63b74c742cd96f8f1e6c,0.42
@@ -425,7 +423,6 @@ c78c366c0b08bbd5a99ef60fa037c1b5f5d3c760,2025-08-18,rtklib-ex,rtklib-ex,rtklib-e
 996181d3259cf1550779e2af9c762dba64e9deb9,2025-08-18,opencc,python3Packages.opencc,python3Packages.opencc: init at 1.1.9,a683adc19ff5228af548c6539dbc3440509bfed3,0.70
 4d7708a74a529f15533b7874f85c424d3829de83,2025-08-18,bgutil-ytdlp-pot-provider,python3Packages.bgutil-ytdlp-pot-provider,python3Packages.bgutil-ytdlp-pot-provider: init at 1.2.2,09906cab24f49dedbb5b429f8b6c840d4e75b1b7,2.73
 52ef4abcc13dc75307113ebf18afb4c8121e295b,2025-08-18,lazyhetzner,lazyhetzner,lazyhetzner: init at 0.0.4,09906cab24f49dedbb5b429f8b6c840d4e75b1b7,0.62
-2d8d13ae35fb66c9cd7a355b0fd0b5b43bc1dfb5,2025-08-08,nvs,nvs,nvs: init at 1.10.6,b069b7c1e2fe1a3a24221428558bf44128d3d5c8,0.80
 ffb190df0e0cc8323cd8c996f9d245c77ea3a56b,2025-08-15,e-imzo-manager,e-imzo-manager,e-imzo-manager: init at 0.1.1,a595dde4d0d31606e19dcec73db02279db59d201,2.81
 6b7378b1defda2fe0707325114aae8aa239eaaca,2025-08-18,eaf-git,emacsPackages.eaf-git,emacsPackages.eaf-git: init at 0-unstable-2025-07-10,09906cab24f49dedbb5b429f8b6c840d4e75b1b7,1.35
 342d1b05d6832ae3af7e315c360691d662831beb,2025-08-15,radicle-tui,radicle-tui,radicle-tui: init at 0.6.0,09906cab24f49dedbb5b429f8b6c840d4e75b1b7,1.21
