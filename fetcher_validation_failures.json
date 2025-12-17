@@ -1,0 +1,498 @@
+[
+  {
+    "package_name": "drawy",
+    "pname": "drawy",
+    "version": "1.0.0-alpha-unstable-2025-11-17",
+    "fetcher": "fetchFromGitHub {\n    owner = \"Prayag2\";\n    repo = \"drawy\";\n    rev = \"ca02b66a9615c45c78f2e29839a40c1e5bf8f71c\";\n    hash = \"sha256-PzIeyhF/1wKD6JyybNRzruuxzSKJZvIq+L7X0rrcQUY=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "hyprwire",
+    "pname": "hyprwire",
+    "version": "0.1.0",
+    "fetcher": "fetchFromGitHub {\n    owner = \"hyprwm\";\n    repo = \"hyprwire\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-84KqFPakU1Pv7axkwbSi1D5XssSHIW8B2xduOUq5Mw4=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "hyprtoolkit",
+    "pname": "hyprtoolkit",
+    "version": "0.1.0",
+    "fetcher": "fetchFromGitHub {\n    owner = \"hyprwm\";\n    repo = \"hyprtoolkit\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-AQCTRH8VsrHzOHL0ueXt/6OQtSSfZbT3XUBI4sq8rx4=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "ptcpdump",
+    "pname": "ptcpdump",
+    "version": "0.37.0",
+    "fetcher": "fetchFromGitHub {\n    owner = \"mozillazg\";\n    repo = \"ptcpdump\";\n    tag = \"v${finalAttr.version}\";\n    hash = \"sha256-ouH7VFWSCOElbmbSWAkmM4dtNVp545mC/FnoNAFtaEw=\";\n  }",
+    "error": "error:\n       \u2026 while evaluating the attribute 'src'\n         at \u00abstring\u00bb:1:130:\n            1| with import <nixpkgs> {}; (rec { pname = \"ptcpdump\"; finalAttrs.pname = pname; version = \"0.37.0\"; finalAttrs.version = version; src = fetchFromGitHub {\n             |                                                                                                                                  ^\n            2|     owner = \"mozillazg\";\n\n       \u2026 while calling a functor (an attribute set with a '__functor' attribute)\n         at \u00abstring\u00bb:1:136:\n            1| with import <nixpkgs> {}; (rec { pname = \"ptcpdump\"; finalAttrs.pname = pname; version = \"0.37.0\"; finalAttrs.version = version; src = fetchFromGitHub {\n             |                                                                                                                                        ^\n            2|     owner = \"mozillazg\";\n\n       (stack trace truncated; use '--show-trace' to show the full, detailed trace)\n\n       error: undefined variable 'finalAttr'\n       at \u00abstring\u00bb:4:15:\n            3|     repo = \"ptcpdump\";\n            4|     tag = \"v${finalAttr.version}\";\n             |               ^\n            5|     hash = \"sha256-ouH7VFWSCOElbmbSWAkmM4dtNVp545mC/FnoNAFtaEw=\";",
+    "category": "finalAttr typo (should be finalAttrs)"
+  },
+  {
+    "package_name": "mangowc",
+    "pname": "mangowc",
+    "version": "0.10.5",
+    "fetcher": "fetchFromGitHub {\n    owner = \"DreamMaoMao\";\n    repo = \"mangowc\";\n    tag = finalAttrs.version;\n    hash = \"sha256-ZESyUtCiIQh6R0VYAo8YaP95Damw3MJVvKy5qU3pgTA=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "xleak",
+    "pname": "xleak",
+    "version": "0.1.0",
+    "fetcher": "fetchFromGitHub {\n    owner = \"bgreenwell\";\n    repo = \"xleak\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-n9AFNGr5kRbQr2P/6QFT0KkuiE6KPun1FZjwrq2iQZs=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "tzpfms",
+    "pname": "tzpfms",
+    "version": "0.4.1",
+    "fetcher": "fetchFromSourcehut {\n    owner = \"~nabijaczleweli\";\n    repo = \"tzpfms\";\n    rev = \"v${finalPackage.version}\";\n    hash = \"sha256-DHmJpfURyFPeOWxIkfwn4f0n2WeDYErevC1gY2oM3Vg=\";\n  }",
+    "error": "error:\n       \u2026 while evaluating the attribute 'src'\n         at \u00abstring\u00bb:1:127:\n            1| with import <nixpkgs> {}; (rec { pname = \"tzpfms\"; finalAttrs.pname = pname; version = \"0.4.1\"; finalAttrs.version = version; src = fetchFromSourcehut {\n             |                                                                                                                               ^\n            2|     owner = \"~nabijaczleweli\";\n\n       \u2026 while calling a functor (an attribute set with a '__functor' attribute)\n         at \u00abstring\u00bb:1:133:\n            1| with import <nixpkgs> {}; (rec { pname = \"tzpfms\"; finalAttrs.pname = pname; version = \"0.4.1\"; finalAttrs.version = version; src = fetchFromSourcehut {\n             |                                                                                                                                     ^\n            2|     owner = \"~nabijaczleweli\";\n\n       (stack trace truncated; use '--show-trace' to show the full, detailed trace)\n\n       error: undefined variable 'finalPackage'\n       at \u00abstring\u00bb:4:15:\n            3|     repo = \"tzpfms\";\n            4|     rev = \"v${finalPackage.version}\";\n             |               ^\n            5|     hash = \"sha256-DHmJpfURyFPeOWxIkfwn4f0n2WeDYErevC1gY2oM3Vg=\";",
+    "category": "finalAttr typo (should be finalAttrs)"
+  },
+  {
+    "package_name": "cocoon",
+    "pname": "cocoon",
+    "version": "0.5.0",
+    "fetcher": "fetchFromGitHub {\n    owner = \"haileyok\";\n    repo = \"cocoon\";\n    tag = finalAttrs.version;\n    hash = \"sha256-9gJj+edTGkQsHH72F2f7A6EWDet+k38+8UZ1KN2UGT0=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "mtkclient",
+    "pname": "mtkclient",
+    "version": "2.0.1-unstable-2025-09-26",
+    "fetcher": "fetchFromGitHub {\n    owner = \"bkerler\";\n    repo = \"mtkclient\";\n    rev = \"399b3a1c25e73ddf4951f12efd20f7254ee04a39\";\n    hash = \"sha256-XNPYeVhp5P+zQdumS9IzlUd5+WebL56qcgs10WS2/LY=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "tomat",
+    "pname": "tomat",
+    "version": "2.3.0",
+    "fetcher": "fetchFromGitHub {\n    owner = \"jolars\";\n    repo = \"tomat\";\n    tag = \"v${version}\";\n    hash = \"sha256-lkNBcTn7uXWifIVNoXmggPy+UjozL5YqVYorH9XAejo=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "systemd-credsubst",
+    "pname": "systemd-credsubst",
+    "version": "0.1.0",
+    "fetcher": "fetchFromGitHub {\n    owner = \"yaxitech\";\n    repo = \"systemd-credsubst\";\n    tag = \"v${version}\";\n    hash = \"sha256-3KbO93OWJuiV8oYLSlqaj0i2x/2GwGxfQ7QwwSrfb1Y=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "nixbit",
+    "pname": "nixbit",
+    "version": "0.1.5",
+    "fetcher": "fetchFromGitHub {\n    owner = \"pbek\";\n    repo = \"nixbit\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-DpjLPvmn61rEn6ui8cFfqeZEPYGyCUVVP/V7mQw1l5Y=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "vicinae",
+    "pname": "vicinae",
+    "version": "0.15.5",
+    "fetcher": "fetchFromGitHub {\n    owner = \"vicinaehq\";\n    repo = \"vicinae\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-3pKexTUWfohL/S/yWsVMShmtMlBFI9zsd7NFzySKG0w=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "stasis",
+    "pname": "stasis",
+    "version": "0.5.0",
+    "fetcher": "fetchFromGitHub {\n    owner = \"saltnpepper97\";\n    repo = \"stasis\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-gJB/y6jSBJZjBTQB9sxbVpllSfF6jwKOEeLqlgIStMA=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "iio-niri",
+    "pname": "iio-niri",
+    "version": "1.2.1",
+    "fetcher": "fetchFromGitHub {\n    owner = \"Zhaith-Izaliel\";\n    repo = \"iio-niri\";\n    tag = \"v${version}\";\n    hash = \"sha256-IOMJ1xtjUkUoUgFZ9pxBf5XKdaUHu3WbUH5TlEiNRc4=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "gdscript-formatter",
+    "pname": "gdscript-formatter",
+    "version": "0.14.0",
+    "fetcher": "fetchFromGitHub {\n    owner = \"GDQuest\";\n    repo = \"GDScript-formatter\";\n    tag = finalAttrs.version;\n    hash = \"sha256-cY6Ow1f8o40M9/knneAod8ABj7ObQAkzs3yODMpkCxQ=\";\n    # Needed due to .gitattributes being used for the Godot addon and export-ignoring all files\n    deepClone = true;\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "iocaine",
+    "pname": "iocaine",
+    "version": "2.5.1",
+    "fetcher": "fetchFromGitea {\n    domain = \"git.madhouse-project.org\";\n    owner = \"iocaine\";\n    repo = \"iocaine\";\n    tag = \"iocaine-${version}\";\n    hash = \"sha256-213QLpGBKSsT9r8O27PyMom5+OGPz0VtRBevxswISZA=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "icesprog",
+    "pname": "icesprog",
+    "version": "1.1b",
+    "fetcher": "fetchFromGitHub {\n    owner = \"wuxx\";\n    repo = \"icesugar\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-LGmT+GEZvo0oxmr2kMfSztutnguPpNt2QJfVyBJo82w=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "noxdir",
+    "pname": "noxdir",
+    "version": "0.9.0",
+    "fetcher": "fetchFromGitHub {\n    owner = \"crumbyte\";\n    repo = \"noxdir\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-sy94J+97fxg0t/GTSLzJQMDcQtOCQeo8TCTT8G4p6wY=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "bc-mbedtls",
+    "pname": "mbedtls",
+    "version": "3.6.1-unstable-2025-08-11",
+    "fetcher": "fetchFromGitLab {\n    inherit rev;\n\n    domain = \"gitlab.linphone.org\";\n    group = \"BC\";\n    owner = \"public/external\";\n    repo = \"mbedtls\";\n    sha256 = \"sha256-jQpRn2F21sPKKAiaqsUvaKyuR80AnedG/hAyiNamKjc=\";\n    fetchSubmodules = true;\n  }",
+    "error": "error:\n       \u2026 while evaluating the attribute 'src'\n         at \u00abstring\u00bb:1:148:\n            1| with import <nixpkgs> {}; (rec { pname = \"mbedtls\"; finalAttrs.pname = pname; version = \"3.6.1-unstable-2025-08-11\"; finalAttrs.version = version; src = fetchFromGitLab {\n             |                                                                                                                                                    ^\n            2|     inherit rev;\n\n       \u2026 while calling a functor (an attribute set with a '__functor' attribute)\n         at \u00abstring\u00bb:1:154:\n            1| with import <nixpkgs> {}; (rec { pname = \"mbedtls\"; finalAttrs.pname = pname; version = \"3.6.1-unstable-2025-08-11\"; finalAttrs.version = version; src = fetchFromGitLab {\n             |                                                                                                                                                          ^\n            2|     inherit rev;\n\n       (stack trace truncated; use '--show-trace' to show the full, detailed trace)\n\n       error: undefined variable 'rev'\n       at \u00abstring\u00bb:2:13:\n            1| with import <nixpkgs> {}; (rec { pname = \"mbedtls\"; finalAttrs.pname = pname; version = \"3.6.1-unstable-2025-08-11\"; finalAttrs.version = version; src = fetchFromGitLab {\n            2|     inherit rev;\n             |             ^\n            3|",
+    "category": "finalAttr typo (should be finalAttrs)"
+  },
+  {
+    "package_name": "xdgcpp",
+    "pname": "xdgcpp",
+    "version": "0-unstable-2024-05-26",
+    "fetcher": "fetchFromGitHub {\n    owner = \"Grumbel\";\n    repo = \"xdgcpp\";\n    rev = \"e2c40c081e2ee2d315d1d0b3ae5981d5fd77260e\";\n    sha256 = \"sha256-eujYRUw8UpDFgEvjHUPsJ/QJN+A+hzcebfgteM9kvXM=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "code",
+    "pname": "code",
+    "version": "0.2.188",
+    "fetcher": "fetchFromGitHub {\n    owner = \"just-every\";\n    repo = \"code\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-xUhgA4poybzFehVgVWHKx1ejhncvYAnug2oxLwGNrk0=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "tinycmmc",
+    "pname": "tinycmmc",
+    "version": "0.1.0-unstable-2025-07-21",
+    "fetcher": "fetchFromGitHub {\n    owner = \"Grumbel\";\n    repo = \"tinycmmc\";\n    rev = \"caf1af301e388e97dca31ee7fdc12f17cff34f82\";\n    sha256 = \"sha256-62ykvAIfOCXH+3bF1IkR+WukeJBLcYC/4Mv3ptqAxEM=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "tsidp",
+    "pname": "tsidp",
+    "version": "0.0.4",
+    "fetcher": "fetchFromGitHub {\n    owner = \"tailscale\";\n    repo = \"tsidp\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-u6dQORtB4eNEFLlouuFV5oxedSN1fZ31YkZavfU1F0U=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "synchronizer",
+    "pname": "synchronizer",
+    "version": "0.1",
+    "fetcher": "fetchFromGitHub {\n    owner = \"OCamlPro\";\n    repo = \"synchronizer\";\n    tag = version;\n    hash = \"sha256-VlKqORXTXafT88GXHIYkz+A1VkEL3jP9SMqDdMyEdrw=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "lacy",
+    "pname": "lacy",
+    "version": "0.5.1",
+    "fetcher": "fetchFromGitHub {\n    owner = \"timothebot\";\n    repo = \"lacy\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-blQPIw8Ct+TGRuy+ybYr9rdlfOZdvAbhsB8sfwugS/w=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "moxnotify",
+    "pname": "moxnotify",
+    "version": "0.1.0",
+    "fetcher": "fetchFromGitHub {\n    owner = \"mox-desktop\";\n    repo = \"moxnotify\";\n    rev = \"6726af08621072e0c95a147cf4ae63ea66c7e857\";\n    hash = \"sha256-tTgY/813WaW3K8QKbj6qwCVKOAA8zMqy97Q7Z5qA0JM=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "gonzo",
+    "pname": "gonzo",
+    "version": "0.2.1",
+    "fetcher": "fetchFromGitHub {\n    owner = \"control-theory\";\n    repo = \"gonzo\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-P8Ntt8Dj5zq+Ff5MkZEvWabk2w5Cm6tXxl3ssMxDNok=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "redland-wayland",
+    "pname": "redland-wayland",
+    "version": "0.1.0",
+    "fetcher": "fetchFromGitHub {\n    owner = \"domenkozar\";\n    repo = \"redland\";\n    tag = \"v${version}\";\n    hash = \"sha256-iZtRpxloZzneAQ6+5cW0x1E7Qbx/8i9PqkpOHbCZ4Qk=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "mdserve",
+    "pname": "mdserve",
+    "version": "0.4.0",
+    "fetcher": "fetchFromGitHub {\n    owner = \"jfernandez\";\n    repo = \"mdserve\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-OCdWoQzmCvKo8EfLAczBud1FfY3vRMk7mivjhsqE840=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "mbmd",
+    "pname": "mbmd",
+    "version": "0.13-unstable-2025-08-08",
+    "fetcher": "fetchFromGitHub {\n    inherit rev;\n    owner = \"volkszaehler\";\n    repo = \"mbmd\";\n    hash = \"sha256-HdldLF9+QgaIvGG8lAENvUiPonMwrdHUphGRSmaeRj8=\";\n  }",
+    "error": "error:\n       \u2026 while evaluating the attribute 'src'\n         at \u00abstring\u00bb:1:144:\n            1| with import <nixpkgs> {}; (rec { pname = \"mbmd\"; finalAttrs.pname = pname; version = \"0.13-unstable-2025-08-08\"; finalAttrs.version = version; src = fetchFromGitHub {\n             |                                                                                                                                                ^\n            2|     inherit rev;\n\n       \u2026 while calling a functor (an attribute set with a '__functor' attribute)\n         at \u00abstring\u00bb:1:150:\n            1| with import <nixpkgs> {}; (rec { pname = \"mbmd\"; finalAttrs.pname = pname; version = \"0.13-unstable-2025-08-08\"; finalAttrs.version = version; src = fetchFromGitHub {\n             |                                                                                                                                                      ^\n            2|     inherit rev;\n\n       (stack trace truncated; use '--show-trace' to show the full, detailed trace)\n\n       error: undefined variable 'rev'\n       at \u00abstring\u00bb:2:13:\n            1| with import <nixpkgs> {}; (rec { pname = \"mbmd\"; finalAttrs.pname = pname; version = \"0.13-unstable-2025-08-08\"; finalAttrs.version = version; src = fetchFromGitHub {\n            2|     inherit rev;\n             |             ^\n            3|     owner = \"volkszaehler\";",
+    "category": "finalAttr typo (should be finalAttrs)"
+  },
+  {
+    "package_name": "pwmenu",
+    "pname": "pwmenu",
+    "version": "0.3.0",
+    "fetcher": "fetchFromGitHub {\n    owner = \"e-tho\";\n    repo = \"pwmenu\";\n    tag = \"v${version}\";\n    hash = \"sha256-Q02kOMC6oQ3fNyDWW9ztLgMs3wR4cA53/wmkbecTr/o=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "radicle-native-ci",
+    "pname": "radicle-native-ci",
+    "version": "0.11.1",
+    "fetcher": "fetchFromRadicle {\n    seed = \"seed.radicle.xyz\";\n    repo = \"z3qg5TKmN83afz2fj9z3fQjU8vaYE\";\n    node = \"z6MkgEMYod7Hxfy9qCvDv5hYHkZ4ciWmLFgfvm3Wn1b2w2FV\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-OjQBq4QopT4dr1/z73fqlGLjQIjUY51/II9m2qQMW1w=\";\n  }",
+    "error": "error:\n       \u2026 while evaluating the attribute 'src'\n         at \u00abstring\u00bb:1:139:\n            1| with import <nixpkgs> {}; (rec { pname = \"radicle-native-ci\"; finalAttrs.pname = pname; version = \"0.11.1\"; finalAttrs.version = version; src = fetchFromRadicle {\n             |                                                                                                                                           ^\n            2|     seed = \"seed.radicle.xyz\";\n\n       error: undefined variable 'fetchFromRadicle'\n       at \u00abstring\u00bb:1:145:\n            1| with import <nixpkgs> {}; (rec { pname = \"radicle-native-ci\"; finalAttrs.pname = pname; version = \"0.11.1\"; finalAttrs.version = version; src = fetchFromRadicle {\n             |                                                                                                                                                 ^\n            2|     seed = \"seed.radicle.xyz\";",
+    "category": "finalAttr typo (should be finalAttrs)"
+  },
+  {
+    "package_name": "radicle-ci-broker",
+    "pname": "radicle-ci-broker",
+    "version": "0.21.0",
+    "fetcher": "fetchFromRadicle {\n    seed = \"seed.radicle.xyz\";\n    repo = \"zwTxygwuz5LDGBq255RA2CbNGrz8\";\n    node = \"z6MkgEMYod7Hxfy9qCvDv5hYHkZ4ciWmLFgfvm3Wn1b2w2FV\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-c0Qo6dnR9rP4mLXODkNZp+AnhKS0tqJeh1KgzfHBRV4=\";\n    leaveDotGit = true;\n    postFetch = ''\n      git -C $out rev-parse --short HEAD > $out/.git_head\n      rm -rf $out/.git\n    '';\n  }",
+    "error": "error:\n       \u2026 while evaluating the attribute 'src'\n         at \u00abstring\u00bb:1:139:\n            1| with import <nixpkgs> {}; (rec { pname = \"radicle-ci-broker\"; finalAttrs.pname = pname; version = \"0.21.0\"; finalAttrs.version = version; src = fetchFromRadicle {\n             |                                                                                                                                           ^\n            2|     seed = \"seed.radicle.xyz\";\n\n       error: undefined variable 'fetchFromRadicle'\n       at \u00abstring\u00bb:1:145:\n            1| with import <nixpkgs> {}; (rec { pname = \"radicle-ci-broker\"; finalAttrs.pname = pname; version = \"0.21.0\"; finalAttrs.version = version; src = fetchFromRadicle {\n             |                                                                                                                                                 ^\n            2|     seed = \"seed.radicle.xyz\";",
+    "category": "finalAttr typo (should be finalAttrs)"
+  },
+  {
+    "package_name": "yaookctl",
+    "pname": "yaookctl",
+    "version": "0-unstable-2025-08-25",
+    "fetcher": "fetchFromGitLab {\n    owner = \"yaook\";\n    repo = \"yaookctl\";\n    rev = \"205fab35f6680d15d86ef3596fe8a12590e3916c\";\n    hash = \"sha256-V30581TeBtk/IvqBebsyT2lJ8bp8UkCH4AIy+mnnzCc=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "hyprviz",
+    "pname": "hyprviz",
+    "version": "0.6.1",
+    "fetcher": "fetchFromGitHub {\n    owner = \"timasoft\";\n    repo = \"hyprviz\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-xiAP5Xy30IokRcR25ObXLeM7qKjVXgEv9fQZA2KDxOA=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "tmuxai",
+    "pname": "tmuxai",
+    "version": "1.1.1",
+    "fetcher": "fetchFromGitHub {\n    owner = \"alvinunreal\";\n    repo = \"tmuxai\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-L3PFyNkvEHfZ2pZFaurFKwHjhdZ+YBXtN2QuKFvktP4=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "prisma-language-server",
+    "pname": "prisma-language-server",
+    "version": "6.16.2",
+    "fetcher": "fetchFromGitHub {\n    owner = \"prisma\";\n    repo = \"language-tools\";\n    tag = \"${finalAttrs.version}\";\n    hash = \"sha256-UZP0pLcbMeaYI0ytOJ68l/ZEC9dBhohJZyTU99p+1QM=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "gophertube",
+    "pname": "gophertube",
+    "version": "2.8.0",
+    "fetcher": "fetchFromGitHub {\n    owner = \"KrishnaSSH\";\n    repo = \"GopherTube\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-0TStXYghfRR11ETJcK2lnkBtS2IUy/YgeFFn0wXpeOU=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "hydrasect",
+    "pname": "hydrasect",
+    "version": "0.1.0-unstable-2025-08-27",
+    "fetcher": "fetchFromGitHub {\n    owner = \"blitz\";\n    repo = \"hydrasect\";\n    rev = \"88161c6d8dce16bf832599cf8ab544bbe5857c00\";\n    hash = \"sha256-Na7MlT+OXHZBtCKqJ0IzK4k3XfvQhsY+lnUJFG66YDU=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "gemini-cli-bin",
+    "pname": "gemini-cli-bin",
+    "version": "0.3.4",
+    "fetcher": "fetchurl {\n    url = \"https://github.com/${owner}/${repo}/releases/download/v${finalAttrs.version}/${asset}\";\n    hash = \"sha256-aVcizpbzV1hPsuMSGRxgMGXTyF+0yBqGk7EwPnKFDyQ=\";\n  }",
+    "error": "error:\n       \u2026 while calling the 'getAttr' builtin\n         at <nix/derivation-internal.nix>:50:17:\n           49|     value = commonAttrs // {\n           50|       outPath = builtins.getAttr outputName strict;\n             |                 ^\n           51|       drvPath = strict.drvPath;\n\n       \u2026 while calling the 'derivationStrict' builtin\n         at <nix/derivation-internal.nix>:37:12:\n           36|\n           37|   strict = derivationStrict drvAttrs;\n             |            ^\n           38|\n\n       (stack trace truncated; use '--show-trace' to show the full, detailed trace)\n\n       error: undefined variable 'owner'\n       at \u00abstring\u00bb:2:33:\n            1| with import <nixpkgs> {}; (rec { pname = \"gemini-cli-bin\"; finalAttrs.pname = pname; version = \"0.3.4\"; finalAttrs.version = version; src = fetchurl {\n            2|     url = \"https://github.com/${owner}/${repo}/releases/download/v${finalAttrs.version}/${asset}\";\n             |                                 ^\n            3|     hash = \"sha256-aVcizpbzV1hPsuMSGRxgMGXTyF+0yBqGk7EwPnKFDyQ=\";",
+    "category": "finalAttr typo (should be finalAttrs)"
+  },
+  {
+    "package_name": "dli",
+    "pname": "dli",
+    "version": "0-unstable-2025-09-06",
+    "fetcher": "fetchFromGitHub {\n    owner = \"haylinmoore\";\n    repo = \"dli\";\n    rev = \"176302f80cf771a7a15d9df58c3296a979f18e28\";\n    hash = \"sha256-I8ozN5ucBhsArehSQibTLlYavq+4rBRUvU42Cli4KVo=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "libfrida-core",
+    "pname": "libfrida-core",
+    "version": "17.2.17",
+    "fetcher": "fetchurl {\n    inherit (source) url hash;\n  }",
+    "error": "error:\n       \u2026 while evaluating the attribute 'src'\n         at \u00abstring\u00bb:1:136:\n            1| with import <nixpkgs> {}; (rec { pname = \"libfrida-core\"; finalAttrs.pname = pname; version = \"17.2.17\"; finalAttrs.version = version; src = fetchurl {\n             |                                                                                                                                        ^\n            2|     inherit (source) url hash;\n\n       \u2026 while calling a functor (an attribute set with a '__functor' attribute)\n         at \u00abstring\u00bb:1:142:\n            1| with import <nixpkgs> {}; (rec { pname = \"libfrida-core\"; finalAttrs.pname = pname; version = \"17.2.17\"; finalAttrs.version = version; src = fetchurl {\n             |                                                                                                                                              ^\n            2|     inherit (source) url hash;\n\n       (stack trace truncated; use '--show-trace' to show the full, detailed trace)\n\n       error: undefined variable 'source'\n       at \u00abstring\u00bb:2:14:\n            1| with import <nixpkgs> {}; (rec { pname = \"libfrida-core\"; finalAttrs.pname = pname; version = \"17.2.17\"; finalAttrs.version = version; src = fetchurl {\n            2|     inherit (source) url hash;\n             |              ^\n            3|   }; }).src",
+    "category": "finalAttr typo (should be finalAttrs)"
+  },
+  {
+    "package_name": "lightway",
+    "pname": "lightway",
+    "version": "0-unstable-2025-09-04",
+    "fetcher": "fetchFromGitHub {\n    owner = \"expressvpn\";\n    repo = \"lightway\";\n    rev = \"4eb836158607c83d47226703de5a043519586782\";\n    hash = \"sha256-sNhTdJTxNxHMVswyzizgBfGbmJhYmMZY/5nVD7ScLjM=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "ee",
+    "pname": "ee",
+    "version": "1.5.2",
+    "fetcher": "fetchgit {\n    url = \"https://git.freebsd.org/src.git\";\n    tag = \"release/14.3.0\";\n    outputHash = \"sha256-nMhHXeoam9VtUuhhi0eoGZfcW9zZhpYQKVYbkAbfgc0=\";\n    rootDir = \"contrib/ee\";\n  }",
+    "error": "error:\n       \u2026 while evaluating the attribute 'src'\n         at \u00abstring\u00bb:1:123:\n            1| with import <nixpkgs> {}; (rec { pname = \"ee\"; finalAttrs.pname = pname; version = \"1.5.2\"; finalAttrs.version = version; src = fetchgit {\n             |                                                                                                                           ^\n            2|     url = \"https://git.freebsd.org/src.git\";\n\n       \u2026 while calling a functor (an attribute set with a '__functor' attribute)\n         at \u00abstring\u00bb:1:129:\n            1| with import <nixpkgs> {}; (rec { pname = \"ee\"; finalAttrs.pname = pname; version = \"1.5.2\"; finalAttrs.version = version; src = fetchgit {\n             |                                                                                                                                 ^\n            2|     url = \"https://git.freebsd.org/src.git\";\n\n       (stack trace truncated; use '--show-trace' to show the full, detailed trace)\n\n       error: function 'anonymous lambda' called with unexpected argument 'rootDir'\n       at /nix/store/4danq4f7rxpsax7bx18709c533v9krii-source/pkgs/build-support/fetchgit/default.nix:23:5:\n           22|     #   ../../../doc/build-helpers/fetchers.chapter.md\n           23|     {\n             |     ^\n           24|       url,",
+    "category": "Other error"
+  },
+  {
+    "package_name": "mado",
+    "pname": "mado",
+    "version": "0.3.0",
+    "fetcher": "fetchFromGitHub {\n    owner = \"akiomik\";\n    repo = \"mado\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-wAuV4w0dKfUbJVLTdp59/u4y13SPy3wkRfTlpvyE/zY=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "yaml2nix",
+    "pname": "yaml2nix",
+    "version": "0.3.0",
+    "fetcher": "fetchFromGitHub {\n    owner = \"euank\";\n    repo = \"yaml2nix\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-DkHWWpvBco2yodyOk40LjTNcoaJ1bFKf0JY9OwWgy5M=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "angrr",
+    "pname": "angrr",
+    "version": "0.1.1",
+    "fetcher": "fetchFromGitHub {\n    owner = \"linyinfeng\";\n    repo = \"angrr\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-SL4UBDoD0pvpCKokQvKLAcS9cQJaFiA+IjswFARswdM=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "xscreenruler",
+    "pname": "xscreenruler",
+    "version": "1.0.2",
+    "fetcher": "fetchFromGitHub {\n    owner = \"julian-hoch\";\n    repo = \"xscreenruler\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-oRbZ8r9EOPcLuuX8VyCBNt6ljdnko/EV8C8aeR85xYU=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "npingler",
+    "pname": "npingler",
+    "version": "unstable-2025-08-21",
+    "fetcher": "fetchFromGitHub {\n    owner = \"9999years\";\n    repo = \"npingler\";\n    rev = \"de47bb5c5c188ba3b36958c2284dbc6d24f2687f\";\n    hash = \"sha256-4Q8oG2iem9dgsTTEFfhyw2rPAxtXdGx+Uhb/9uAdUy4=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "e-imzo-manager",
+    "pname": "e-imzo-manager",
+    "version": "0.1.1",
+    "fetcher": "fetchFromGitHub {\n    owner = \"xinux-org\";\n    repo = \"e-imzo\";\n    tag = finalAttrs.version;\n    hash = \"sha256-uDaqkz2VDvqTgi+k8EGGKjLkjoH93xXHQcgUc1NVo30=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "radicle-tui",
+    "pname": "radicle-tui",
+    "version": "0.6.0",
+    "fetcher": "fetchgit {\n    url = \"https://seed.radicle.xyz/z39mP9rQAaGmERfUMPULfPUi473tY.git\";\n    rev = \"refs/namespaces/z6MkswQE8gwZw924amKatxnNCXA55BMupMmRg7LvJuim2C1V/refs/tags/${finalAttrs.version}\";\n    hash = \"sha256-rz9l9GtycqZoROUI6Hn0Fv5Br0YCIrcHlEWLMP4hasQ=\";\n    leaveDotGit = true;\n    postFetch = ''\n      git -C $out rev-parse HEAD > $out/.git_head\n      git -C $out log -1 --pretty=%ct HEAD > $out/.git_time\n      rm -rf $out/.git\n    '';\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "protoletariat",
+    "pname": "protoletariat",
+    "version": "3.3.10",
+    "fetcher": "fetchFromGitHub {\n    owner = \"cpcloud\";\n    repo = \"protoletariat\";\n    tag = version;\n    hash = \"sha256-oaZmgen/7WkX+nNuphrcyniL7Z/OaeqlcnbCnqR5h0w=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "powerview",
+    "pname": "powerview",
+    "version": "2025.1.1",
+    "fetcher": "fetchFromGitHub {\n    owner = \"aniqfakhrul\";\n    repo = \"powerview.py\";\n    tag = version;\n    hash = \"sha256-kA7vb3YwUlolEnSJRFi+YZoq4yZsdMG+Snk7zsyOCmQ=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "honeyfetch",
+    "pname": "honeyfetch",
+    "version": "1.5.0",
+    "fetcher": "fetchFromGitLab {\n    owner = \"ahoneybun\";\n    repo = \"honeyfetch\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-lFp7L3tcqZ1jAL7V7tfUJDPKO2WCvMekUx+p12fNlcM=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "ld-audit-search-mod",
+    "pname": "ld-audit-search-mod",
+    "version": "0-unstable-2025-06-19",
+    "fetcher": "fetchFromGitHub {\n    repo = \"ld-audit-search-mod\";\n    owner = \"DDoSolitary\";\n    rev = \"261f475f154d0f1f0766d6756af9c714eeeb14ea\";\n    hash = \"sha256-c6ub+m4ihIE3gh6yHtLfJIVqm12C46wThrBCqp8SOLE=\";\n    sparseCheckout = [ \"src\" ];\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "emmylua-check",
+    "pname": "emmylua_check",
+    "version": "0.10.0",
+    "fetcher": "fetchFromGitHub {\n    owner = \"EmmyLuaLs\";\n    repo = \"emmylua-analyzer-rust\";\n    tag = finalAttrs.version;\n    hash = \"sha256-Fvg3G0C/YECDEWZ4mDC5b8qocWvyDJ9KdLYNtwIu0+I=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "emmylua-ls",
+    "pname": "emmylua_ls",
+    "version": "0.10.0",
+    "fetcher": "fetchFromGitHub {\n    owner = \"EmmyLuaLs\";\n    repo = \"emmylua-analyzer-rust\";\n    tag = finalAttrs.version;\n    hash = \"sha256-Fvg3G0C/YECDEWZ4mDC5b8qocWvyDJ9KdLYNtwIu0+I=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "emmylua-doc-cli",
+    "pname": "emmylua_doc_cli",
+    "version": "0.10.0",
+    "fetcher": "fetchFromGitHub {\n    owner = \"EmmyLuaLs\";\n    repo = \"emmylua-analyzer-rust\";\n    tag = finalAttrs.version;\n    hash = \"sha256-Fvg3G0C/YECDEWZ4mDC5b8qocWvyDJ9KdLYNtwIu0+I=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "ip2asn",
+    "pname": "ip2asn",
+    "version": "0.1.2",
+    "fetcher": "fetchFromGitHub {\n    owner = \"x123\";\n    repo = \"ip2asn\";\n    tag = finalAttrs.version;\n    hash = \"sha256-2wuxBwllrkPdmmBCt7DPQ38E2k3igAjbICun51bhopY=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  },
+  {
+    "package_name": "tattoy",
+    "pname": "tattoy",
+    "version": "0.1.8",
+    "fetcher": "fetchFromGitHub {\n    owner = \"tattoy-org\";\n    repo = \"tattoy\";\n    tag = \"tattoy-v${attrs.version}\";\n    hash = \"sha256-44rXygZVbwwC/jOB69iHydsjYr/WeVU4Eky3BPqJzyc=\";\n  }",
+    "error": "error:\n       \u2026 while evaluating the attribute 'src'\n         at \u00abstring\u00bb:1:127:\n            1| with import <nixpkgs> {}; (rec { pname = \"tattoy\"; finalAttrs.pname = pname; version = \"0.1.8\"; finalAttrs.version = version; src = fetchFromGitHub {\n             |                                                                                                                               ^\n            2|     owner = \"tattoy-org\";\n\n       \u2026 while calling a functor (an attribute set with a '__functor' attribute)\n         at \u00abstring\u00bb:1:133:\n            1| with import <nixpkgs> {}; (rec { pname = \"tattoy\"; finalAttrs.pname = pname; version = \"0.1.8\"; finalAttrs.version = version; src = fetchFromGitHub {\n             |                                                                                                                                     ^\n            2|     owner = \"tattoy-org\";\n\n       (stack trace truncated; use '--show-trace' to show the full, detailed trace)\n\n       error: undefined variable 'attrs'\n       at \u00abstring\u00bb:4:22:\n            3|     repo = \"tattoy\";\n            4|     tag = \"tattoy-v${attrs.version}\";\n             |                      ^\n            5|     hash = \"sha256-44rXygZVbwwC/jOB69iHydsjYr/WeVU4Eky3BPqJzyc=\";",
+    "category": "finalAttr typo (should be finalAttrs)"
+  },
+  {
+    "package_name": "mdwatch",
+    "pname": "mdwatch",
+    "version": "0.1.11",
+    "fetcher": "fetchFromGitHub {\n    owner = \"santoshxshrestha\";\n    repo = \"mdwatch\";\n    tag = \"v${finalAttrs.version}\";\n    hash = \"sha256-v+QsSPknUAFk+GC8D0wtA8VTcCWeb8DX6inL6WNl8gQ=\";\n  }",
+    "error": "contains_nix_code",
+    "category": "contains_nix_code"
+  }
+]

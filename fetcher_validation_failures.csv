@@ -1,0 +1,94 @@
+package_name,pname,version,category,error
+drawy,drawy,1.0.0-alpha-unstable-2025-11-17,contains_nix_code,contains_nix_code
+hyprwire,hyprwire,0.1.0,contains_nix_code,contains_nix_code
+hyprtoolkit,hyprtoolkit,0.1.0,contains_nix_code,contains_nix_code
+ptcpdump,ptcpdump,0.37.0,finalAttr typo (should be finalAttrs),"error:
+       … while evaluating the attribute 'src'
+         at «string»:1:130:
+            1| with import <nixpkgs> {}; (rec { pname = ""ptcpdump""; finalAttrs.pname = pname; version = ""0.37.0""; final"
+mangowc,mangowc,0.10.5,contains_nix_code,contains_nix_code
+xleak,xleak,0.1.0,contains_nix_code,contains_nix_code
+tzpfms,tzpfms,0.4.1,finalAttr typo (should be finalAttrs),"error:
+       … while evaluating the attribute 'src'
+         at «string»:1:127:
+            1| with import <nixpkgs> {}; (rec { pname = ""tzpfms""; finalAttrs.pname = pname; version = ""0.4.1""; finalAtt"
+cocoon,cocoon,0.5.0,contains_nix_code,contains_nix_code
+mtkclient,mtkclient,2.0.1-unstable-2025-09-26,contains_nix_code,contains_nix_code
+tomat,tomat,2.3.0,contains_nix_code,contains_nix_code
+systemd-credsubst,systemd-credsubst,0.1.0,contains_nix_code,contains_nix_code
+nixbit,nixbit,0.1.5,contains_nix_code,contains_nix_code
+vicinae,vicinae,0.15.5,contains_nix_code,contains_nix_code
+stasis,stasis,0.5.0,contains_nix_code,contains_nix_code
+iio-niri,iio-niri,1.2.1,contains_nix_code,contains_nix_code
+gdscript-formatter,gdscript-formatter,0.14.0,contains_nix_code,contains_nix_code
+iocaine,iocaine,2.5.1,contains_nix_code,contains_nix_code
+icesprog,icesprog,1.1b,contains_nix_code,contains_nix_code
+noxdir,noxdir,0.9.0,contains_nix_code,contains_nix_code
+bc-mbedtls,mbedtls,3.6.1-unstable-2025-08-11,finalAttr typo (should be finalAttrs),"error:
+       … while evaluating the attribute 'src'
+         at «string»:1:148:
+            1| with import <nixpkgs> {}; (rec { pname = ""mbedtls""; finalAttrs.pname = pname; version = ""3.6.1-unstable-"
+xdgcpp,xdgcpp,0-unstable-2024-05-26,contains_nix_code,contains_nix_code
+code,code,0.2.188,contains_nix_code,contains_nix_code
+tinycmmc,tinycmmc,0.1.0-unstable-2025-07-21,contains_nix_code,contains_nix_code
+tsidp,tsidp,0.0.4,contains_nix_code,contains_nix_code
+synchronizer,synchronizer,0.1,contains_nix_code,contains_nix_code
+lacy,lacy,0.5.1,contains_nix_code,contains_nix_code
+moxnotify,moxnotify,0.1.0,contains_nix_code,contains_nix_code
+gonzo,gonzo,0.2.1,contains_nix_code,contains_nix_code
+redland-wayland,redland-wayland,0.1.0,contains_nix_code,contains_nix_code
+mdserve,mdserve,0.4.0,contains_nix_code,contains_nix_code
+mbmd,mbmd,0.13-unstable-2025-08-08,finalAttr typo (should be finalAttrs),"error:
+       … while evaluating the attribute 'src'
+         at «string»:1:144:
+            1| with import <nixpkgs> {}; (rec { pname = ""mbmd""; finalAttrs.pname = pname; version = ""0.13-unstable-2025"
+pwmenu,pwmenu,0.3.0,contains_nix_code,contains_nix_code
+radicle-native-ci,radicle-native-ci,0.11.1,finalAttr typo (should be finalAttrs),"error:
+       … while evaluating the attribute 'src'
+         at «string»:1:139:
+            1| with import <nixpkgs> {}; (rec { pname = ""radicle-native-ci""; finalAttrs.pname = pname; version = ""0.11."
+radicle-ci-broker,radicle-ci-broker,0.21.0,finalAttr typo (should be finalAttrs),"error:
+       … while evaluating the attribute 'src'
+         at «string»:1:139:
+            1| with import <nixpkgs> {}; (rec { pname = ""radicle-ci-broker""; finalAttrs.pname = pname; version = ""0.21."
+yaookctl,yaookctl,0-unstable-2025-08-25,contains_nix_code,contains_nix_code
+hyprviz,hyprviz,0.6.1,contains_nix_code,contains_nix_code
+tmuxai,tmuxai,1.1.1,contains_nix_code,contains_nix_code
+prisma-language-server,prisma-language-server,6.16.2,contains_nix_code,contains_nix_code
+gophertube,gophertube,2.8.0,contains_nix_code,contains_nix_code
+hydrasect,hydrasect,0.1.0-unstable-2025-08-27,contains_nix_code,contains_nix_code
+gemini-cli-bin,gemini-cli-bin,0.3.4,finalAttr typo (should be finalAttrs),"error:
+       … while calling the 'getAttr' builtin
+         at <nix/derivation-internal.nix>:50:17:
+           49|     value = commonAttrs // {
+           50|       outPath = builtins.getAttr outputN"
+dli,dli,0-unstable-2025-09-06,contains_nix_code,contains_nix_code
+libfrida-core,libfrida-core,17.2.17,finalAttr typo (should be finalAttrs),"error:
+       … while evaluating the attribute 'src'
+         at «string»:1:136:
+            1| with import <nixpkgs> {}; (rec { pname = ""libfrida-core""; finalAttrs.pname = pname; version = ""17.2.17"";"
+lightway,lightway,0-unstable-2025-09-04,contains_nix_code,contains_nix_code
+ee,ee,1.5.2,Other error,"error:
+       … while evaluating the attribute 'src'
+         at «string»:1:123:
+            1| with import <nixpkgs> {}; (rec { pname = ""ee""; finalAttrs.pname = pname; version = ""1.5.2""; finalAttrs.v"
+mado,mado,0.3.0,contains_nix_code,contains_nix_code
+yaml2nix,yaml2nix,0.3.0,contains_nix_code,contains_nix_code
+angrr,angrr,0.1.1,contains_nix_code,contains_nix_code
+xscreenruler,xscreenruler,1.0.2,contains_nix_code,contains_nix_code
+npingler,npingler,unstable-2025-08-21,contains_nix_code,contains_nix_code
+e-imzo-manager,e-imzo-manager,0.1.1,contains_nix_code,contains_nix_code
+radicle-tui,radicle-tui,0.6.0,contains_nix_code,contains_nix_code
+protoletariat,protoletariat,3.3.10,contains_nix_code,contains_nix_code
+powerview,powerview,2025.1.1,contains_nix_code,contains_nix_code
+honeyfetch,honeyfetch,1.5.0,contains_nix_code,contains_nix_code
+ld-audit-search-mod,ld-audit-search-mod,0-unstable-2025-06-19,contains_nix_code,contains_nix_code
+emmylua-check,emmylua_check,0.10.0,contains_nix_code,contains_nix_code
+emmylua-ls,emmylua_ls,0.10.0,contains_nix_code,contains_nix_code
+emmylua-doc-cli,emmylua_doc_cli,0.10.0,contains_nix_code,contains_nix_code
+ip2asn,ip2asn,0.1.2,contains_nix_code,contains_nix_code
+tattoy,tattoy,0.1.8,finalAttr typo (should be finalAttrs),"error:
+       … while evaluating the attribute 'src'
+         at «string»:1:127:
+            1| with import <nixpkgs> {}; (rec { pname = ""tattoy""; finalAttrs.pname = pname; version = ""0.1.8""; finalAtt"
+mdwatch,mdwatch,0.1.11,contains_nix_code,contains_nix_code
