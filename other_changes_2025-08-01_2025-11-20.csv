@@ -242,4 +242,3 @@ c6137ada4bb9492821c9ff54a3a7508a56f87a90,2025-08-07,hijridate,python3Packages.hi
 409e80d2446aa57e888eeb5327c035819466c220,2025-08-05,ktimetracker,ktimetracker,ktimetracker: migrate to by-name,a683adc19ff5228af548c6539dbc3440509bfed3
 147d02e310b472fcf1c1498d7d6bebb1acdbd6e7,2025-08-01,"roapi-http,sickgear",treewide,treewide: move to by-name part 2,e7eabdc701d7dbb810fd91a97ec358caa4c1fc50
 7d442d6579a4cd5963170e0cf57a4f0c9b3ae921,2025-08-01,exegol,exegol,exegol: 4.3.11 -> 5.1.1,e7eabdc701d7dbb810fd91a97ec358caa4c1fc50
-f9461320ae0553c7b4720fdb7be9615ae133541f,2025-08-01,tremor-language-server,treewide,treewide: move to by-name,a7822a17050fedda63794775b9090880c8214290
